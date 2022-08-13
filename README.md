@@ -221,7 +221,7 @@
 <p>(3) Weights are relative, but the user can scale the w or normalize them to be between 0 and 1 for clarity. The user can also remove scenario weighting by selecting the button <em>Set Weights Equal</em>. The <em>Scale Weights</em> button will maintain the same relative weights while scaling the numbers from 0 to 1, which is recommended when weights are very large. Weighting is important in DREAM because it optimizes monitoring campaigns by testing random sensor placements and iterating towards &lsquo;better&rsquo; solutions based on objectives. Weighting scenarios can influence which monitoring campaign is preferred. DREAM can also factor scenario weighting in Pareto optimization to rank the top performing monitoring campaigns.</p>
 <p>During multi-objective optimization in the last phase of running DREAM, theFor <em>Weight Equation</em>, it can be modified as needed using any of the variables: <em>v, a</em>, or <em>b</em>.</p>
 <p>In this example, the default scheme of equal weighting is applied (Figure 10).</p>
-<p><a name="_Toc108615033"></a>Figure 10: Default settings on <em>Scenario Weighting</em> page</p>
+<p><a name="_Toc108615033"></a><b>Figure 10: Default settings on <em>Scenario Weighting</em> page. </b></p>
 <p>&nbsp;</p>
 <h2><a name="_Toc108614998"></a>1.2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Detection Threshold</h2>
 <p>The <em>Detection Threshold</em> page (Figure 11) allows the user to select monitoring technologies that are being considered based on the parameters available in the input files, and to define associated parameters, such as deployment cost and detection threshold.</p>
