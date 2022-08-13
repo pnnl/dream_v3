@@ -405,12 +405,13 @@
 </ul>
 </li>      
 <ul>
-<li><strong>csv</strong>
+<li><strong>TopCampaigns.csv</strong>
 <ul>
 <li>If <em>Calculate Pareto Ranks</em> was enabled, all campaigns within the top 10 Pareto ranks are listed in this file. This represents the best campaigns available based on the constraints and allows decision-makers to assess the cost trade-offs of the top options.</li>
 </ul>
 </li>
 </ul>
+</li>
 <p>The following sections will describe the process for analyzing the DREAM outputs using the post-processing features in DREAM.</p>
 <p>&nbsp;</p>
 
