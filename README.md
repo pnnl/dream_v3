@@ -395,9 +395,15 @@
 </ul>
 </li>
 </ul>
+</li>
+<ul>
+<li><strong>EnsembleName_solutionSpace.txt</strong>     
 <ul>
 <li>A simple space-delimited text file that lists the XYZ location of each node, and either a &ldquo;0&rdquo; or &ldquo;1&rdquo; to show whether the node is part of the leak plume or a detectable plume. A &ldquo;1&rdquo; implies that the node surpasses the user-defined threshold for at least one scenario.</li>
 </ul>
+</li>
+</ul>
+</li>      
 <ul>
 <li><strong>csv</strong>
 <ul>
