@@ -380,7 +380,7 @@
 <li>Run the optimization algorithm by clicking <em>Start Optimization</em>.
 <ol>
 <li>Check the <em>Calculate Pareto Ranks </em>box under <strong><em>Plotting Options</em></strong>. View the Pareto figure in real-time as it graphs each iteration. For this example, there should be &ldquo;Time to Detection&rdquo; selected for the <em>Y-Axis Objective</em> and &ldquo;Cost&rdquo; selected for the <em>X-Axis Objective</em> under <strong><em>Plotting Options</em></strong> for <em>Initial Graphed Objective</em>. The objectives can be changed as desired.</li>
-<li>Check the <em>Show Visualization</em> box under <strong><em>Plotting Options</em></strong>. View the <em>DREAM Visualization </em>(Figure 22) that launches when you run the optimization. There are three tabs present: <em>Leak Plume</em>, <em>Detectable Plume</em>, and <em>Monitoring Plan</em>. In the bottom window, there is the option to select the box for Pareto Rank Run# and selectively view each of the top performing campaigns.</li>
+<li>Check the <em>Show Visualization</em> box under <strong><em>Plotting Options</em></strong>. View the <em>DREAM Visualization </em>(Figure 20) that launches when you run the optimization. There are three tabs present: <em>Leak Plume</em>, <em>Detectable Plume</em>, and <em>Monitoring Plan</em>. In the bottom window, there is the option to select the box for Pareto Rank Run# and selectively view each of the top performing campaigns.</li>
 </ol>
 </li>
 </ol>
@@ -420,14 +420,14 @@
 
 <h1><a name="_Toc108615004"></a>4.&nbsp;&nbsp;&nbsp;&nbsp; Pre-processing data</h1>
 <p>There are two file formats accepted by DREAM: (1) converting full leakage simulations into HDF5 files or (2) reading results from IAM, a reduced order model that uses a probabilistic framework from NRAP-Open-IAM.</p>
-<p>To handle outputs from leakage simulations, DREAM provides the HDF5 Converter tool (Figure 24), which is pre-programmed to convert the output files from the following applications:</p>
+<p>To handle outputs from leakage simulations, DREAM provides the HDF5 Converter tool (Figure 22), which is pre-programmed to convert the output files from the following applications:</p>
 <ul>
 <li>NUFT (Nonisothermal, Unsaturated Flow and Transport model; Nitao, 1998),</li>
 <li>STOMP (Subsurface Transport Over Multiple Phases model; White and Oostrom, 2000), and</li>
 <li>TECPLOT formatted output data to DREAM input files.</li>
 </ul>
 <p>IAM files can also be configured as input files for DREAM. The user must provide the directory containing the time plot files of all the scenarios, organized according to the selected folder structure. The converter quickly reads the basic structure and allows the user to select monitoring parameters of interest and deselect unwanted time steps or scenarios. Select <em>Run</em> to begin the conversion process.</p>
-<p><a name="_Toc108615047"></a>Figure 22: DREAM HDF5 Converter Tool</p>
+<p><a name="_Toc108615047"></a><b>Figure 22: DREAM HDF5 Converter Tool</b></p>
 <p>&nbsp;&nbsp;&nbsp;</p>
 <h2><a name="_Toc108615005"></a>4.1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; STOMP Data</h2>
 <p>The DREAM file converter will accept most output types from STOMP. The required directory hierarchy is &ldquo;ensemble folder\scenario folders\file per time step&rdquo;. Detailed information follows below.</p>
@@ -555,8 +555,8 @@
 <h2><a name="_Toc108615008"></a>4.4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; HDF5 Output</h2>
 <p>For each of the three examples, DREAM will create a directory with the same name as the parent directory with an &ldquo;_hdf5&rdquo; appended. Inside the directory will be an HDF5 file for each scenario that contains all the time steps for all the data types along with the grid information. All data will be cell centered.</p>
 <p><strong>File Example:</strong></p>
-<p>The HDF5 files can be viewed with HDFView (Figure 25).</p>
-<p><a name="_Toc108615048"></a>Figure 23: HDFView of DREAM input file structure.</p>
+<p>The HDF5 files can be viewed with HDFView (Figure 23).</p>
+<p><a name="_Toc108615048"></a><b>Figure 23: HDFView of DREAM input file structure.</b></p>
 <p>Each scenario will contain a &ldquo;data&rdquo; group that contains metadata about the scenario: porosity information (optional), steps and their matching times, the grid XYZ vertices or edges (e.g., vertex-x, vertex-y, and vertex-z), and the grid XYZ centers (e.g., x, y, and z). There will also be a group for each time step containing 3D data for each parameter at that time step. Lastly, there is a &ldquo;statistics&rdquo; group that lists the global minimum, average, and maximum for each parameter to expedite future calculations.</p>
 <p>DREAM also assigns attributes to variables in the HDF5 file. This includes &ldquo;units&rdquo; for time, XYZ vertices and centers, and for each parameter; although, some parameters may be unitless. A &ldquo;positive&rdquo; attribute of up or down is assigned to the Z vertex and center to denote whether the model uses depth or height. If attributes are missing, DREAM will simply ask for the user to input this information.</p>
 <h2><a name="_Toc108615009"></a>4.5&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; IAM Output</h2>
@@ -573,3 +573,305 @@
 <p>776601.0498687663,14468759.842519684,-2343.3581219014286,24106.5</p>
 <p>776601.0498687663,14468792.650918635,-2343.3581219014286,21915.0</p>
 <p>--------------------------------------- End of File</p>
+<p>&nbsp;</p>
+
+
+
+
+
+<h1><a name="_Toc108615010"></a>5.&nbsp;&nbsp;&nbsp;&nbsp; Post-Processing Data</h1>
+<p>Once the user has finished running DREAM, the results directory can be located to find the outputted files: ensemblename_solutionSpace.txt, Run#_AllCampaigns.csv, TopCampaigns.csv, and VolumeOfAquiferDegraded.csv.</p>
+<p>For &ldquo;ensemblename_solutionSpace.txt&rdquo;, the data file includes columns with nominal values for <em>x</em>,<em>y</em>,<em>z </em>centered points, and the corresponding values for &ldquo;<em>saturation</em>&rdquo;, &ldquo;<em>gravity</em>&rdquo;, and &ldquo;<em>pressure</em>&rdquo;.</p>
+<p>For &ldquo;Run#_AllCampaigns.csv&rdquo;, the data file has multiple columns, including</p>
+<ul>
+<li><em>Iteration </em>of optimization algorithm is how many simulations or monitoring campaigns are generated</li>
+<li><em>Scenarios with Leak Detected </em>corresponds to the percent of scenarios when a leak was detected, and which simulations detected a leak. For example, &ldquo;1%: sim_0086&rdquo; means that out of all simulations, only 1% of the simulations detected a leak, which only includes simulation #86 in this example.</li>
+<li><em>Scenarios with No Leak Detected </em>corresponds to the percent of scenarios when a leak was not detected, and it includes the simulations (if any) that had undetected leaks. For example, &ldquo;99%: sim_0075, sim 0101, sim 830&rdquo; means that simulations 0075, 0101, and 830 had leaks that went undetected. The value 99% is the percent of simulations that predicted no leaks.</li>
+<li><em>Average TTD of Successful Scenarios </em>is the average time to detection if there are any leaks detected.</li>
+<li><em>Average VAD at TTD </em>is the estimated volume of aquifer degraded if there are any leaks detected.</li>
+<li><em>Average Cost of Successful Scenarios </em>is the proposed cost for installing monitoring technologies and wells along with the cost of upkeep for monitoring one to many leaks.</li>
+<li><em>Number of Wells </em>provides the optimal number of wells needed for monitoring the proposed campaign.</li>
+<li><em>Sensor Types (x y z) </em>provides the location of the proposed monitoring technology to install for optimal coverage. It also includes how long the monitoring technology should be deployed. An example of the values in <em>Sensor Types (x y z) </em>is &ldquo;gravity: 20 40 120 years (4450 2650 1388) &hellip; (4000 2020 1500)&rdquo; and &ldquo;saturation: 50 years (4850 4400 1290) 20 years (4800 4400 1290)&rdquo;. This output means that a gravity survey is suggested to occur on the 20<sup>th</sup>, 40<sup>th</sup>, and 120<sup>th</sup> year after the monitoring campaign begins, and the gravity survey will be taken over the area covering all nodes, including node (x=4450m, y=2650m, z=1388m) to node (x=4000m, y=2020m, z=1500m). For saturation, the point sensor will be deployed at node (x=4850m, y=4400m, z=1290m), and it is expected to occur on the 50<sup>th</sup> year after the start of the campaign. Twenty years later, the point sensor will be redeployed to node (x=4800m, y=4400m, z=1290m) until the end of the monitoring campaign.</li>
+</ul>
+<p>Note that the user can reproduce the Pareto rank figure using the data in &ldquo;Run#_AllCampaigns.csv&rdquo;.</p>
+<p>For &ldquo;TopCampaigns.csv&rdquo;, the data file has multiple columns, including</p>
+<ul>
+<li><em>Pareto Rank </em>outputs a positive integer that ranks which scenarios and monitoring campaigns minimize the tradeoff between the objectives, i.e., Pareto optimal set, selected under <strong><em>Optimization Settings </em></strong>and <strong><em>Plotting Options</em></strong>. A rank number of 1 indicates Pareto optimality in balancing the tradeoff between both objectives.</li>
+<li><em>Scenarios with Leak Detected </em>finds the scenarios where leak(s) are detected.</li>
+<li><em>Scenarios </em>includes a list of all simulated leaks from the user selected optimization algorithm.</li>
+<li><em>Average TTD of Successful Scenarios </em>is explained above.</li>
+<li><em>Average VAD at TTD </em>is explained above.</li>
+<li><em>Average Cost of Successful Scenarios </em>is explained above.</li>
+<li><em>Number of Wells </em>is explained above.</li>
+<li><em>Sensor Types (x y z) </em>is explained above.</li>
+</ul>
+<p>For &ldquo;VolumeOfAquiferDegraded.csv&rdquo;, the data file has multiple columns, including <em>Time</em> (units specified by user or within the input files), and the <em>Average</em>, <em>Minimum</em>, and <em>Maximum VAD</em> (units of volume, e.g., cubic meters), which are the estimated ranges for volume of aquifer degraded. The final column is <em>Total Possible VAD</em>.</p>
+<h2><a name="_Toc108615011"></a>5.1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Python Visualization</h2>
+<p>Post-processing of the DREAM run can be executed by clicking <em>Display Python Plots </em>under <strong><em>Optimization Settings</em></strong>. Multiple figures will be produced and then automatically saved to the specified output directory under a subdirectory called &ldquo;Figures&rdquo;. Below is a list of acronyms that are used in specifying the parameters in the figures.</p>
+<p>Parameter List of Acronyms</p>
+<ul>
+<li>PLD - Percent of Leaks Detected</li>
+<li>PMCD - Percent Mass of CO2 Detected</li>
+<li>PMMCD &ndash; Percent Mass of CO2 Detected at Max Leak</li>
+<li>TTD &ndash; Time to Detection</li>
+<li>VAD &ndash; Volume of Aquifer Degraded</li>
+</ul>
+<p>The goal of post-processing after running DREAM is to aid the user in understanding the outputs and how to make informative decisions with these results. In the following section, the different types of figures produced are discussed. Please read below for a description of each figure&rsquo;s purpose and how it can aid in interpreting the results and/or selecting a suitable monitoring campaign.</p>
+<p>As an example, to aid this discussion, there will be figures produced from the dataset, &ldquo;root/outputs/kimberlina_1_2/outputs/pres_sat_grav/Run1_AllCampaigns_sa_10k.csv&rdquo;, which can be found under the user&rsquo;s root directory if the DREAM demo has been downloaded. The example is from a single DREAM run using Simulated Annealing with 10,000 iterations and the default cooling equation.</p>
+<ul>
+<li>PLD &amp; PMCD vs TTD
+<ul>
+<li>A dual panel view of PLD and PMCD (e.g., Figure 24) is insightful for identifying if there are some leaks that are more important than others. It showcases where the bulk of leaks are as well as the less frequent but larger leaks. PLD and PMCD are plotted against TTD to see how TTD is related to the two parameters.</li>
+<li>Questions to consider are: how is TTD affected by solely looking at percent of leaks detected compared to the percent mass of CO2 detected? Is one of these objectives more indicative of performance than the other?</li>
+<li>In</li>
+</ul>
+</li>
+</ul>
+<p><a name="_Toc108615049"></a><b>Figure 24: Simulated annealing example of PLD and PMCD versus TTD &nbsp;</b></p>
+<ul>
+<li>PLD &amp; PMCD vs Monitoring Cost
+<ul>
+<li>Similar to (a), this figure is another dual panel view of PLD and PMCD (e.g., Figure 25). A dual panel view of PLD and PMCD is insightful for identifying if there are some leaks that are more important than others. It showcases where the bulk of leaks are as well as the less frequent but larger leaks. PLD and PMCD are plotted against Monitoring Cost.</li>
+<li>Questions to consider are: how is it better to use PLD or PMCD when budgeting for a CO2 monitoring campaign?</li>
+<li>In Figure 25, PLD might be useful in providing more consistent estimates for monitoring costs compared to PMCD.</li>
+</ul>
+</li>
+</ul>
+<p><a name="_Toc108615050"></a><b>Figure 25: Simulated annealing example of PLD and PMCD versus Monitoring Cost</b></p>
+<ul>
+<li>PLD vs PMCD
+<ul>
+<li>Ideally, a one-to-one or linear relationship between PLD and PMCD is expected to highlight the fact that as the percent of leaks detected increases so too will the percent mass of CO2 detected (e.g., Figure 2). If there are outliers, this indicates that some leaks are undetected.</li>
+<li>Questions to consider are: how many wells and monitoring technologies have been deployed? Are there any constraints or leak detection thresholds that can be affecting the number of undetected leaks?</li>
+<li>In Figure 29, the PMCD is greater than the PLD, meaning some leaks are going undetected.</li>
+</ul>
+</li>
+</ul>
+<p><a name="_Toc108615051"></a>Figure 26: Simulated annealing example of PLD versus PMCD</p>
+<ul>
+<li>TTD vs Monitoring Cost
+<ul>
+<li>As TTD increases, the expenses for monitoring the site are expected to drive up (e.g., Figure 29). When the cost for monitoring is very low, this corresponds to proposed monitoring campaigns that are likely only using surface arrays and not drilling any wells.</li>
+<li>Questions to consider are: what tradeoff is the user comfortable with, e.g., higher monitoring costs to capture all leaks?</li>
+<li>In Figure 29, there is not a defined relationship between TTD and Monitoring Cost. This shows that PLD or PMCD are probably better or more informative indicators of Monitoring Cost.</li>
+</ul>
+</li>
+</ul>
+<p><a name="_Toc108615052"></a>Figure 27: annealing example Monitoring Cost versus TTD</p>
+<ul>
+<li>VAD vs TTD
+<ul>
+<li>VAD is generally not a highly informative parameter. However, examining VAD versus TTD can show if there is a one-to-one relationship as the number of leaks detected increases (Figure 30). If there are some outliers or scattering, this indicates that there are some undetected leaks, which are being captured by a growing value of VAD.</li>
+<li>Questions to consider are: what is different between monitoring campaign scenarios that might be significantly impacting TTD?</li>
+<li>In Figure 30, the initial VAD has some variability with respect to TTD for the first 0.3 but as more aquifer volume is degraded, the TTD linearly increases with VAD.</li>
+</ul>
+</li>
+</ul>
+<p><a name="_Toc108615053"></a>Figure 28: Simulated annealing example of VAD versus TTD</p>
+<ul>
+<li>PMCD &amp; PMMCD vs TTD
+<ul>
+<li>This dual panel view is comparing the mass of CO2 detected at the end of the monitoring campaign to the mass of CO2 detected when there is maximum saturation (i.e., largest leak detected). This figure aims to highlight the discrepancy (if any) between PMCD and PMMCD (e.g., Figure 31).</li>
+<li>For example, it can help address if there is a large enough difference between the two, such that there is a significant time gap when the largest leak is detected compared to the end of the monitoring campaign.</li>
+<li>In Figure 31, this figure indicates that there is not a significant difference for TTD when using the last time step of the monitoring campaign or the time step at which the maximum leak is detected.</li>
+</ul>
+</li>
+</ul>
+<p><a name="_Toc108615054"></a>Figure 29: Simulated annealing example of PMCD using last time step compared to the time at which the maximum leak is detected versus TTD</p>
+<p>&nbsp;</p>
+<ul>
+<li>PMCD &amp; PMMCD vs Monitoring Cost
+<ul>
+<li>Similar to (f), this dual panel view is comparing the mass of CO2 detected at the end of the monitoring campaign to the mass of CO2 detected when there is maximum saturation (i.e., largest leak detected). This figure will highlight the discrepancy in PMCD and PMMCD (e.g., Figure 32).</li>
+<li>For example, it can help address if there is a large enough difference between the two, such that it is worthwhile to continue monitoring and accruing costs to capture relevant or significant leaks.</li>
+<li>In Figure 31, this figure indicates that there does not appear to be a significant difference between using the last time step of the monitoring campaign or the time step at which the maximum leak is detected.</li>
+<li>In Figure 32, this figure indicates that there is not a significant difference for TTD when using the last time step of the Monitoring Cost or the time step at which the maximum leak is detected.</li>
+</ul>
+</li>
+</ul>
+<p><a name="_Toc108615055"></a>Figure 30: Simulated annealing example of PMCD using last time step compared to the time at which the maximum leak is detected versus Monitoring Cost</p>
+<ul>
+<li>3D scatter plots of PMCD, PLD and TTD
+<ul>
+<li>In these 3D scatter plots, the percent leak detection cutoff iterates through 10% to 90%, in which a smaller percent cutoff indicates that almost all leaks are included (e.g., Figure 33). A GIF is produced from this set of figures to visualize the progression of smaller, more common leaks to larger, less common leaks, and how these leaks relate to TTD.</li>
+<li>Questions to consider are: on average, does it take longer to detect larger leaks?</li>
+<li>In Figure 33, PMCD, PLD, and TTD all increase as more leaks are detected.</li>
+</ul>
+</li>
+</ul>
+<p><a name="_Toc108615056"></a>Figure 31: Simulated annealing example of 3D scatter plots that show when 0%-100% of leaks are detected for (left) PMCD, PLD and TTD and (right) PMCD, PLD and TTD</p>
+<ul>
+<li>3D scatter plots of PMCD, TTD, and Monitoring Cost
+<ul>
+<li>Similar to (h), these 3D scatter plots look at the leak detection cutoff from 10% to 90% (e.g., Figure 33). A GIF is produced from this set of figures to show the relationship for the mass (or size) of the leak in relation to how long it takes to be detected and how expensive this scenario will be.</li>
+<li>Questions to consider are: how important is PMCD, and is it a good indicator with a strong relationship between TTD and monitoring cost?</li>
+<li>In Figure 33, as expected, the GIF shows how PLD and TTD increase as the mass of CO2 detected increases.</li>
+</ul>
+</li>
+</ul>
+<p>&nbsp;</p>
+<ul>
+<li>3D plot showing designation of monitoring campaigns for different scenarios
+<ul>
+<li>This figure shows the placement of the specified monitoring technologies, e.g., gravity survey, well(s), point sensor(s), at the designated site. On the right-hand panel, the plots of PLD and Monitoring Cost versus TTD iteratively show the location of the monitoring campaign scenario on the plots as a black dot. This allows the user to visualize how a certain scenario affects these objectives.</li>
+</ul>
+</li>
+</ul>
+<p>Figure 32: Simulated annealing example of 3D scatter plots that show (left) some of the proposed monitoring campaigns and (right) the respective PLD and Monitoring Cost versus TTD <a name="_Toc108615012"></a>Monitoring Technologies</p>
+<p>DREAM currently supports point sensors and surface surveys, but there are plans to expand to additional technologies. Cross-well ERT technology was once available to a limited degree but needs some additional work to fit with the new architecture of DREAM V3. There are some assumptions made about each monitoring technology that the user should be aware of.</p>
+<p>Many of the algorithms also make small mutations to monitoring technologies between iterations, and these mutations look different depending on the technology. These mutations are intentionally as small as possible to allow the algorithms to test campaigns similar to other optimal campaigns. Details on how mutations are handled are further described for each algorithm in Section 7.</p>
+<h2><a name="_Toc108615013"></a>5.2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Point Sensors</h2>
+<p>Point sensors occupy a single location and continuously monitor at every time step. Point sensors are only placed within the detectable plume for a given parameter, where they will detect a leak for at least one scenario. To develop optimized monitoring campaigns, point sensors typically have a delayed start until the first time at which they can detect a leak for any scenario. If a point sensor is allowed redeployments, it may be moved from one location to another at a randomly chosen timestep. Point sensors are also constrained by the maximum number of wells and minimum distance between wells, as point sensor locations are first determined. Then, well locations, depths, and costs are assessed based on point sensor locations.</p>
+<p>The following mutations are available for point sensors:</p>
+<ul>
+<li>Move an existing sensor to another valid location, searching for a valid move within 3 nodes of the original location, and then within 6 nodes, and so forth to keep changes small (60%)</li>
+<li>Add a redeployment to an existing sensor, allowing it to move locations at a specified time (20%)</li>
+<li>Remove a redeployment on an existing sensor, so that it remains longer at its original location (20%)</li>
+</ul>
+<h2><a name="_Toc108615014"></a>5.3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Surface Surveys</h2>
+<p>Surface surveys, such as gravity surveys, are assumed to be conducted by a team at several discrete points in time, across a wide area along the surface. DREAM visualizes surveys across the top layer of nodes, though it represents actions only on the surface. All surveys are limited to be rectangular grids, with a density anywhere between every 1-3 nodes within a given rectangular grid. Since surveys typically detect change from a baseline, DREAM assumes that a survey was conducted at the start of the simulation and that the locations of the survey remain constant that the change can be seen compared to the baseline. To develop more optimized monitoring campaigns, the first survey (aside from the baseline) is fixed at the first time at which they can detect a leak for any scenario. The max number of redeployments controls how many times the survey team might conduct another survey.</p>
+<p>The following mutations are available for surface surveys:</p>
+<ul>
+<li>Add additional nodes to an existing survey, increasing its size by one additional row in either direction (30%)</li>
+<li>Remove nodes from an existing survey, reducing its size by one row in either direction (30%)</li>
+<li>Alter the density spacing on an existing survey, which can alter the survey to be every node, every other node, or every third node (20%)</li>
+<li>Add an additional survey redeployment to an existing survey (10%)</li>
+<li>Remove a survey redeployment from an existing survey (10%)</li>
+</ul>
+<p>&nbsp;</p>
+
+
+
+
+
+
+<h1><a name="_Toc108615015"></a>6.&nbsp;&nbsp;&nbsp;&nbsp; Optimization Algorithms</h1>
+<p>DREAM is intentionally designed to run on a personal computer. Therefore, a complete enumeration of the solution space that tests all possible combinations and placements of monitoring technologies is not feasible. As an alternative, DREAM uses various optimization algorithms to approximate the optimal monitoring campaigns. Because multiple objectives are considered, there will be many optimal monitoring campaigns each with unique trade-offs between the objectives.</p>
+<p>The algorithms are built into DREAM such that the user can easily select any of the following algorithms and simply compare results from one run to the next. However, a basic understanding of the algorithms can help decide which option suites a particular leak ensemble. Number of scenarios, size of domain, and degree of variation between scenarios can all factor into which algorithm may perform the best for each leak ensemble.</p>
+<h2><a name="_Toc108615016"></a>6.1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Monte Carlo</h2>
+<p>Monte Carlo essentially uses randomization to seek optimal numerical results. Each iteration is a randomly created campaign and has no bearing on the next iteration, i.e., an independent draw of a campaign for each iteration. Every random campaign only considers placing monitoring technology in locations where it may detect a leak for at least one scenario, known as the detectable plume. If the user determines a more restrictive detection criteria (Section 3.5), it is possible that the random campaign results in no detection, but otherwise, most campaigns should offer some benefit.</p>
+<p>The main advantage of Monte Carlo is that it is very fast to run iterations. Monte Carlo also widely explores the solution space, giving a full spectrum of possible solutions and their objective values. However, Monte Carlo does not explore the optimal solution space well, is computationally expensive, especially for a large solution space. Therefore, it is not recommended to be anything more than a diagnostics tool.</p>
+<h2><a name="_Toc108615017"></a>6.2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Simulated Annealing</h2>
+<p>Simulated annealing is the default algorithm for DREAM that was founded by Matott et al. (2011) to perform moderately well among evaluated algorithms for geoscience applications, and it was first developed by Bangerth et al. (2006) to be efficient at finding near-optimal solutions. Simulated annealing is an iterative search heuristic analogous to the physical process of annealing. At each iteration, the campaign is randomly mutated with one of the following actions, listing the probability that each action will be selected:</p>
+<ul>
+<li>Add a random monitoring technology to a valid location (10% chance)</li>
+<li>Remove an existing monitoring technology (10% chance)</li>
+<li>Modify an existing monitoring technology (80% chance), which varies depending on the deployment method and is specified for point sensors (1) and surface surveys (6.2).</li>
+</ul>
+<p>Each of the listed actions are limited by user-defined constraints, such as the range of monitoring technologies allowed, the range of available survey sizes, and budget constraints. The probabilities determine which action is selected. If one action is attempted and fails due to constraints (e.g., add a location when no budget is available), a new action is randomly selected until an action is successful.</p>
+<p>Simulated annealing comes into play as the algorithm decides whether to keep the previous campaign or the mutated campaign at each iteration. Each new iteration is compared with the previous best iteration based on performance for the selected objectives. However, simply taking the better campaign every time is likely to trap the algorithm at a locally optimized result rather than the globally optimized result. Therefore, DREAM will occasionally continue with the objectively worse campaign based on a cooling function.</p>
+<p>The cooling function determines a degradation from 1 to 0 across the iterations, with the default as exponential decay (Figure 33). As the value is &ldquo;hot&rdquo;, (closer to 1) it is more likely to keep the worse campaign, but as the value &ldquo;cools&rdquo;, (closer to 0) it is more likely to keep the better campaign. This allows the algorithm to act risky towards the start of the run and transition towards more stable changes as the solution converges on an optimized location at the end of the run. The best campaigns are saved during the entire process.</p>
+<p>The cooling function is &nbsp;by default, where &nbsp;is the current iterate and &nbsp;is the total number of allotted iterations. As the algorithm reaches the end, i.e., , the cooling function &nbsp;will approach 0.01; in other words, it will be inclined to choosing better campaigns.&nbsp; If the user would like to adjust or change the cooling function, the two variables, &nbsp;and , can be manipulated to create a new cooling function that differs from the default. However, it must behave in such a way that it has a range between 0 and 1, and as the simulated annealing algorithm progresses, it must eventually &ldquo;cool&rdquo; down close to 0 as .</p>
+<p><a name="_Toc108615057"></a><b>Figure 33: Exponential decay used for temperature function</b></p>
+<p>&nbsp;</p>
+<h2><a name="_Toc108615018"></a>6.3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Heuristic Algorithm</h2>
+<p>The DREAM heuristic algorithm is a novel approach for examining the set of undetected, detectable leaks, and identifies the spaces where they spatially overlap (Figure 34). It then generates a cumulative distribution function (Figure 35) based on the number of overlapping leaks that are predicted by a single monitoring plan with different sensor technology schemes, and preferentially assigns sensors to the spaces where the greatest number of possible leaks would be detected. Each time a new sensor is added to the monitoring plan, the set of overlaps and the cumulative distribution function are re-computed. This algorithm considers only the detectable leaks, meaning that the monitoring technology being added to the monitoring plan could detect the magnitude of the physical signal produced by the leak. Where multiple monitoring technologies are being considered, the algorithm cycles through the list and considers one monitoring technology at a time.</p>
+<p><a name="_Toc108615058"></a><b>Figure 34: The variability and intensity of color in the colormap indicates the number of leaks that overlap at each point (x,y), considering only the leaks that are detectable but as-yet undetected by the given monitoring plan.</b></p>
+<p>&nbsp;</p>
+<p><a name="_Toc108615059"></a><b>Figure 35: Each node number corresponds to a pixel from Figure 35, and the rise in the corresponding CDF value is proportional to the number of leaks that are detectable at that node location.</b></p>
+<p>&nbsp;</p>
+
+
+
+
+
+<p>value is proportional to the number of leaks that are detectable at that node location.</p>
+<h1>&nbsp;</h1>
+<h1><a name="_Toc108615019"></a>7.&nbsp;&nbsp;&nbsp;&nbsp; Appendix</h1>
+<h2><a name="_Toc108615020"></a>7.1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Objectives</h2>
+<p>Objectives are assessed in Run DREAM, and there is a minimum of two objectives that must be assessed. These objectives may feed back into some algorithms at each iteration, though. The following objectives are available&nbsp;:</p>
+<p>Time to Detection &ndash; A required objective; this determines how much time passes until the deployed technology detects a leak. DREAM considers a shorter time to detection to be preferable.</p>
+<ul>
+<li>Cost &ndash; This objective includes the cost of each technology and well costs for the campaign. Using equations on the cost fields can allow for both capital and operating costs. DREAM considers lower costs to be preferable.</li>
+<li>VAD at Detection &ndash; Tied to the first objective, this calculates the volume of aquifer degraded at the time when the leak is first detected, representing the magnitude of the leak. DREAM considers lower volumes to be preferable.</li>
+<li>Scenarios Detected &ndash; Tied to the first objective, this calculates the percent of scenarios that are detected with a given monitoring campaign.</li>
+</ul>
+<h2><a name="_Toc108615021"></a>7.2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Pointers for Running Dream</h2>
+<p>In this section, we will go over some important pointers when using DREAM to ease the difficulty in setting up a DREAM run. Throughout DREAM, there will be question marks above some of the features that you can click on for more helpful information. If you click on one of these questions marks, you can learn about what inputs are required, description of the feature, and much more.</p>
+<p><a name="_Toc108615060"></a><b>Figure 36: Example of question marks that you can click on for more information</b></p>
+<p><strong>Runtime Considerations</strong></p>
+<ul>
+<li>Be mindful of the number of model nodes specified in the HDF5 or IAM files. Many nodes will shoot up runtime.</li>
+<li>Having either many nodes, wells, and/or sensors will significantly increase runtime. Including many wells and sensors will increase the search space by increasing the possible combinations for sensor type and sensor locations. Using more iterations will increase runtime either significantly or mildly depending on the algorithm.</li>
+<li>Relative change will always be a percent value regardless of the units of the parameter</li>
+<li>Negative values and ranges for parameter values are currently not allowed?</li>
+<li>When choosing the number of iterations for the optimization algorithm be aware that
+<ul>
+<li>Grid Search will quickly become computationally intractable</li>
+<li>Monte Carlo will also become computationally expensive searching through a large decision space</li>
+<li>Simulated Annealing, Heuristic, and NSGA-II algorithms are better equipped for searching large decision space, but runtime will still increase</li>
+</ul>
+</li>
+</ul>
+<p><strong><em>Scenario Weighting</em></strong></p>
+<ul>
+<li>In general, it is sufficient to stick with equal weighting of all scenarios. The default setting is okay to use.</li>
+<li>It is advised to limit how many scenarios are unselected under <em>Scenario</em>. This can introduce bias into the results from the DREAM optimization algorithm, e.g., only selecting simulations when there are detected leaks may be tempting. However, this will introduce bias into the solution for optimal monitoring campaign scenarios.</li>
+<li>The <em>Variable A (a) </em>and <em>Variable B (b) </em>can represent any variable of interest, e.g., user-define probability and remediation cost.</li>
+</ul>
+<p><strong><em>Exclude Locations</em></strong></p>
+<ul>
+<li>In general, it is sufficient to have all nodes selected to run in the model.</li>
+<li>It may be tempting to only select scenarios where a leak is detected, but this will introduce bias into the solution for optimal monitoring campaign scenarios.</li>
+</ul>
+<p><strong><em>Monitoring Campaign Settings</em></strong></p>
+<ul>
+<li>Although it is okay to specify a monitoring budget, it is best to allow the optimization algorithm to have full range when finding the optimal monitoring campaign scenario and not limit possible scenarios. That way, the user can view all possible solutions and make informed decisions about budget afterwards.</li>
+<li>It may be tempting to only select scenarios where a leak is detected, but this will introduce bias into the solution for optimal monitoring campaign scenarios. Unless</li>
+</ul>
+<p><strong><em>Detection Criteria</em></strong></p>
+<ul>
+<li>The user has free range on how many criteria to specify for leak detection.</li>
+<li>&ldquo;Any Technology&rdquo; is a wildcard, meaning any sensor specified on the <strong><em>Detection Threshold</em></strong> page exceeding the user-defined value for <em>Minimum Detections to Signify Leak </em>will confidently indicate a leak has occurred.</li>
+<li>The only sensors that can be used to signify a leak must have been defined on the <strong><em>Detection Threshold</em></strong></li>
+</ul>
+<p><strong><em>Detection Threshold</em></strong></p>
+<ul>
+<li>This page is different from the <strong><em>Leak Definition</em></strong> The potential leak space does not indicate a detectable leak. The thresholds and criteria specified on this page and the following are what determine if there is a detectable leak(s).</li>
+<li>Under <em>Cost</em>, a cost function can be created for each monitoring technology with any of the variables, e.g., <em>t, i, s, a</em>.</li>
+<li>Make sure detectable nodes for each sensor covers a reasonable amount of nodes in the model space, e.g., should be greater than 0 but it should not necessarily cover all nodes. If there are zero detectable nodes, then no leak is detected. If all nodes are covered, then it means the entire model space is covered by a leak, which might not be realistic.</li>
+</ul>
+<p><strong><em>Leak Definition</em></strong></p>
+<ul>
+<li>Only saturation and pressure can define the leak space nodes.</li>
+<li>There must be at least one node found when calculating the leak space in order to proceed; otherwise, the <em>Leak Value</em> needs to be decreased, especially if there are only a few nodes covering the leak space.</li>
+<li>If the user-defined threshold is exceeded, this does not necessarily mean a leak has been detected. This section is mainly for calculating VAD by finding nodes that indicate part of the aquifer has been degraded.</li>
+</ul>
+<p><strong>Additional Information</strong></p>
+<ul>
+<li>If you click on the question marks above the features, the <em>Help Viewer</em> will provide additional information. For example, under <em>Scenario Weighting</em>, the user can hover over the question mark on <em>Variable A</em> and <em>Variable B</em> and click to read more about the description and requirements (Figure 38). Or, the user can sometimes hover over the value box for a description.</li>
+</ul>
+<p><a name="_Toc108615061"></a></b>Figure 37: Example of the <strong><em>Help Viewer</em></strong> in DREAM</b></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>This page intentionally left blank.</p>
+<p>&nbsp;</p>
+<h1><a name="_Toc108615023"></a><a name="_Toc108596361"></a><a name="_Toc108602985"></a><a name="_Toc108603103"></a><a name="_Toc108615022"></a></h1>
+<h1><a name="_Toc108615019"></a>8.&nbsp; &nbsp; &nbsp;References</h1>
+<p>Bacon, D.H.; Yonkofski, C.M.; Brown, C.F.; Demirkanli, D.I.; Whiting, J.M. (2019). Risk-based post injection site care and monitoring for commercial-scale carbon storage: Reevaluation of the FutureGen 2.0 site using NRAP-Open-IAM and DREAM. <em>Intl. J. Greenhouse Gas Control</em>, 90, 102784.</p>
+<p>Carroll, S. A.; Keating, E.; Mansoor, K.; Dai, Z.; Sun, Y.; Trainor-Guitton, W.; Brown, C.; Bacon, D. (2014a). Key factors for determining groundwater impacts due to leakage from geologic carbon sequestration reservoirs. <em>Intl. J. Greenhouse Gas Control</em>, 29, 153&ndash;168.</p>
+<p>Carroll, S. A.; Mansoor, K.; Sun, Y. (2014b). <em>Second</em>-<em>Generation Reduced-Order Model for Calculating Groundwater Impacts as a Function of pH, Total Dissolved Solids, and Trace Metal Concentration</em>; NRAP-TRS-III-002-2014; NRAP Technical Report Series; U.S. Department of Energy, National Energy Technology Laboratory: Morgantown, WV<em>,</em> p 40.</p>
+<p>Last, G. V.; Murray, C. J.; Brown, C. F.; Jordan, P. D.; Sharma, M. (2013). <em>No-Impact Threshold Values for NRAP&rsquo;s Reduced Order Models</em>; Pacific Northwest National Laboratory, Richland, Washington, p.72.</p>
+<p>Nitao, J. J. (1998). <em>Reference manual for the NUFT flow and transport code, version 2.0</em>; Lawrence Livermore National Laboratory, Livermore, CA.</p>
+<p>Sminchak, J. R.; Moody, M.; Theodos, A.; Larsen, G.; Gupta, N. (2014). Investigation of Wellbore Integrity Factors in Historical Oil and gas Wells for CO2 Geosequestration in the Midwestern US. <em>Energy Procedia</em>, 63, 5787-5797.</p>
+<p>White, M. D.; Oostrom M. (2000). <em>STOMP, Subsurface transport over multiple phases, Version 2.0, Theory Guide</em>; Pacific Northwest National Laboratory, Richland, WA.</p>
+<p>Yonkofski, C. M.; Gastelum, J. A.; Porter, E. A.; Rodriguez, L. R.; Bacon, D. H.; Brown, C. F. (2016). An optimization approach to design monitoring schemes for CO<sub>2</sub> leakage detection. <em>Intl. J. Greenhouse Gas Control</em>, 47, 233&ndash;239.</p>
+<p>Yonkofski C.; Davidson, C.L.; Rodriguez, L.R.; Porter, E.A.; Bender, S.R.; Brown, C.F. (2017). Optimized, budget-constrained monitoring well placement using DREAM. <em>Energy Procedia</em>, 114, 3649-3655.</p>
+<h1>&nbsp;</h1>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
