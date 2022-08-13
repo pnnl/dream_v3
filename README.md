@@ -395,7 +395,6 @@
 </ul>
 </li>
 </ul>
-<p>&nbsp;</p>
 <ul>
 <li>A simple space-delimited text file that lists the XYZ location of each node, and either a &ldquo;0&rdquo; or &ldquo;1&rdquo; to show whether the node is part of the leak plume or a detectable plume. A &ldquo;1&rdquo; implies that the node surpasses the user-defined threshold for at least one scenario.</li>
 </ul>
@@ -408,3 +407,162 @@
 </ul>
 <p>The following sections will describe the process for analyzing the DREAM outputs using the post-processing features in DREAM.</p>
 <p>&nbsp;</p>
+
+
+
+
+<h1><a name="_Toc108615004"></a>4.&nbsp;&nbsp;&nbsp;&nbsp; Pre-processing data</h1>
+<p>There are two file formats accepted by DREAM: (1) converting full leakage simulations into HDF5 files or (2) reading results from IAM, a reduced order model that uses a probabilistic framework from NRAP-Open-IAM.</p>
+<p>To handle outputs from leakage simulations, DREAM provides the HDF5 Converter tool (Figure 24), which is pre-programmed to convert the output files from the following applications:</p>
+<ul>
+<li>NUFT (Nonisothermal, Unsaturated Flow and Transport model; Nitao, 1998),</li>
+<li>STOMP (Subsurface Transport Over Multiple Phases model; White and Oostrom, 2000), and</li>
+<li>TECPLOT formatted output data to DREAM input files.</li>
+</ul>
+<p>IAM files can also be configured as input files for DREAM. The user must provide the directory containing the time plot files of all the scenarios, organized according to the selected folder structure. The converter quickly reads the basic structure and allows the user to select monitoring parameters of interest and deselect unwanted time steps or scenarios. Select <em>Run</em> to begin the conversion process.</p>
+<p><a name="_Toc108615047"></a>Figure 22: DREAM HDF5 Converter Tool</p>
+<p>&nbsp;&nbsp;&nbsp;</p>
+<h2><a name="_Toc108615005"></a>4.1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; STOMP Data</h2>
+<p>The DREAM file converter will accept most output types from STOMP. The required directory hierarchy is &ldquo;ensemble folder\scenario folders\file per time step&rdquo;. Detailed information follows below.</p>
+<p><strong>Folder Structure</strong></p>
+<p>For STOMP output, a folder with sub folders is expected. Each subfolder contains all the data for a given scenario. Within the scenario folder, there should be one file for each time step that contains data for all the variables. Each scenario needs to have the same number of time steps and the same set of variables.</p>
+<p>stomp_ensemble/scenario1/plot.1</p>
+<p>stomp_ensemble/scenario1/plot.2</p>
+<p>stomp_ensemble/scenario2/plot.1</p>
+<p>stomp_ensemble/scenario2/plot.2</p>
+<p><strong>File Example: stomp_ensemble/scenario1/plot.1 </strong></p>
+<p>This example file contains data for the first timestep from the first scenario. XYZ data in STOMP is expected in x, then y, then z ordering. <strong>Required </strong>inputs are in bold, and optional data is in <em>italics</em>.</p>
+<p>&nbsp;</p>
+<p>----------------------------- Beginning of File</p>
+<p><em>Number of Time Steps =&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2</em></p>
+<p><strong>Time =&nbsp; 1,yr </strong></p>
+<p><strong>Number of X or R-Direction Nodes =&nbsp;&nbsp;&nbsp;&nbsp; 2</strong></p>
+<p><strong>Number of Y or Theta-Direction Nodes =&nbsp;&nbsp; &nbsp;&nbsp;2</strong></p>
+<p><strong>Number of Z-Direction Nodes =&nbsp;&nbsp;&nbsp;&nbsp; 2</strong></p>
+<p><em>Number of Active Nodes =&nbsp; 8</em></p>
+<p><em>Number of Vertices = 8</em></p>
+<p><strong>X-Direction Nodal Vertices, m</strong></p>
+<p>&nbsp;0 1 0 1 0 1 0 1</p>
+<p>&nbsp;1 2 1 2 1 2 1 2</p>
+<p>&nbsp;0 1 0 1 0 1 0 1</p>
+<p>&nbsp;1 2 1 2 1 2 1 2</p>
+<p>&nbsp;0 1 0 1 0 1 0 1</p>
+<p>&nbsp;1 2 1 2 1 2 1 2</p>
+<p>&nbsp;0 1 0 1 0 1 0 1</p>
+<p>&nbsp;1 2 1 2 1 2 1 2</p>
+<p><strong>Y-Direction Nodal Vertices, m</strong></p>
+<p>&nbsp;0 0 1 1 0 0 1 1</p>
+<p>&nbsp;0 0 1 1 0 0 1 1</p>
+<p>&nbsp;1 1 2 2 1 1 2 2</p>
+<p>&nbsp;1 1 2 2 1 1 2 2</p>
+<p>&nbsp;0 0 1 1 0 0 1 1</p>
+<p>&nbsp;0 0 1 1 0 0 1 1</p>
+<p>&nbsp;1 1 2 2 1 1 2 2</p>
+<p>&nbsp;1 1 2 2 1 1 2 2</p>
+<p><strong>Z-Direction Nodal Vertices, m</strong></p>
+<p>&nbsp;0 0 0 0 1 1 1 1</p>
+<p>&nbsp;0 0 0 0 1 1 1 1</p>
+<p>&nbsp;0 0 0 0 1 1 1 1</p>
+<p>&nbsp;0 0 0 0 1 1 1 1</p>
+<p>&nbsp;1 1 1 1 2 2 2 2</p>
+<p>&nbsp;1 1 1 1 2 2 2 2</p>
+<p>&nbsp;1 1 1 1 2 2 2 2</p>
+<p>&nbsp;1 1 1 1 2 2 2 2</p>
+<p><strong>Data type 1</strong>, <em>units</em></p>
+<p>&nbsp;1.2 1.2 1.2 6.3 1.2 1.2 1.2 1.2</p>
+<p><strong>Data type 2</strong>, <em>units</em></p>
+<p>&nbsp;4.5 4.5 4.5 4.5 4.5 4.5 4.5 4.5</p>
+<p>&nbsp;</p>
+<p>--------------------------------------- End of File</p>
+<p><strong><u>&nbsp;</u></strong></p>
+<h2><a name="_Toc108615006"></a>4.2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; NUFT Data</h2>
+<p>The DREAM file converter will accept most output types from NUFT given in NTAB format. The required directory hierarchy is &ldquo;ensemble folder\file per parameter and time step&rdquo;. Detailed information follows below.</p>
+<p><strong>Folder Structure</strong></p>
+<p>For a NUFT output, a single folder is expected for the entire ensemble. Each file should represent a parameter for each scenario. All scenarios should have the same parameters. Each scenario needs to have the same number of time steps.</p>
+<p>ntab_ensemble/parameter1_scenario1.ntab</p>
+<p>ntab_ensemble/parameter1_scenario2.ntab</p>
+<p>ntab_ensemble/parameter2_scenario1.ntab</p>
+<p>ntab_ensemble/parameter2_scenario2.ntab</p>
+<p><strong>File Example:</strong> <strong>ntab_ensemble/parameter1_scenario1.ntab </strong></p>
+<p>This file contains data for all time steps of parameter 1. <strong>Required </strong>inputs are in bold, and optional data is in <em>italics</em>.</p>
+<p>----------------------------- Beginning of File</p>
+<p>&nbsp;</p>
+<p><em>index</em> <strong>i j k</strong> <em>element_ref nuft_ind</em> <strong>x y z</strong> <strong>dx dy dz volume</strong> <strong>1.0y 2.0y</strong></p>
+<p>1 1 1 1 52 1 0.5 0.5 0.5 1 1 1 1 1.2 1.2</p>
+<p>2 2 1 1 52 2501 1.5 0.5 0.5 1 1 1 1 1.2 1.2</p>
+<p>3 1 2 1 52 5001 0.5 1.5 0.5 1 1 1 1 1.2 6.3</p>
+<p>4 2 2 1 52 7501 1.5 1.5 0.5 1 1 1 1 6.3 6.3</p>
+<p>5 1 1 2 52 10001 0.5 0.5 1.5 1 1 1 1 1.2 1.2</p>
+<p>6 2 1 2 52 12501 1.5 0.5 1.5 1 1 1 1 1.2 1.2</p>
+<p>7 1 2 2 52 15001 0.5 1.5 1.5 1 1 1 1 1.2 1.2</p>
+<p>8 2 2 2 52 17501 1.5 1.5 1.5 1 1 1 1 1.2 1.2</p>
+<p>&nbsp;</p>
+<p>--------------------------------------- End of File</p>
+<p>&nbsp;</p>
+<h2><a name="_Toc108615007"></a>4.3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; TECPLOT Data</h2>
+<p>If the user has plot files generated by another subsurface simulation code, it is recommended to reformat the plot file to fit an accepted ASCII format. TECPLOT formats are accepted due to their prevalent use in post-processing. &nbsp;</p>
+<p><strong>Folder Structure</strong></p>
+<p>For Tecplot output, DREAM expects a single folder containing a TECPLOT file for each scenario. Each tecplot file is expected to contain all the time steps and all the data for that scenario. Each scenario needs to have the same number of time steps and the same set of variables.</p>
+<p>tecplot_ensemble/scenario1.dat</p>
+<p>tecplot_ensemble/scenario2.dat</p>
+<p><strong>File Example:</strong> <strong>tecplot_ensemble/scenario1.tecplot</strong></p>
+<p>This file contains data for all time steps and all data types. XYZ are expected to be nodal and should be in z then y then x ordering. All data is expected to be cell centered. <strong>Required </strong>keys are in bold, and optional data is in <em>italics</em>.</p>
+<p>----------------------------- Beginning of File</p>
+<p><em>TITLE = "Scenario 1"</em></p>
+<p><strong>VARIABLES = "X, m" "Y, m" "Z, m" "data type 1" "data type 2"</strong></p>
+<p><strong>ZONE </strong>T = "1, y" , <em>STRANDID = 1<strong>,</strong></em><strong> SOLUTIONTIME = 1</strong>, <strong>NODES = 64</strong>, <strong>ELEMENTS = 8</strong>, <em>DATAPACKING = BLOCK, ZONETYPE = FEBRICK</em></p>
+<p><em>VARLOCATION = ([4,5] = CELLCENTERED)</em></p>
+<p>0 1 0 1 0 1 0 1</p>
+<p>0 1 0 1 0 1 0 1</p>
+<p>0 1 0 1 0 1 0 1</p>
+<p>0 1 0 1 0 1 0 1</p>
+<p>1 2 1 2 1 2 1 2</p>
+<p>1 2 1 2 1 2 1 2</p>
+<p>1 2 1 2 1 2 1 2</p>
+<p>1 2 1 2 1 2 1 2</p>
+<p>0 0 1 1 0 0 1 1</p>
+<p>0 0 1 1 0 0 1 1</p>
+<p>1 1 2 2 1 1 2 2</p>
+<p>1 1 2 2 1 1 2 2</p>
+<p>0 0 1 1 0 0 1 1</p>
+<p>0 0 1 1 0 0 1 1</p>
+<p>1 1 2 2 1 1 2 2</p>
+<p>1 1 2 2 1 1 2 2</p>
+<p>0 0 0 0 1 1 1 1</p>
+<p>1 1 1 1 2 2 2 2</p>
+<p>0 0 0 0 1 1 1 1</p>
+<p>1 1 1 1 2 2 2 2</p>
+<p>0 0 0 0 1 1 1 1</p>
+<p>1 1 1 1 2 2 2 2</p>
+<p>0 0 0 0 1 1 1 1</p>
+<p>1 1 1 1 2 2 2 2</p>
+<p>1.2 1.2 1.2 6.3 1.2 1.2 1.2 1.2</p>
+<p>4.5 4.5 4.5 4.5 4.5 4.5 4.5 4.5</p>
+<p>&nbsp;</p>
+<p><strong>ZONE</strong> T = "2, y" , <em>STRANDID = 1<strong>, </strong></em><strong>SOLUTIONTIME = 2</strong>, <strong>NODES = 64, ELEMENTS = 8</strong>, <em>DATAPACKING = BLOCK, ZONETYPE = FEBRICK VARSHARELIST = ([1,2,3]=1), CONNECTIVITYSHAREZONE = 1</em></p>
+<p><em>VARLOCATION = ([4,5] = CELLCENTERED)</em></p>
+<p>1.2 1.2 6.3 6.3 1.2 1.2 1.2 6.3</p>
+<p>4.5 4.5 4.5 4.5 4.5 4.5 4.5 4.5</p>
+<p>--------------------------------------- End of File</p>
+<p>&nbsp;</p>
+<h2><a name="_Toc108615008"></a>4.4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; HDF5 Output</h2>
+<p>For each of the three examples, DREAM will create a directory with the same name as the parent directory with an &ldquo;_hdf5&rdquo; appended. Inside the directory will be an HDF5 file for each scenario that contains all the time steps for all the data types along with the grid information. All data will be cell centered.</p>
+<p><strong>File Example:</strong></p>
+<p>The HDF5 files can be viewed with HDFView (Figure 25).</p>
+<p><a name="_Toc108615048"></a>Figure 23: HDFView of DREAM input file structure.</p>
+<p>Each scenario will contain a &ldquo;data&rdquo; group that contains metadata about the scenario: porosity information (optional), steps and their matching times, the grid XYZ vertices or edges (e.g., vertex-x, vertex-y, and vertex-z), and the grid XYZ centers (e.g., x, y, and z). There will also be a group for each time step containing 3D data for each parameter at that time step. Lastly, there is a &ldquo;statistics&rdquo; group that lists the global minimum, average, and maximum for each parameter to expedite future calculations.</p>
+<p>DREAM also assigns attributes to variables in the HDF5 file. This includes &ldquo;units&rdquo; for time, XYZ vertices and centers, and for each parameter; although, some parameters may be unitless. A &ldquo;positive&rdquo; attribute of up or down is assigned to the Z vertex and center to denote whether the model uses depth or height. If attributes are missing, DREAM will simply ask for the user to input this information.</p>
+<h2><a name="_Toc108615009"></a>4.5&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; IAM Output</h2>
+<p>IAM can quickly create many scenarios, all of which should be placed in a single directory. As part of the process of creating these files from IAM, the user must select a detection criteria and threshold for each parameter. Therefore, the IAM files only contain detecting nodes for the inputted detection values, causing values to be greyed out on the Leakage Criteria page. To test different detection values, IAM must be rerun to generate a new set of IAM files.</p>
+<p><strong>File Example:</strong></p>
+<p>Each file has a header that lists IAM, scenario number, parameter, the detection criteria (relative change, absolute change, above, below), and the detection threshold. A negative or positive sign can be placed before the detection threshold to limit to a positive or negative change, otherwise the change threshold will work in both positive and native directions.</p>
+<p>Following the header is a list of all detecting nodes for the given detection values. Each line represents a node and lists X, Y, Z, and time to first detection.</p>
+<p>The same detection criteria and threshold should be used across all scenarios for a given parameter. All data is expected to be cell centered. <strong>Required </strong>keys are in bold, and optional data is in <em>italics</em>.</p>
+<p>----------------------------- Beginning of File</p>
+<p><strong>IAM,1,Dissolved_CO2,relative,0.2,</strong></p>
+<p>776568.2414698162,14468825.459317585,-2343.3581219014286,25202.25</p>
+<p>776568.2414698162,14468858.267716534,-2343.3581219014286,24837.0</p>
+<p>776568.2414698162,14468891.076115485,-2343.3581219014286,25567.5</p>
+<p>776601.0498687663,14468759.842519684,-2343.3581219014286,24106.5</p>
+<p>776601.0498687663,14468792.650918635,-2343.3581219014286,21915.0</p>
+<p>--------------------------------------- End of File</p>
