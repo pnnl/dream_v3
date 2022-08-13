@@ -225,8 +225,8 @@
 <p>&nbsp;</p>
 <h2><a name="_Toc108614998"></a>1.2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Detection Threshold</h2>
 <p>The <em>Detection Threshold</em> page (Figure 11) allows the user to select monitoring technologies that are being considered based on the parameters available in the input files, and to define associated parameters, such as deployment cost and detection threshold.</p>
-<p><a name="_Toc108615034"></a>Figure 11: Default settings on <em>Detection Threshold</em> page</p>
-<p>This page has a lot of information that defines each technology, including:</p>
+<p><a name="_Toc108615034"></a><b>Figure 11: Default settings on <em>Detection Threshold</em> page</p>
+<p>This page has a lot of information that defines each technology, including:</b></p>
 <ul>
 <li>The <em>&lsquo;+&rsquo; box</em> allows technologies to be competed, creating a second monitoring parameter option that can have different cost, detection information, or zone limitations. It can be used to duplicate a <em>Parameter</em> if there are multiple sensor options (e.g., cheap vs. expensive).</li>
 <li>The <em>check box</em> enables or disables a monitoring technology from the optimization.</li>
@@ -256,6 +256,6 @@
 <li><em>Max Redeployments</em> determines the maximum number of times that a single point sensor can be moved, or the maximum number of times that a surface survey may be conducted. Surface surveys must be set to greater than 1 so that at least one reading is taken. It has a different meaning for different deployment methods.</li>
 <li><em>Zone Bottom</em> and <em>Zone Top</em> define depth limitations to where the monitoring technology can be placed. By default, these values are set to the global minimum and maximum. The value is greyed out for surface surveys since they are conducted at the surface.</li>
 </ul>
-<p><b>Figure 12: Specifying criteria for each monitoring technology on Detection Threshold page</b></p>
+<p><b>Figure 12: Specifying criteria for each monitoring technology on Detection Threshold page. </b></p>
 <p>When loading IAM files, many user inputs are not available, as inputs are fixed during the process to generate IAM files. Some inputs may also be unavailable depending on the deployment method selected.</p>
 <p>For this example, refer to Figure 12. First, select the <em>check box</em> for &ldquo;gravity&rdquo;, &ldquo;pressure&rdquo;, and &ldquo;saturation&rdquo;. Assign &ldquo;gravity&rdquo; with a cost equation of &ldquo;1500*s+250*a/1000000&rdquo; to represent $1500 per survey plus $250 per square kilometer of land surveyed. Gravity should also set <em>Detection Type</em> to &ldquo;Above threshold&rdquo;, <em>Detection Value</em> to 20 mGal, and <em>Max Redeployments</em> to 5. Pressure should set <em>Cost</em> to $500, <em>Detection Type</em> to &ldquo;Relative change&rdquo;, and <em>Detection Value</em> . Disclaimer: starting at 0 when calculating &ldquo;Relative change&rdquo; will cause an infinite value. Saturation should set <em>Cost</em> to $1500, <em>Detection Type</em> to &ldquo;Above threshold&rdquo;, and <em>Detection Value</em> to 2%. Finally, click <em>Find Detectable Nodes</em>. DREAM will calculate which nodes detect at least one scenario in the ensemble based on the user-defined detection type and value. The following values should appear next to each selected parameter type at the bottom of the page (Table 1).</p>
