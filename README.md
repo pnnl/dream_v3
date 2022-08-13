@@ -312,5 +312,103 @@
 <p>Minimum Detections specifies how many detections from a specific sensor must exceed the user-defined value to have confidence that a leak occurred. Multiple tests with any combination of sensors can be created. To clarify, a full campaign of surface surveys monitoring an area is counted as one sensor, so it is advised not to require more than one surface survey. In most cases, it can be left at default, where one of any detecting sensors can identify a leak. For example, if both a cheap and expensive pressure sensor are available, two criteria can be created for one expensive or two cheap sensors need to be triggered to have a confidence in the leak.</p>
 <p><a name="_Toc108615037"></a><b>Figure 14: Default settings for <em>Detection Criteria</em> page</b></p>
 <p>For this example, set the first criteria, <em>Criteria 1</em>, to &ldquo;saturation&rdquo; with <em>Minimum Detections to Signify Leak </em>set to 1. Set the second criteria, <em>Criteria 2</em>, to &ldquo;gravity&rdquo; and &ldquo;pressure&rdquo; with <em>Minimum Detections to Signify Leak </em>set to 1 for each <em>Monitoring Technology </em>(Figure <strong>15</strong>). This implies confidence in a leak when either (1) a single saturation sensor exceeds the threshold or (2) both a gravity and pressure sensor exceed the threshold. Click <em>Next</em>.</p>
-<p>&nbsp;</p>
+
 <p><a name="_Toc108615038"></a><b>Figure 15: Setting criteria for detecting a leak on <em>Detection Criteria</em> page</b></p>
+<p>&nbsp;</p>
+
+
+
+
+<h2>3.7&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Monitoring Campaign Settings</h2>
+<p>The <em>Monitoring Campaign Settings </em>page (Figure 16) allows the user to specify additional information and constraints for monitoring campaigns. Some inputs apply to all campaigns, while others are only for surface surveys or point sensors. The following fields are available:</p>
+<ul>
+<li><em>Maximum Monitoring Budget</em> sets a cap on the total cost for a campaign, including technology costs and well costs defined below. Leaving the value empty means there is no cap. Cost is a possible optimization objective, so it is not necessary to set a maximum. Setting a maximum that is too restrictive may cause problems for the algorithm. Hovering over the value box, it shows that a numeric value or a time-dependent equation using the variable &lsquo;t&rsquo; can be applied in setting a <em>Maximum Monitoring Budget</em>.</li>
+<li><em>Number of Sensors </em>determines a range for the number of distinct technologies that can be included in a monitoring campaign. A sensor is defined either as a point sensor that can be relocated or a surface survey of fixed size that can be represented at multiple times. The algorithm will explore different numbers of sensors, but this sets hard limits on how many sensors can be included.</li>
+<li><strong><em>Surface Surveys</em></strong>
+<ul>
+<li><em>Number of Station Locations Allowed</em> sets a range for how many nodes can be included in a single surface survey. Since surface surveys often measure change between surveys, survey size will remain constant across redeployments for a given campaign. By default, this value is set at 5%-40% of the total surface nodes. Hovering over these fields shows a tooltip with the total number of available surface nodes.</li>
+</ul>
+</li>
+<li><strong><em>Point Sensors</em></strong>
+<ul>
+<li>sets a cap on the number of vertical wells that be included in a monitoring campaign. The algorithm will explore different numbers of wells, and the number of wells will affect the cost objective, but this sets a hard limit on how many wells of any depth can be considered for the campaigns. Leaving the value empty means there is no cap.</li>
+<li><em>Minimum Distance Between Wells</em> constrains the wells to be at a certain distance from other wells. DREAM is limited by the model resolution that makes up the domain space and assumes that wells are placed in the center of the cell, for the purposes of distance calculations. In reality, a decision-maker will micro-site the recommended monitoring campaign to a location that makes sense.</li>
+<li><em>Cost Per Well</em> and <em>Cost of Well Per unit Depth</em> assigns a cost to each well and for the depth of each well, respectively. This factors into the maximum monitoring budget and the cost objective. A numeric value or &nbsp;an equation can be entered for each field that includes &lsquo;t&rsquo; as a variable for time.</li>
+</ul>
+</li>
+</ul>
+<p><a name="_Toc108615039"></a><b>Figure 16: Default settings for <em>Monitoring Campaign Settings</em> page</b></p>
+<p>For this example shown in Figure 17, leave the default settings for <em>Maximum Monitoring Budget</em> to be empty (i.e., &ldquo;$No Limit&rdquo;) and Number of Sensors to range from 1-5. Set the <em>Number of Station Locations Allowed </em>under<em> <strong>Surface Surveys</strong> </em>to be between 20 and 200 nodes. Under <strong><em>Point Sensors</em></strong><em>,</em> set the <em>Maximum Number of Wells</em> to 3, the <em>Cost Per Well</em> to $500,000, and the <em>Cost of Well Per m Depth</em> (i.e., cost of well per unit depth) to $1,000. Leave the <em>Minimum Distance Between Wells</em> with a value of 0. Click <em>Next</em>.</p>
+<p>&nbsp;</p>
+<p><a name="_Toc108615040"></a><b>Figure 17: Example on <em>Monitoring Campaign Settings </em>page</b></p>
+<h2>3.8&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Exclude Locations</h2>
+<p>The <em>Exclude Locations</em> page (Figure 18) allows the user to exclude (x, y) locations from the monitoring configuration that are infeasible or unapproved. This window allows the user to manually deselect nodes that should not be used in the optimization algorithm. Note that if the solution space is too large, the user may not have the ability to exclude locations.</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; For this page, please continue with the default settings, which includes all locations. Click <em>Next</em>.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><a name="_Toc108615041"></a><b>Figure 18: <em>Exclude Locations</em> Page showing an example with some of the nodes disabled</b></p>
+<h2><a name="_Toc108615002"></a>3.9&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Run DREAM</h2>
+<p>The <em>Run DREAM</em> page (Figure 21) provides a summary of the user inputs to the left. By default, a new &ldquo;results&rdquo; directory will be created to store output files. The output file location can be changed along with the output&rsquo;s filename.</p>
+<p>&nbsp;</p>
+<p>Figure 19: Run DREAM Page</p>
+<p>DREAM features several algorithms for identifying the optimal solution while factoring in multiple objectives. For more information about the available algorithms and which to select, see Optimization Algorithms. Under <strong><em>Optimization Settings</em></strong>, there may be additional inputs depending on the selected algorithm, such as cooling equation for Simulated Annealing. <em>Total</em> <em>Iterations</em> are the number of unique campaigns that are created by the <em>Selected Algorithm</em>. <em>Total Runs</em> allows multiple instances of the algorithms to run if restarting the process is required for a fresh start when the algorithm gets stuck in a local optimization and never reaches the global optimization. The user may assess any of the following objectives under <em>Select Objectives:</em> &nbsp;</p>
+<ul>
+<li><em>Time to Detection</em> &ndash; A required objective; this determines how much time passes until the deployed technology detects a leak in accordance with the specified <em>Detection Criteria</em>. DREAM considers a shorter time to detection to be preferable.</li>
+<li><em>Cost</em> (optional) &ndash; This objective includes the cost of each technology along with associated well costs for the campaign. Using equations on the <em>Cost</em> fields can allow for both capital and operating costs. DREAM considers lower costs to be preferable.</li>
+<li><em>VAD at Detection</em> (optional) &ndash; Tied to the first objective, this calculates the volume of aquifer degraded at the time when the leak is first detected, representing the magnitude of the leak. DREAM considers lower volumes to be preferable.</li>
+<li><em>Scenarios Detected</em> (optional) &ndash; Tied to the first objective, this calculates the percent of scenarios that are detected for a given monitoring campaign.</li>
+</ul>
+<p>Objectives are assessed for each scenario, and there is a minimum of two objectives that must be assessed. Note that any objective (other than <em>Time to Detection</em>) can be disabled for any reason, like reducing computational time. These objectives may feed back into some algorithms at each iteration (refer to Appendix &nbsp;for more details about the objectives).</p>
+<p>When the user clicks <em>Start Optimization</em>, up to two windows may appear if selected under <strong><em>Plotting Options</em></strong>. The user can choose to select <em>Calculate Pareto Ranks </em>(highly recommended), <em>Show Visualization</em>, or <em>Show Objective Graph</em>. The first page to display is the <em>Visualization</em> (Figure 22) that spatially displays each campaign overlaid with the leak space in a 3D space. The second page is an <em>Objective Graph</em> (Figure 23) that plots two objectives against one another to show progress as the optimization works towards an optimal solution. Under <em>Initial Graphed Objective</em>, the user can select which objectives to display in the Y- and X-Axes. Selecting <em>Calculate Pareto Ranks</em> will add a processing step after the iterations complete, . In other words, the multi-objective optimization will minimize the tradeoff in performance for the objectives. the DREAM only calculates the top 10 pareto ranks as they are expected to contain the best solutions. Once calculated, only the top ranks will be displayed on the <em>Visualization </em>page, and the ranks will be colored on the <em>Objective Graph</em>. It is recommended that the user leave <em>Calculate Pareto Ranks</em> enabled. The colors of the outputs (e.g., aqueous pressure or CO<sub>2</sub>) can be modified to suit the user&rsquo;s preference, and the included configurations or data can be disabled as desired.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+<p><a name="_Toc108615045"></a><b>Figure 20: 3D visualization of monitoring campaigns and leak plumes from <em>Visualization</em> page</b></p>
+<h2>3.7&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Monitoring Campaign Settings</h2>
+<p>The <em>Monitoring Campaign Settings </em>page (Figure 16) allows the user to specify additional information and constraints for monitoring campaigns. Some inputs apply to all campaigns, while others are only for surface surveys or point sensors. The following fields are available:</p>
+<ul>
+<li><em>Maximum Monitoring Budget</em> sets a cap on the total cost for a campaign, including technology costs and well costs defined below. Leaving the value empty means there is no cap. Cost is a possible optimization objective, so it is not necessary to set a maximum. Setting a maximum that is too restrictive may cause problems for the algorithm. Hovering over the value box, it shows that a numeric value or a time-dependent equation using the variable &lsquo;t&rsquo; can be applied in setting a <em>Maximum Monitoring Budget</em>.</li>
+<li><em>Number of Sensors </em>determines a range for the number of distinct technologies that can be included in a monitoring campaign. A sensor is defined either as a point sensor that can be relocated or a surface survey of fixed size that can be represented at multiple times. The algorithm will explore different numbers of sensors, but this sets hard limits on how many sensors can be included.</li>
+<li><strong><em>Surface Surveys</em></strong>
+<ul>
+<li><em>Number of Station Locations Allowed</em> sets a range for how many nodes can be included in a single surface survey. Since surface surveys often measure change between surveys, survey size will remain constant across redeployments for a given campaign. By default, this value is set at 5%-40% of the total surface nodes. Hovering over these fields shows a tooltip with the total number of available surface nodes.</li>
+</ul>
+</li>
+<li><strong><em>Point Sensors</em></strong>
+<ul>
+<li>sets a cap on the number of vertical wells that be included in a monitoring campaign. The algorithm will explore different numbers of wells, and the number of wells will affect the cost objective, but this sets a hard limit on how many wells of any depth can be considered for the campaigns. Leaving the value empty means there is no cap.</li>
+<li><em>Minimum Distance Between Wells</em> constrains the wells to be at a certain distance from other wells. DREAM is limited by the model resolution that makes up the domain space and assumes that wells are placed in the center of the cell, for the purposes of distance calculations. In reality, a decision-maker will micro-site the recommended monitoring campaign to a location that makes sense.</li>
+<li><em>Cost Per Well</em> and <em>Cost of Well Per unit Depth</em> assigns a cost to each well and for the depth of each well, respectively. This factors into the maximum monitoring budget and the cost objective. A numeric value or &nbsp;an equation can be entered for each field that includes &lsquo;t&rsquo; as a variable for time.</li>
+</ul>
+</li>
+</ul>
+<p><a name="_Toc108615039"></a>Figure 16: Default settings for <em>Monitoring Campaign Settings</em> page</p>
+<p>For this example shown in Figure 17, leave the default settings for <em>Maximum Monitoring Budget</em> to be empty (i.e., &ldquo;$No Limit&rdquo;) and Number of Sensors to range from 1-5. Set the <em>Number of Station Locations Allowed </em>under<em> <strong>Surface Surveys</strong> </em>to be between 20 and 200 nodes. Under <strong><em>Point Sensors</em></strong><em>,</em> set the <em>Maximum Number of Wells</em> to 3, the <em>Cost Per Well</em> to $500,000, and the <em>Cost of Well Per m Depth</em> (i.e., cost of well per unit depth) to $1,000. Leave the <em>Minimum Distance Between Wells</em> with a value of 0. Click <em>Next</em>.</p>
+<p>&nbsp;</p>
+<p><a name="_Toc108615040"></a>Figure 17: Example on <em>Monitoring Campaign Settings </em>page</p>
+<h2>3.8&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Exclude Locations</h2>
+<p>The <em>Exclude Locations</em> page (Figure 18) allows the user to exclude (x, y) locations from the monitoring configuration that are infeasible or unapproved. This window allows the user to manually deselect nodes that should not be used in the optimization algorithm. Note that if the solution space is too large, the user may not have the ability to exclude locations.</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; For this page, please continue with the default settings, which includes all locations. Click <em>Next</em>.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><a name="_Toc108615041"></a><b>Figure 18: <em>Exclude Locations</em> Page showing an example with some of the nodes disabled</b></p>
+
+
+
+
+
+
+
+
+<h2><a name="_Toc108615002"></a>3.9&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Run DREAM</h2>
+<p>The <em>Run DREAM</em> page (Figure 19) provides a summary of the user inputs to the left. By default, a new &ldquo;results&rdquo; directory will be created to store output files. The output file location can be changed along with the output&rsquo;s filename.</p>
+<p>&nbsp;</p>
+<p><b>Figure 19: Run DREAM Page</b></p>
+<p>DREAM features several algorithms for identifying the optimal solution while factoring in multiple objectives. For more information about the available algorithms and which to select, see Optimization Algorithms. Under <strong><em>Optimization Settings</em></strong>, there may be additional inputs depending on the selected algorithm, such as cooling equation for Simulated Annealing. <em>Total</em> <em>Iterations</em> are the number of unique campaigns that are created by the <em>Selected Algorithm</em>. <em>Total Runs</em> allows multiple instances of the algorithms to run if restarting the process is required for a fresh start when the algorithm gets stuck in a local optimization and never reaches the global optimization. The user may assess any of the following objectives under <em>Select Objectives:</em> &nbsp;</p>
+<ul>
+<li><em>Time to Detection</em> &ndash; A required objective; this determines how much time passes until the deployed technology detects a leak in accordance with the specified <em>Detection Criteria</em>. DREAM considers a shorter time to detection to be preferable.</li>
+<li><em>Cost</em> (optional) &ndash; This objective includes the cost of each technology along with associated well costs for the campaign. Using equations on the <em>Cost</em> fields can allow for both capital and operating costs. DREAM considers lower costs to be preferable.</li>
+<li><em>VAD at Detection</em> (optional) &ndash; Tied to the first objective, this calculates the volume of aquifer degraded at the time when the leak is first detected, representing the magnitude of the leak. DREAM considers lower volumes to be preferable.</li>
+<li><em>Scenarios Detected</em> (optional) &ndash; Tied to the first objective, this calculates the percent of scenarios that are detected for a given monitoring campaign.</li>
+</ul>
+<p>Objectives are assessed for each scenario, and there is a minimum of two objectives that must be assessed. Note that any objective (other than <em>Time to Detection</em>) can be disabled for any reason, like reducing computational time. These objectives may feed back into some algorithms at each iteration (refer to Appendix &nbsp;for more details about the objectives).</p>
+<p>When the user clicks <em>Start Optimization</em>, up to two windows may appear if selected under <strong><em>Plotting Options</em></strong>. The user can choose to select <em>Calculate Pareto Ranks </em>(highly recommended), <em>Show Visualization</em>, or <em>Show Objective Graph</em>. The first page to display is the <em>Visualization</em> (Figure 20) that spatially displays each campaign overlaid with the leak space in a 3D space. The second page is an <em>Objective Graph</em> (Figure 21) that plots two objectives against one another to show progress as the optimization works towards an optimal solution. Under <em>Initial Graphed Objective</em>, the user can select which objectives to display in the Y- and X-Axes. Selecting <em>Calculate Pareto Ranks</em> will add a processing step after the iterations complete, . In other words, the multi-objective optimization will minimize the tradeoff in performance for the objectives. the DREAM only calculates the top 10 pareto ranks as they are expected to contain the best solutions. Once calculated, only the top ranks will be displayed on the <em>Visualization </em>page, and the ranks will be colored on the <em>Objective Graph</em>. It is recommended that the user leave <em>Calculate Pareto Ranks</em> enabled. The colors of the outputs (e.g., aqueous pressure or CO<sub>2</sub>) can be modified to suit the user&rsquo;s preference, and the included configurations or data can be disabled as desired.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+<p><a name="_Toc108615045"></a><b>Figure 20: 3D visualization of monitoring campaigns and leak plumes from <em>Visualization</em> page</b></p>
+<p>&nbsp;</p>
