@@ -841,24 +841,14 @@
 <ul>
 <li>If you click on the question marks above the features, the <em>Help Viewer</em> will provide additional information. For example, under <em>Scenario Weighting</em>, the user can hover over the question mark on <em>Variable A</em> and <em>Variable B</em> and click to read more about the description and requirements (Figure 38). Or, the user can sometimes hover over the value box for a description.</li>
 </ul>
-<p><a name="_Toc108615061"></a></b>Figure 37: Example of the <strong><em>Help Viewer</em></strong> in DREAM</b></p>
+<p><a name="_Toc108615061"></a><b>Figure 37: Example of the <strong><em>Help Viewer</em></strong> in DREAM</b></p>
 <p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>This page intentionally left blank.</p>
-<p>&nbsp;</p>
+
+
+
+
+
+
 <h1><a name="_Toc108615023"></a><a name="_Toc108596361"></a><a name="_Toc108602985"></a><a name="_Toc108603103"></a><a name="_Toc108615022"></a></h1>
 <h1><a name="_Toc108615019"></a>8.&nbsp; &nbsp; &nbsp;References</h1>
 <p>Bacon, D.H.; Yonkofski, C.M.; Brown, C.F.; Demirkanli, D.I.; Whiting, J.M. (2019). Risk-based post injection site care and monitoring for commercial-scale carbon storage: Reevaluation of the FutureGen 2.0 site using NRAP-Open-IAM and DREAM. <em>Intl. J. Greenhouse Gas Control</em>, 90, 102784.</p>
