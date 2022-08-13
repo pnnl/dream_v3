@@ -1,3 +1,322 @@
+<p><a name="_Toc209595605"></a><strong>Disclaimer</strong></p>
+<p>This report was prepared as an account of work sponsored by an agency of the United States Government. Neither the United States Government nor any agency thereof, nor any of their employees, makes any warranty, express or implied, or assumes any legal liability or responsibility for the accuracy, completeness, or usefulness of any information, apparatus, product, or process disclosed, or represents that its use would not infringe privately owned rights. Reference therein to any specific commercial product, process, or service by trade name, trademark, manufacturer, or otherwise does not necessarily constitute or imply its endorsement, recommendation, or favoring by the United States Government or any agency thereof. The views and opinions of authors expressed therein do not necessarily state or reflect those of the United States Government or any agency thereof.</p>
+<p><strong>&nbsp;</strong></p>
+<p><strong>Cover Illustration:</strong> A conceptual visualization of a DREAM application to a hypothetical leak from subsurface storage into an overlying aquifer through an abandoned wellbore. The inserts visualize three of many monitoring configurations that DREAM would generate and assess during the iterative procedure.&nbsp;</p>
+<p><strong>&nbsp;</strong></p>
+<p><strong>Suggested Citation:</strong> Hanna, A.C.; Whiting, J.M.; Huang, B.Z.; Appriou, D. <em>Designs for Risk Evaluation and Management (DREAM) Tool User Manual, Version: 2022.01;</em> NRAP-TRS-III-001-2020; NRAP Technical Report Series; U.S. Department of Energy, National Energy Technology Laboratory:</p>
+<p>&nbsp;</p>
+<p><strong>An electronic version of this report can be found at: </strong></p>
+<p>&nbsp;</p>
+<p><strong>&nbsp;</strong></p>
+<p><strong>&nbsp;</strong></p>
+<p>The data in this report can be accessed from NETL's Energy Data eXchange (EDX) online system (https://edx.netl.doe.gov) using the following link:</p>
+<p>https://edx.netl.doe.gov/dataset/........</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><strong>Designs for Risk Evaluation and </strong></p>
+<p><strong>&nbsp;</strong></p>
+<p><strong>&nbsp;</strong></p>
+<p><strong>Alexander C. Hanna<sup>1</sup>, </strong><strong>Jonathan M. Whiting<sup>1</sup>, Brian Z. Huang<sup>1</sup>, Delphine Appriou<sup>1</sup></strong></p>
+<p><strong>&nbsp;</strong></p>
+<p><strong><sup>1</sup></strong><strong>Pacific Northwest National Laboratory,</strong> <strong>902 Battelle Boulevard, </strong><strong>Richland, WA 99354</strong></p>
+<p><strong>&nbsp;</strong></p>
+<p><strong>&nbsp;</strong></p>
+<p><strong>NRAP-TRS-III-001-2020</strong></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; NRAP Contacts:</p>
+<p>XX, Principal Investigator</p>
+<p>XX, Technical Portfolio Lead</p>
+<p>XXX, Research &amp; Innovation Center</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+<p><strong>List of Tables</strong></p>
+<p><a href="#_Toc108615062">Table 1: Number of detectable nodes for each parameter in the example. 3</a></p>
+<p><br /> <strong>Acronyms, Abbreviations, and Symbols</strong></p>
+<table>
+<tbody>
+<tr>
+<td width="109">
+<p><strong>Term</strong></p>
+</td>
+<td width="433">
+<p><strong>Description</strong></p>
+</td>
+</tr>
+<tr>
+<td colspan="2" width="542">
+<p><strong><em>Acronyms/Abbreviations</em></strong></p>
+</td>
+</tr>
+<tr>
+<td width="109">
+<p>3D</p>
+</td>
+<td width="433">
+<p>Three-dimensional</p>
+</td>
+</tr>
+<tr>
+<td width="109">
+<p>ASCII</p>
+</td>
+<td width="433">
+<p>American Standard Code for Information Interchange</p>
+</td>
+</tr>
+<tr>
+<td width="109">
+<p>CO<sub>2</sub></p>
+</td>
+<td width="433">
+<p>Carbon dioxide</p>
+</td>
+</tr>
+<tr>
+<td width="109">
+<p>DOE</p>
+</td>
+<td width="433">
+<p>U.S. Department of Energy</p>
+</td>
+</tr>
+<tr>
+<td width="109">
+<p>DREAM</p>
+</td>
+<td width="433">
+<p>Designs for Risk Evaluation and Management</p>
+</td>
+</tr>
+<tr>
+<td width="109">
+<p>EDX</p>
+</td>
+<td width="433">
+<p>Energy Data Exchange</p>
+</td>
+</tr>
+<tr>
+<td width="109">
+<p>GUI</p>
+</td>
+<td width="433">
+<p>Graphical user interface</p>
+</td>
+</tr>
+<tr>
+<td width="109">
+<p>HDF5</p>
+</td>
+<td width="433">
+<p>Hierarchical data format</p>
+</td>
+</tr>
+<tr>
+<td width="109">
+<p>IAM</p>
+</td>
+<td width="433">
+<p>Integrated Assessment Model</p>
+</td>
+</tr>
+<tr>
+<td width="109">
+<p>LANL</p>
+</td>
+<td width="433">
+<p>Los Alamos National Laboratory</p>
+</td>
+</tr>
+<tr>
+<td width="109">
+<p>LBNL</p>
+</td>
+<td width="433">
+<p>Lawrence Berkeley National Laboratory</p>
+</td>
+</tr>
+<tr>
+<td width="109">
+<p>LLNL</p>
+</td>
+<td width="433">
+<p>Lawrence Livermore National Laboratory</p>
+</td>
+</tr>
+<tr>
+<td width="109">
+<p>NETL</p>
+</td>
+<td width="433">
+<p>National Energy Technology Laboratory</p>
+</td>
+</tr>
+<tr>
+<td width="109">
+<p>NRAP</p>
+</td>
+<td width="433">
+<p>National Risk Assessment Partnership</p>
+</td>
+</tr>
+<tr>
+<td width="109">
+<p>NUFT</p>
+</td>
+<td width="433">
+<p>Nonisothermal, Unsaturated Flow and Transport model</p>
+</td>
+</tr>
+<tr>
+<td width="109">
+<p>PC</p>
+</td>
+<td width="433">
+<p>Personal computer</p>
+</td>
+</tr>
+<tr>
+<td width="109">
+<p>PNNL</p>
+</td>
+<td width="433">
+<p>Pacific Northwest National Laboratory</p>
+</td>
+</tr>
+<tr>
+<td width="109">
+<p>RCSP</p>
+</td>
+<td width="433">
+<p>Regional Carbon Sequestration Partnership</p>
+</td>
+</tr>
+<tr>
+<td width="109">
+<p>STOMP</p>
+</td>
+<td width="433">
+<p>Subsurface Transport Over Multiple Phases model</p>
+</td>
+</tr>
+<tr>
+<td width="109">
+<p>TTD</p>
+</td>
+<td width="433">
+<p>Time to detection</p>
+</td>
+</tr>
+<tr>
+<td width="109">
+<p>USDW</p>
+</td>
+<td width="433">
+<p>Underground source of drinking water</p>
+</td>
+</tr>
+<tr>
+<td width="109">
+<p>VAD</p>
+</td>
+<td width="433">
+<p>Volume of aquifer degraded</p>
+</td>
+</tr>
+<tr>
+<td colspan="2" width="542">
+<p><strong><em>Units/Symbols</em></strong></p>
+</td>
+</tr>
+<tr>
+<td width="109">
+<p>cm</p>
+</td>
+<td width="433">
+<p>centimeter</p>
+</td>
+</tr>
+<tr>
+<td width="109">
+<p>L</p>
+</td>
+<td width="433">
+<p>Liter</p>
+</td>
+</tr>
+<tr>
+<td width="109">
+<p>mg</p>
+</td>
+<td width="433">
+<p>Milligram</p>
+</td>
+</tr>
+<tr>
+<td width="109">
+<p>mg/L</p>
+</td>
+<td width="433">
+<p>Milligrams per liter</p>
+</td>
+</tr>
+<tr>
+<td width="109">
+<p>min</p>
+</td>
+<td width="433">
+<p>Minute</p>
+</td>
+</tr>
+<tr>
+<td width="109">
+<p>mol</p>
+</td>
+<td width="433">
+<p>Mole</p>
+</td>
+</tr>
+<tr>
+<td width="109">
+<p>Pa</p>
+</td>
+<td width="433">
+<p>Pascal</p>
+</td>
+</tr>
+<tr>
+<td width="109">
+<p>yr</p>
+</td>
+<td width="433">
+<p>Year</p>
+</td>
+</tr>
+<tr>
+<td width="109">
+<p>Gal</p>
+</td>
+<td width="433">
+<p>Galileo</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+
+
+
+
+
 <!-- Acknowledgements -->
 
 <h1 style="margin-top:0in;margin-right:0in;margin-bottom:9.6pt;margin-left:0in;">Acknowledgments</h1>
