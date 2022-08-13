@@ -768,14 +768,13 @@
 <p>The DREAM heuristic algorithm is a novel approach for examining the set of undetected, detectable leaks, and identifies the spaces where they spatially overlap (Figure 34). It then generates a cumulative distribution function (Figure 35) based on the number of overlapping leaks that are predicted by a single monitoring plan with different sensor technology schemes, and preferentially assigns sensors to the spaces where the greatest number of possible leaks would be detected. Each time a new sensor is added to the monitoring plan, the set of overlaps and the cumulative distribution function are re-computed. This algorithm considers only the detectable leaks, meaning that the monitoring technology being added to the monitoring plan could detect the magnitude of the physical signal produced by the leak. Where multiple monitoring technologies are being considered, the algorithm cycles through the list and considers one monitoring technology at a time.</p>
 <p><a name="_Toc108615058"></a><b>Figure 34: The variability and intensity of color in the colormap indicates the number of leaks that overlap at each point (x,y), considering only the leaks that are detectable but as-yet undetected by the given monitoring plan.</b></p>
 <p>&nbsp;</p>
-<p><a name="_Toc108615059"></a><b>Figure 35: Each node number corresponds to a pixel from Figure 35, and the rise in the corresponding CDF value is proportional to the number of leaks that are detectable at that node location.</b></p>
+<p><a name="_Toc108615059"></a><b>Figure 35: Each node number corresponds to a pixel from Figure 34, and the rise in the corresponding CDF value is proportional to the number of leaks that are detectable at that node location.</b></p>
 <p>&nbsp;</p>
 
 
 
 
 
-<p>value is proportional to the number of leaks that are detectable at that node location.</p>
 <h1>&nbsp;</h1>
 <h1><a name="_Toc108615019"></a>7.&nbsp;&nbsp;&nbsp;&nbsp; Appendix</h1>
 <h2><a name="_Toc108615020"></a>7.1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Objectives</h2>
