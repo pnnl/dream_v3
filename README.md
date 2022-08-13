@@ -185,7 +185,8 @@
 <h2><a name="_Toc108614996"></a>3.3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Leak Definition</h2>
 <p>The <em>Leak Definition </em>page (Figure 7) allows the user to define what will be considered as a leak by taking a union of leak parameters, such as saturation and/or gravity, to specify a leak definition for some user-specified criteria.</p>
 <p>&nbsp;</p>
-<p>&nbsp;Figure 7: Scenario <em>Leak Definition</em> Page</p>
+
+<p><b>Figure 7: Scenario <em>Leak Definition</em> Page</b></p>
 <p>Under <em>Parameter</em>, pressure, saturation, and any other user-specified parameters can define a leak either individually or as a combination of parameters. Up to three parameters can be selected at a time to define a leak by taking the union of the selected parameters. Parameters are read in from the input H5 or IAM files and represent a value at each model node and timestep. The leak space is all the model nodes that exceed the defined type and value at any timestep. A carbon capture application might define the leak where CO2 saturation exceeds a maximum contaminant level.</p>
 <p>Under <em>Leak Type</em>, there are three options that can be selected to define a leak:</p>
 <ul>
@@ -200,7 +201,10 @@
 <p>The <em>Leak Type</em> can be set independently for each parameter and defines the type of change that is expected to signify a leak.</p>
 <p>Hovering over the <em>Leak Value</em>will display the global minimum, average, and maximum for the parameter across all timesteps and scenarios to help the user make an informed selection. The leak value corresponds to the leak type and determines the leak space. The leak space is made of all model nodes that exceed the defined leak value at any scenario. This space determines how much aquifer has degraded at each timestep and scenario, indicating the size of the leak and potential environmental remediation costs.&nbsp; If multiple parameters are selected, the final leak space becomes the union of the parameters or nodes that meet any of the thresholds.</p>
 <p>Most users may choose to select a CO<sub>2</sub> parameter exceeding some value for carbon capture applications; although, pressure or other proxies may be necessary if a CO<sub>2 </sub>parameter is not available. Clicking <em>Calculate Leak</em> will calculate which nodes exceed the threshold in at least one scenario, and the number of nodes found should The number of nodes in the leak space must be greater than 0 to continue.</p>
-<p>and remove the default pressure leak type (Figure 8)<em>. Then,</em> click <em>Calculate Leak </em>and view how many nodes exceeded the saturation threshold. Finally, click <em>Next</em>.Figure 8: Calculating leak space on <em>Leak Definition</em> page</p>
+<p>and remove the default pressure leak type (Figure 8)<em>. Then,</em> click <em>Calculate Leak </em>and view how many nodes exceeded the saturation threshold. Finally, click <em>Next</em>.
+      
+<p><b>Figure 8: Calculating leak space on <em>Leak Definition</em> page</b></p>
+
 <p>Click <em>Launch Visualization</em> to display the visualization of potential leak plumes captured by pressure, gravity, and saturation profiles when the leak threshold is exceeded at any time (Figure 9). The user may toggle between views and change which parameters to display and what the color and transparency of the parameter should be. The user may zoom in and out with the mouse or scale the grid with the &ldquo;Scale X/Y/Z&rdquo; sliders located in the top right pane. The <em>Monitoring Plan</em> configuration tab will become useful once the DREAM tool has run. Close out of the Visualization Tool and select <em>Next</em> on the <em>Leakage Definition</em> Window.</p>
 <p><b>Figure 9. Interactive display of the leak plume after <em>Leak Definition</em></b></p>
 <div id="_com_3" language="JavaScript"><br></div>
@@ -260,7 +264,7 @@
 <p>When loading IAM files, many user inputs are not available, as inputs are fixed during the process to generate IAM files. Some inputs may also be unavailable depending on the deployment method selected.</p>
 <p>For this example, refer to Figure 12. First, select the <em>check box</em> for &ldquo;gravity&rdquo;, &ldquo;pressure&rdquo;, and &ldquo;saturation&rdquo;. Assign &ldquo;gravity&rdquo; with a cost equation of &ldquo;1500*s+250*a/1000000&rdquo; to represent $1500 per survey plus $250 per square kilometer of land surveyed. Gravity should also set <em>Detection Type</em> to &ldquo;Above threshold&rdquo;, <em>Detection Value</em> to 20 mGal, and <em>Max Redeployments</em> to 5. Pressure should set <em>Cost</em> to $500, <em>Detection Type</em> to &ldquo;Relative change&rdquo;, and <em>Detection Value</em> . Disclaimer: starting at 0 when calculating &ldquo;Relative change&rdquo; will cause an infinite value. Saturation should set <em>Cost</em> to $1500, <em>Detection Type</em> to &ldquo;Above threshold&rdquo;, and <em>Detection Value</em> to 2%. Finally, click <em>Find Detectable Nodes</em>. DREAM will calculate which nodes detect at least one scenario in the ensemble based on the user-defined detection type and value. The following values should appear next to each selected parameter type at the bottom of the page (Table 1).</p>
 <p>Note: While the process is working, a red box appears to the right of the progress bar. Pressing this box cancels the process before completion but progress is saved.</p>
-<p>&nbsp;</p>
+
 <p><a name="_Toc108615062"></a><b>Table 1: Number of detectable nodes for each parameter in the example.</b></p>
 <table>
 <tbody>
@@ -298,7 +302,7 @@
 </tr>
 </tbody>
 </table>
-<p>&nbsp;</p>
+
 <p>To visualize both the detectable plume and the leak plume, click <em>Launch Visualization </em>(Figure 13). When ready to continue, click <em>Next</em>.</p>
 <p><a name="_Toc108615036"></a><b>Figure 13: Visualization of detectable plume</b></p>
 <div id="_com_3" language="JavaScript"><br></div>
@@ -339,66 +343,14 @@
 </ul>
 <p><a name="_Toc108615039"></a><b>Figure 16: Default settings for <em>Monitoring Campaign Settings</em> page</b></p>
 <p>For this example shown in Figure 17, leave the default settings for <em>Maximum Monitoring Budget</em> to be empty (i.e., &ldquo;$No Limit&rdquo;) and Number of Sensors to range from 1-5. Set the <em>Number of Station Locations Allowed </em>under<em> <strong>Surface Surveys</strong> </em>to be between 20 and 200 nodes. Under <strong><em>Point Sensors</em></strong><em>,</em> set the <em>Maximum Number of Wells</em> to 3, the <em>Cost Per Well</em> to $500,000, and the <em>Cost of Well Per m Depth</em> (i.e., cost of well per unit depth) to $1,000. Leave the <em>Minimum Distance Between Wells</em> with a value of 0. Click <em>Next</em>.</p>
-<p>&nbsp;</p>
+<p>
 <p><a name="_Toc108615040"></a><b>Figure 17: Example on <em>Monitoring Campaign Settings </em>page</b></p>
 <h2>3.8&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Exclude Locations</h2>
 <p>The <em>Exclude Locations</em> page (Figure 18) allows the user to exclude (x, y) locations from the monitoring configuration that are infeasible or unapproved. This window allows the user to manually deselect nodes that should not be used in the optimization algorithm. Note that if the solution space is too large, the user may not have the ability to exclude locations.</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; For this page, please continue with the default settings, which includes all locations. Click <em>Next</em>.</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
+<p>For this page, please continue with the default settings, which includes all locations. Click <em>Next</em>.</p>
 <p><a name="_Toc108615041"></a><b>Figure 18: <em>Exclude Locations</em> Page showing an example with some of the nodes disabled</b></p>
 <h2><a name="_Toc108615002"></a>3.9&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Run DREAM</h2>
 <p>The <em>Run DREAM</em> page (Figure 21) provides a summary of the user inputs to the left. By default, a new &ldquo;results&rdquo; directory will be created to store output files. The output file location can be changed along with the output&rsquo;s filename.</p>
-<p>&nbsp;</p>
-<p>Figure 19: Run DREAM Page</p>
-<p>DREAM features several algorithms for identifying the optimal solution while factoring in multiple objectives. For more information about the available algorithms and which to select, see Optimization Algorithms. Under <strong><em>Optimization Settings</em></strong>, there may be additional inputs depending on the selected algorithm, such as cooling equation for Simulated Annealing. <em>Total</em> <em>Iterations</em> are the number of unique campaigns that are created by the <em>Selected Algorithm</em>. <em>Total Runs</em> allows multiple instances of the algorithms to run if restarting the process is required for a fresh start when the algorithm gets stuck in a local optimization and never reaches the global optimization. The user may assess any of the following objectives under <em>Select Objectives:</em> &nbsp;</p>
-<ul>
-<li><em>Time to Detection</em> &ndash; A required objective; this determines how much time passes until the deployed technology detects a leak in accordance with the specified <em>Detection Criteria</em>. DREAM considers a shorter time to detection to be preferable.</li>
-<li><em>Cost</em> (optional) &ndash; This objective includes the cost of each technology along with associated well costs for the campaign. Using equations on the <em>Cost</em> fields can allow for both capital and operating costs. DREAM considers lower costs to be preferable.</li>
-<li><em>VAD at Detection</em> (optional) &ndash; Tied to the first objective, this calculates the volume of aquifer degraded at the time when the leak is first detected, representing the magnitude of the leak. DREAM considers lower volumes to be preferable.</li>
-<li><em>Scenarios Detected</em> (optional) &ndash; Tied to the first objective, this calculates the percent of scenarios that are detected for a given monitoring campaign.</li>
-</ul>
-<p>Objectives are assessed for each scenario, and there is a minimum of two objectives that must be assessed. Note that any objective (other than <em>Time to Detection</em>) can be disabled for any reason, like reducing computational time. These objectives may feed back into some algorithms at each iteration (refer to Appendix &nbsp;for more details about the objectives).</p>
-<p>When the user clicks <em>Start Optimization</em>, up to two windows may appear if selected under <strong><em>Plotting Options</em></strong>. The user can choose to select <em>Calculate Pareto Ranks </em>(highly recommended), <em>Show Visualization</em>, or <em>Show Objective Graph</em>. The first page to display is the <em>Visualization</em> (Figure 22) that spatially displays each campaign overlaid with the leak space in a 3D space. The second page is an <em>Objective Graph</em> (Figure 23) that plots two objectives against one another to show progress as the optimization works towards an optimal solution. Under <em>Initial Graphed Objective</em>, the user can select which objectives to display in the Y- and X-Axes. Selecting <em>Calculate Pareto Ranks</em> will add a processing step after the iterations complete, . In other words, the multi-objective optimization will minimize the tradeoff in performance for the objectives. the DREAM only calculates the top 10 pareto ranks as they are expected to contain the best solutions. Once calculated, only the top ranks will be displayed on the <em>Visualization </em>page, and the ranks will be colored on the <em>Objective Graph</em>. It is recommended that the user leave <em>Calculate Pareto Ranks</em> enabled. The colors of the outputs (e.g., aqueous pressure or CO<sub>2</sub>) can be modified to suit the user&rsquo;s preference, and the included configurations or data can be disabled as desired.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
-<p><a name="_Toc108615045"></a><b>Figure 20: 3D visualization of monitoring campaigns and leak plumes from <em>Visualization</em> page</b></p>
-<h2>3.7&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Monitoring Campaign Settings</h2>
-<p>The <em>Monitoring Campaign Settings </em>page (Figure 16) allows the user to specify additional information and constraints for monitoring campaigns. Some inputs apply to all campaigns, while others are only for surface surveys or point sensors. The following fields are available:</p>
-<ul>
-<li><em>Maximum Monitoring Budget</em> sets a cap on the total cost for a campaign, including technology costs and well costs defined below. Leaving the value empty means there is no cap. Cost is a possible optimization objective, so it is not necessary to set a maximum. Setting a maximum that is too restrictive may cause problems for the algorithm. Hovering over the value box, it shows that a numeric value or a time-dependent equation using the variable &lsquo;t&rsquo; can be applied in setting a <em>Maximum Monitoring Budget</em>.</li>
-<li><em>Number of Sensors </em>determines a range for the number of distinct technologies that can be included in a monitoring campaign. A sensor is defined either as a point sensor that can be relocated or a surface survey of fixed size that can be represented at multiple times. The algorithm will explore different numbers of sensors, but this sets hard limits on how many sensors can be included.</li>
-<li><strong><em>Surface Surveys</em></strong>
-<ul>
-<li><em>Number of Station Locations Allowed</em> sets a range for how many nodes can be included in a single surface survey. Since surface surveys often measure change between surveys, survey size will remain constant across redeployments for a given campaign. By default, this value is set at 5%-40% of the total surface nodes. Hovering over these fields shows a tooltip with the total number of available surface nodes.</li>
-</ul>
-</li>
-<li><strong><em>Point Sensors</em></strong>
-<ul>
-<li>sets a cap on the number of vertical wells that be included in a monitoring campaign. The algorithm will explore different numbers of wells, and the number of wells will affect the cost objective, but this sets a hard limit on how many wells of any depth can be considered for the campaigns. Leaving the value empty means there is no cap.</li>
-<li><em>Minimum Distance Between Wells</em> constrains the wells to be at a certain distance from other wells. DREAM is limited by the model resolution that makes up the domain space and assumes that wells are placed in the center of the cell, for the purposes of distance calculations. In reality, a decision-maker will micro-site the recommended monitoring campaign to a location that makes sense.</li>
-<li><em>Cost Per Well</em> and <em>Cost of Well Per unit Depth</em> assigns a cost to each well and for the depth of each well, respectively. This factors into the maximum monitoring budget and the cost objective. A numeric value or &nbsp;an equation can be entered for each field that includes &lsquo;t&rsquo; as a variable for time.</li>
-</ul>
-</li>
-</ul>
-<p><a name="_Toc108615039"></a>Figure 16: Default settings for <em>Monitoring Campaign Settings</em> page</p>
-<p>For this example shown in Figure 17, leave the default settings for <em>Maximum Monitoring Budget</em> to be empty (i.e., &ldquo;$No Limit&rdquo;) and Number of Sensors to range from 1-5. Set the <em>Number of Station Locations Allowed </em>under<em> <strong>Surface Surveys</strong> </em>to be between 20 and 200 nodes. Under <strong><em>Point Sensors</em></strong><em>,</em> set the <em>Maximum Number of Wells</em> to 3, the <em>Cost Per Well</em> to $500,000, and the <em>Cost of Well Per m Depth</em> (i.e., cost of well per unit depth) to $1,000. Leave the <em>Minimum Distance Between Wells</em> with a value of 0. Click <em>Next</em>.</p>
-<p>&nbsp;</p>
-<p><a name="_Toc108615040"></a>Figure 17: Example on <em>Monitoring Campaign Settings </em>page</p>
-<h2>3.8&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Exclude Locations</h2>
-<p>The <em>Exclude Locations</em> page (Figure 18) allows the user to exclude (x, y) locations from the monitoring configuration that are infeasible or unapproved. This window allows the user to manually deselect nodes that should not be used in the optimization algorithm. Note that if the solution space is too large, the user may not have the ability to exclude locations.</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; For this page, please continue with the default settings, which includes all locations. Click <em>Next</em>.</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p><a name="_Toc108615041"></a><b>Figure 18: <em>Exclude Locations</em> Page showing an example with some of the nodes disabled</b></p>
-
-
-
-
-
-
-
-
-<h2><a name="_Toc108615002"></a>3.9&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Run DREAM</h2>
-<p>The <em>Run DREAM</em> page (Figure 19) provides a summary of the user inputs to the left. By default, a new &ldquo;results&rdquo; directory will be created to store output files. The output file location can be changed along with the output&rsquo;s filename.</p>
 <p>&nbsp;</p>
 <p><b>Figure 19: Run DREAM Page</b></p>
 <p>DREAM features several algorithms for identifying the optimal solution while factoring in multiple objectives. For more information about the available algorithms and which to select, see Optimization Algorithms. Under <strong><em>Optimization Settings</em></strong>, there may be additional inputs depending on the selected algorithm, such as cooling equation for Simulated Annealing. <em>Total</em> <em>Iterations</em> are the number of unique campaigns that are created by the <em>Selected Algorithm</em>. <em>Total Runs</em> allows multiple instances of the algorithms to run if restarting the process is required for a fresh start when the algorithm gets stuck in a local optimization and never reaches the global optimization. The user may assess any of the following objectives under <em>Select Objectives:</em> &nbsp;</p>
@@ -411,4 +363,48 @@
 <p>Objectives are assessed for each scenario, and there is a minimum of two objectives that must be assessed. Note that any objective (other than <em>Time to Detection</em>) can be disabled for any reason, like reducing computational time. These objectives may feed back into some algorithms at each iteration (refer to Appendix &nbsp;for more details about the objectives).</p>
 <p>When the user clicks <em>Start Optimization</em>, up to two windows may appear if selected under <strong><em>Plotting Options</em></strong>. The user can choose to select <em>Calculate Pareto Ranks </em>(highly recommended), <em>Show Visualization</em>, or <em>Show Objective Graph</em>. The first page to display is the <em>Visualization</em> (Figure 20) that spatially displays each campaign overlaid with the leak space in a 3D space. The second page is an <em>Objective Graph</em> (Figure 21) that plots two objectives against one another to show progress as the optimization works towards an optimal solution. Under <em>Initial Graphed Objective</em>, the user can select which objectives to display in the Y- and X-Axes. Selecting <em>Calculate Pareto Ranks</em> will add a processing step after the iterations complete, . In other words, the multi-objective optimization will minimize the tradeoff in performance for the objectives. the DREAM only calculates the top 10 pareto ranks as they are expected to contain the best solutions. Once calculated, only the top ranks will be displayed on the <em>Visualization </em>page, and the ranks will be colored on the <em>Objective Graph</em>. It is recommended that the user leave <em>Calculate Pareto Ranks</em> enabled. The colors of the outputs (e.g., aqueous pressure or CO<sub>2</sub>) can be modified to suit the user&rsquo;s preference, and the included configurations or data can be disabled as desired.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
 <p><a name="_Toc108615045"></a><b>Figure 20: 3D visualization of monitoring campaigns and leak plumes from <em>Visualization</em> page</b></p>
+
+<p><a name="_Toc108615046"></a><b>Figure 21: <em>Objective Graph </em>campaign performance between time to detection and cost objectives that is produced when <em>Calculate Pareto Ranks</em> is enabled</b></p>
+<p>Finally, there are a few optional <strong><em>Diagnostic Tools</em></strong> available, including:</p>
+<ul>
+<li><em>Best TTD Possible per Technology</em> quickly generates a table providing the shortest time to detection for each monitoring technology, if hypothetically every node in the solution space was monitored. This provides no indication of optimal monitoring configurations but allows the user to understand the problem before running the iterative procedure. This table is outputted into the selected <em>Output Directory</em> as a csv file called &ldquo;best_ttd_table.csv&rdquo;. The Best TTD per Technology is calculated separately from the optimization, which means it will be the same regardless of what optimization algorithm is selected and does not need to be recalculated for each optimization algorithm ran.</li>
+<li><em>Volume of Aquifer Degraded</em> quickly generates a table showing the average, minimum, and maximum volume of aquifer degraded across all scenarios at each time step, providing insight into the magnitude of leaks across the provided scenarios. This table is outputted into the selected <em>Output Directory</em> as a csv file called &ldquo;VolumeOfAquiferDegraded.csv&rdquo;. The VAD is calculated separately from the optimization, which means the VAD will be the same regardless of what optimization algorithm is selected and does not need to be recalculated for each optimization algorithm ran.</li>
+</ul>
+<p>For this example, follow this progression:</p>
+<ol>
+<li>Under <strong><em>Output Directory</em></strong>, choose where the outputted the files will be saved from this DREAM run. Click <em>Select Output Directory</em> to browse your directories, or manually type in the results directory of your choice.
+<ol start="2">
+<li>Click under <strong><em>Diagnostic Tools</em></strong> to view a summary of the lowest possible times to leakage detection. An excel file is created in the results directory specified (&ldquo;best_ttd_table.csv&rdquo;).</li>
+<li>Click <em>Volume of Aquifer Degraded </em>under <strong><em>Diagnostic Tools</em></strong> to view a summary of the volume of aquifer degraded (VAD) per timestep (&ldquo;VolumeOfAquiferDegraded.csv&rdquo;).</li>
+<li>Next, for <strong><em>Optimization Settings</em></strong>, select Heuristic algorithm at 1 run of 1000 iterations and keep all the objectives checked under <em>Select Objectives</em> (Figure 21). For <strong><em>Plotting Options</em></strong>, keep the default settings checked, including <em>Calculate Pareto Ranks</em>, <em>Show Visualization</em>, <em>Show Objective Graph</em>. For Initial Graphed Objective, choose the <em>Y-Axis Objective </em>to be &ldquo;Time to Detection&rdquo; and <em>X-Axis Objective</em> to be &ldquo;Cost&rdquo;. Click <em>Start Optimization</em>.</li>
+<li>Run the optimization algorithm by clicking <em>Start Optimization</em>.
+<ol>
+<li>Check the <em>Calculate Pareto Ranks </em>box under <strong><em>Plotting Options</em></strong>. View the Pareto figure in real-time as it graphs each iteration. For this example, there should be &ldquo;Time to Detection&rdquo; selected for the <em>Y-Axis Objective</em> and &ldquo;Cost&rdquo; selected for the <em>X-Axis Objective</em> under <strong><em>Plotting Options</em></strong> for <em>Initial Graphed Objective</em>. The objectives can be changed as desired.</li>
+<li>Check the <em>Show Visualization</em> box under <strong><em>Plotting Options</em></strong>. View the <em>DREAM Visualization </em>(Figure 22) that launches when you run the optimization. There are three tabs present: <em>Leak Plume</em>, <em>Detectable Plume</em>, and <em>Monitoring Plan</em>. In the bottom window, there is the option to select the box for Pareto Rank Run# and selectively view each of the top performing campaigns.</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+<h2><a name="_Toc108615003"></a>3.10&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Outputs</h2>
+<p>When DREAM completes, it creates several files in the specified results directory, including:</p>
+<ul>
+<li><strong>Run#_AllCampaigns.csv</strong>
+<ul>
+<li>A file listing details on every iteration tested by the algorithm for each run set in <em>Total Runs</em>. It lists iteration number, scenarios with a leak detected, scenarios with no leak detected, the number of wells, time/location details for each monitoring technology in the campaign, average values for each objective (); however, in Simulate Annealing and Heuristic Algorithm, the weights are factored in.</li>
+</ul>
+</li>
+</ul>
+<p>&nbsp;</p>
+<ul>
+<li>A simple space-delimited text file that lists the XYZ location of each node, and either a &ldquo;0&rdquo; or &ldquo;1&rdquo; to show whether the node is part of the leak plume or a detectable plume. A &ldquo;1&rdquo; implies that the node surpasses the user-defined threshold for at least one scenario.</li>
+</ul>
+<ul>
+<li><strong>csv</strong>
+<ul>
+<li>If <em>Calculate Pareto Ranks</em> was enabled, all campaigns within the top 10 Pareto ranks are listed in this file. This represents the best campaigns available based on the constraints and allows decision-makers to assess the cost trade-offs of the top options.</li>
+</ul>
+</li>
+</ul>
+<p>The following sections will describe the process for analyzing the DREAM outputs using the post-processing features in DREAM.</p>
 <p>&nbsp;</p>
