@@ -407,7 +407,7 @@
 <p style="margin-bottom:9.6pt;text-indent:.25in;">The Nonisothermal, Unsaturated Flow and Transport <ins cite="mailto:Kupis,%20Shyla" datetime="2022-07-01T09:15">(</ins>NUFT<ins cite="mailto:Kupis,%20Shyla" datetime="2022-07-01T09:15">)</ins> numerical model<span style="font-size:11px;"><a href="#_msocom_5" id="_anchor_5" language="JavaScript" name="_msoanchor_5"></a>&nbsp;</span>for an alluvium case study of CO<sub>2</sub> storage (Figure 1) from the Kimberlina 1.2 site is comprised of a 3D heterogeneous domain that is represented as an unconsolidated aquifer consisting of permeable sand layers and impermeable shale layers that are based on the lithology of the High Plains Aquifer. The aquifer is underlain by a hypothetical CO<sub>2</sub> storage reservoir, and both aquifer and reservoir are penetrated by leaking wells. The model domain encompasses 10 km &times; 5 km &times; 240 m with 1 to 5 leakage sources per scenario placed at a depth of 198 m based on 48 known well locations. The wells are a mix of domestic, feedlot, irrigation, public water supply, and oil field water supply wells. Leakage rates are varied based on uncertainties in the hydrogeologic properties.</p>
 
 <p align="center">
- <img width="348" height="348" src="./figures/beta_ex_fig1.png">
+ <img src="./figures/beta_ex_fig1.png">
 </p>
 <p align="center"><sub><b>
       Figure&nbsp;1: Beta Example Schematic. Figure from Carroll et al. (2014b) shows the links between reservoir, well leakage, and aquifer models using the alluvium case study. Links between reservoir, well leakage, and the carbonate case study are identical.
@@ -417,7 +417,7 @@
 <p style="margin-bottom:9.6pt;text-indent:.25in;">The DREAM GUI allows linear progression through a series of pages (Figure 2). The user can move back and forth but note that moving backwards may cause the user-inputs on later pages to be lost.</p>
 
 <p align="center">
- <img width="348" height="348" src="./figures/gui_flow_chart.png">
+ <img src="./figures/gui_flow_chart.png">
 </p>
 <p align="center"><sub><b>
       Figure&nbsp;2: DREAM GUI Flow Chart
@@ -435,7 +435,7 @@
 
 
 <p align="center">
- <img width="500" height="400" src="./figures/welcome_page.png">
+ <img src="./figures/welcome_page.png">
 </p>
 <p align="center"><sub><b>
       Figure&nbsp;3: DREAM <em>Welcome</em> Page
@@ -455,18 +455,43 @@
 
 
 <p align="center">
- <img width="650" height="450" src="./figures/input_directory_page.png">
+ <img src="./figures/input_directory_page.png">
 </p>
 <p align="center"><sub><b>
       Figure&nbsp;4: <em>Input Directory</em> Page&nbsp;(by folders)
       </b></sub></p>
+      
+      
+      
 
 <p style='margin-top:0in;margin-right:0in;margin-bottom:9.6pt;margin-left:0in;text-indent:.25in;font-size:16px;font-family:"Times New Roman",serif;'>Alternatively, use the &ldquo;Files&rdquo; option to select a particular assortment of input files from a directory (Figure 5). Click <em>Next.</em></p>
 
-<p><a name="_Toc108615028"></a><b>Figure 5: <em>Input Directory</em> Page (by filenames)</b></p>
+
+
+
+<p align="center">
+ <img src="./figures/input_directory_page1.png">
+</p>
+<p align="center"><sub><b>
+      Figure&nbsp;5: <em>Input Directory</em> Page&nbsp;(by filenames)
+      </b></sub></p>
+      
+      
+      
+      
 <p>A pop-up window (Figure 6) may prompt the user to specify any information missing from the HDF5 files, including porosity, units, and z-axis orientation, that will be specific to the model considered. Depending on units. If the HDF5 files are generated with the DREAM File Converter, they should contain all the necessary information and the user may never see this popup. IAM files will almost always ask for these inputs. The z-axis positive direction is important as depth of wells can factor into costs. Porosity is important as it factors into the volume of aquifer degraded calculations. Porosity can be entered in two ways: (1) as a variable in the HDF5 file that will allow porosity to vary across time and space or (2) as a constant scalar value that is applied to the whole domain either as an HDF5 attribute or entered in the pop-up window.</p>
 
-<p><a name="_Toc108615029"></a><b>Figure 6: Pop-up to specify missing information</b></p>
+
+
+<p align="center">
+ <img src="./figures/input_directory_page2.png">
+</p>
+<p align="center"><sub><b>
+      Figure&nbsp;6: Pop-up to specify missing information
+      </b></sub></p>
+      
+      
+      
 <p>If the loaded HDF5 or IAM files do not include units for an input, then it must be specified. The possible units that you might be required to specify are:</p>
 <ul>
 <li>XYZ &ndash; meters or feet,</li>
@@ -488,7 +513,18 @@
 <p>The <em>Leak Definition </em>page (Figure 7) allows the user to define what will be considered as a leak by taking a union of leak parameters, such as saturation and/or gravity, to specify a leak definition for some user-specified criteria.</p>
 <p>&nbsp;</p>
 
-<p><b>Figure 7: Scenario <em>Leak Definition</em> Page</b></p>
+
+
+
+<p align="center">
+ <img src="./figures/leak_definition_page.png">
+</p>
+<p align="center"><sub><b>
+      Figure&nbsp;7: Scenario <em>Leak Definition</em> Page
+      </b></sub></p>
+
+
+
 <p>Under <em>Parameter</em>, pressure, saturation, and any other user-specified parameters can define a leak either individually or as a combination of parameters. Up to three parameters can be selected at a time to define a leak by taking the union of the selected parameters. Parameters are read in from the input H5 or IAM files and represent a value at each model node and timestep. The leak space is all the model nodes that exceed the defined type and value at any timestep. A carbon capture application might define the leak where CO2 saturation exceeds a maximum contaminant level.</p>
 <p>Under <em>Leak Type</em>, there are three options that can be selected to define a leak:</p>
 <ul>
@@ -505,8 +541,18 @@
 <p>Most users may choose to select a CO<sub>2</sub> parameter exceeding some value for carbon capture applications; although, pressure or other proxies may be necessary if a CO<sub>2 </sub>parameter is not available. Clicking <em>Calculate Leak</em> will calculate which nodes exceed the threshold in at least one scenario, and the number of nodes found should The number of nodes in the leak space must be greater than 0 to continue.</p>
 <p>and remove the default pressure leak type (Figure 8)<em>. Then,</em> click <em>Calculate Leak </em>and view how many nodes exceeded the saturation threshold. Finally, click <em>Next</em>.
       
-<p><b>Figure 8: Calculating leak space on <em>Leak Definition</em> page</b></p>
-
+      
+      
+ <p align="center">
+ <img src="./figures/leak_definition_page1.png">
+</p>
+<p align="center"><sub><b>
+      Figure&nbsp;8: Calculating leak space on <em>Leak Definition</em> page
+      </b></sub></p>
+     
+     
+     
+     
 <p>Click <em>Launch Visualization</em> to display the visualization of potential leak plumes captured by pressure, gravity, and saturation profiles when the leak threshold is exceeded at any time (Figure 9). The user may toggle between views and change which parameters to display and what the color and transparency of the parameter should be. The user may zoom in and out with the mouse or scale the grid with the &ldquo;Scale X/Y/Z&rdquo; sliders located in the top right pane. The <em>Monitoring Plan</em> configuration tab will become useful once the DREAM tool has run. Close out of the Visualization Tool and select <em>Next</em> on the <em>Leakage Definition</em> Window.</p>
 <p><b>Figure 9. Interactive display of the leak plume after <em>Leak Definition</em></b></p>
 <div id="_com_3" language="JavaScript"><br></div>
