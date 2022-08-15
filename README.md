@@ -406,13 +406,23 @@
 <p style="margin-bottom:9.6pt;text-indent:.25in;">The example presented in this user manual is based on the test dataset from the brownfield site at Kimberlina Site, California, which is called Kimberlina 1.2. The data files are based on NUFT simulations at the Kimberlina site to model reactive multi-phase flow and transport of CO2 and brine for a case study of geologic carbon storage. In this tutorial, the user will be guided through the DREAM Java Wizard GUI while demonstrating an application to 19 randomly selected leakage scenarios generated for an NRAP Second-Generation Reduced-Order Model study (Carroll et al., 2014b). For context, a summary of the model set up from Carroll et al. (2014b) is provided below. <span style="font-size:11px;"><a href="#_msocom_4" id="_anchor_4" language="JavaScript" name="_msoanchor_4"></a></span></p>
 <p style="margin-bottom:9.6pt;text-indent:.25in;">The Nonisothermal, Unsaturated Flow and Transport <ins cite="mailto:Kupis,%20Shyla" datetime="2022-07-01T09:15">(</ins>NUFT<ins cite="mailto:Kupis,%20Shyla" datetime="2022-07-01T09:15">)</ins> numerical model<span style="font-size:11px;"><a href="#_msocom_5" id="_anchor_5" language="JavaScript" name="_msoanchor_5"></a>&nbsp;</span>for an alluvium case study of CO<sub>2</sub> storage (Figure 1) from the Kimberlina 1.2 site is comprised of a 3D heterogeneous domain that is represented as an unconsolidated aquifer consisting of permeable sand layers and impermeable shale layers that are based on the lithology of the High Plains Aquifer. The aquifer is underlain by a hypothetical CO<sub>2</sub> storage reservoir, and both aquifer and reservoir are penetrated by leaking wells. The model domain encompasses 10 km &times; 5 km &times; 240 m with 1 to 5 leakage sources per scenario placed at a depth of 198 m based on 48 known well locations. The wells are a mix of domestic, feedlot, irrigation, public water supply, and oil field water supply wells. Leakage rates are varied based on uncertainties in the hydrogeologic properties.</p>
 
-![plot](https://github.com/pnnl/tree/master/figures/beta_ex_fig1.png) 
+<p align="center">
+ <img width="256" height="256" src="./figures/beta_ex_fig1.png">
+</p>
+<p align="center"><sub><b>
+      Figure&nbsp;1: Beta Example Schematic. Figure from Carroll et al. (2014b) shows the links between reservoir, well leakage, and aquifer models using the alluvium case study. Links between reservoir, well leakage, and the carbonate case study are identical.
+      </b></sub></p>
 
-<p style="margin-top:0in;margin-right:0in;margin-bottom:9.6pt;margin-left:0in;"> <span style="font-size: 9px"><b> Figure&nbsp;1: Beta Example Schematic. Figure from Carroll et al. (2014b) shows the links between reservoir, well leakage, and aquifer models using the alluvium case study. Links between reservoir, well leakage, and the carbonate case study are identical. </b></span></p>
 <p style="margin-bottom:9.6pt;text-indent:.25in;">The files included in this tutorial contain output data <span style="font-size:11px;"></span>at specified times across all nodes representing hypothetical leakage scenarios from the CO<sub>2</sub> storage formation. DREAM will be used to optimize monitoring configurations that minimize the estimated time to first detection (TTD) of CO<sub>2</sub> leakage.</p>
 <p style="margin-bottom:9.6pt;text-indent:.25in;">The DREAM GUI allows linear progression through a series of pages (Figure 2). The user can move back and forth but note that moving backwards may cause the user-inputs on later pages to be lost.</p>
 
-<p style='margin-top:0in;margin-right:0in;margin-bottom:9.6pt;margin-left:0in;text-align:center;font-size:13px;font-family:"Times New Roman",serif;font-weight:bold;'><b>Figure 2: DREAM GUI Flow Chart</b></p>
+<p align="center">
+ <img width="348" height="348" src="./figures/gui_flow_chart.png">
+</p>
+<p align="center"><sub><b>
+      Figure&nbsp;2: DREAM GUI Flow Chart
+      </b></sub></p>
+ 
 <div id="_com_3" language="JavaScript"><br></div>
 
 
@@ -421,11 +431,17 @@
 <p style="margin-bottom:9.6pt;text-indent:.25in;">The DREAM<em>&nbsp;Welcome</em> page (Figure 3) provides links to the DREAM User Manual and literature detailing the technical development and theory behind the DREAM optimization algorithms<span style="font-size:11px;"><a href="#_msocom_1" id="_anchor_1" language="JavaScript" name="_msoanchor_1"></a>&nbsp;</span>(Yonkofski et al., 2016). The user is recommended to review the cited paper to thoroughly understand the objective function, decision variables and constraints, as well as the iterative process that DREAM performs to approach the optimal monitoring solution.</p>
 <p style="margin-bottom:9.6pt;text-indent:.25in;">A conceptual figure on the right side of the <em>Welcome</em> window shows a theoretical DREAM application, with a leak from subsurface storage entering an overlying aquifer through an abandoned wellbore (Figure 3). While the user must provide the leakage scenario, this figurative example of inserts visualizes three of many monitoring configurations that DREAM can generate and assess during the iterative procedure. &nbsp;</p>
 
-<p style='margin-top:0in;margin-right:0in;margin-bottom:9.6pt;margin-left:0in;text-align:center;font-size:13px;font-family:"Times New Roman",serif;font-weight:bold;'><b>Figure&nbsp;3: DREAM <em>Welcome</em> Page </b></p>
-<p style='margin:0in;font-size:16px;font-family:"Times New Roman",serif;margin-top:0in;margin-right:0in;margin-bottom:9.6pt;margin-left:.25in;'>To continue to the example application, press <em>Next</em>.</p>
+
+
+
+<p align="center">
+ <img width="500" height="400" src="./figures/welcome_page.png">
+</p>
+<p align="center"><sub><b>
+      Figure&nbsp;3: DREAM <em>Welcome</em> Page
+      </b></sub></p>
+ 
 <div id="_com_3" language="JavaScript"><br></div>
-
-
 
 
 
