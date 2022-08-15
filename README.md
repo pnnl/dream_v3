@@ -455,7 +455,7 @@
 
 
 <p align="center">
- <img width="650" height="400" src="./figures/input_directory_page.png">
+ <img width="650" height="450" src="./figures/input_directory_page.png">
 </p>
 <p align="center"><sub><b>
       Figure&nbsp;4: <em>Input Directory</em> Page&nbsp;(by folders)
