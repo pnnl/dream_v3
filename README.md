@@ -662,7 +662,7 @@
 
 
 <p align="center">
- <img src="./figures/detection_threshold_page1.png">
+ <img src="./figures/detection_threshold_page1.PNG">
 </p>
 <p align="center"><sub><b>
       Figure&nbsp;12: Specifying criteria for each monitoring technology on <em>Detection Threshold</em> page
@@ -714,8 +714,18 @@
 </table>
 
 <p>To visualize both the detectable plume and the leak plume, click <em>Launch Visualization </em>(Figure 13). When ready to continue, click <em>Next</em>.</p>
-<p><a name="_Toc108615036"></a><b>Figure 13: Visualization of detectable plume</b></p>
-<div id="_com_3" language="JavaScript"><br></div>
+
+
+
+
+
+<p align="center">
+ <img src="./figures/visualization_detectable_plume.PNG">
+</p>
+<p align="center"><sub><b>
+      Figure&nbsp;13: Visualization of detectable plume</b></p>
+      </b></sub></p>
+<p>&nbsp;</p>
 
 
 
@@ -724,10 +734,31 @@
 <h2><a name="_Toc108614999"></a>3.6&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Detection Criteria</h2>
 <p>The <em>Detection Criteria</em> page (Figure 14) prompts the user to specify how many monitoring devices must be triggered to signify a leak has occurred. Only the sensors that were defined on the <em>Detection Threshold</em> page are selectable. &ldquo;Any Technology&rdquo; is a wildcard for any available sensors. Multiple criteria can be created by clicking the <em>Add a new criteria</em> button. Within a given test, the user may select any combination of specific technologies that will signify a leak. It is important to note that on this page we are taking all the instances where the nodes exceed the leak threshold from <em>Detection Threshold</em> (and <em>Leak Definition)</em> and are allowing the user to determine whether that instance qualifies as a &ldquo;leak&rdquo;, e.g., both pressure and saturation sensors exceed their leak detection thresholds.</p>
 <p>Minimum Detections specifies how many detections from a specific sensor must exceed the user-defined value to have confidence that a leak occurred. Multiple tests with any combination of sensors can be created. To clarify, a full campaign of surface surveys monitoring an area is counted as one sensor, so it is advised not to require more than one surface survey. In most cases, it can be left at default, where one of any detecting sensors can identify a leak. For example, if both a cheap and expensive pressure sensor are available, two criteria can be created for one expensive or two cheap sensors need to be triggered to have a confidence in the leak.</p>
-<p><a name="_Toc108615037"></a><b>Figure 14: Default settings for <em>Detection Criteria</em> page</b></p>
+
+
+
+<p align="center">
+ <img src="./figures/detection_criteria_page.PNG">
+</p>
+<p align="center"><sub><b>
+      Figure&nbsp;14: Default settings for <em>Detection Criteria</em> page</b></p>
+      </b></sub></p>
+
+
+
+
+
 <p>For this example, set the first criteria, <em>Criteria 1</em>, to &ldquo;saturation&rdquo; with <em>Minimum Detections to Signify Leak </em>set to 1. Set the second criteria, <em>Criteria 2</em>, to &ldquo;gravity&rdquo; and &ldquo;pressure&rdquo; with <em>Minimum Detections to Signify Leak </em>set to 1 for each <em>Monitoring Technology </em>(Figure <strong>15</strong>). This implies confidence in a leak when either (1) a single saturation sensor exceeds the threshold or (2) both a gravity and pressure sensor exceed the threshold. Click <em>Next</em>.</p>
 
-<p><a name="_Toc108615038"></a><b>Figure 15: Setting criteria for detecting a leak on <em>Detection Criteria</em> page</b></p>
+
+
+
+<p align="center">
+ <img src="./figures/detection_criteria_page1.png">
+</p>
+<p align="center"><sub><b>
+      Figure&nbsp;15: Setting criteria for detecting a leak on <em>Detection Criteria</em> page</b></p>
+      </b></sub></p>
 <p>&nbsp;</p>
 
 
@@ -751,10 +782,37 @@
 </ul>
 </li>
 </ul>
-<p><a name="_Toc108615039"></a><b>Figure 16: Default settings for <em>Monitoring Campaign Settings</em> page</b></p>
+
+
+
+
+<p align="center">
+ <img src="./figures/monitoring_campaign_settings_page.png">
+</p>
+<p align="center"><sub><b>
+      Figure&nbsp;16: Default settings for <em>Monitoring Campaign Settings</em> page</b></p>
+      </b></sub></p>
+
+
+
+
+
 <p>For this example shown in Figure 17, leave the default settings for <em>Maximum Monitoring Budget</em> to be empty (i.e., &ldquo;$No Limit&rdquo;) and Number of Sensors to range from 1-5. Set the <em>Number of Station Locations Allowed </em>under<em> <strong>Surface Surveys</strong> </em>to be between 20 and 200 nodes. Under <strong><em>Point Sensors</em></strong><em>,</em> set the <em>Maximum Number of Wells</em> to 3, the <em>Cost Per Well</em> to $500,000, and the <em>Cost of Well Per m Depth</em> (i.e., cost of well per unit depth) to $1,000. Leave the <em>Minimum Distance Between Wells</em> with a value of 0. Click <em>Next</em>.</p>
 <p>
-<p><a name="_Toc108615040"></a><b>Figure 17: Example on <em>Monitoring Campaign Settings </em>page</b></p>
+
+      
+<p align="center">
+ <img src="./figures/monitoring_campaign_settings_page2.png">
+</p>
+<p align="center"><sub><b>
+      Figure&nbsp;17: Example on <em>Monitoring Campaign Settings </em>page</b></p>
+      </b></sub></p>
+<p>&nbsp;</p>
+
+
+
+
+
 <h2>3.8&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Exclude Locations</h2>
 <p>The <em>Exclude Locations</em> page (Figure 18) allows the user to exclude (x, y) locations from the monitoring configuration that are infeasible or unapproved. This window allows the user to manually deselect nodes that should not be used in the optimization algorithm. Note that if the solution space is too large, the user may not have the ability to exclude locations.</p>
 <p>For this page, please continue with the default settings, which includes all locations. Click <em>Next</em>.</p>
