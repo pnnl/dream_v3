@@ -1253,9 +1253,9 @@
 <ul>
 <li>VAD vs TTD
 <ul>
-<li>VAD is generally not a highly informative parameter. However, examining VAD versus TTD can show if there is a one-to-one relationship as the number of leaks detected increases (Figure 30). If there are some outliers or scattering, this indicates that there are some undetected leaks, which are being captured by a growing value of VAD.</li>
+<li>VAD is generally not a highly informative parameter. However, examining VAD versus TTD can show if there is a one-to-one relationship as the number of leaks detected increases (Figure 28). If there are some outliers or scattering, this indicates that there are some undetected leaks, which are being captured by a growing value of VAD.</li>
 <li>Questions to consider are: what is different between monitoring campaign scenarios that might be significantly impacting TTD?</li>
-<li>In Figure 30, the initial VAD has some variability with respect to TTD for the first 0.3 but as more aquifer volume is degraded, the TTD linearly increases with VAD.</li>
+<li>In Figure 28, the initial VAD has some variability with respect to TTD for the first 0.3 but as more aquifer volume is degraded, the TTD linearly increases with VAD.</li>
 </ul>
 </li>
 </ul>
@@ -1275,35 +1275,79 @@
 <ul>
 <li>PMCD &amp; PMMCD vs TTD
 <ul>
-<li>This dual panel view is comparing the mass of CO2 detected at the end of the monitoring campaign to the mass of CO2 detected when there is maximum saturation (i.e., largest leak detected). This figure aims to highlight the discrepancy (if any) between PMCD and PMMCD (e.g., Figure 31).</li>
+<li>This dual panel view is comparing the mass of CO2 detected at the end of the monitoring campaign to the mass of CO2 detected when there is maximum saturation (i.e., largest leak detected). This figure aims to highlight the discrepancy (if any) between PMCD and PMMCD (e.g., Figure 29).</li>
 <li>For example, it can help address if there is a large enough difference between the two, such that there is a significant time gap when the largest leak is detected compared to the end of the monitoring campaign.</li>
-<li>In Figure 31, this figure indicates that there is not a significant difference for TTD when using the last time step of the monitoring campaign or the time step at which the maximum leak is detected.</li>
+<li>In Figure 29, this figure indicates that there is not a significant difference for TTD when using the last time step of the monitoring campaign or the time step at which the maximum leak is detected.</li>
 </ul>
 </li>
 </ul>
-<p><a name="_Toc108615054"></a>Figure 29: Simulated annealing example of PMCD using last time step compared to the time at which the maximum leak is detected versus TTD</p>
+
+
+
+<p align="center">
+ <img src="./figures/kimberlina_1_2_sa_10k_example_f.png">
+</p>
+<p align="center"><sub><b>
+      Figure&nbsp;29: Simulated annealing example of PMCD using last time step compared to the time at which the maximum leak is detected versus TTD
+      </b></sub></p>
+
+
+
+
+
+
+
+
 <p>&nbsp;</p>
 <ul>
 <li>PMCD &amp; PMMCD vs Monitoring Cost
 <ul>
-<li>Similar to (f), this dual panel view is comparing the mass of CO2 detected at the end of the monitoring campaign to the mass of CO2 detected when there is maximum saturation (i.e., largest leak detected). This figure will highlight the discrepancy in PMCD and PMMCD (e.g., Figure 32).</li>
+<li>Similar to (f), this dual panel view is comparing the mass of CO2 detected at the end of the monitoring campaign to the mass of CO2 detected when there is maximum saturation (i.e., largest leak detected). This figure will highlight the discrepancy in PMCD and PMMCD (e.g., Figure 30).</li>
 <li>For example, it can help address if there is a large enough difference between the two, such that it is worthwhile to continue monitoring and accruing costs to capture relevant or significant leaks.</li>
-<li>In Figure 31, this figure indicates that there does not appear to be a significant difference between using the last time step of the monitoring campaign or the time step at which the maximum leak is detected.</li>
-<li>In Figure 32, this figure indicates that there is not a significant difference for TTD when using the last time step of the Monitoring Cost or the time step at which the maximum leak is detected.</li>
+<li>In Figure 30, this figure indicates that there does not appear to be a significant difference between using the last time step of the monitoring campaign or the time step at which the maximum leak is detected.</li>
 </ul>
 </li>
 </ul>
-<p><a name="_Toc108615055"></a>Figure 30: Simulated annealing example of PMCD using last time step compared to the time at which the maximum leak is detected versus Monitoring Cost</p>
+
+
+
+<p align="center">
+ <img src="./figures/kimberlina_1_2_sa_10k_example_g.png">
+</p>
+<p align="center"><sub><b>
+      Figure&nbsp;30: Simulated annealing example of PMCD using last time step compared to the time at which the maximum leak is detected versus Monitoring Cost
+      </b></sub></p>
+
+
+
+
+
+
+
 <ul>
 <li>3D scatter plots of PMCD, PLD and TTD
 <ul>
-<li>In these 3D scatter plots, the percent leak detection cutoff iterates through 10% to 90%, in which a smaller percent cutoff indicates that almost all leaks are included (e.g., Figure 33). A GIF is produced from this set of figures to visualize the progression of smaller, more common leaks to larger, less common leaks, and how these leaks relate to TTD.</li>
+<li>In these 3D scatter plots, the percent leak detection cutoff iterates through 10% to 90%, in which a smaller percent cutoff indicates that almost all leaks are included (e.g., Figure 31). A GIF is produced from this set of figures to visualize the progression of smaller, more common leaks to larger, less common leaks, and how these leaks relate to TTD.</li>
 <li>Questions to consider are: on average, does it take longer to detect larger leaks?</li>
-<li>In Figure 33, PMCD, PLD, and TTD all increase as more leaks are detected.</li>
+<li>In Figure 31, PMCD, PLD, and TTD all increase as more leaks are detected.</li>
 </ul>
 </li>
 </ul>
-<p><a name="_Toc108615056"></a>Figure 31: Simulated annealing example of 3D scatter plots that show when 0%-100% of leaks are detected for (left) PMCD, PLD and TTD and (right) PMCD, PLD and TTD</p>
+
+
+
+
+
+<p align="center">
+ <img src="./figures/kimberlina_1_2_sa_10k_example_h.png">
+</p>
+<p align="center"><sub><b>
+      Figure&nbsp;31: Simulated annealing example of 3D scatter plots that show when 0%-100% of leaks are detected for (left) PMCD, PLD and TTD and (right) PMCD, PLD and TTD
+      </b></sub></p>
+      
+
+
+
 <ul>
 <li>3D scatter plots of PMCD, TTD, and Monitoring Cost
 <ul>
