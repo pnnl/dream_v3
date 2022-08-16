@@ -406,15 +406,28 @@
 <p style="margin-bottom:9.6pt;text-indent:.25in;">The example presented in this user manual is based on the test dataset from the brownfield site at Kimberlina Site, California, which is called Kimberlina 1.2. The data files are based on NUFT simulations at the Kimberlina site to model reactive multi-phase flow and transport of CO2 and brine for a case study of geologic carbon storage. In this tutorial, the user will be guided through the DREAM Java Wizard GUI while demonstrating an application to 19 randomly selected leakage scenarios generated for an NRAP Second-Generation Reduced-Order Model study (Carroll et al., 2014b). For context, a summary of the model set up from Carroll et al. (2014b) is provided below. <span style="font-size:11px;"><a href="#_msocom_4" id="_anchor_4" language="JavaScript" name="_msoanchor_4"></a></span></p>
 <p style="margin-bottom:9.6pt;text-indent:.25in;">The Nonisothermal, Unsaturated Flow and Transport <ins cite="mailto:Kupis,%20Shyla" datetime="2022-07-01T09:15">(</ins>NUFT<ins cite="mailto:Kupis,%20Shyla" datetime="2022-07-01T09:15">)</ins> numerical model<span style="font-size:11px;"><a href="#_msocom_5" id="_anchor_5" language="JavaScript" name="_msoanchor_5"></a>&nbsp;</span>for an alluvium case study of CO<sub>2</sub> storage (Figure 1) from the Kimberlina 1.2 site is comprised of a 3D heterogeneous domain that is represented as an unconsolidated aquifer consisting of permeable sand layers and impermeable shale layers that are based on the lithology of the High Plains Aquifer. The aquifer is underlain by a hypothetical CO<sub>2</sub> storage reservoir, and both aquifer and reservoir are penetrated by leaking wells. The model domain encompasses 10 km &times; 5 km &times; 240 m with 1 to 5 leakage sources per scenario placed at a depth of 198 m based on 48 known well locations. The wells are a mix of domestic, feedlot, irrigation, public water supply, and oil field water supply wells. Leakage rates are varied based on uncertainties in the hydrogeologic properties.</p>
 
+
+
+
+
+
 <p align="center">
  <img src="./figures/beta_ex_fig1.png">
 </p>
 <p align="center"><sub><b>
       Figure&nbsp;1: Beta Example Schematic. Figure from Carroll et al. (2014b) shows the links between reservoir, well leakage, and aquifer models using the alluvium case study. Links between reservoir, well leakage, and the carbonate case study are identical.
       </b></sub></p>
+      
+      
+      
+      
 
 <p style="margin-bottom:9.6pt;text-indent:.25in;">The files included in this tutorial contain output data <span style="font-size:11px;"></span>at specified times across all nodes representing hypothetical leakage scenarios from the CO<sub>2</sub> storage formation. DREAM will be used to optimize monitoring configurations that minimize the estimated time to first detection (TTD) of CO<sub>2</sub> leakage.</p>
 <p style="margin-bottom:9.6pt;text-indent:.25in;">The DREAM GUI allows linear progression through a series of pages (Figure 2). The user can move back and forth but note that moving backwards may cause the user-inputs on later pages to be lost.</p>
+
+
+
+
 
 <p align="center">
  <img src="./figures/gui_flow_chart.png">
@@ -424,6 +437,8 @@
       </b></sub></p>
  
 <div id="_com_3" language="JavaScript"><br></div>
+
+
 
 
 
@@ -554,10 +569,18 @@
      
      
 <p>Click <em>Launch Visualization</em> to display the visualization of potential leak plumes captured by pressure, gravity, and saturation profiles when the leak threshold is exceeded at any time (Figure 9). The user may toggle between views and change which parameters to display and what the color and transparency of the parameter should be. The user may zoom in and out with the mouse or scale the grid with the &ldquo;Scale X/Y/Z&rdquo; sliders located in the top right pane. The <em>Monitoring Plan</em> configuration tab will become useful once the DREAM tool has run. Close out of the Visualization Tool and select <em>Next</em> on the <em>Leakage Definition</em> Window.</p>
-<p><b>Figure 9. Interactive display of the leak plume after <em>Leak Definition</em></b></p>
-<div id="_com_3" language="JavaScript"><br></div>
 
 
+
+
+
+<p align="center">
+ <img src="./figures/visualization_leak_plume.png">
+</p>
+<p align="center"><sub><b>
+      Figure&nbsp;9: Interactive display of the leak plume after <em>Leak Definition</em>
+      </b></sub></p>
+<p>&nbsp;</p>
 
 
 
@@ -573,11 +596,38 @@
 <p>(3) Weights are relative, but the user can scale the w or normalize them to be between 0 and 1 for clarity. The user can also remove scenario weighting by selecting the button <em>Set Weights Equal</em>. The <em>Scale Weights</em> button will maintain the same relative weights while scaling the numbers from 0 to 1, which is recommended when weights are very large. Weighting is important in DREAM because it optimizes monitoring campaigns by testing random sensor placements and iterating towards &lsquo;better&rsquo; solutions based on objectives. Weighting scenarios can influence which monitoring campaign is preferred. DREAM can also factor scenario weighting in Pareto optimization to rank the top performing monitoring campaigns.</p>
 <p>During multi-objective optimization in the last phase of running DREAM, theFor <em>Weight Equation</em>, it can be modified as needed using any of the variables: <em>v, a</em>, or <em>b</em>.</p>
 <p>In this example, the default scheme of equal weighting is applied (Figure 10).</p>
-<p><a name="_Toc108615033"></a><b>Figure 10: Default settings on <em>Scenario Weighting</em> page. </b></p>
+
+
+
+
+<p align="center">
+ <img src="./figures/scenario_weighting_page.png">
+</p>
+<p align="center"><sub><b>
+      Figure&nbsp;10: Default settings on <em>Scenario Weighting</em> page.</em>
+      </b></sub></p>
 <p>&nbsp;</p>
+
+
+
+
+
 <h2><a name="_Toc108614998"></a>3.5&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Detection Threshold</h2>
 <p>The <em>Detection Threshold</em> page (Figure 11) allows the user to select monitoring technologies that are being considered based on the parameters available in the input files, and to define associated parameters, such as deployment cost and detection threshold.</p>
-<p><a name="_Toc108615034"></a><b>Figure 11: Default settings on <em>Detection Threshold</em></b>page</p>
+
+
+
+<p align="center">
+ <img src="./figures/detection_threshold_page.png">
+</p>
+<p align="center"><sub><b>
+      Figure&nbsp;11: Default settings on <em>Detection Threshold</em>
+      </b></sub></p>
+
+
+
+
+
 <p>This page has a lot of information that defines each technology, including:</b></p>
 <ul>
 <li>The <em>&lsquo;+&rsquo; box</em> allows technologies to be competed, creating a second monitoring parameter option that can have different cost, detection information, or zone limitations. It can be used to duplicate a <em>Parameter</em> if there are multiple sensor options (e.g., cheap vs. expensive).</li>
@@ -608,7 +658,19 @@
 <li><em>Max Redeployments</em> determines the maximum number of times that a single point sensor can be moved, or the maximum number of times that a surface survey may be conducted. Surface surveys must be set to greater than 1 so that at least one reading is taken. It has a different meaning for different deployment methods.</li>
 <li><em>Zone Bottom</em> and <em>Zone Top</em> define depth limitations to where the monitoring technology can be placed. By default, these values are set to the global minimum and maximum. The value is greyed out for surface surveys since they are conducted at the surface.</li>
 </ul>
-<p><b>Figure 12: Specifying criteria for each monitoring technology on Detection Threshold page </b></p>
+
+
+
+<p align="center">
+ <img src="./figures/detection_threshold_page1.png">
+</p>
+<p align="center"><sub><b>
+      Figure&nbsp;12: Specifying criteria for each monitoring technology on <em>Detection Threshold</em> page
+      </b></sub></p>
+
+
+
+
 <p>When loading IAM files, many user inputs are not available, as inputs are fixed during the process to generate IAM files. Some inputs may also be unavailable depending on the deployment method selected.</p>
 <p>For this example, refer to Figure 12. First, select the <em>check box</em> for &ldquo;gravity&rdquo;, &ldquo;pressure&rdquo;, and &ldquo;saturation&rdquo;. Assign &ldquo;gravity&rdquo; with a cost equation of &ldquo;1500*s+250*a/1000000&rdquo; to represent $1500 per survey plus $250 per square kilometer of land surveyed. Gravity should also set <em>Detection Type</em> to &ldquo;Above threshold&rdquo;, <em>Detection Value</em> to 20 mGal, and <em>Max Redeployments</em> to 5. Pressure should set <em>Cost</em> to $500, <em>Detection Type</em> to &ldquo;Relative change&rdquo;, and <em>Detection Value</em> . Disclaimer: starting at 0 when calculating &ldquo;Relative change&rdquo; will cause an infinite value. Saturation should set <em>Cost</em> to $1500, <em>Detection Type</em> to &ldquo;Above threshold&rdquo;, and <em>Detection Value</em> to 2%. Finally, click <em>Find Detectable Nodes</em>. DREAM will calculate which nodes detect at least one scenario in the ensemble based on the user-defined detection type and value. The following values should appear next to each selected parameter type at the bottom of the page (Table 1).</p>
 <p>Note: While the process is working, a red box appears to the right of the progress bar. Pressing this box cancels the process before completion but progress is saved.</p>
