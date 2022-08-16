@@ -1,3 +1,74 @@
+<p style="margin-bottom:9.6pt;"><br></p>
+<p style="margin-bottom:9.6pt;"><img src="./figures/nrap_logo.png" style="width: 110.4pt; height: 50.25pt;" alt="image">&nbsp; &nbsp; </p>
+<p style="margin-bottom:9.6pt;">&nbsp;</p>
+<p style="margin-bottom:9.6pt;">&nbsp;</p>
+<p style="margin-bottom:9.6pt;">&nbsp;</p>
+<p style="margin-bottom:9.6pt;">&nbsp;</p>
+<p style="margin-top:0in;margin-right:0in;margin-bottom:9.6pt;margin-left:1.5in;text-align:center;"><img src="" style="width: 396pt; height: 278.5pt;" alt="image"></p>
+<div style="border:none;border-bottom:solid windowtext 1.0pt;padding:0in 0in 6.0pt 0in;margin-left:2.25in;margin-right:0in;">
+    <p style="margin-bottom:9.6pt;border:none;padding:0in;"><strong><span style='font-size:24px;font-family:"Arial",sans-serif;color:#003399;'>Designs for Risk Evaluation and Management (DREAM) Tool User Manual, Version: 2022.01</span></strong></p>
+</div>
+<p style="margin-top:0in;margin-right:0in;margin-bottom:9.6pt;margin-left:2.25in;"><span style='font-size:21px;font-family:"Arial",sans-serif;color:black;'>X August 2022</span></p>
+<p style="margin-bottom:9.6pt;text-align:center;"><span style="font-size:19px;color:red;">&nbsp;</span></p>
+<p style="margin-top:0in;margin-right:0in;margin-bottom:9.6pt;margin-left:2.25in;"><span style="font-size:19px;color:red;">&nbsp;</span></p>
+<p style="margin-top:0in;margin-right:0in;margin-bottom:9.6pt;margin-left:2.25in;"><span style="font-size:19px;color:red;">&nbsp;</span></p>
+<p style="margin-top:0in;margin-right:0in;margin-bottom:9.6pt;margin-left:2.25in;"><span style="font-size:19px;color:red;">&nbsp;</span></p>
+<p style="margin-top:0in;margin-right:0in;margin-bottom:9.6pt;margin-left:2.25in;"><span style="font-size:19px;color:red;">&nbsp;</span></p>
+<p style="margin-top:0in;margin-right:0in;margin-bottom:9.6pt;margin-left:2.25in;"><strong><span style='font-size:13px;font-family:"Arial",sans-serif;'>&nbsp;</span></strong></p>
+<p style="margin-top:0in;margin-right:0in;margin-bottom:9.6pt;margin-left:2.25in;"><strong><span style='font-size:13px;font-family:"Arial",sans-serif;'>&nbsp;</span></strong></p>
+<p style="margin-top:0in;margin-right:0in;margin-bottom:9.6pt;margin-left:2.25in;"><strong><span style='font-size:13px;font-family:"Arial",sans-serif;'>&nbsp;</span></strong></p>
+<p style="margin-bottom:9.6pt;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <strong><span style='font-size:21px;font-family:"Arial",sans-serif;'>Office of Fossil Energy and Carbon Management</span></strong></p>
+<p style="margin-bottom:9.6pt;"><img src="" style="width: 222.4pt; height: 36pt;" alt="image"><strong><span style='font-size:21px;font-family:"Arial",sans-serif;'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span></strong><span style='font-family:"Arial",sans-serif;'>NRAP-TRS-III-001-2020</span><span style="font-size:11px;"><a href="#_msocom_5" id="_anchor_5" language="JavaScript" name="_msoanchor_5"></a></span></p>
+<p><span style='font-size:16px;font-family:"Times New Roman",serif;'><br>&nbsp;</span></p>
+<p style="margin-top:0in;margin-right:.25in;margin-bottom:9.6pt;margin-left:.25in;text-align:center;"><strong><span style="font-size:32px;">Disclaimer</span></strong></p>
+<p style="margin-top:0in;margin-right:.5in;margin-bottom:9.6pt;margin-left:.5in;">This report was prepared as an account of work sponsored by an agency of the United States Government. Neither the United States Government nor any agency thereof, nor any of their employees, makes any warranty, express or implied, or assumes any legal liability or responsibility for the accuracy, completeness, or usefulness of any information, apparatus, product, or process disclosed, or represents that its use would not infringe privately owned rights. Reference therein to any specific commercial product, process, or service by trade name, trademark, manufacturer, or otherwise does not necessarily constitute or imply its endorsement, recommendation, or favoring by the United States Government or any agency thereof. The views and opinions of authors expressed therein do not necessarily state or reflect those of the United States Government or any agency thereof.</p>
+<p style="margin-top:0in;margin-right:.5in;margin-bottom:9.6pt;margin-left:.5in;"><strong>&nbsp;</strong></p>
+<p style="margin-top:0in;margin-right:.5in;margin-bottom:9.6pt;margin-left:.5in;"><strong>Cover Illustration:</strong> A conceptual visualization of a DREAM application to a hypothetical leak from subsurface storage into an overlying aquifer through an abandoned wellbore. The inserts visualize three of many monitoring configurations that DREAM would generate and assess during the iterative procedure. &nbsp;</p>
+<p style="margin-top:0in;margin-right:.5in;margin-bottom:9.6pt;margin-left:.5in;"><strong>&nbsp;</strong></p>
+<p style="margin-top:0in;margin-right:.5in;margin-bottom:9.6pt;margin-left:.5in;"><strong>Suggested Citation:</strong> <span style="color:black;">Hanna, A.C.; Whiting, J.M.; Huang, B.Z.;</span> <span style="color:black;">Appriou, D. <em>Designs for Risk Evaluation and Management (DREAM) Tool User Manual, Version: 2022.01;</em> NRAP-TRS-III-001-2020</span><span style="color:black;">; NRAP&nbsp;</span>Technical Report Series;<em>&nbsp;</em>U.S. Department of Energy, National Energy Technology Laboratory:<em>&nbsp;</em>Morgantown, WV<em>,&nbsp;</em>2020; p 45.<span style="font-size:11px;"><a href="#_msocom_8" id="_anchor_8" language="JavaScript" name="_msoanchor_8"></a></span></p>
+<p style="margin-top:0in;margin-right:.5in;margin-bottom:9.6pt;margin-left:.5in;">&nbsp;</p>
+<p style="margin-top:0in;margin-right:0in;margin-bottom:9.6pt;margin-left:.5in;"><strong>An electronic version of this report can be found at:&nbsp;</strong></p>
+<p style="margin-top:0in;margin-right:0in;margin-bottom:9.6pt;margin-left:.5in;"><a href="https://edx.netl.doe.gov/organization/nrap-tools/folder/080f6c7e-7a40-43c2-9c44-551bcc16ed7d"><strong>https://edx.netl.doe.gov/organization/nrap-tools/folder/080f6c7e-7a40-43c2-9c44-551bcc16ed7d</strong></a><span style="font-size:11px;"><a href="#_msocom_10" id="_anchor_10" language="JavaScript" name="_msoanchor_10"></a></span></p>
+<p style="margin-top:0in;margin-right:0in;margin-bottom:9.6pt;margin-left:.5in;"><strong><span style="text-decoration:none;">&nbsp;</span></strong></p>
+<p style="margin-top:0in;margin-right:0in;margin-bottom:9.6pt;margin-left:.5in;"><strong><span style="text-decoration:none;">&nbsp;</span></strong></p>
+<p style="margin-top:0in;margin-right:0in;margin-bottom:9.6pt;margin-left:.5in;"><span style="font-size:15px;color:black;">The data in this report can be accessed from NETL&apos;s Energy Data eXchange (</span><span style="font-size:15px;color:blue;">EDX</span><span style="font-size:15px;color:black;">) online system (</span><span style="font-size:15px;color:blue;">https://edx.netl.doe.gov</span><span style="font-size:15px;color:black;">) using the following link:</span></p>
+<p style="margin-top:0in;margin-right:0in;margin-bottom:9.6pt;margin-left:.5in;"><span style="font-size:15px;color:blue;">https://edx.netl.doe.gov/dataset/........</span></p>
+<p><span style='font-size:16px;font-family:"Times New Roman",serif;'><br>&nbsp;</span></p>
+<p style="margin-top:0in;margin-right:0in;margin-bottom:9.6pt;margin-left:.5in;">&nbsp;</p>
+<p style="margin-bottom:9.6pt;text-align:center;"><strong><span style="font-size:24px;">Designs for Risk Evaluation and Management (DREAM) Tool User Manual, Version: 2022.01</span></strong><span style="font-size:11px;"><a href="#_msocom_13" id="_anchor_13" language="JavaScript" name="_msoanchor_13"></a></span></p>
+<p style="margin-bottom:9.6pt;text-align:center;"><strong><span style="font-size:24px;">&nbsp;</span></strong></p>
+<p style="margin-bottom:9.6pt;text-align:center;"><strong><span style="font-size:19px;">&nbsp;</span></strong></p>
+<p style="margin-bottom:9.6pt;text-align:center;"><strong><span style="font-size:19px;">Alexander C. Hanna<sup>1</sup>,&nbsp;</span></strong><strong><span style="font-size:19px;">Jonathan M. Whiting<sup>1</sup>, Brian Z. Huang<sup>1</sup>, Delphine Appriou<sup>1</sup></span></strong></p>
+<p style="margin-bottom:9.6pt;text-align:center;"><strong><span style="font-size:19px;">&nbsp;</span></strong></p>
+<div style="border:none;border-bottom:solid windowtext 1.0pt;padding:0in 0in 1.0pt 0in;">
+    <p style="margin-top:0in;margin-right:0in;margin-bottom:9.6pt;margin-left:9.0pt;text-align:center;text-indent:-9.0pt;border:none;padding:0in;"><strong><sup>1</sup></strong><strong>Pacific Northwest National Laboratory,</strong><span style='font-size:13px;font-family:"Calibri",sans-serif;color:black;'>&nbsp;</span><strong>902 Battelle Boulevard,&nbsp;</strong><strong>Richland, WA 99354</strong></p>
+    <p style="margin-top:0in;margin-right:0in;margin-bottom:9.6pt;margin-left:9.0pt;text-align:center;text-indent:-9.0pt;border:none;padding:0in;"><strong>&nbsp;</strong></p>
+</div>
+<p style="margin-bottom:9.6pt;text-align:center;line-height:150%;"><strong>&nbsp;</strong></p>
+<p style="margin-bottom:9.6pt;text-align:center;line-height:150%;"><strong><span lang="DE">NRAP-TRS-III-001-2020</span></strong></p>
+<p style="margin-bottom:9.6pt;text-align:center;line-height:150%;">X August 2022</p>
+<p style="margin-bottom:9.6pt;text-align:center;line-height:150%;">&nbsp;</p>
+<p style="margin-bottom:9.6pt;text-align:center;line-height:150%;">&nbsp;</p>
+<p style="margin-bottom:9.6pt;text-align:center;line-height:150%;">&nbsp;</p>
+<p style="margin-bottom:9.6pt;text-align:center;line-height:150%;">&nbsp;</p>
+<p style="margin-bottom:9.6pt;text-align:center;">Level III Technical Report Series<span style="font-size:11px;"><a href="#_msocom_16" id="_anchor_16" language="JavaScript" name="_msoanchor_16"></a></span></p>
+<p style="margin-bottom:9.6pt;text-align:center;">&nbsp;</p>
+<p style="margin-bottom:9.6pt;">&nbsp;</p>
+<p style="margin-bottom:9.6pt;text-align:center;"><span style="font-size:11px;">&nbsp;</span></p>
+<p style="margin-top:0in;margin-right:0in;margin-bottom:9.6pt;margin-left:2.0in;text-indent:.5in;"><span style='font-size:15px;font-family:"Times New Roman",serif;'>&nbsp; &nbsp; &nbsp; &nbsp;NRAP Contacts:&nbsp;</span></p>
+<p style="margin-bottom:9.6pt;text-align:center;"><span style="font-size:15px;color:black;">XX, Principal Investigator</span></p>
+<p style="margin-bottom:9.6pt;text-align:center;"><span style="font-size:15px;color:black;">XX, Technical Portfolio Lead</span></p>
+<p style="margin-bottom:9.6pt;text-align:center;"><span style="font-size:15px;color:black;">XXX, Research &amp; Innovation Center</span></p>
+<div id="_com_17" language="JavaScript"><br></div>
+
+
+
+
+
+
+
+
+
 <p><br /> <strong>Acronyms, Abbreviations, and Symbols</strong></p>
 <table>
 <tbody>
