@@ -723,7 +723,7 @@
  <img src="./figures/visualization_detectable_plume.png">
 </p>
 <p align="center"><sub><b>
-      Figure&nbsp;13: Visualization of detectable plume</b></p>
+      Figure&nbsp;13: Visualization of detectable plume
       </b></sub></p>
 <p>&nbsp;</p>
 
@@ -741,7 +741,7 @@
  <img src="./figures/detection_criteria_page.png">
 </p>
 <p align="center"><sub><b>
-      Figure&nbsp;14: Default settings for <em>Detection Criteria</em> page</b></p>
+      Figure&nbsp;14: Default settings for <em>Detection Criteria</em> page
       </b></sub></p>
 
 
@@ -757,7 +757,7 @@
  <img src="./figures/detection_criteria_page1.png">
 </p>
 <p align="center"><sub><b>
-      Figure&nbsp;15: Setting criteria for detecting a leak on <em>Detection Criteria</em> page</b></p>
+      Figure&nbsp;15: Setting criteria for detecting a leak on <em>Detection Criteria</em> page
       </b></sub></p>
 <p>&nbsp;</p>
 
@@ -790,7 +790,7 @@
  <img src="./figures/monitor_campaign_settings_page.png">
 </p>
 <p align="center"><sub><b>
-      Figure&nbsp;16: Default settings for <em>Monitoring Campaign Settings</em> page</b></p>
+      Figure&nbsp;16: Default settings for <em>Monitoring Campaign Settings</em> page
       </b></sub></p>
 
 
@@ -805,7 +805,7 @@
  <img src="./figures/monitor_campaign_settings_page2.png">
 </p>
 <p align="center"><sub><b>
-      Figure&nbsp;17: Example on <em>Monitoring Campaign Settings </em>page</b></p>
+      Figure&nbsp;17: Example on <em>Monitoring Campaign Settings </em>page
       </b></sub></p>
 <p>&nbsp;</p>
 
@@ -816,11 +816,38 @@
 <h2>3.8&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Exclude Locations</h2>
 <p>The <em>Exclude Locations</em> page (Figure 18) allows the user to exclude (x, y) locations from the monitoring configuration that are infeasible or unapproved. This window allows the user to manually deselect nodes that should not be used in the optimization algorithm. Note that if the solution space is too large, the user may not have the ability to exclude locations.</p>
 <p>For this page, please continue with the default settings, which includes all locations. Click <em>Next</em>.</p>
-<p><a name="_Toc108615041"></a><b>Figure 18: <em>Exclude Locations</em> Page showing an example with some of the nodes disabled</b></p>
-<h2><a name="_Toc108615002"></a>3.9&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Run DREAM</h2>
-<p>The <em>Run DREAM</em> page (Figure 21) provides a summary of the user inputs to the left. By default, a new &ldquo;results&rdquo; directory will be created to store output files. The output file location can be changed along with the output&rsquo;s filename.</p>
+
+
+
+
+<p align="center">
+ <img src="./figures/exclude_locations_page.png">
+</p>
+<p align="center"><sub><b>
+      Figure&nbsp;18: <em>Exclude Locations</em> Page showing an example with some of the nodes disabled
+      </b></sub></p>
 <p>&nbsp;</p>
-<p><b>Figure 19: Run DREAM Page</b></p>
+
+
+
+
+<h2><a name="_Toc108615002"></a>3.9&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Run DREAM</h2>
+<p>The <em>Run DREAM</em> page (Figure 19) provides a summary of the user inputs to the left. By default, a new &ldquo;results&rdquo; directory will be created to store output files. The output file location can be changed along with the output&rsquo;s filename.</p>
+<p>&nbsp;</p>
+
+
+
+<p align="center">
+ <img src="./figures/dream_run_page.png">
+</p>
+<p align="center"><sub><b>
+      Figure&nbsp;19: <em>Run Dream</em> Page 
+      </b></sub></p>
+
+
+
+
+
 <p>DREAM features several algorithms for identifying the optimal solution while factoring in multiple objectives. For more information about the available algorithms and which to select, see Optimization Algorithms. Under <strong><em>Optimization Settings</em></strong>, there may be additional inputs depending on the selected algorithm, such as cooling equation for Simulated Annealing. <em>Total</em> <em>Iterations</em> are the number of unique campaigns that are created by the <em>Selected Algorithm</em>. <em>Total Runs</em> allows multiple instances of the algorithms to run if restarting the process is required for a fresh start when the algorithm gets stuck in a local optimization and never reaches the global optimization. The user may assess any of the following objectives under <em>Select Objectives:</em> &nbsp;</p>
 <ul>
 <li><em>Time to Detection</em> &ndash; A required objective; this determines how much time passes until the deployed technology detects a leak in accordance with the specified <em>Detection Criteria</em>. DREAM considers a shorter time to detection to be preferable.</li>
@@ -830,9 +857,28 @@
 </ul>
 <p>Objectives are assessed for each scenario, and there is a minimum of two objectives that must be assessed. Note that any objective (other than <em>Time to Detection</em>) can be disabled for any reason, like reducing computational time. These objectives may feed back into some algorithms at each iteration (refer to Appendix &nbsp;for more details about the objectives).</p>
 <p>When the user clicks <em>Start Optimization</em>, up to two windows may appear if selected under <strong><em>Plotting Options</em></strong>. The user can choose to select <em>Calculate Pareto Ranks </em>(highly recommended), <em>Show Visualization</em>, or <em>Show Objective Graph</em>. The first page to display is the <em>Visualization</em> (Figure 20) that spatially displays each campaign overlaid with the leak space in a 3D space. The second page is an <em>Objective Graph</em> (Figure 21) that plots two objectives against one another to show progress as the optimization works towards an optimal solution. Under <em>Initial Graphed Objective</em>, the user can select which objectives to display in the Y- and X-Axes. Selecting <em>Calculate Pareto Ranks</em> will add a processing step after the iterations complete, . In other words, the multi-objective optimization will minimize the tradeoff in performance for the objectives. the DREAM only calculates the top 10 pareto ranks as they are expected to contain the best solutions. Once calculated, only the top ranks will be displayed on the <em>Visualization </em>page, and the ranks will be colored on the <em>Objective Graph</em>. It is recommended that the user leave <em>Calculate Pareto Ranks</em> enabled. The colors of the outputs (e.g., aqueous pressure or CO<sub>2</sub>) can be modified to suit the user&rsquo;s preference, and the included configurations or data can be disabled as desired.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
-<p><a name="_Toc108615045"></a><b>Figure 20: 3D visualization of monitoring campaigns and leak plumes from <em>Visualization</em> page</b></p>
 
-<p><a name="_Toc108615046"></a><b>Figure 21: <em>Objective Graph </em>campaign performance between time to detection and cost objectives that is produced when <em>Calculate Pareto Ranks</em> is enabled</b></p>
+
+
+<p align="center">
+ <img src="./figures/dream_run_page1.png">
+</p>
+<p align="center"><sub><b>
+      Figure&nbsp;20: 3D visualization of monitoring campaigns and leak plumes from <em>Visualization</em> page
+      </b></sub></p>
+<p>&nbsp;</p>
+
+
+<p align="center">
+ <img src="./figures/dream_run_page2.png">
+</p>
+<p align="center"><sub><b>
+      Figure&nbsp;21: <em>Objective Graph </em>campaign performance between time to detection and cost objectives that is produced when <em>Calculate Pareto Ranks</em> is enabled
+      </b></sub></p>
+
+
+
+
 <p>Finally, there are a few optional <strong><em>Diagnostic Tools</em></strong> available, including:</p>
 <ul>
 <li><em>Best TTD Possible per Technology</em> quickly generates a table providing the shortest time to detection for each monitoring technology, if hypothetically every node in the solution space was monitored. This provides no indication of optimal monitoring configurations but allows the user to understand the problem before running the iterative procedure. This table is outputted into the selected <em>Output Directory</em> as a csv file called &ldquo;best_ttd_table.csv&rdquo;. The Best TTD per Technology is calculated separately from the optimization, which means it will be the same regardless of what optimization algorithm is selected and does not need to be recalculated for each optimization algorithm ran.</li>
@@ -895,7 +941,21 @@
 <li>TECPLOT formatted output data to DREAM input files.</li>
 </ul>
 <p>IAM files can also be configured as input files for DREAM. The user must provide the directory containing the time plot files of all the scenarios, organized according to the selected folder structure. The converter quickly reads the basic structure and allows the user to select monitoring parameters of interest and deselect unwanted time steps or scenarios. Select <em>Run</em> to begin the conversion process.</p>
+
+
+
+<p align="center">
+ <img src="./figures/hdf_tool.png">
+</p>
+<p align="center"><sub><b>
+      Figure&nbsp;22: DREAM HDF5 Converter Tool
+      </b></sub></p>
 <p><a name="_Toc108615047"></a><b>Figure 22: DREAM HDF5 Converter Tool</b></p>
+<p>&nbsp;</p>
+
+
+
+
 <p>&nbsp;&nbsp;&nbsp;</p>
 <h2><a name="_Toc108615005"></a>4.1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; STOMP Data</h2>
 <p>The DREAM file converter will accept most output types from STOMP. The required directory hierarchy is &ldquo;ensemble folder\scenario folders\file per time step&rdquo;. Detailed information follows below.</p>
@@ -1024,7 +1084,19 @@
 <p>For each of the three examples, DREAM will create a directory with the same name as the parent directory with an &ldquo;_hdf5&rdquo; appended. Inside the directory will be an HDF5 file for each scenario that contains all the time steps for all the data types along with the grid information. All data will be cell centered.</p>
 <p><strong>File Example:</strong></p>
 <p>The HDF5 files can be viewed with HDFView (Figure 23).</p>
-<p><a name="_Toc108615048"></a><b>Figure 23: HDFView of DREAM input file structure.</b></p>
+
+
+<p align="center">
+ <img src="./figures/hdf_tool2.png">
+</p>
+<p align="center"><sub><b>
+      Figure&nbsp;23: HDFView of DREAM input file structure.
+      </b></sub></p>
+
+
+
+
+
 <p>Each scenario will contain a &ldquo;data&rdquo; group that contains metadata about the scenario: porosity information (optional), steps and their matching times, the grid XYZ vertices or edges (e.g., vertex-x, vertex-y, and vertex-z), and the grid XYZ centers (e.g., x, y, and z). There will also be a group for each time step containing 3D data for each parameter at that time step. Lastly, there is a &ldquo;statistics&rdquo; group that lists the global minimum, average, and maximum for each parameter to expedite future calculations.</p>
 <p>DREAM also assigns attributes to variables in the HDF5 file. This includes &ldquo;units&rdquo; for time, XYZ vertices and centers, and for each parameter; although, some parameters may be unitless. A &ldquo;positive&rdquo; attribute of up or down is assigned to the Z vertex and center to denote whether the model uses depth or height. If attributes are missing, DREAM will simply ask for the user to input this information.</p>
 <h2><a name="_Toc108615009"></a>4.5&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; IAM Output</h2>
@@ -1095,7 +1167,21 @@
 </ul>
 </li>
 </ul>
-<p><a name="_Toc108615049"></a><b>Figure 24: Simulated annealing example of PLD and PMCD versus TTD &nbsp;</b></p>
+
+
+
+
+<p align="center">
+ <img src="./figures/kimberlina_1_2_sa_10k_example_a.png">
+</p>
+<p align="center"><sub><b>
+      Figure&nbsp;24: Simulated annealing example of PLD and PMCD versus TTD &nbsp;
+      </b></sub></p>
+
+
+
+
+
 <ul>
 <li>PLD &amp; PMCD vs Monitoring Cost
 <ul>
@@ -1105,27 +1191,65 @@
 </ul>
 </li>
 </ul>
-<p><a name="_Toc108615050"></a><b>Figure 25: Simulated annealing example of PLD and PMCD versus Monitoring Cost</b></p>
+
+
+
+<p align="center">
+ <img src="./figures/kimberlina_1_2_sa_10k_example_b.png">
+</p>
+<p align="center"><sub><b>
+      Figure&nbsp;25: Simulated annealing example of PLD and PMCD versus Monitoring Cost
+      </b></sub></p>
+
+
+
+
 <ul>
 <li>PLD vs PMCD
 <ul>
-<li>Ideally, a one-to-one or linear relationship between PLD and PMCD is expected to highlight the fact that as the percent of leaks detected increases so too will the percent mass of CO2 detected (e.g., Figure 2). If there are outliers, this indicates that some leaks are undetected.</li>
+<li>Ideally, a one-to-one or linear relationship between PLD and PMCD is expected to highlight the fact that as the percent of leaks detected increases so too will the percent mass of CO2 detected (e.g., Figure 26). If there are outliers, this indicates that some leaks are undetected.</li>
 <li>Questions to consider are: how many wells and monitoring technologies have been deployed? Are there any constraints or leak detection thresholds that can be affecting the number of undetected leaks?</li>
-<li>In Figure 29, the PMCD is greater than the PLD, meaning some leaks are going undetected.</li>
+<li>In Figure 26, the PMCD is greater than the PLD, meaning some leaks are going undetected.</li>
 </ul>
 </li>
 </ul>
-<p><a name="_Toc108615051"></a>Figure 26: Simulated annealing example of PLD versus PMCD</p>
+
+
+
+
+<p align="center">
+ <img src="./figures/kimberlina_1_2_sa_10k_example_c.png">
+</p>
+<p align="center"><sub><b>
+      Figure&nbsp;26: Simulated annealing example of PLD versus PMCD
+      </b></sub></p>
+
+
+
 <ul>
 <li>TTD vs Monitoring Cost
 <ul>
-<li>As TTD increases, the expenses for monitoring the site are expected to drive up (e.g., Figure 29). When the cost for monitoring is very low, this corresponds to proposed monitoring campaigns that are likely only using surface arrays and not drilling any wells.</li>
+<li>As TTD increases, the expenses for monitoring the site are expected to drive up (e.g., Figure 27). When the cost for monitoring is very low, this corresponds to proposed monitoring campaigns that are likely only using surface arrays and not drilling any wells.</li>
 <li>Questions to consider are: what tradeoff is the user comfortable with, e.g., higher monitoring costs to capture all leaks?</li>
-<li>In Figure 29, there is not a defined relationship between TTD and Monitoring Cost. This shows that PLD or PMCD are probably better or more informative indicators of Monitoring Cost.</li>
+<li>In Figure 27, there is not a defined relationship between TTD and Monitoring Cost. This shows that PLD or PMCD are probably better or more informative indicators of Monitoring Cost.</li>
 </ul>
 </li>
 </ul>
-<p><a name="_Toc108615052"></a>Figure 27: annealing example Monitoring Cost versus TTD</p>
+
+
+
+<p align="center">
+ <img src="./figures/kimberlina_1_2_sa_10k_example_d.png">
+</p>
+<p align="center"><sub><b>
+      Figure&nbsp;27: Simulated annealing example of Monitoring Cost versus TTD
+      </b></sub></p>
+
+
+
+
+
+
 <ul>
 <li>VAD vs TTD
 <ul>
@@ -1135,7 +1259,19 @@
 </ul>
 </li>
 </ul>
-<p><a name="_Toc108615053"></a>Figure 28: Simulated annealing example of VAD versus TTD</p>
+
+
+
+<p align="center">
+ <img src="./figures/kimberlina_1_2_sa_10k_example_e.png">
+</p>
+<p align="center"><sub><b>
+      Figure&nbsp;28: Simulated annealing example of VAD versus TTD
+      </b></sub></p>
+
+
+
+
 <ul>
 <li>PMCD &amp; PMMCD vs TTD
 <ul>
