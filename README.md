@@ -18,7 +18,12 @@
 <p style="margin-top:0in;margin-right:0in;margin-bottom:9.6pt;margin-left:2.25in;"><strong><span style='font-size:13px;font-family:"Arial",sans-serif;'>&nbsp;</span></strong></p>
 <p style="margin-top:0in;margin-right:0in;margin-bottom:9.6pt;margin-left:2.25in;"><strong><span style='font-size:13px;font-family:"Arial",sans-serif;'>&nbsp;</span></strong></p>
 <p style="margin-bottom:9.6pt;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <strong><span style='font-size:21px;font-family:"Arial",sans-serif;'>Office of Fossil Energy and Carbon Management</span></strong></p>
+
 <p style="margin-bottom:9.6pt;"><img src="./figures/doe_label.png" style="width: 222.4pt; height: 36pt;" alt="image"><strong><span style='font-size:21px;font-family:"Arial",sans-serif;'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span></strong><span style='font-family:"Arial",sans-serif;'>NRAP-TRS-III-001-2020</span><span style="font-size:11px;"><a href="#_msocom_5" id="_anchor_5" language="JavaScript" name="_msoanchor_5"></a></span></p>
+
+
+
+
 <p><span style='font-size:16px;font-family:"Times New Roman",serif;'><br>&nbsp;</span></p>
 <p style="margin-top:0in;margin-right:.25in;margin-bottom:9.6pt;margin-left:.25in;text-align:center;"><strong><span style="font-size:32px;">Disclaimer</span></strong></p>
 <p style="margin-top:0in;margin-right:.5in;margin-bottom:9.6pt;margin-left:.5in;">This report was prepared as an account of work sponsored by an agency of the United States Government. Neither the United States Government nor any agency thereof, nor any of their employees, makes any warranty, express or implied, or assumes any legal liability or responsibility for the accuracy, completeness, or usefulness of any information, apparatus, product, or process disclosed, or represents that its use would not infringe privately owned rights. Reference therein to any specific commercial product, process, or service by trade name, trademark, manufacturer, or otherwise does not necessarily constitute or imply its endorsement, recommendation, or favoring by the United States Government or any agency thereof. The views and opinions of authors expressed therein do not necessarily state or reflect those of the United States Government or any agency thereof.</p>
