@@ -1327,7 +1327,7 @@
 <ul>
 <li>3D scatter plots of PMCD, PLD and TTD
 <ul>
-<li>In these 3D scatter plots, the percent leak detection cutoff iterates through 10% to 90%, in which a smaller percent cutoff indicates that almost all leaks are included (e.g., Figure 31). A GIF is produced from this set of figures to visualize the progression of smaller, more common leaks to larger, less common leaks, and how these leaks relate to TTD.</li>
+<li>In these 3D scatter plots, the percent leak detection cutoff iterates through 10% to 90%, in which a smaller percent cutoff indicates that almost all leaks are included (e.g., Figure 31). A GIF (left) is produced from this set of figures to visualize the progression of smaller, more common leaks to larger, less common leaks, and how these leaks relate to TTD.</li>
 <li>Questions to consider are: on average, does it take longer to detect larger leaks?</li>
 <li>In Figure 31, PMCD, PLD, and TTD all increase as more leaks are detected.</li>
 </ul>
@@ -1342,7 +1342,7 @@
  <img src="./figures/kimberlina_1_2_sa_10k_example_h.png">
 </p>
 <p align="center"><sub><b>
-      Figure&nbsp;31: Simulated annealing example of 3D scatter plots that show when 0%-100% of leaks are detected for (left) PMCD, PLD and TTD and (right) PMCD, PLD and TTD
+      Figure&nbsp;31: Simulated annealing example of 3D scatter plots that show when 0%-100% of leaks are detected for (left) PMCD, PLD and TTD and (right) PLD, TTD, and Monitoring Cost
       </b></sub></p>
       
 
@@ -1351,9 +1351,9 @@
 <ul>
 <li>3D scatter plots of PMCD, TTD, and Monitoring Cost
 <ul>
-<li>Similar to (h), these 3D scatter plots look at the leak detection cutoff from 10% to 90% (e.g., Figure 32). A GIF is produced from this set of figures to show the relationship for the mass (or size) of the leak in relation to how long it takes to be detected and how expensive this scenario will be.</li>
+<li>Similar to (h), these 3D scatter plots look at the leak detection cutoff from 10% to 90% (e.g., Figure 31). A GIF (right) is produced from this set of figures to show the relationship for the mass (or size) of the leak in relation to how long it takes to be detected and how expensive this scenario will be.</li>
 <li>Questions to consider are: how important is PMCD, and is it a good indicator with a strong relationship between TTD and monitoring cost?</li>
-<li>In Figure 32, as expected, the GIF shows how PLD and TTD increase as the mass of CO2 detected increases.</li>
+<li>In Figure 31, as expected, the GIF shows how PLD and TTD increase as the mass of CO2 detected increases.</li>
 </ul>
 </li>
 </ul>
