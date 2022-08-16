@@ -1049,7 +1049,7 @@
 
 
 
-<p>&nbsp;&nbsp;&nbsp;</p>
+<p>&nbsp;</p>
 <h2><a name="_Toc108615005"></a>4.1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; STOMP Data</h2>
 <p>The DREAM file converter will accept most output types from STOMP. The required directory hierarchy is &ldquo;ensemble folder\scenario folders\file per time step&rdquo;. Detailed information follows below.</p>
 <p><strong>Folder Structure</strong></p>
@@ -1191,7 +1191,10 @@
 
 
 <p>Each scenario will contain a &ldquo;data&rdquo; group that contains metadata about the scenario: porosity information (optional), steps and their matching times, the grid XYZ vertices or edges (e.g., vertex-x, vertex-y, and vertex-z), and the grid XYZ centers (e.g., x, y, and z). There will also be a group for each time step containing 3D data for each parameter at that time step. Lastly, there is a &ldquo;statistics&rdquo; group that lists the global minimum, average, and maximum for each parameter to expedite future calculations.</p>
-<p>DREAM also assigns attributes to variables in the HDF5 file. This includes &ldquo;units&rdquo; for time, XYZ vertices and centers, and for each parameter; although, some parameters may be unitless. A &ldquo;positive&rdquo; attribute of up or down is assigned to the Z vertex and center to denote whether the model uses depth or height. If attributes are missing, DREAM will simply ask for the user to input this information.</p>
+<p>DREAM also assigns attributes to variables in the HDF5 file. This includes &ldquo;units&rdquo; for time, XYZ vertices and centers, and for each parameter; although, some parameters may be unitless. A &ldquo;positive&rdquo; attribute of up or down is assigned to the Z vertex and center to denote whether the model uses depth or height. If attributes are missing, DREAM will simply ask for the user to input this information.&nbsp;</p>
+
+<p> &nbsp;</p>
+
 <h2><a name="_Toc108615009"></a>4.5&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; IAM Output</h2>
 <p>IAM can quickly create many scenarios, all of which should be placed in a single directory. As part of the process of creating these files from IAM, the user must select a detection criteria and threshold for each parameter. Therefore, the IAM files only contain detecting nodes for the inputted detection values, causing values to be greyed out on the Leakage Criteria page. To test different detection values, IAM must be rerun to generate a new set of IAM files.</p>
 <p><strong>File Example:</strong></p>
