@@ -720,7 +720,7 @@
 
 
 <p align="center">
- <img src="./figures/visualization_detectable_plume.PNG">
+ <img src="./figures/visualization_detectable_plume.png">
 </p>
 <p align="center"><sub><b>
       Figure&nbsp;13: Visualization of detectable plume</b></p>
@@ -738,7 +738,7 @@
 
 
 <p align="center">
- <img src="./figures/detection_criteria_page.PNG">
+ <img src="./figures/detection_criteria_page.png">
 </p>
 <p align="center"><sub><b>
       Figure&nbsp;14: Default settings for <em>Detection Criteria</em> page</b></p>
@@ -787,7 +787,7 @@
 
 
 <p align="center">
- <img src="./figures/monitoring_campaign_settings_page.png">
+ <img src="./figures/monitor_campaign_settings_page.png">
 </p>
 <p align="center"><sub><b>
       Figure&nbsp;16: Default settings for <em>Monitoring Campaign Settings</em> page</b></p>
@@ -802,7 +802,7 @@
 
       
 <p align="center">
- <img src="./figures/monitoring_campaign_settings_page2.png">
+ <img src="./figures/monitor_campaign_settings_page2.png">
 </p>
 <p align="center"><sub><b>
       Figure&nbsp;17: Example on <em>Monitoring Campaign Settings </em>page</b></p>
