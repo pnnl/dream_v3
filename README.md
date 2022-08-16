@@ -1351,9 +1351,9 @@
 <ul>
 <li>3D scatter plots of PMCD, TTD, and Monitoring Cost
 <ul>
-<li>Similar to (h), these 3D scatter plots look at the leak detection cutoff from 10% to 90% (e.g., Figure 33). A GIF is produced from this set of figures to show the relationship for the mass (or size) of the leak in relation to how long it takes to be detected and how expensive this scenario will be.</li>
+<li>Similar to (h), these 3D scatter plots look at the leak detection cutoff from 10% to 90% (e.g., Figure 32). A GIF is produced from this set of figures to show the relationship for the mass (or size) of the leak in relation to how long it takes to be detected and how expensive this scenario will be.</li>
 <li>Questions to consider are: how important is PMCD, and is it a good indicator with a strong relationship between TTD and monitoring cost?</li>
-<li>In Figure 33, as expected, the GIF shows how PLD and TTD increase as the mass of CO2 detected increases.</li>
+<li>In Figure 32, as expected, the GIF shows how PLD and TTD increase as the mass of CO2 detected increases.</li>
 </ul>
 </li>
 </ul>
@@ -1365,7 +1365,20 @@
 </ul>
 </li>
 </ul>
+
+
+
+<p align="center">
+ <img src="./figures/kimberlina_1_2_sa_10k_example_h.png">
+</p>
+<p align="center"><sub><b>
+      Figure&nbsp;32: Simulated annealing example of 3D scatter plots that show (left) some of the proposed monitoring campaigns and (right) the respective PLD and Monitoring Cost versus TTD
+      </b></sub></p>
 <p>Figure 32: Simulated annealing example of 3D scatter plots that show (left) some of the proposed monitoring campaigns and (right) the respective PLD and Monitoring Cost versus TTD <a name="_Toc108615012"></a>Monitoring Technologies</p>
+
+
+
+
 <p>DREAM currently supports point sensors and surface surveys, but there are plans to expand to additional technologies. Cross-well ERT technology was once available to a limited degree but needs some additional work to fit with the new architecture of DREAM V3. There are some assumptions made about each monitoring technology that the user should be aware of.</p>
 <p>Many of the algorithms also make small mutations to monitoring technologies between iterations, and these mutations look different depending on the technology. These mutations are intentionally as small as possible to allow the algorithms to test campaigns similar to other optimal campaigns. Details on how mutations are handled are further described for each algorithm in Section 7.</p>
 <h2><a name="_Toc108615013"></a>5.2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Point Sensors</h2>
@@ -1410,13 +1423,42 @@
 <p>Simulated annealing comes into play as the algorithm decides whether to keep the previous campaign or the mutated campaign at each iteration. Each new iteration is compared with the previous best iteration based on performance for the selected objectives. However, simply taking the better campaign every time is likely to trap the algorithm at a locally optimized result rather than the globally optimized result. Therefore, DREAM will occasionally continue with the objectively worse campaign based on a cooling function.</p>
 <p>The cooling function determines a degradation from 1 to 0 across the iterations, with the default as exponential decay (Figure 33). As the value is &ldquo;hot&rdquo;, (closer to 1) it is more likely to keep the worse campaign, but as the value &ldquo;cools&rdquo;, (closer to 0) it is more likely to keep the better campaign. This allows the algorithm to act risky towards the start of the run and transition towards more stable changes as the solution converges on an optimized location at the end of the run. The best campaigns are saved during the entire process.</p>
 <p>The cooling function is &nbsp;by default, where &nbsp;is the current iterate and &nbsp;is the total number of allotted iterations. As the algorithm reaches the end, i.e., , the cooling function &nbsp;will approach 0.01; in other words, it will be inclined to choosing better campaigns.&nbsp; If the user would like to adjust or change the cooling function, the two variables, &nbsp;and , can be manipulated to create a new cooling function that differs from the default. However, it must behave in such a way that it has a range between 0 and 1, and as the simulated annealing algorithm progresses, it must eventually &ldquo;cool&rdquo; down close to 0 as .</p>
-<p><a name="_Toc108615057"></a><b>Figure 33: Exponential decay used for temperature function</b></p>
+
+
+
+<p align="center">
+ <img src="./figures/simulated_annealing_temp_func.png">
+</p>
+<p align="center"><sub><b>
+      Figure&nbsp;33: Exponential decay used for temperature function
+      </b></sub></p>
 <p>&nbsp;</p>
+
+
+
+
 <h2><a name="_Toc108615018"></a>6.3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Heuristic Algorithm</h2>
 <p>The DREAM heuristic algorithm is a novel approach for examining the set of undetected, detectable leaks, and identifies the spaces where they spatially overlap (Figure 34). It then generates a cumulative distribution function (Figure 35) based on the number of overlapping leaks that are predicted by a single monitoring plan with different sensor technology schemes, and preferentially assigns sensors to the spaces where the greatest number of possible leaks would be detected. Each time a new sensor is added to the monitoring plan, the set of overlaps and the cumulative distribution function are re-computed. This algorithm considers only the detectable leaks, meaning that the monitoring technology being added to the monitoring plan could detect the magnitude of the physical signal produced by the leak. Where multiple monitoring technologies are being considered, the algorithm cycles through the list and considers one monitoring technology at a time.</p>
-<p><a name="_Toc108615058"></a><b>Figure 34: The variability and intensity of color in the colormap indicates the number of leaks that overlap at each point (x,y), considering only the leaks that are detectable but as-yet undetected by the given monitoring plan.</b></p>
+
+
+
+<p align="center">
+ <img src="./figures/heuristic_alg.png">
+</p>
+<p align="center"><sub><b>
+      Figure&nbsp;34: The variability and intensity of color in the colormap indicates the number of leaks that overlap at each point (x,y), considering only the leaks that are detectable but as-yet undetected by the given monitoring plan.
+      </b></sub></p>
 <p>&nbsp;</p>
-<p><a name="_Toc108615059"></a><b>Figure 35: Each node number corresponds to a pixel from Figure 34, and the rise in the corresponding CDF value is proportional to the number of leaks that are detectable at that node location.</b></p>
+
+
+
+
+<p align="center">
+ <img src="./figures/heuristic_alg_cdf.png">
+</p>
+<p align="center"><sub><b>
+      Figure&nbsp;35: Each node number corresponds to a pixel from Figure 34, and the rise in the corresponding CDF value is proportional to the number of leaks that are detectable at that node location.
+      </b></sub></p>
 <p>&nbsp;</p>
 
 
@@ -1435,7 +1477,20 @@
 </ul>
 <h2><a name="_Toc108615021"></a>7.2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Pointers for Running Dream</h2>
 <p>In this section, we will go over some important pointers when using DREAM to ease the difficulty in setting up a DREAM run. Throughout DREAM, there will be question marks above some of the features that you can click on for more helpful information. If you click on one of these questions marks, you can learn about what inputs are required, description of the feature, and much more.</p>
-<p><a name="_Toc108615060"></a><b>Figure 36: Example of question marks that you can click on for more information</b></p>
+
+
+
+<p align="center">
+ <img src="./figures/question_mark.png">
+</p>
+<p align="center"><sub><b>
+      Figure&nbsp;36: Example of question marks that you can click on for more information
+      </b></sub></p>
+
+
+
+
+
 <p><strong>Runtime Considerations</strong></p>
 <ul>
 <li>Be mindful of the number of model nodes specified in the HDF5 or IAM files. Many nodes will shoot up runtime.</li>
@@ -1486,9 +1541,20 @@
 </ul>
 <p><strong>Additional Information</strong></p>
 <ul>
-<li>If you click on the question marks above the features, the <em>Help Viewer</em> will provide additional information. For example, under <em>Scenario Weighting</em>, the user can hover over the question mark on <em>Variable A</em> and <em>Variable B</em> and click to read more about the description and requirements (Figure 38). Or, the user can sometimes hover over the value box for a description.</li>
+<li>If you click on the question marks above the features, the <em>Help Viewer</em> will provide additional information. For example, under <em>Scenario Weighting</em>, the user can hover over the question mark on <em>Variable A</em> and <em>Variable B</em> and click to read more about the description and requirements (Figure 37). Or, the user can sometimes hover over the value box for a description.</li>
 </ul>
-<p><a name="_Toc108615061"></a><b>Figure 37: Example of the <strong><em>Help Viewer</em></strong> in DREAM</b></p>
+
+
+
+
+<p align="center">
+ <img src="./figures/scenario_weighting_question_marks.png">     
+ <img src="./figures/scenario_weighting_a.png">
+ <img src="./figures/scenario_weighting_b.png">   
+</p>
+<p align="center"><sub><b>
+      Figure&nbsp;37: Example of the <strong><em>Help Viewer</em></strong> in DREAM
+      </b></sub></p>
 <p>&nbsp;</p>
 
 
