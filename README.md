@@ -9,21 +9,21 @@
 <p align=center style="margin-top:0in;margin-right:0in;margin-bottom:9.6pt;margin-left:2.25in;"><span style='font-size:21px;font-family:"Arial",sans-serif;color:black;'>X August 2022</span></p>
 <p style="margin-bottom:9.6pt;text-align:center;"><span style="font-size:19px;color:red;">&nbsp;</span></p>
 <p style="margin-top:0in;margin-right:0in;margin-bottom:9.6pt;margin-left:2.25in;"><span style="font-size:19px;color:red;">&nbsp;</span></p>
-<p style="margin-top:0in;margin-right:0in;margin-bottom:9.6pt;margin-left:2.25in;"><span style="font-size:19px;color:red;">&nbsp;</span></p>
-<p style="margin-top:0in;margin-right:0in;margin-bottom:9.6pt;margin-left:2.25in;"><span style="font-size:19px;color:red;">&nbsp;</span></p>
-<p style="margin-top:0in;margin-right:0in;margin-bottom:9.6pt;margin-left:2.25in;"><span style="font-size:19px;color:red;">&nbsp;</span></p>
-<p style="margin-top:0in;margin-right:0in;margin-bottom:9.6pt;margin-left:2.25in;"><strong><span style='font-size:13px;font-family:"Arial",sans-serif;'>&nbsp;</span></strong></p>
-<p style="margin-top:0in;margin-right:0in;margin-bottom:9.6pt;margin-left:2.25in;"><strong><span style='font-size:13px;font-family:"Arial",sans-serif;'>&nbsp;</span></strong></p>
-<p style="margin-top:0in;margin-right:0in;margin-bottom:9.6pt;margin-left:2.25in;"><strong><span style='font-size:13px;font-family:"Arial",sans-serif;'>&nbsp;</span></strong></p>
+
+<hr>
+
+
 <p align=right style="margin-bottom:9.6pt;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <strong><span style='font-size:40px;font-family:"Arial",sans-serif;'>Office of Fossil Energy and Carbon Management</span></strong></p>
 <p align=right style="margin-bottom:9.6pt;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span style='font-size:35px;font-family:"Arial",sans-serif;'>NRAP-TRS-III-001-2020</span></p>
 
 <p style="margin-bottom:9.6pt;"><img src="./figures/doe_label.png" style="width: 222.4pt; height: 36pt;" alt="image"><strong><span style='font-size:21px;font-family:"Arial",sans-serif;'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span></strong></p>
 
-
-
-
 <p><span style='font-size:16px;font-family:"Times New Roman",serif;'><br>&nbsp;</span></p>
+
+
+
+
+
 <p style="margin-top:0in;margin-right:.25in;margin-bottom:9.6pt;margin-left:.25in;text-align:center;"><strong><span style="font-size:32px;">Disclaimer</span></strong></p>
 <p style="margin-top:0in;margin-right:.5in;margin-bottom:9.6pt;margin-left:.5in;">This report was prepared as an account of work sponsored by an agency of the United States Government. Neither the United States Government nor any agency thereof, nor any of their employees, makes any warranty, express or implied, or assumes any legal liability or responsibility for the accuracy, completeness, or usefulness of any information, apparatus, product, or process disclosed, or represents that its use would not infringe privately owned rights. Reference therein to any specific commercial product, process, or service by trade name, trademark, manufacturer, or otherwise does not necessarily constitute or imply its endorsement, recommendation, or favoring by the United States Government or any agency thereof. The views and opinions of authors expressed therein do not necessarily state or reflect those of the United States Government or any agency thereof.</p>
 <p style="margin-top:0in;margin-right:.5in;margin-bottom:9.6pt;margin-left:.5in;"><strong>&nbsp;</strong></p>
@@ -38,7 +38,15 @@
 <p style="margin-top:0in;margin-right:0in;margin-bottom:9.6pt;margin-left:.5in;"><span style="font-size:15px;color:black;">The data in this report can be accessed from NETL&apos;s Energy Data eXchange (</span><span style="font-size:15px;color:blue;">EDX</span><span style="font-size:15px;color:black;">) online system (</span><span style="font-size:15px;color:blue;">https://edx.netl.doe.gov</span><span style="font-size:15px;color:black;">) using the following link:</span></p>
 <p style="margin-top:0in;margin-right:0in;margin-bottom:9.6pt;margin-left:.5in;"><span style="font-size:15px;color:blue;">https://edx.netl.doe.gov/dataset/........</span></p>
 <p><span style='font-size:16px;font-family:"Times New Roman",serif;'><br>&nbsp;</span></p>
-<p style="margin-top:0in;margin-right:0in;margin-bottom:9.6pt;margin-left:.5in;">&nbsp;</p>
+<p style="margin-top:0in;margin-right:0in;margin-bottom:9.6pt;margin-left:.5in;"></p>
+
+
+<hr>
+
+
+
+
+<p> &nbsp;&nbsp; </p> 
 <p align=center style="margin-bottom:9.6pt;text-align:center;"><strong><span style="font-size:24px;">Designs for Risk Evaluation and Management (DREAM) Tool User Manual, Version: 2022.01</span></strong><span style="font-size:11px;"><a href="#_msocom_13" id="_anchor_13" language="JavaScript" name="_msoanchor_13"></a></span></p>
 <p style="margin-bottom:9.6pt;text-align:center;"><strong><span style="font-size:24px;">&nbsp;</span></strong></p>
 <p style="margin-bottom:9.6pt;text-align:center;"><strong><span style="font-size:19px;">&nbsp;</span></strong></p>
@@ -65,13 +73,16 @@
 <p align=center style="margin-bottom:9.6pt;text-align:center;"><span style="font-size:15px;color:black;">XXX, Research &amp; Innovation Center</span></p>
 <div id="_com_17" language="JavaScript"><br></div>
 
+<p>&nbsp;&nbsp;</p>
+
+
+<hr>
 
 
 
 
 
-
-
+<p>&nbsp;&nbsp;</p>
 
 <p><br /> <strong>Acronyms, Abbreviations, and Symbols</strong></p>
 <table>
