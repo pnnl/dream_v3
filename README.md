@@ -1741,7 +1741,7 @@
 <p style='margin:0in;font-size:16px;font-family:"Times New Roman",serif;'><span style="font-size:15px;">Livermore, CA</span></p>
 <p style='margin:0in;font-size:16px;font-family:"Times New Roman",serif;margin-top:0in;margin-right:.1in;margin-bottom:9.6pt;margin-left:.1in;'><span style="font-size:15px;">&nbsp;</span></p>
 <p><span style='font-size:15px;font-family:"Times New Roman",serif;'><br>&nbsp;</span></p>
-<p style='margin:0in;font-size:16px;font-family:"Times New Roman",serif;'><img src="" style="width: 132.3pt; height: 33.3pt;" alt="image"><img src="" style="width: 79.85pt; height: 36.45pt;" alt="image"></p>
+<p style='margin:0in;font-size:16px;font-family:"Times New Roman",serif;'><img src="./figures/doe_label2.png" style="width: 150pt; height: 40pt;" alt="image"><img src="./figures/nrap_logo.png" style="width: 80pt; height: 36pt;" alt="image"></p>
 <p><strong><span style="font-size:16px;"><br>&nbsp;</span></strong></p>
 <p style='margin:0in;font-size:16px;font-family:"Times New Roman",serif;margin-left:.5in;'><strong><span style="font-size:15px;">&nbsp;</span></strong></p>
 <p style='margin:0in;font-size:16px;font-family:"Times New Roman",serif;margin-left:.5in;'><strong><span style="font-size:15px;color:#201D1E;">&nbsp;</span></strong></p>
