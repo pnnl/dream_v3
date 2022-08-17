@@ -1433,7 +1433,8 @@
 
 
 <p align="center">
- <img src="./figures/kimberlina_1_2_sa_10k_example_h.png">
+ <img src="./figures/kimberlina_1_2_sa_10k_example_h.gif">
+ <img src="./figures/kimberlina_1_2_sa_10k_example_i.gif">
 </p>
 <p align="center"><sub><b>
       Figure&nbsp;31: Simulated annealing example of 3D scatter plots that show when 0%-100% of leaks are detected for (left) PMCD, PLD and TTD and (right) PLD, TTD, and Monitoring Cost
@@ -1463,7 +1464,7 @@
 
 
 <p align="center">
- <img src="./figures/kimberlina_1_2_sa_10k_example_h.png">
+ <img src="./figures/kimberlina_1_2_sa_10k_example_j.gif">
 </p>
 <p align="center"><sub><b>
       Figure&nbsp;32: Simulated annealing example of 3D scatter plots that show (left) some of the proposed monitoring campaigns and (right) the respective PLD and Monitoring Cost versus TTD
