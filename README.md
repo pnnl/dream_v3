@@ -1676,10 +1676,6 @@
 <p>Zhou, Q.; Birkholzer, J.T. (2011). On Scale and Magnitude of Pressure Buildup Induced by Large-Scale Geologic Storage of CO2. <em>Greenhouse Gases: Science and Technology</em>, 1(1), 11-20.</p>
 <h1>&nbsp;</h1>
 <p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-
 
 
 <hr>
