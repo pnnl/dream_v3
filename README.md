@@ -1741,30 +1741,30 @@
 <p style='margin:0in;font-size:16px;font-family:"Times New Roman",serif;'><span style="font-size:15px;">Livermore, CA</span></p>
 <p style='margin:0in;font-size:16px;font-family:"Times New Roman",serif;margin-top:0in;margin-right:.1in;margin-bottom:9.6pt;margin-left:.1in;'><span style="font-size:15px;">&nbsp;</span></p>
 <p><span style='font-size:15px;font-family:"Times New Roman",serif;'><br>&nbsp;</span></p>
-<p style='margin:0in;font-size:16px;font-family:"Times New Roman",serif;'><img src="./figures/doe_label2.png" style="width: 170pt; height: 50pt;" alt="image">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./figures/nrap_logo.png" style="width: 120pt; height: 55pt;" alt="image"></p>
+<p style='margin:0in;font-size:16px;font-family:"Times New Roman",serif;'><img src="./figures/doe_label2.png" style="width: 170pt; height: 50pt;" alt="image">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./figures/nrap_logo.png" style="width: 120pt; height: 55pt;" alt="image"></p>
 
-<table class="center">
+<table>
 <tr>
-<th> <p style='margin:0in;font-size:16px;font-family:"Times New Roman",serif;'><img src="./figures/doe_label2.png" style="width: 170pt; height: 50pt;" alt="image">
-<p style='margin:0in;font-size:16px;font-family:"Times New Roman",serif;margin-left:.5in;'><strong><span style="font-size:15px;color:#201D1E;"><b>Sean Plasynski</b></span></strong></p> <p style='margin:0in;font-size:16px;font-family:"Times New Roman",serif;margin-left:.5in;'><span style="font-size:15px;color:#201D1E;">Executive Director</span></p>
+<th align="center"> 
+<p style='margin:0in;font-size:16px;font-family:"Times New Roman",serif;margin-left:.5in;'><strong><span style="font-size:16px;color:#201D1E;"><em>Sean Plasynski</em></span></strong></p> <p style='margin:0in;font-size:16px;font-family:"Times New Roman",serif;margin-left:.5in;'><span style="font-size:15px;color:#201D1E;">Executive Director</span></p>
 <p style='margin:0in;font-size:16px;font-family:"Times New Roman",serif;margin-left:.5in;'><span style="font-size:15px;color:black;">Technology Development and Integration Center</span></p>
 <p style='margin:0in;font-size:16px;font-family:"Times New Roman",serif;margin-left:.5in;'><span style="font-size:15px;color:black;">National Energy Technology Laboratory</span></p>
 <p style='margin:0in;font-size:16px;font-family:"Times New Roman",serif;margin-left:.5in;'><span style="font-size:15px;color:black;">U.S. Department of Energy</span></p>
 <p style='margin:0in;font-size:16px;font-family:"Times New Roman",serif;margin-left:.5in;'><span style="font-size:15px;color:black;">&nbsp;</span></p>
-<p style='margin:0in;font-size:16px;font-family:"Times New Roman",serif;margin-left:.5in;'><strong><span style="font-size:15px;color:black;">Heather Quedenfeld</span></strong></p>
+<p style='margin:0in;font-size:16px;font-family:"Times New Roman",serif;margin-left:.5in;'><strong><span style="font-size:16px;color:black;"><em>Heather Quedenfeld</em></span></strong></p>
 <p style='margin:0in;font-size:16px;font-family:"Times New Roman",serif;margin-left:.5in;'><span style="font-size:15px;color:#201D1E;">Associate Director</span></p>
 <p style='margin:0in;font-size:16px;font-family:"Times New Roman",serif;margin-left:.5in;'><span style="font-size:15px;color:#201D1E;">Coal Development and Integration</span></p>
 <p style='margin:0in;font-size:16px;font-family:"Times New Roman",serif;margin-left:.5in;'><span style="font-size:15px;color:#201D1E;">National Energy Technology Laboratory</span></p>
 <p style='margin:0in;font-size:16px;font-family:"Times New Roman",serif;margin-left:.5in;'><span style="font-size:15px;color:#201D1E;">U.S. Department of Energy</span></p>
 <p style='margin:0in;font-size:16px;font-family:"Times New Roman",serif;margin-left:.5in;'><span style="font-size:15px;color:black;">&nbsp;</span></p>
-<p style='margin:0in;font-size:16px;font-family:"Times New Roman",serif;margin-left:.5in;'><strong><span style="font-size:15px;color:black;">Traci Rodosta</span></strong></p>
+<p style='margin:0in;font-size:16px;font-family:"Times New Roman",serif;margin-left:.5in;'><strong><span style="font-size:16px;color:black;"><em>Traci Rodosta</em></span></strong></p>
 <p style='margin:0in;font-size:16px;font-family:"Times New Roman",serif;margin-left:.5in;'><span style="font-size:15px;color:#201D1E;">Technology Manager</span></p>
 <p style='margin:0in;font-size:16px;font-family:"Times New Roman",serif;margin-left:.5in;'><span style="font-size:15px;color:#201D1E;">Strategic Planning</span></p>
 <p style='margin:0in;font-size:16px;font-family:"Times New Roman",serif;margin-left:.5in;'><span style="font-size:15px;color:#201D1E;">Science and Technology Strategic Plans and Programs</span></p>
 <p style='margin:0in;font-size:16px;font-family:"Times New Roman",serif;margin-left:.5in;'><span style="font-size:15px;color:black;">National Energy Technology Laboratory</span></p>
 <p style='margin:0in;font-size:16px;font-family:"Times New Roman",serif;margin-left:.5in;'><span style="font-size:15px;color:black;">U.S. Department of Energy</span></p>
 <p style='margin:0in;font-size:16px;font-family:"Times New Roman",serif;margin-left:.5in;'><strong><span style="font-size:15px;color:#201D1E;">&nbsp;</span></strong></p>
-<p style='margin:0in;font-size:16px;font-family:"Times New Roman",serif;margin-left:.5in;'><strong><span style="font-size:15px;color:black;">Mark Ackiewicz</span></strong></p>
+<p style='margin:0in;font-size:16px;font-family:"Times New Roman",serif;margin-left:.5in;'><strong><span style="font-size:16px;color:black;"><em>Mark Ackiewicz</em></span></strong></p>
 <p style='margin:0in;font-size:16px;font-family:"Times New Roman",serif;margin-left:.5in;'><span style="font-size:15px;color:black;">Director</span></p>
 <p style='margin:0in;font-size:16px;font-family:"Times New Roman",serif;margin-left:.5in;'><span style="font-size:15px;color:black;">Division of Carbon Capture and Storage</span></p>
 <p style='margin:0in;font-size:16px;font-family:"Times New Roman",serif;margin-left:.5in;'><span style="font-size:15px;color:black;">Office of Fossil Energy</span></p>
@@ -1777,37 +1777,37 @@
     
     
     
-<th> <p style='margin:0in;font-size:16px;font-family:"Times New Roman",serif;'><img src="./figures/nrap_logo.png" style="width: 120pt; height: 55pt;" alt="image"></p> <p style='margin:0in;font-size:16px;font-family:"Times New Roman",serif;text-indent:.5in;'><strong><em><span style="font-size:15px;color:#221E1F;">NRAP Executive Committee</span></em></strong></p>
+<th align="center"> <p style='margin:0in;font-size:16px;font-family:"Times New Roman",serif;text-indent:.5in;'><strong><em><span style="font-size:15px;color:#221E1F;">NRAP Executive Committee</span></em></strong></p>
 <p style='margin:0in;font-size:16px;font-family:"Times New Roman",serif;margin-left:.5in;'><strong><span style="font-size:15px;color:#221E1F;">&nbsp;</span></strong></p>
-<p style='margin:0in;font-size:16px;font-family:"Times New Roman",serif;margin-left:.5in;'><strong><span style="font-size:15px;color:#221E1F;">Cynthia Powell</span></strong></p>
+<p style='margin:0in;font-size:16px;font-family:"Times New Roman",serif;margin-left:.5in;'><strong><span style="font-size:16px;color:#221E1F;"><em>Cynthia Powell</em></span></strong></p>
 <p style='margin:0in;font-size:16px;font-family:"Times New Roman",serif;margin-left:.5in;'><span style="font-size:15px;color:#221E1F;">Executive Director</span></p>
 <p style='margin:0in;font-size:16px;font-family:"Times New Roman",serif;margin-left:.5in;'><span style="font-size:15px;">Research and Innovation Center</span></p>
 <p style='margin:0in;font-size:16px;font-family:"Times New Roman",serif;margin-left:.5in;'><span style="font-size:15px;">National Energy Technology Laboratory</span></p>
 <p style='margin:0in;font-size:16px;font-family:"Times New Roman",serif;margin-left:.5in;'><strong><span style="font-size:15px;color:#221E1F;">&nbsp;</span></strong></p>
-<p style='margin:0in;font-size:16px;font-family:"Times New Roman",serif;margin-left:.5in;'><strong><span style="font-size:15px;color:#221E1F;">Donald DePaolo</span></strong></p>
+<p style='margin:0in;font-size:16px;font-family:"Times New Roman",serif;margin-left:.5in;'><strong><span style="font-size:16px;color:#221E1F;"><em>Donald DePaolo</em></span></strong></p>
 <p style='margin:0in;font-size:16px;font-family:"Times New Roman",serif;margin-left:.5in;'><span style="font-size:15px;color:#221E1F;">Associate Laboratory Director</span></p>
 <p style='margin:0in;font-size:16px;font-family:"Times New Roman",serif;margin-left:.5in;'><span style="font-size:15px;color:#221E1F;">Energy and Environmental Sciences</span></p>
 <p style='margin:0in;font-size:16px;font-family:"Times New Roman",serif;margin-left:.5in;'><span style="font-size:15px;color:#221E1F;">Lawrence Berkeley National Laboratory</span></p>
 <p style='margin:0in;font-size:16px;font-family:"Times New Roman",serif;margin-left:.5in;'><strong><span style="font-size:15px;color:#221E1F;">&nbsp;</span></strong></p>
-<p style='margin:0in;font-size:16px;font-family:"Times New Roman",serif;margin-left:.5in;'><strong><span style="font-size:15px;color:#221E1F;">Roger Aines</span></strong></p>
+<p style='margin:0in;font-size:16px;font-family:"Times New Roman",serif;margin-left:.5in;'><strong><span style="font-size:16px;color:#221E1F;"><em>Roger Aines</em></span></strong></p>
 <p style='margin:0in;font-size:16px;font-family:"Times New Roman",serif;margin-left:.5in;'><span style="font-size:15px;color:#201D1E;">Chief Energy Technologist</span></p>
 <p style='margin:0in;font-size:16px;font-family:"Times New Roman",serif;margin-left:.5in;'><span style="font-size:15px;color:#221E1F;">Lawrence Livermore National Laboratory</span></p>
 <p style='margin:0in;font-size:16px;font-family:"Times New Roman",serif;margin-left:.5in;'><strong><span style="font-size:15px;color:#221E1F;">&nbsp;</span></strong></p>
-<p style='margin:0in;font-size:16px;font-family:"Times New Roman",serif;margin-left:.5in;'><strong><span style="font-size:15px;color:#221E1F;">Melissa Fox</span></strong></p>
+<p style='margin:0in;font-size:16px;font-family:"Times New Roman",serif;margin-left:.5in;'><strong><span style="font-size:16px;color:#221E1F;"><em>Melissa Fox</em></span></strong></p>
 <p style='margin:0in;font-size:16px;font-family:"Times New Roman",serif;margin-left:.5in;'><span style="font-size:15px;color:#221E1F;">Program Manager</span></p>
 <p style='margin:0in;font-size:16px;font-family:"Times New Roman",serif;margin-left:.5in;'><span style="font-size:15px;color:#221E1F;">Applied Energy Programs</span></p>
 <p style='margin:0in;font-size:16px;font-family:"Times New Roman",serif;margin-left:.5in;'><span style="font-size:15px;color:#221E1F;">Los Alamos National Laboratory</span></p>
 <p style='margin:0in;font-size:16px;font-family:"Times New Roman",serif;margin-left:.5in;'><strong><span style="font-size:15px;color:#221E1F;">&nbsp;</span></strong></p>
-<p style='margin:0in;font-size:16px;font-family:"Times New Roman",serif;margin-left:.5in;'><strong><span style="font-size:15px;color:#221E1F;">George Guthrie</span></strong></p>
+<p style='margin:0in;font-size:16px;font-family:"Times New Roman",serif;margin-left:.5in;'><strong><span style="font-size:16px;color:#221E1F;"><em>George Guthrie</em></span></strong></p>
 <p style='margin:0in;font-size:16px;font-family:"Times New Roman",serif;margin-left:.5in;'><span style="font-size:15px;color:#221E1F;">Chair, NRAP Executive Committee</span></p>
 <p style='margin:0in;font-size:16px;font-family:"Times New Roman",serif;margin-left:.5in;'><span style="font-size:15px;color:#221E1F;">Earth and Environmental Sciences</span></p>
 <p style='margin:0in;font-size:16px;font-family:"Times New Roman",serif;margin-left:.5in;'><span style="font-size:15px;color:#221E1F;">Los Alamos National Laboratory</span></p>
 <p style='margin:0in;font-size:16px;font-family:"Times New Roman",serif;margin-left:.5in;'><strong><span style="font-size:15px;color:#221E1F;">&nbsp;</span></strong></p>
-<p style='margin:0in;font-size:16px;font-family:"Times New Roman",serif;margin-left:.5in;'><strong><span style="font-size:15px;color:#221E1F;">Alain Bonneville</span></strong></p>
+<p style='margin:0in;font-size:16px;font-family:"Times New Roman",serif;margin-left:.5in;'><strong><span style="font-size:16px;color:#221E1F;"><em>Alain Bonneville</em></span></strong></p>
 <p style='margin:0in;font-size:16px;font-family:"Times New Roman",serif;margin-left:.5in;'><span style="font-size:15px;color:#221E1F;">Laboratory Fellow</span></p>
 <p style='margin:0in;font-size:16px;font-family:"Times New Roman",serif;margin-left:.5in;'><span style="font-size:15px;color:#221E1F;">Pacific Northwest National Laboratory</span></p>
 <p style='margin:0in;font-size:16px;font-family:"Times New Roman",serif;margin-left:.5in;'><strong><span style="font-size:15px;color:#221E1F;">&nbsp;</span></strong></p>
-<p style='margin:0in;font-size:16px;font-family:"Times New Roman",serif;margin-left:.5in;'><strong><span style="font-size:15px;color:#221E1F;">Grant Bromhal</span></strong></p>
+<p style='margin:0in;font-size:16px;font-family:"Times New Roman",serif;margin-left:.5in;'><strong><span style="font-size:16px;color:#221E1F;"><em>Grant Bromhal</em></span></strong></p>
 <p style='margin:0in;font-size:16px;font-family:"Times New Roman",serif;margin-left:.5in;'><span style="font-size:15px;color:#221E1F;">Technical Director, NRAP</span></p>
 <p style='margin:0in;font-size:16px;font-family:"Times New Roman",serif;margin-left:.5in;'><span style="font-size:15px;color:#221E1F;">Senior Research Fellow x&nbsp;</span></p>
 <p style='margin:0in;font-size:16px;font-family:"Times New Roman",serif;margin-left:.5in;'><span style="font-size:15px;">Research and Innovation Center</span></p>
