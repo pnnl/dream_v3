@@ -1678,11 +1678,10 @@
 
 
 
-<p style='margin:0in;font-size:16px;font-family:"Times New Roman",serif;text-align:center;'>&nbsp;<img src="" style="width: 79.5pt; height: 36.5pt;" alt="image"></p>
-<p style='margin:0in;font-size:16px;font-family:"Times New Roman",serif;text-align:center;'><em>&nbsp;</em></p>
+<p align=center style='margin:0in;font-size:16px;font-family:"Times New Roman",serif;text-align:center;'>&nbsp;<img width=150.5pt height=72.5pt src="./figures/nrap_logo.png" alt="image"></p>
 <p style='margin:0in;font-size:16px;font-family:"Times New Roman",serif;text-align:justify;'>NRAP is an initiative within DOE&rsquo;s Office of Fossil Energy and is led by the National Energy Technology Laboratory (NETL). It is a multi-national-lab effort that leverages broad technical capabilities across the DOE complex to develop an integrated science base that can be applied to risk assessment for long-term storage of carbon dioxide (CO<sub>2</sub>). NRAP involves five DOE national laboratories: NETL, Lawrence Berkeley National Laboratory (LBNL), Lawrence Livermore National Laboratory (LLNL), Los Alamos National Laboratory (LANL), and Pacific Northwest National Laboratory (PNNL).</p>
 <p style='margin:0in;font-size:16px;font-family:"Times New Roman",serif;'>&nbsp;</p>
-<p style='margin:0in;font-size:16px;font-family:"Times New Roman",serif;text-align:center;'><em><span style="font-size:100px;">Technical Leadership Team</span></em></p>
+<h2>Technical Leadership Team</h2>
 <p><em><span style='font-size:16px;font-family:"Times New Roman",serif;'><br>&nbsp;</span></em></p>
 
 <table>
