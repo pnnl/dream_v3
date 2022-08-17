@@ -1659,14 +1659,21 @@
 <h1><a name="_Toc108615023"></a><a name="_Toc108596361"></a><a name="_Toc108602985"></a><a name="_Toc108603103"></a><a name="_Toc108615022"></a></h1>
 <h1><a name="_Toc108615019"></a>8.&nbsp; &nbsp; &nbsp;References</h1>
 <p>Bacon, D.H.; Yonkofski, C.M.; Brown, C.F.; Demirkanli, D.I.; Whiting, J.M. (2019). Risk-based post injection site care and monitoring for commercial-scale carbon storage: Reevaluation of the FutureGen 2.0 site using NRAP-Open-IAM and DREAM. <em>Intl. J. Greenhouse Gas Control</em>, 90, 102784.</p>
+<p>Baek, S.; Bacon, D.H.; Huerta, N.J. (2022). <em>Deep learning-based multisegmented wellbore model development for many wells site study</em>. In NRAP Annual Technical Meeting Conference. National Risk Assessment Partnership.</p>
 <p>Carroll, S. A.; Keating, E.; Mansoor, K.; Dai, Z.; Sun, Y.; Trainor-Guitton, W.; Brown, C.; Bacon, D. (2014a). Key factors for determining groundwater impacts due to leakage from geologic carbon sequestration reservoirs. <em>Intl. J. Greenhouse Gas Control</em>, 29, 153&ndash;168.</p>
 <p>Carroll, S. A.; Mansoor, K.; Sun, Y. (2014b). <em>Second</em>-<em>Generation Reduced-Order Model for Calculating Groundwater Impacts as a Function of pH, Total Dissolved Solids, and Trace Metal Concentration</em>; NRAP-TRS-III-002-2014; NRAP Technical Report Series; U.S. Department of Energy, National Energy Technology Laboratory: Morgantown, WV<em>,</em> p 40.</p>
+<p>Lackey, G.; Vasylkivska, V.; Huerta, N.J.; King, S.; Dilmore, R.M. (2019). Managing well leakage risks at a geologic carbon storage site with many wells. <em>International Journal of Greenhouse Gas Control, </em>88, 182-194.</p>
 <p>Last, G. V.; Murray, C. J.; Brown, C. F.; Jordan, P. D.; Sharma, M. (2013). <em>No-Impact Threshold Values for NRAP&rsquo;s Reduced Order Models</em>; Pacific Northwest National Laboratory, Richland, Washington, p.72.</p>
+<p>Mansoor, K.; Buscheck, T.A.; Yang, X.; Carroll, S.A.; Chen, X. (2020). <em>LLNL Kimberlina 1.2 NUFT Simulations June 2018</em>. Technical report, National Energy Technology Laboratory (NETL), Pittsburgh, PA, Morgantown, WV.</p>
 <p>Nitao, J. J. (1998). <em>Reference manual for the NUFT flow and transport code, version 2.0</em>; Lawrence Livermore National Laboratory, Livermore, CA.</p>
 <p>Sminchak, J. R.; Moody, M.; Theodos, A.; Larsen, G.; Gupta, N. (2014). Investigation of Wellbore Integrity Factors in Historical Oil and gas Wells for CO2 Geosequestration in the Midwestern US. <em>Energy Procedia</em>, 63, 5787-5797.</p>
+<p>Vasylkivska, V.; Dilmore, R.; Lackey, G.; Zhang, Y.; King, S.; Bacon, D.; Chen, B.; Mansoor, K.; Harp, D. (2021). NRAP-Open-IAM: A flexible open-source integrated-assessment-model for geologic carbon storage risk assessment and management. <em>Environmental Modelling &amp; Software, </em>143, 105114.</p>
+<p>Wainwright, H.; Finsterle, S.; Zhou, Q.; Birkholzer, J.T. (2013). Modeling the performance of large-scale CO2 storage systems: A comparison of different sensitivity analysis methods. <em>International Journal of Greenhouse Gas Control, </em>17, 189-205.</p>
 <p>White, M. D.; Oostrom M. (2000). <em>STOMP, Subsurface transport over multiple phases, Version 2.0, Theory Guide</em>; Pacific Northwest National Laboratory, Richland, WA.</p>
 <p>Yonkofski, C. M.; Gastelum, J. A.; Porter, E. A.; Rodriguez, L. R.; Bacon, D. H.; Brown, C. F. (2016). An optimization approach to design monitoring schemes for CO<sub>2</sub> leakage detection. <em>Intl. J. Greenhouse Gas Control</em>, 47, 233&ndash;239.</p>
 <p>Yonkofski C.; Davidson, C.L.; Rodriguez, L.R.; Porter, E.A.; Bender, S.R.; Brown, C.F. (2017). Optimized, budget-constrained monitoring well placement using DREAM. <em>Energy Procedia</em>, 114, 3649-3655.</p>
+<p>Yonkofski C.; Tartakovsky, G.; Huerta, N.; Wentworth, A. (2019). Risk-based monitoring designs for detecting CO2 leakage through abandoned wellbores: An application of NRAP&rsquo;s WLAT and DREAM tools. <em>International Journal of Greenhouse Gas Control</em>, 91, 102807.</p>
+<p>Zhou, Q.; Birkholzer, J.T. (2011). On Scale and Magnitude of Pressure Buildup Induced by Large-Scale Geologic Storage of CO2. <em>Greenhouse Gases: Science and Technology</em>, 1(1), 11-20.</p>
 <h1>&nbsp;</h1>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
