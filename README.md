@@ -90,7 +90,7 @@
  [3.2 Input Directory Page](##input)
  [3.3 Leak Definition](##def)
  [3.4 Scenario Weighting](##weight)
- [3.5 Detection Threshold](##thresh)
+ [3.5 Detection Threshold](##threshold)
  [3.6 Detection Criteria](##criteria)
  [3.7 Monitoring Campaign Settings](##settings)
  [3.8 Exclude Locations](##locations)
@@ -720,7 +720,7 @@
 
 
 
-<h2>3.4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Scenario Weighting</h2>
+<h2 name="weight">3.4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Scenario Weighting</h2>
 <p>. This can be done with a simple weight equation that can use any combination of the following three variables:</p>
 <ul>
 <li><em>v </em>&ndash; maximum volume of aquifer degraded,</li>
@@ -748,7 +748,7 @@
 
 
 
-<h2><a name="_Toc108614998"></a>3.5&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Detection Threshold</h2>
+<h2 name="threshold">3.5&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Detection Threshold</h2>
 <p>The <em>Detection Threshold</em> page (Figure 11) allows the user to select monitoring technologies that are being considered based on the parameters available in the input files, and to define associated parameters, such as deployment cost and detection threshold.</p>
 
 
@@ -867,7 +867,7 @@
 
 
 
-<h2><a name="_Toc108614999"></a>3.6&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Detection Criteria</h2>
+<h2 name="criteria">3.6&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Detection Criteria</h2>
 <p>The <em>Detection Criteria</em> page (Figure 14) prompts the user to specify how many monitoring devices must be triggered to signify a leak has occurred. Only the sensors that were defined on the <em>Detection Threshold</em> page are selectable. &ldquo;Any Technology&rdquo; is a wildcard for any available sensors. Multiple criteria can be created by clicking the <em>Add a new criteria</em> button. Within a given test, the user may select any combination of specific technologies that will signify a leak. It is important to note that on this page we are taking all the instances where the nodes exceed the leak threshold from <em>Detection Threshold</em> (and <em>Leak Definition)</em> and are allowing the user to determine whether that instance qualifies as a &ldquo;leak&rdquo;, e.g., both pressure and saturation sensors exceed their leak detection thresholds.</p>
 <p>Minimum Detections specifies how many detections from a specific sensor must exceed the user-defined value to have confidence that a leak occurred. Multiple tests with any combination of sensors can be created. To clarify, a full campaign of surface surveys monitoring an area is counted as one sensor, so it is advised not to require more than one surface survey. In most cases, it can be left at default, where one of any detecting sensors can identify a leak. For example, if both a cheap and expensive pressure sensor are available, two criteria can be created for one expensive or two cheap sensors need to be triggered to have a confidence in the leak.</p>
 
