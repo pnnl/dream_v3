@@ -96,8 +96,8 @@
 
 [3. User Interface Walkthrough](#ui)
  
-<p> &nbsp; </p> 
- 
+<p> &nbsp;</p> 
+
 [3.1 DREAM Welcome Page](#welcome)
  
 <p> &nbsp; </p>  
@@ -1611,7 +1611,7 @@
 
 
 
-<h1 name="point">6.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Monitoring Technologies</h1>
+<h1 name="technologies">6.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Monitoring Technologies</h1>
 
 <p>DREAM currently supports point sensors and surface surveys, but there are plans to expand to additional technologies. Cross-well ERT technology was once available to a limited degree but needs some additional work to fit with the new architecture of DREAM V3. There are some assumptions made about each monitoring technology that the user should be aware of.</p>
 <p>Many of the algorithms also make small mutations to monitoring technologies between iterations, and these mutations look different depending on the technology. These mutations are intentionally as small as possible to allow the algorithms to test campaigns similar to other optimal campaigns. Details on how mutations are handled are further described for each algorithm in Section 7.</p>
