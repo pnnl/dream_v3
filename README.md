@@ -82,14 +82,38 @@
 <h1><a name="_Toc108615019"></a>7.&nbsp;&nbsp;&nbsp;&nbsp; Table of Contents</h1>
 <p> &nbsp; </p>
 
- [Abstract](#abstract)
- [1. Introduction](#intro)
- [2. Software Installation and Requirements](#software)
- [3. User Interface Walkthrough](#ui)
- [3.1 DREAM Welcome Page](#welcome)
- [3.2 Input Directory Page](#input)
- [3.3 Leak Definition](#def)
- [3.4 Scenario Weighting](#weight)
+[Abstract](#abstract)
+ 
+<p> &nbsp; </p>
+
+[1. Introduction](#intro)
+ 
+<p> &nbsp; </p>
+
+[2. Software Installation and Requirements](#software)
+
+<p> &nbsp; </p>
+
+[3. User Interface Walkthrough](#ui)
+ 
+<p> &nbsp; </p> 
+ 
+[3.1 DREAM Welcome Page](#welcome)
+ 
+<p> &nbsp; </p>  
+ 
+[3.2 Input Directory Page](#input)
+ 
+ <p> &nbsp; </p>
+ 
+[3.3 Leak Definition](#def)
+ 
+<p> &nbsp; </p> 
+ 
+[3.4 Scenario Weighting](#weight)
+ 
+<p> &nbsp; </p> 
+ 
  [3.5 Detection Threshold](#threshold)
  [3.6 Detection Criteria](#criteria)
  [3.7 Monitoring Campaign Settings](#settings)
