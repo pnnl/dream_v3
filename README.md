@@ -806,7 +806,7 @@
 
 
 <p align="center">
- <img src="./figures/visualization_leak_plume.png">
+ <img src="./figures/leak_visualization.png">
 </p>
 <p align="center"><sub><b>
       Figure&nbsp;9: Interactive display of the leak plume after <em>Leak Definition</em>
@@ -825,8 +825,8 @@
 <p>(1) The maximum volume of aquifer degraded <em>v</em> is automatically calculated for each scenario threshold (see Section 3.3) and by multiplying porosity by the total volume of nodes that exceed the threshold. Porosity is either a constant or can be set individually for each node with the input HDF5 file. The maximum value at any time step can be used as the variable <em>v</em> with the scenario weighting equation.</p>
 <p>(2) For variables <em>a </em>and <em>b</em>, they can manually be set by the user or can be read in from a CSV file and used as a variable in the &ldquo;Weight Equation&rdquo;. They can represent variables, such as scenario likelihood, potential remediation cost, proximity to an area of concern, and so on. The default settings for the variables do not need to be changed if all scenarios will be weighted equally.</p>
 <p>(3) Weights are relative, but the user can scale the w or normalize them to be between 0 and 1 for clarity. The user can also remove scenario weighting by selecting the button <em>Set Weights Equal</em>. The <em>Scale Weights</em> button will maintain the same relative weights while scaling the numbers from 0 to 1, which is recommended when weights are very large. Weighting is important in DREAM because it optimizes monitoring campaigns by testing random sensor placements and iterating towards &lsquo;better&rsquo; solutions based on objectives. Weighting scenarios can influence which monitoring campaign is preferred. DREAM can also factor scenario weighting in Pareto optimization to rank the top performing monitoring campaigns.</p>
-<p>During multi-objective optimization in the last phase of running DREAM, theFor <em>Weight Equation</em>, it can be modified as needed using any of the variables: <em>v, a</em>, or <em>b</em>.</p>
-<p>In this example, the default scheme of equal weighting is applied (Figure 10).</p>
+<p>During multi-objective optimization in the last phase of running DREAM, theFor <em>Weight Equation</em>, it can be modified as needed using any of the variables: <em>v, a</em>, or <em>b</em>. The user also has the option to upload a weighting scheme of choice by clicking “Load weights”.</p>
+<p>In this example, continue with the default setting of equal or uniform weighting (Figure 10). </p>
 
 
 
@@ -849,7 +849,7 @@
 
 
 <p align="center">
- <img src="./figures/detection_threshold_page.png">
+ <img src="./figures/define_available_sensors_page.png">
 </p>
 <p align="center"><sub><b>
       Figure&nbsp;11: Default settings on <em>Detection Threshold</em>
@@ -893,7 +893,7 @@
 
 
 <p align="center">
- <img src="./figures/detection_threshold_page1.PNG">
+ <img src="./figures/define_available_sensors_page1.png">
 </p>
 <p align="center"><sub><b>
       Figure&nbsp;12: Specifying criteria for each monitoring technology on <em>Detection Threshold</em> page
@@ -951,7 +951,7 @@
 
 
 <p align="center">
- <img src="./figures/visualization_detectable_plume.png">
+ <img src="./figures/detectable_plume_visualization.png">
 </p>
 <p align="center"><sub><b>
       Figure&nbsp;13: Visualization of detectable plume
@@ -1018,7 +1018,7 @@
 
 
 <p align="center">
- <img src="./figures/monitoring_campaign_setting_page.png">
+ <img src="./figures/monitoring_campaign_settings_page.png">
 </p>
 <p align="center"><sub><b>
       Figure&nbsp;16: Default settings for <em>Monitoring Campaign Settings</em> page
@@ -1033,7 +1033,7 @@
 
       
 <p align="center">
- <img src="./figures/monitoring_campaign_setting_page1.png">
+ <img src="./figures/monitoring_campaign_settings_page1.png">
 </p>
 <p align="center"><sub><b>
       Figure&nbsp;17: Example on <em>Monitoring Campaign Settings </em>page
