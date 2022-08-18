@@ -1092,7 +1092,7 @@
 
 
 <p align="center">
- <img src="./figures/dream_run_page1.png">
+ <img src="./figures/dream_run_page2.png">
 </p>
 <p align="center"><sub><b>
       Figure&nbsp;20: 3D visualization of monitoring campaigns and leak plumes from <em>Visualization</em> page
@@ -1101,7 +1101,7 @@
 
 
 <p align="center">
- <img src="./figures/dream_run_page2.png">
+ <img src="./figures/dream_run_page1.png">
 </p>
 <p align="center"><sub><b>
       Figure&nbsp;21: <em>Objective Graph </em>campaign performance between time to detection and cost objectives that is produced when <em>Calculate Pareto Ranks</em> is enabled
