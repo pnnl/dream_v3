@@ -114,32 +114,103 @@
  
 <p> &nbsp; </p> 
  
- [3.5 Detection Threshold](#threshold)
- [3.6 Detection Criteria](#criteria)
- [3.7 Monitoring Campaign Settings](#settings)
- [3.8 Exclude Locations](#locations)
- [3.9 Run DREAM](#run)
- [3.10 Outputs](#outputs)
- [4. Pre-processing Data](#pre)
- [4.1 STOMP Data](#stomp)
- [4.2 NUFT Data](#nuft)
- [4.3 TECPLOT Data](#tecplot)
- [4.4 HDF5 Data](#hdf)
- [4.5 IAM Data](#iam) 
- [5. Post-processing Data](#post)
- [5.1. Python Visualization](#py)
- [6. Monitoring Technologies](#tech)
- [6.1 Point Sensors](#point)
- [6.2 Surface Surveys](#surface)
- [7. Optimization Algorithms](#opt)
- [7.1 Monte Carlo](#mc)
- [7.2 Simulated Annealing](#sa)
- [7.3 Heuristic Algorithm](#heuristic)
- [8. Appendix](#appendix)
- [8.1 Objectives](#objectives)
- [8.2 Pointers for Running DREAM](#pointers)
- [9. References](#references)
+[3.5 Detection Threshold](#threshold)
  
+<p> &nbsp; </p>  
+ 
+[3.6 Detection Criteria](#criteria)
+ 
+<p> &nbsp; </p>  
+ 
+[3.7 Monitoring Campaign Settings](#settings)
+ 
+<p> &nbsp; </p>  
+ 
+[3.8 Exclude Locations](#locations)
+ 
+<p> &nbsp; </p>  
+ 
+[3.9 Run DREAM](#run)
+ 
+<p> &nbsp; </p>  
+ 
+[3.10 Outputs](#outputs)
+ 
+<p> &nbsp; </p>  
+ 
+[4. Pre-processing Data](#pre)
+ 
+<p> &nbsp; </p>  
+ 
+[4.1 STOMP Data](#stomp)
+ 
+<p> &nbsp; </p>  
+ 
+[4.2 NUFT Data](#nuft)
+ 
+<p> &nbsp; </p>  
+ 
+[4.3 TECPLOT Data](#tecplot)
+ 
+<p> &nbsp; </p>  
+ 
+[4.4 HDF5 Data](#hdf)
+ 
+<p> &nbsp; </p>  
+ 
+[4.5 IAM Data](#iam) 
+ 
+<p> &nbsp; </p>  
+ 
+[5. Post-processing Data](#post)
+ 
+<p> &nbsp; </p>  
+ 
+[5.1. Python Visualization](#py)
+ 
+<p> &nbsp; </p>  
+ 
+[6. Monitoring Technologies](#technologies)
+ 
+<p> &nbsp; </p>  
+ 
+[6.1 Point Sensors](#point)
+ 
+<p> &nbsp; </p>  
+ 
+[6.2 Surface Surveys](#surface)
+ 
+<p> &nbsp; </p>  
+ 
+[7. Optimization Algorithms](#opt)
+ 
+<p> &nbsp; </p>  
+ 
+[7.1 Monte Carlo](#mc)
+ 
+<p> &nbsp; </p>  
+ 
+[7.2 Simulated Annealing](#sa)
+ 
+<p> &nbsp; </p>  
+ 
+[7.3 Heuristic Algorithm](#heuristic)
+ 
+<p> &nbsp; </p>  
+ 
+[8. Appendix](#appendix)
+ 
+<p> &nbsp; </p>  
+ 
+[8.1 Objectives](#objectives)
+ 
+<p> &nbsp; </p>  
+ 
+[8.2 Pointers for Running DREAM](#pointers)
+ 
+<p> &nbsp; </p>  
+ 
+[9. References](#references)
  
  
 <p>&nbsp;&nbsp;</p>
