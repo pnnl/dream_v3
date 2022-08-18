@@ -900,7 +900,7 @@
 
 
 
-<h2>3.7&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Monitoring Campaign Settings</h2>
+<h2 name="settings">3.7&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Monitoring Campaign Settings</h2>
 <p>The <em>Monitoring Campaign Settings </em>page (Figure 16) allows the user to specify additional information and constraints for monitoring campaigns. Some inputs apply to all campaigns, while others are only for surface surveys or point sensors. The following fields are available:</p>
 <ul>
 <li><em>Maximum Monitoring Budget</em> sets a cap on the total cost for a campaign, including technology costs and well costs defined below. Leaving the value empty means there is no cap. Cost is a possible optimization objective, so it is not necessary to set a maximum. Setting a maximum that is too restrictive may cause problems for the algorithm. Hovering over the value box, it shows that a numeric value or a time-dependent equation using the variable &lsquo;t&rsquo; can be applied in setting a <em>Maximum Monitoring Budget</em>.</li>
@@ -949,7 +949,7 @@
 
 
 
-<h2>3.8&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Exclude Locations</h2>
+<h2 name="locations">3.8&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Exclude Locations</h2>
 <p>The <em>Exclude Locations</em> page (Figure 18) allows the user to exclude (x, y) locations from the monitoring configuration that are infeasible or unapproved. This window allows the user to manually deselect nodes that should not be used in the optimization algorithm. Note that if the solution space is too large, the user may not have the ability to exclude locations.</p>
 <p>For this page, please continue with the default settings, which includes all locations. Click <em>Next</em>.</p>
 
@@ -967,7 +967,7 @@
 
 
 
-<h2><a name="_Toc108615002"></a>3.9&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Run DREAM</h2>
+<h2 name="run">3.9&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Run DREAM</h2>
 <p>The <em>Run DREAM</em> page (Figure 19) provides a summary of the user inputs to the left. By default, a new &ldquo;results&rdquo; directory will be created to store output files. The output file location can be changed along with the output&rsquo;s filename.</p>
 <p>&nbsp;</p>
 
@@ -1036,7 +1036,7 @@
 </ol>
 </li>
 </ol>
-<h2><a name="_Toc108615003"></a>3.10&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Outputs</h2>
+<h2 name="outputs">3.10&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Outputs</h2>
 <p>When DREAM completes, it creates several files in the specified results directory, including:</p>
 <ul>
 <li><strong>Run#_AllCampaigns.csv</strong>
@@ -1068,7 +1068,7 @@
 
 
 
-<h1><a name="_Toc108615004"></a>4.&nbsp;&nbsp;&nbsp;&nbsp; Pre-processing data</h1>
+<h1 name="pre">4.&nbsp;&nbsp;&nbsp;&nbsp; Pre-processing data</h1>
 <p>There are two file formats accepted by DREAM: (1) converting full leakage simulations into HDF5 files or (2) reading results from IAM, a reduced order model that uses a probabilistic framework from NRAP-Open-IAM.</p>
 <p>To handle outputs from leakage simulations, DREAM provides the HDF5 Converter tool (Figure 22), which is pre-programmed to convert the output files from the following applications:</p>
 <ul>
@@ -1091,7 +1091,7 @@
 
 
 
-<h2><a name="_Toc108615005"></a>4.1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; STOMP Data</h2>
+<h2 name="stomp">4.1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; STOMP Data</h2>
 <p>The DREAM file converter will accept most output types from STOMP. The required directory hierarchy is &ldquo;ensemble folder\scenario folders\file per time step&rdquo;. Detailed information follows below.</p>
 <p><strong>Folder Structure</strong></p>
 <p>For STOMP output, a folder with sub folders is expected. Each subfolder contains all the data for a given scenario. Within the scenario folder, there should be one file for each time step that contains data for all the variables. Each scenario needs to have the same number of time steps and the same set of variables.</p>
@@ -1144,7 +1144,7 @@
 <p>&nbsp;</p>
 <p>--------------------------------------- End of File</p></sub>
 <p><strong><u>&nbsp;</u></strong></p>
-<h2><a name="_Toc108615006"></a>4.2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; NUFT Data</h2>
+<h2 name="nuft">4.2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; NUFT Data</h2>
 <p>The DREAM file converter will accept most output types from NUFT given in NTAB format. The required directory hierarchy is &ldquo;ensemble folder\file per parameter and time step&rdquo;. Detailed information follows below.</p>
 <p><strong>Folder Structure</strong></p>
 <p>For a NUFT output, a single folder is expected for the entire ensemble. Each file should represent a parameter for each scenario. All scenarios should have the same parameters. Each scenario needs to have the same number of time steps.</p>
@@ -1168,7 +1168,7 @@
 <p>&nbsp;</p>
 <p>--------------------------------------- End of File</p></sub>
 <p>&nbsp;</p>
-<h2><a name="_Toc108615007"></a>4.3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; TECPLOT Data</h2>
+<h2 name="tecplot">4.3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; TECPLOT Data</h2>
 <p>If the user has plot files generated by another subsurface simulation code, it is recommended to reformat the plot file to fit an accepted ASCII format. TECPLOT formats are accepted due to their prevalent use in post-processing. &nbsp;</p>
 <p><strong>Folder Structure</strong></p>
 <p>For Tecplot output, DREAM expects a single folder containing a TECPLOT file for each scenario. Each tecplot file is expected to contain all the time steps and all the data for that scenario. Each scenario needs to have the same number of time steps and the same set of variables.</p>
@@ -1214,7 +1214,7 @@
 <p>4.5 4.5 4.5 4.5 4.5 4.5 4.5 4.5</p>
 <p>--------------------------------------- End of File</p></sub>
 <p>&nbsp;</p>
-<h2><a name="_Toc108615008"></a>4.4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; HDF5 Output</h2>
+<h2 name="hdf">4.4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; HDF5 Output</h2>
 <p>For each of the three examples, DREAM will create a directory with the same name as the parent directory with an &ldquo;_hdf5&rdquo; appended. Inside the directory will be an HDF5 file for each scenario that contains all the time steps for all the data types along with the grid information. All data will be cell centered.</p>
 <p><strong>File Example:</strong></p>
 <p>The HDF5 files can be viewed with HDFView (Figure 23).</p>
@@ -1236,7 +1236,7 @@
 
 <p> &nbsp;</p>
 
-<h2><a name="_Toc108615009"></a>4.5&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; IAM Output</h2>
+<h2 name="iam">4.5&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; IAM Output</h2>
 <p>IAM can quickly create many scenarios, all of which should be placed in a single directory. As part of the process of creating these files from IAM, the user must select a detection criteria and threshold for each parameter. Therefore, the IAM files only contain detecting nodes for the inputted detection values, causing values to be greyed out on the Leakage Criteria page. To test different detection values, IAM must be rerun to generate a new set of IAM files.</p>
 <p><strong>File Example:</strong></p>
 <p>Each file has a header that lists IAM, scenario number, parameter, the detection criteria (relative change, absolute change, above, below), and the detection threshold. A negative or positive sign can be placed before the detection threshold to limit to a positive or negative change, otherwise the change threshold will work in both positive and native directions.</p>
@@ -1256,7 +1256,7 @@
 
 
 
-<h1><a name="_Toc108615010"></a>5.&nbsp;&nbsp;&nbsp;&nbsp; Post-Processing Data</h1>
+<h1 name="post">5.&nbsp;&nbsp;&nbsp;&nbsp; Post-Processing Data</h1>
 <p>Once the user has finished running DREAM, the results directory can be located to find the outputted files: ensemblename_solutionSpace.txt, Run#_AllCampaigns.csv, TopCampaigns.csv, and VolumeOfAquiferDegraded.csv.</p>
 <p>For &ldquo;ensemblename_solutionSpace.txt&rdquo;, the data file includes columns with nominal values for <em>x</em>,<em>y</em>,<em>z </em>centered points, and the corresponding values for &ldquo;<em>saturation</em>&rdquo;, &ldquo;<em>gravity</em>&rdquo;, and &ldquo;<em>pressure</em>&rdquo;.</p>
 <p>For &ldquo;Run#_AllCampaigns.csv&rdquo;, the data file has multiple columns, including</p>
@@ -1283,7 +1283,7 @@
 <li><em>Sensor Types (x y z) </em>is explained above.</li>
 </ul>
 <p>For &ldquo;VolumeOfAquiferDegraded.csv&rdquo;, the data file has multiple columns, including <em>Time</em> (units specified by user or within the input files), and the <em>Average</em>, <em>Minimum</em>, and <em>Maximum VAD</em> (units of volume, e.g., cubic meters), which are the estimated ranges for volume of aquifer degraded. The final column is <em>Total Possible VAD</em>.</p>
-<h2><a name="_Toc108615011"></a>5.1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Python Visualization</h2>
+<h2 name="py">5.1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Python Visualization</h2>
 <p>Post-processing of the DREAM run can be executed by clicking <em>Display Python Plots </em>under <strong><em>Optimization Settings</em></strong>. Multiple figures will be produced and then automatically saved to the specified output directory under a subdirectory called &ldquo;Figures&rdquo;. Below is a list of acronyms that are used in specifying the parameters in the figures.</p>
 <p>Parameter List of Acronyms</p>
 <ul>
@@ -1519,7 +1519,7 @@
 
 <p>DREAM currently supports point sensors and surface surveys, but there are plans to expand to additional technologies. Cross-well ERT technology was once available to a limited degree but needs some additional work to fit with the new architecture of DREAM V3. There are some assumptions made about each monitoring technology that the user should be aware of.</p>
 <p>Many of the algorithms also make small mutations to monitoring technologies between iterations, and these mutations look different depending on the technology. These mutations are intentionally as small as possible to allow the algorithms to test campaigns similar to other optimal campaigns. Details on how mutations are handled are further described for each algorithm in Section 7.</p>
-<h2><a name="_Toc108615013"></a>5.2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Point Sensors</h2>
+<h2 name="point">5.2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Point Sensors</h2>
 <p>Point sensors occupy a single location and continuously monitor at every time step. Point sensors are only placed within the detectable plume for a given parameter, where they will detect a leak for at least one scenario. To develop optimized monitoring campaigns, point sensors typically have a delayed start until the first time at which they can detect a leak for any scenario. If a point sensor is allowed redeployments, it may be moved from one location to another at a randomly chosen timestep. Point sensors are also constrained by the maximum number of wells and minimum distance between wells, as point sensor locations are first determined. Then, well locations, depths, and costs are assessed based on point sensor locations.</p>
 <p>The following mutations are available for point sensors:</p>
 <ul>
@@ -1527,7 +1527,7 @@
 <li>Add a redeployment to an existing sensor, allowing it to move locations at a specified time (20%)</li>
 <li>Remove a redeployment on an existing sensor, so that it remains longer at its original location (20%)</li>
 </ul>
-<h2><a name="_Toc108615014"></a>5.3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Surface Surveys</h2>
+<h2 name="surface">5.3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Surface Surveys</h2>
 <p>Surface surveys, such as gravity surveys, are assumed to be conducted by a team at several discrete points in time, across a wide area along the surface. DREAM visualizes surveys across the top layer of nodes, though it represents actions only on the surface. All surveys are limited to be rectangular grids, with a density anywhere between every 1-3 nodes within a given rectangular grid. Since surveys typically detect change from a baseline, DREAM assumes that a survey was conducted at the start of the simulation and that the locations of the survey remain constant that the change can be seen compared to the baseline. To develop more optimized monitoring campaigns, the first survey (aside from the baseline) is fixed at the first time at which they can detect a leak for any scenario. The max number of redeployments controls how many times the survey team might conduct another survey.</p>
 <p>The following mutations are available for surface surveys:</p>
 <ul>
@@ -1544,13 +1544,13 @@
 
 
 
-<h1><a name="_Toc108615015"></a>6.&nbsp;&nbsp;&nbsp;&nbsp; Optimization Algorithms</h1>
+<h1 name="opt">6.&nbsp;&nbsp;&nbsp;&nbsp; Optimization Algorithms</h1>
 <p>DREAM is intentionally designed to run on a personal computer. Therefore, a complete enumeration of the solution space that tests all possible combinations and placements of monitoring technologies is not feasible. As an alternative, DREAM uses various optimization algorithms to approximate the optimal monitoring campaigns. Because multiple objectives are considered, there will be many optimal monitoring campaigns each with unique trade-offs between the objectives.</p>
 <p>The algorithms are built into DREAM such that the user can easily select any of the following algorithms and simply compare results from one run to the next. However, a basic understanding of the algorithms can help decide which option suites a particular leak ensemble. Number of scenarios, size of domain, and degree of variation between scenarios can all factor into which algorithm may perform the best for each leak ensemble.</p>
-<h2><a name="_Toc108615016"></a>6.1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Monte Carlo</h2>
+<h2 name="mc">6.1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Monte Carlo</h2>
 <p>Monte Carlo essentially uses randomization to seek optimal numerical results. Each iteration is a randomly created campaign and has no bearing on the next iteration, i.e., an independent draw of a campaign for each iteration. Every random campaign only considers placing monitoring technology in locations where it may detect a leak for at least one scenario, known as the detectable plume. If the user determines a more restrictive detection criteria (Section 3.5), it is possible that the random campaign results in no detection, but otherwise, most campaigns should offer some benefit.</p>
 <p>The main advantage of Monte Carlo is that it is very fast to run iterations. Monte Carlo also widely explores the solution space, giving a full spectrum of possible solutions and their objective values. However, Monte Carlo does not explore the optimal solution space well, is computationally expensive, especially for a large solution space. Therefore, it is not recommended to be anything more than a diagnostics tool.</p>
-<h2><a name="_Toc108615017"></a>6.2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Simulated Annealing</h2>
+<h2 name="sa">6.2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Simulated Annealing</h2>
 <p>Simulated annealing is the default algorithm for DREAM that was founded by Matott et al. (2011) to perform moderately well among evaluated algorithms for geoscience applications, and it was first developed by Bangerth et al. (2006) to be efficient at finding near-optimal solutions. Simulated annealing is an iterative search heuristic analogous to the physical process of annealing. At each iteration, the campaign is randomly mutated with one of the following actions, listing the probability that each action will be selected:</p>
 <ul>
 <li>Add a random monitoring technology to a valid location (10% chance)</li>
@@ -1575,7 +1575,7 @@
 
 
 
-<h2><a name="_Toc108615018"></a>6.3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Heuristic Algorithm</h2>
+<h2 name="heuristic">6.3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Heuristic Algorithm</h2>
 <p>The DREAM heuristic algorithm is a novel approach for examining the set of undetected, detectable leaks, and identifies the spaces where they spatially overlap (Figure 34). It then generates a cumulative distribution function (Figure 35) based on the number of overlapping leaks that are predicted by a single monitoring plan with different sensor technology schemes, and preferentially assigns sensors to the spaces where the greatest number of possible leaks would be detected. Each time a new sensor is added to the monitoring plan, the set of overlaps and the cumulative distribution function are re-computed. This algorithm considers only the detectable leaks, meaning that the monitoring technology being added to the monitoring plan could detect the magnitude of the physical signal produced by the leak. Where multiple monitoring technologies are being considered, the algorithm cycles through the list and considers one monitoring technology at a time.</p>
 
 
@@ -1601,9 +1601,9 @@
 
 
 
-<h1><a name="_Toc108615019"></a>7.&nbsp;&nbsp;&nbsp;&nbsp; Appendix</h1>
+<h1 name="appendix">7.&nbsp;&nbsp;&nbsp;&nbsp; Appendix</h1>
 <p> &nbsp; </p>
-<h2><a name="_Toc108615020"></a>7.1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Objectives</h2>
+<h2 name="objectives">7.1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Objectives</h2>
 <p>Objectives are assessed in Run DREAM, and there is a minimum of two objectives that must be assessed. These objectives may feed back into some algorithms at each iteration, though. The following objectives are available&nbsp;:</p>
 <p>Time to Detection &ndash; A required objective; this determines how much time passes until the deployed technology detects a leak. DREAM considers a shorter time to detection to be preferable.</p>
 <ul>
@@ -1612,7 +1612,7 @@
 <li>Scenarios Detected &ndash; Tied to the first objective, this calculates the percent of scenarios that are detected with a given monitoring campaign.</li>
 </ul>
 <p> &nbsp; </p>
-<h2><a name="_Toc108615021"></a>7.2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Pointers for Running Dream</h2>
+<h2 name="pointers">7.2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Pointers for Running Dream</h2>
 <p>In this section, we will go over some important pointers when using DREAM to ease the difficulty in setting up a DREAM run. Throughout DREAM, there will be question marks above some of the features that you can click on for more helpful information. If you click on one of these questions marks, you can learn about what inputs are required, description of the feature, and much more.</p>
 
 
@@ -1699,8 +1699,7 @@
 
 
 
-<h1><a name="_Toc108615023"></a><a name="_Toc108596361"></a><a name="_Toc108602985"></a><a name="_Toc108603103"></a><a name="_Toc108615022"></a></h1>
-<h1><a name="_Toc108615019"></a>8.&nbsp; &nbsp; &nbsp;References</h1>
+<h1 name="references">8.&nbsp; &nbsp; &nbsp;References</h1>
 <p>Bacon, D.H.; Yonkofski, C.M.; Brown, C.F.; Demirkanli, D.I.; Whiting, J.M. (2019). Risk-based post injection site care and monitoring for commercial-scale carbon storage: Reevaluation of the FutureGen 2.0 site using NRAP-Open-IAM and DREAM. <em>Intl. J. Greenhouse Gas Control</em>, 90, 102784.</p>
 <p>Baek, S.; Bacon, D.H.; Huerta, N.J. (2022). <em>Deep learning-based multisegmented wellbore model development for many wells site study</em>. In NRAP Annual Technical Meeting Conference. National Risk Assessment Partnership.</p>
 <p>Carroll, S. A.; Keating, E.; Mansoor, K.; Dai, Z.; Sun, Y.; Trainor-Guitton, W.; Brown, C.; Bacon, D. (2014a). Key factors for determining groundwater impacts due to leakage from geologic carbon sequestration reservoirs. <em>Intl. J. Greenhouse Gas Control</em>, 29, 153&ndash;168.</p>
