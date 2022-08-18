@@ -1516,10 +1516,11 @@
 
 
 
+<h1 name="point">6.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Monitoring Technologies</h1>
 
 <p>DREAM currently supports point sensors and surface surveys, but there are plans to expand to additional technologies. Cross-well ERT technology was once available to a limited degree but needs some additional work to fit with the new architecture of DREAM V3. There are some assumptions made about each monitoring technology that the user should be aware of.</p>
 <p>Many of the algorithms also make small mutations to monitoring technologies between iterations, and these mutations look different depending on the technology. These mutations are intentionally as small as possible to allow the algorithms to test campaigns similar to other optimal campaigns. Details on how mutations are handled are further described for each algorithm in Section 7.</p>
-<h2 name="point">5.2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Point Sensors</h2>
+<h2 name="point">6.1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Point Sensors</h2>
 <p>Point sensors occupy a single location and continuously monitor at every time step. Point sensors are only placed within the detectable plume for a given parameter, where they will detect a leak for at least one scenario. To develop optimized monitoring campaigns, point sensors typically have a delayed start until the first time at which they can detect a leak for any scenario. If a point sensor is allowed redeployments, it may be moved from one location to another at a randomly chosen timestep. Point sensors are also constrained by the maximum number of wells and minimum distance between wells, as point sensor locations are first determined. Then, well locations, depths, and costs are assessed based on point sensor locations.</p>
 <p>The following mutations are available for point sensors:</p>
 <ul>
@@ -1527,7 +1528,7 @@
 <li>Add a redeployment to an existing sensor, allowing it to move locations at a specified time (20%)</li>
 <li>Remove a redeployment on an existing sensor, so that it remains longer at its original location (20%)</li>
 </ul>
-<h2 name="surface">5.3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Surface Surveys</h2>
+<h2 name="surface">6.2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Surface Surveys</h2>
 <p>Surface surveys, such as gravity surveys, are assumed to be conducted by a team at several discrete points in time, across a wide area along the surface. DREAM visualizes surveys across the top layer of nodes, though it represents actions only on the surface. All surveys are limited to be rectangular grids, with a density anywhere between every 1-3 nodes within a given rectangular grid. Since surveys typically detect change from a baseline, DREAM assumes that a survey was conducted at the start of the simulation and that the locations of the survey remain constant that the change can be seen compared to the baseline. To develop more optimized monitoring campaigns, the first survey (aside from the baseline) is fixed at the first time at which they can detect a leak for any scenario. The max number of redeployments controls how many times the survey team might conduct another survey.</p>
 <p>The following mutations are available for surface surveys:</p>
 <ul>
@@ -1544,13 +1545,13 @@
 
 
 
-<h1 name="opt">6.&nbsp;&nbsp;&nbsp;&nbsp; Optimization Algorithms</h1>
+<h1 name="opt">7.&nbsp;&nbsp;&nbsp;&nbsp; Optimization Algorithms</h1>
 <p>DREAM is intentionally designed to run on a personal computer. Therefore, a complete enumeration of the solution space that tests all possible combinations and placements of monitoring technologies is not feasible. As an alternative, DREAM uses various optimization algorithms to approximate the optimal monitoring campaigns. Because multiple objectives are considered, there will be many optimal monitoring campaigns each with unique trade-offs between the objectives.</p>
 <p>The algorithms are built into DREAM such that the user can easily select any of the following algorithms and simply compare results from one run to the next. However, a basic understanding of the algorithms can help decide which option suites a particular leak ensemble. Number of scenarios, size of domain, and degree of variation between scenarios can all factor into which algorithm may perform the best for each leak ensemble.</p>
-<h2 name="mc">6.1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Monte Carlo</h2>
+<h2 name="mc">7.1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Monte Carlo</h2>
 <p>Monte Carlo essentially uses randomization to seek optimal numerical results. Each iteration is a randomly created campaign and has no bearing on the next iteration, i.e., an independent draw of a campaign for each iteration. Every random campaign only considers placing monitoring technology in locations where it may detect a leak for at least one scenario, known as the detectable plume. If the user determines a more restrictive detection criteria (Section 3.5), it is possible that the random campaign results in no detection, but otherwise, most campaigns should offer some benefit.</p>
 <p>The main advantage of Monte Carlo is that it is very fast to run iterations. Monte Carlo also widely explores the solution space, giving a full spectrum of possible solutions and their objective values. However, Monte Carlo does not explore the optimal solution space well, is computationally expensive, especially for a large solution space. Therefore, it is not recommended to be anything more than a diagnostics tool.</p>
-<h2 name="sa">6.2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Simulated Annealing</h2>
+<h2 name="sa">7.2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Simulated Annealing</h2>
 <p>Simulated annealing is the default algorithm for DREAM that was founded by Matott et al. (2011) to perform moderately well among evaluated algorithms for geoscience applications, and it was first developed by Bangerth et al. (2006) to be efficient at finding near-optimal solutions. Simulated annealing is an iterative search heuristic analogous to the physical process of annealing. At each iteration, the campaign is randomly mutated with one of the following actions, listing the probability that each action will be selected:</p>
 <ul>
 <li>Add a random monitoring technology to a valid location (10% chance)</li>
@@ -1575,7 +1576,7 @@
 
 
 
-<h2 name="heuristic">6.3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Heuristic Algorithm</h2>
+<h2 name="heuristic">7.3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Heuristic Algorithm</h2>
 <p>The DREAM heuristic algorithm is a novel approach for examining the set of undetected, detectable leaks, and identifies the spaces where they spatially overlap (Figure 34). It then generates a cumulative distribution function (Figure 35) based on the number of overlapping leaks that are predicted by a single monitoring plan with different sensor technology schemes, and preferentially assigns sensors to the spaces where the greatest number of possible leaks would be detected. Each time a new sensor is added to the monitoring plan, the set of overlaps and the cumulative distribution function are re-computed. This algorithm considers only the detectable leaks, meaning that the monitoring technology being added to the monitoring plan could detect the magnitude of the physical signal produced by the leak. Where multiple monitoring technologies are being considered, the algorithm cycles through the list and considers one monitoring technology at a time.</p>
 
 
@@ -1601,9 +1602,9 @@
 
 
 
-<h1 name="appendix">7.&nbsp;&nbsp;&nbsp;&nbsp; Appendix</h1>
+<h1 name="appendix">8.&nbsp;&nbsp;&nbsp;&nbsp; Appendix</h1>
 <p> &nbsp; </p>
-<h2 name="objectives">7.1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Objectives</h2>
+<h2 name="objectives">8.1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Objectives</h2>
 <p>Objectives are assessed in Run DREAM, and there is a minimum of two objectives that must be assessed. These objectives may feed back into some algorithms at each iteration, though. The following objectives are available&nbsp;:</p>
 <p>Time to Detection &ndash; A required objective; this determines how much time passes until the deployed technology detects a leak. DREAM considers a shorter time to detection to be preferable.</p>
 <ul>
@@ -1612,7 +1613,7 @@
 <li>Scenarios Detected &ndash; Tied to the first objective, this calculates the percent of scenarios that are detected with a given monitoring campaign.</li>
 </ul>
 <p> &nbsp; </p>
-<h2 name="pointers">7.2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Pointers for Running Dream</h2>
+<h2 name="pointers">8.2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Pointers for Running Dream</h2>
 <p>In this section, we will go over some important pointers when using DREAM to ease the difficulty in setting up a DREAM run. Throughout DREAM, there will be question marks above some of the features that you can click on for more helpful information. If you click on one of these questions marks, you can learn about what inputs are required, description of the feature, and much more.</p>
 
 
@@ -1699,7 +1700,7 @@
 
 
 
-<h1 name="references">8.&nbsp; &nbsp; &nbsp;References</h1>
+<h1 name="references">9.&nbsp; &nbsp; &nbsp;References</h1>
 <p>Bacon, D.H.; Yonkofski, C.M.; Brown, C.F.; Demirkanli, D.I.; Whiting, J.M. (2019). Risk-based post injection site care and monitoring for commercial-scale carbon storage: Reevaluation of the FutureGen 2.0 site using NRAP-Open-IAM and DREAM. <em>Intl. J. Greenhouse Gas Control</em>, 90, 102784.</p>
 <p>Baek, S.; Bacon, D.H.; Huerta, N.J. (2022). <em>Deep learning-based multisegmented wellbore model development for many wells site study</em>. In NRAP Annual Technical Meeting Conference. National Risk Assessment Partnership.</p>
 <p>Carroll, S. A.; Keating, E.; Mansoor, K.; Dai, Z.; Sun, Y.; Trainor-Guitton, W.; Brown, C.; Bacon, D. (2014a). Key factors for determining groundwater impacts due to leakage from geologic carbon sequestration reservoirs. <em>Intl. J. Greenhouse Gas Control</em>, 29, 153&ndash;168.</p>
