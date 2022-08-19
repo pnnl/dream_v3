@@ -213,6 +213,26 @@
 [9. References](#references)
  
  
+ 
+<p>&nbsp;&nbsp;</p>
+
+
+<hr>
+
+
+<h1><a name="_Toc108615019"></a>7.&nbsp;&nbsp;&nbsp;&nbsp; List of Figures</h1>
+<p> &nbsp; </p>
+
+[Figure 1: Beta Example Schematic. Figure from Carroll et al. (2014b) shows the links between reservoir, well leakage, and aquifer models using the alluvium case study. Links between reservoir, well leakage, and the carbonate case study are identical.](#fig1)
+ 
+<p> &nbsp; </p>
+
+[Figure 2: DREAM GUI Flow Chart.](#fig2)
+ 
+<p> &nbsp; </p>
+
+
+
 <p>&nbsp;&nbsp;</p>
 
 
@@ -643,7 +663,7 @@
 
 
 <p align="center">
- <img src="./figure/beta_ex_fig1.png">
+ <img name="fig1" src="./figure/beta_ex_fig1.png">
 </p>
 <p align="center"><sub><b>
       Figure&nbsp;1: Beta Example Schematic. Figure from Carroll et al. (2014b) shows the links between reservoir, well leakage, and aquifer models using the alluvium case study. Links between reservoir, well leakage, and the carbonate case study are identical.
@@ -661,7 +681,7 @@
 
 
 <p align="center">
- <img src="./figure/gui_flow_chart.png">
+ <img name="fig2" src="./figure/gui_flow_chart.png">
 </p>
 <p align="center"><sub><b>
       Figure&nbsp;2: DREAM GUI Flow Chart
@@ -681,7 +701,7 @@
 
 
 <p align="center">
- <img src="./figure/welcome_page.png">
+ <img name="fig3" src="./figure/welcome_page.png">
 </p>
 <p align="center"><sub><b>
       Figure&nbsp;3: DREAM <em>Welcome</em> Page
@@ -701,7 +721,7 @@
 
 
 <p align="center">
- <img src="./figure/input_directory_page.png">
+ <img name="fig4" src="./figure/input_directory_page.png">
 </p>
 <p align="center"><sub><b>
       Figure&nbsp;4: <em>Input Directory</em> Page&nbsp;(by folders)
@@ -716,7 +736,7 @@
 
 
 <p align="center">
- <img src="./figure/input_directory_page1.png">
+ <img name="fig5" src="./figure/input_directory_page1.png">
 </p>
 <p align="center"><sub><b>
       Figure&nbsp;5: <em>Input Directory</em> Page&nbsp;(by filenames)
@@ -730,7 +750,7 @@
 
 
 <p align="center">
- <img src="./figure/input_directory_page2.png">
+ <img name="fig6" src="./figure/input_directory_page2.png">
 </p>
 <p align="center"><sub><b>
       Figure&nbsp;6: Pop-up to specify missing information
@@ -763,7 +783,7 @@
 
 
 <p align="center">
- <img src="./figure/leak_definition_page.png">
+ <img name="fig7" src="./figure/leak_definition_page.png">
 </p>
 <p align="center"><sub><b>
       Figure&nbsp;7: Scenario <em>Leak Definition</em> Page
@@ -790,7 +810,7 @@
       
       
  <p align="center">
- <img src="./figure/leak_definition_page1.png">
+ <img name="fig8" src="./figure/leak_definition_page1.png">
 </p>
 <p align="center"><sub><b>
       Figure&nbsp;8: Calculating leak space on <em>Leak Definition</em> page
@@ -806,7 +826,7 @@
 
 
 <p align="center">
- <img src="./figure/leak_visualization.png">
+ <img name="fig9" src="./figure/leak_visualization.png">
 </p>
 <p align="center"><sub><b>
       Figure&nbsp;9: Interactive display of the leak plume after <em>Leak Definition</em>
@@ -832,7 +852,7 @@
 
 
 <p align="center">
- <img src="./figure/scenario_weighting_page.png">
+ <img name="fig10" src="./figure/scenario_weighting_page.png">
 </p>
 <p align="center"><sub><b>
       Figure&nbsp;10: Default settings on <em>Scenario Weighting</em> page.</em>
@@ -849,7 +869,7 @@
 
 
 <p align="center">
- <img src="./figure/define_available_sensors_page.png">
+ <img name="fig11" src="./figure/define_available_sensors_page.png">
 </p>
 <p align="center"><sub><b>
       Figure&nbsp;11: Default settings on <em>Define Available Sensors</em> page
@@ -892,7 +912,7 @@
 
 
 <p align="center">
- <img src="./figure/define_available_sensors_page1.png">
+ <img name="fig12" src="./figure/define_available_sensors_page1.png">
 </p>
 <p align="center"><sub><b>
       Figure&nbsp;12: Specifying criteria for each monitoring technology on <em>Define Available Sensors</em> page
@@ -950,7 +970,7 @@
 
 
 <p align="center">
- <img src="./figure/detectable_plume_visualization.png">
+ <img name="fig13" src="./figure/detectable_plume_visualization.png">
 </p>
 <p align="center"><sub><b>
       Figure&nbsp;13: Visualization of detectable plume
@@ -968,7 +988,7 @@
 
 
 <p align="center">
- <img src="./figure/detection_criteria_page.png">
+ <img name="fig14" src="./figure/detection_criteria_page.png">
 </p>
 <p align="center"><sub><b>
       Figure&nbsp;14: Default settings for <em>Detection Criteria</em> page
@@ -984,7 +1004,7 @@
 
 
 <p align="center">
- <img src="./figure/detection_criteria_page1.png">
+ <img name="fig15" src="./figure/detection_criteria_page1.png">
 </p>
 <p align="center"><sub><b>
       Figure&nbsp;15: Setting criteria for detecting a leak on <em>Detection Criteria</em> page
@@ -1018,7 +1038,7 @@
 
 
 <p align="center">
- <img src="./figure/monitoring_campaign_settings_page0.png">
+ <img name="fig16" src="./figure/monitoring_campaign_settings_page0.png">
 </p>
 <p align="center"><sub><b>
       Figure&nbsp;16: Default settings for <em>Monitoring Campaign Settings</em> page
@@ -1033,7 +1053,7 @@
 
       
 <p align="center">
- <img src="./figure/monitoring_campaign_settings_page.png">
+ <img name="fig17" src="./figure/monitoring_campaign_settings_page.png">
 </p>
 <p align="center"><sub><b>
       Figure&nbsp;17: Example on <em>Monitoring Campaign Settings </em>page
@@ -1052,7 +1072,7 @@
 
 
 <p align="center">
- <img src="./figure/exclude_locations_page.png">
+ <img name="fig18" src="./figure/exclude_locations_page.png">
 </p>
 <p align="center"><sub><b>
       Figure&nbsp;18: <em>Exclude Locations</em> Page showing an example with none of the nodes disabled
@@ -1069,7 +1089,7 @@
 
 
 <p align="center">
- <img src="./figure/dream_run_page.png">
+ <img name="fig19" src="./figure/dream_run_page.png">
 </p>
 <p align="center"><sub><b>
       Figure&nbsp;19: <em>Run Dream</em> Page 
@@ -1093,7 +1113,7 @@
 
 
 <p align="center">
- <img src="./figure/dream_run_page1.png">
+ <img name="fig20" src="./figure/dream_run_page1.png">
 </p>
 <p align="center"><sub><b>
       Figure&nbsp;20: 3D visualization of monitoring campaigns and leak plumes from <em>Visualization</em> page
@@ -1102,7 +1122,7 @@
 
 
 <p align="center">
- <img src="./figure/dream_run_page2.png">
+ <img name="fig21" src="./figure/dream_run_page2.png">
 </p>
 <p align="center"><sub><b>
       Figure&nbsp;21: <em>Objective Graph </em>campaign performance between time to detection and cost objectives that is produced when <em>Calculate Pareto Ranks</em> is enabled
@@ -1177,7 +1197,7 @@
 
 
 <p align="center">
- <img src="./figure/hdf5_tool.png">
+ <img name="fig22" src="./figure/hdf5_tool.png">
 </p>
 <p align="center"><sub><b>
       Figure&nbsp;22: DREAM HDF5 Converter Tool
@@ -1317,7 +1337,7 @@
 
 
 <p align="center">
- <img src="./figure/hdf5_tool2.png">
+ <img name="fig23" src="./figure/hdf5_tool2.png">
 </p>
 <p align="center"><sub><b>
       Figure&nbsp;23: HDFView of DREAM input file structure.
@@ -1405,7 +1425,7 @@
 
 
 <p align="center">
- <img src="./figure/kimberlina_1_2_sa_10k_example_a.png">
+ <img name="fig24" src="./figure/kimberlina_1_2_sa_10k_example_a.png">
 </p>
 <p align="center"><sub><b>
       Figure&nbsp;24: Simulated annealing example of PLD and PMCD versus TTD &nbsp;
@@ -1428,7 +1448,7 @@
 
 
 <p align="center">
- <img src="./figure/kimberlina_1_2_sa_10k_example_b.png">
+ <img name="fig25" src="./figure/kimberlina_1_2_sa_10k_example_b.png">
 </p>
 <p align="center"><sub><b>
       Figure&nbsp;25: Simulated annealing example of PLD and PMCD versus Monitoring Cost
@@ -1451,7 +1471,7 @@
 
 
 <p align="center">
- <img src="./figure/kimberlina_1_2_sa_10k_example_c.png">
+ <img name="fig26" src="./figure/kimberlina_1_2_sa_10k_example_c.png">
 </p>
 <p align="center"><sub><b>
       Figure&nbsp;26: Simulated annealing example of PLD versus PMCD
@@ -1472,7 +1492,7 @@
 
 
 <p align="center">
- <img src="./figure/kimberlina_1_2_sa_10k_example_d.png">
+ <img name="fig27" src="./figure/kimberlina_1_2_sa_10k_example_d.png">
 </p>
 <p align="center"><sub><b>
       Figure&nbsp;27: Simulated annealing example of Monitoring Cost versus TTD
@@ -1496,7 +1516,7 @@
 
 
 <p align="center">
- <img src="./figure/kimberlina_1_2_sa_10k_example_e.png">
+ <img name="fig28" src="./figure/kimberlina_1_2_sa_10k_example_e.png">
 </p>
 <p align="center"><sub><b>
       Figure&nbsp;28: Simulated annealing example of VAD versus TTD
@@ -1518,7 +1538,7 @@
 
 
 <p align="center">
- <img src="./figure/kimberlina_1_2_sa_10k_example_f.png">
+ <img name="fig29" src="./figure/kimberlina_1_2_sa_10k_example_f.png">
 </p>
 <p align="center"><sub><b>
       Figure&nbsp;29: Simulated annealing example of PMCD using last time step compared to the time at which the maximum leak is detected versus TTD
@@ -1545,7 +1565,7 @@
 
 
 <p align="center">
- <img src="./figure/kimberlina_1_2_sa_10k_example_g.png">
+ <img name="fig30" src="./figure/kimberlina_1_2_sa_10k_example_g.png">
 </p>
 <p align="center"><sub><b>
       Figure&nbsp;30: Simulated annealing example of PMCD using last time step compared to the time at which the maximum leak is detected versus Monitoring Cost
@@ -1572,7 +1592,7 @@
 
 
 <p align="center">
- <img src="./figure/kimberlina_1_2_sa_10k_example_h.gif">
+ <img name="fig31" src="./figure/kimberlina_1_2_sa_10k_example_h.gif">
  <img src="./figure/kimberlina_1_2_sa_10k_example_i.gif">
 </p>
 <p align="center"><sub><b>
@@ -1603,7 +1623,7 @@
 
 
 <p align="center">
- <img src="./figure/kimberlina_1_2_sa_10k_example_j.gif">
+ <img name="fig32" src="./figure/kimberlina_1_2_sa_10k_example_j.gif">
 </p>
 <p align="center"><sub><b>
       Figure&nbsp;32: Simulated annealing example of 3D scatter plots that show (left) some of the proposed monitoring campaigns and (right) the respective PLD and Monitoring Cost versus TTD
@@ -1662,7 +1682,7 @@
 
 
 <p align="center">
- <img src="./figure/simulated_annealing_temp_func.png">
+ <img name="fig33" src="./figure/simulated_annealing_temp_func.png">
 </p>
 <p align="center"><sub><b>
       Figure&nbsp;33: Exponential decay used for temperature function
@@ -1678,7 +1698,7 @@
 
 
 <p align="center">
- <img src="./figure/heuristic_alg.png">
+ <img name="fig34" src="./figure/heuristic_alg.png">
 </p>
 <p align="center"><sub><b>
       Figure&nbsp;34: The variability and intensity of color in the colormap indicates the number of leaks that overlap at each point (x,y), considering only the leaks that are detectable but as-yet undetected by the given monitoring plan.
@@ -1689,7 +1709,7 @@
 
 
 <p align="center">
- <img src="./figure/heuristic_alg_cdf.png">
+ <img name="fig35" src="./figure/heuristic_alg_cdf.png">
 </p>
 <p align="center"><sub><b>
       Figure&nbsp;35: Each node number corresponds to a pixel from Figure 34, and the rise in the corresponding CDF value is proportional to the number of leaks that are detectable at that node location.
@@ -1715,7 +1735,7 @@
 
 
 <p align="center">
- <img src="./figure/question_mark.png">
+ <img name="fig36" src="./figure/question_mark.png">
 </p>
 <p align="center"><sub><b>
       Figure&nbsp;36: Example of question marks that you can click on for more information
@@ -1782,7 +1802,7 @@
 
 
 <p align="center">
- <img src="./figure/scenario_weighting_question_marks.png">     
+ <img name="fig37" src="./figure/scenario_weighting_question_marks.png">     
  <img src="./figure/scenario_weighting_a.png">
  <img src="./figure/scenario_weighting_b.png">   
 </p>
