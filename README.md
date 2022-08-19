@@ -176,27 +176,27 @@
  
 [6.1 Point Sensors](#point)
  
-<p> &nbsp; </p>  
+<p> Summary: the <em>Point Sensors</em> page discusses what are considered point sensors, their constraints, and other associated variables.  &nbsp; </p>  
  
 [6.2 Surface Surveys](#surface)
  
-<p> &nbsp; </p>  
+<p> Summary: the <em>Surface Surveys</em> page discusses what are considered surface surveys, their constraints, and other associated variables.&nbsp; </p>  
  
 [7. Optimization Algorithms](#opt)
  
-<p> &nbsp; </p>  
+<p> Summary: the <em>Optimization Algorithms</em> page discusses the types of optimization algorithms available in DREAM. &nbsp; </p>  
  
 [7.1 Monte Carlo](#mc)
  
-<p> &nbsp; </p>  
+<p> Summary: the <em>Monte Carlo</em> page discusses the optimization algorithm called Monte Carlo and how it uses randomization to seek optimal numerical results.  &nbsp; </p>  
  
 [7.2 Simulated Annealing](#sa)
  
-<p> &nbsp; </p>  
+<p> Summary: the <em>Simulated Annealing</em> page discusses the default optimization algorithm in DREAM called Simulated Annealing and how it randomly mutates solutions to find the optimal campaigns. The default cooling function is also discussed.  &nbsp; </p>  
  
 [7.3 Heuristic Algorithm](#heuristic)
  
-<p> &nbsp; </p>  
+<p> Summary: the <em>Heuristic Algorithm</em> page discusses the newly developed Heuristic Algorithm that has been implemented in DREAM. It is a novel approach for examining the set of undetected, detectable leaks, and identifies the spaces where they spatially overlap  &nbsp; </p>  
  
 [8. Appendix](#appendix)
  
@@ -204,11 +204,11 @@
  
 [8.1 Objectives](#objectives)
  
-<p> &nbsp; </p>  
+<p> Summary: the <em>Objectives</em> page reviews the available objectives that the user can select from when running DREAM. &nbsp; </p>  
  
 [8.2 Pointers for Running DREAM](#pointers)
  
-<p> &nbsp; </p>  
+<p> Summary: the <em>Pointers for Running DREAM</em> page goes over some important pointers when using DREAM to ease the difficulty in setting up a DREAM run.  &nbsp; </p>  
  
 [9. References](#references)
  
