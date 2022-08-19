@@ -825,7 +825,7 @@
 <p>(1) The maximum volume of aquifer degraded <em>v</em> is automatically calculated for each scenario threshold (see Section 3.3) and by multiplying porosity by the total volume of nodes that exceed the threshold. Porosity is either a constant or can be set individually for each node with the input HDF5 file. The maximum value at any time step can be used as the variable <em>v</em> with the scenario weighting equation.</p>
 <p>(2) For variables <em>a </em>and <em>b</em>, they can manually be set by the user or can be read in from a CSV file and used as a variable in the &ldquo;Weight Equation&rdquo;. They can represent variables, such as scenario likelihood, potential remediation cost, proximity to an area of concern, and so on. The default settings for the variables do not need to be changed if all scenarios will be weighted equally.</p>
 <p>(3) Weights are relative, but the user can scale the w or normalize them to be between 0 and 1 for clarity. The user can also remove scenario weighting by selecting the button <em>Set Weights Equal</em>. The <em>Scale Weights</em> button will maintain the same relative weights while scaling the numbers from 0 to 1, which is recommended when weights are very large. Weighting is important in DREAM because it optimizes monitoring campaigns by testing random sensor placements and iterating towards &lsquo;better&rsquo; solutions based on objectives. Weighting scenarios can influence which monitoring campaign is preferred. DREAM can also factor scenario weighting in Pareto optimization to rank the top performing monitoring campaigns.</p>
-<p>During multi-objective optimization in the last phase of running DREAM, theFor <em>Weight Equation</em>, it can be modified as needed using any of the variables: <em>v, a</em>, or <em>b</em>. The user also has the option to upload a weighting scheme of choice by clicking “Load weights”.</p>
+<p>During multi-objective optimization in the last phase of running DREAM, the algorithms Simulated Annealing and Heuristic Algorithm, incorporate weighting schemes to prioritize simulations with high valued weights over those with lower values in weight. However, Monte Carlo algorithm does not use the scenarion weighting, and the resulting outputs will still display both of the variables: <em>v</em>, a<em></em>, or <em>b</em>. For <em>Weight Equation</em>, it can be modified as needed using any of the variables: <em>v, a</em>, or <em>b</em>. The user also has the option to upload a weighting scheme of choice by clicking “Load weights”.</p>
 <p>In this example, continue with the default setting of equal or uniform weighting (Figure 10). </p>
 
 
@@ -843,8 +843,8 @@
 
 
 
-<h2 name="threshold">3.5&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Detection Threshold</h2>
-<p>The <em>Detection Threshold</em> page (Figure 11) allows the user to select monitoring technologies that are being considered based on the parameters available in the input files, and to define associated parameters, such as deployment cost and detection threshold.</p>
+<h2 name="threshold">3.5&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Define Available Sensors</h2>
+<p>The <em>Define Available Sensors</em> page (Figure 11) allows the user to select monitoring technologies that are being considered based on the parameters available in the input files, and to define associated parameters, such as deployment cost and detection threshold.</p>
 
 
 
@@ -852,7 +852,7 @@
  <img src="./figures/define_available_sensors_page.png">
 </p>
 <p align="center"><sub><b>
-      Figure&nbsp;11: Default settings on <em>Detection Threshold</em>
+      Figure&nbsp;11: Default settings on <em>Define Available Sensors</em> page
       </b></sub></p>
 
 
@@ -871,7 +871,7 @@
 <li>For surface surveys (e.g., gravity survey), &lsquo;a&rsquo; represents the area being surveyed and &lsquo;s&rsquo; represents the number of after the original baseline.</li>
 </ul>
 </li>
-<li><em>Detection Type</em> and <em>Detection Value</em> define the technical capabilities of the monitoring technology and the magnitude of detection that will reliably identify a leak. <em>Detection Type </em>can be set independently for each parameter and defines the type of change that a sensor is able to detect.
+<li><em>Detection Type</em> and <em>Detection Threshold</em> define the technical capabilities of the monitoring technology and the magnitude of detection that will reliably identify a leak. <em>Detection Type </em>can be set independently for each parameter and defines the type of change that a sensor is able to detect.
 <ul>
 <li>&ldquo;Absolute change&rdquo; means the sensor detect when a parameter exceeds the value. It has units of the <em>Monitoring Parameter</em>. &ldquo;Relative change&rdquo; is detected as percent change from the original value as a percent. Both work across time and may be limited to positive or negative change by providing a +/- sign before the value.</li>
 <li>&ldquo;Above threshold&rdquo; and &ldquo;Below threshold&rdquo; (units of <em>Monitoring Parameter)</em> define detection as surpassing and falling below, respectively, the given threshold.</li>
@@ -886,7 +886,6 @@
 <li>&ldquo;Surface Surveys&rdquo; cover a large area and have any number of discrete deployments while a survey is conducted. They involve periodic measurements taken by a survey crew to detect changes. It is assumed that a survey is conducted at time 0, and all future survey are detecting change from this time.</li>
 </ul>
 </li>
-<li><em>Max Redeployments</em> determines the maximum number of times that a single point sensor can be moved, or the maximum number of times that a surface survey may be conducted. Surface surveys must be set to greater than 1 so that at least one reading is taken. It has a different meaning for different deployment methods.</li>
 <li><em>Zone Bottom</em> and <em>Zone Top</em> define depth limitations to where the monitoring technology can be placed. By default, these values are set to the global minimum and maximum. The value is greyed out for surface surveys since they are conducted at the surface.</li>
 </ul>
 
@@ -896,14 +895,14 @@
  <img src="./figures/define_available_sensors_page1.png">
 </p>
 <p align="center"><sub><b>
-      Figure&nbsp;12: Specifying criteria for each monitoring technology on <em>Detection Threshold</em> page
+      Figure&nbsp;12: Specifying criteria for each monitoring technology on <em>Define Available Sensors</em> page
       </b></sub></p>
 
 
 
 
 <p>When loading IAM files, many user inputs are not available, as inputs are fixed during the process to generate IAM files. Some inputs may also be unavailable depending on the deployment method selected.</p>
-<p>For this example, refer to Figure 12. First, select the <em>check box</em> for &ldquo;gravity&rdquo;, &ldquo;pressure&rdquo;, and &ldquo;saturation&rdquo;. Assign &ldquo;gravity&rdquo; with a cost equation of &ldquo;1500*s+250*a/1000000&rdquo; to represent $1500 per survey plus $250 per square kilometer of land surveyed. Gravity should also set <em>Detection Type</em> to &ldquo;Above threshold&rdquo;, <em>Detection Value</em> to 20 mGal, and <em>Max Redeployments</em> to 5. Pressure should set <em>Cost</em> to $500, <em>Detection Type</em> to &ldquo;Relative change&rdquo;, and <em>Detection Value</em> . Disclaimer: starting at 0 when calculating &ldquo;Relative change&rdquo; will cause an infinite value. Saturation should set <em>Cost</em> to $1500, <em>Detection Type</em> to &ldquo;Above threshold&rdquo;, and <em>Detection Value</em> to 2%. Finally, click <em>Find Detectable Nodes</em>. DREAM will calculate which nodes detect at least one scenario in the ensemble based on the user-defined detection type and value. The following values should appear next to each selected parameter type at the bottom of the page (Table 1).</p>
+<p>For this example, refer to Figure 12. First, select the <em>check box</em> for &ldquo;gravity&rdquo;, &ldquo;pressure&rdquo;, and &ldquo;saturation&rdquo;. Assign &ldquo;gravity&rdquo; with a cost equation of &ldquo;1500*s+250*a/1000000&rdquo; to represent $1500 per survey plus $250 per square kilometer of land surveyed. Gravity should also set <em>Detection Type</em> to &ldquo;Above threshold&rdquo;, <em>Detection Threshold</em> to &ldquo;20 microGal&rdquo;. Pressure should set <em>Cost</em> to &ldquo;$500&rdquo;, <em>Detection Type</em> to &ldquo;Relative change&rdquo;, and <em>Detection Threshold</em> &ldquo;2000%&rdquo;. Disclaimer: starting at 0 when calculating &ldquo;Relative change&rdquo; will cause an infinite value. Saturation should set <em>Cost</em> to &ldquo;$1500&rdquo;, <em>Detection Type</em> to &ldquo;Above threshold&rdquo;, and <em>Detection Threshold</em> to &ldquo;2%&rdquo;. Finally, click <em>Find Detectable Nodes</em>. DREAM will calculate which nodes detect at least one scenario in the ensemble based on the user-defined detection type and value. The following values should appear next to each selected parameter type at the bottom of the page (Table 1).</p>
 <p>Note: While the process is working, a red box appears to the right of the progress bar. Pressing this box cancels the process before completion but progress is saved.</p>
 
 <p><a name="_Toc108615062"></a><b>Table 1: Number of detectable nodes for each parameter in the example.</b></p>
@@ -979,7 +978,7 @@
 
 
 
-<p>For this example, set the first criteria, <em>Criteria 1</em>, to &ldquo;saturation&rdquo; with <em>Minimum Detections to Signify Leak </em>set to 1. Set the second criteria, <em>Criteria 2</em>, to &ldquo;gravity&rdquo; and &ldquo;pressure&rdquo; with <em>Minimum Detections to Signify Leak </em>set to 1 for each <em>Monitoring Technology </em>(Figure <strong>15</strong>). This implies confidence in a leak when either (1) a single saturation sensor exceeds the threshold or (2) both a gravity and pressure sensor exceed the threshold. Click <em>Next</em>.</p>
+<p>For this example, set the first criteria, <em>Criteria 1</em>, to &ldquo;saturation&rdquo; with <em>Minimum Detections to Signify Leak </em>set to &ldquo;1&rdquo;. Set the second criteria, <em>Criteria 2</em>, to &ldquo;gravity&rdquo; and &ldquo;pressure&rdquo; with <em>Minimum Detections to Signify Leak </em>set to &ldquo;1&rdquo; for each <em>Monitoring Technology </em>(Figure <strong>15</strong>). This implies confidence in a leak when either (1) a single saturation sensor exceeds the threshold or (2) both a gravity and pressure sensor exceed the threshold. Click <em>Next</em>.</p>
 
 
 
@@ -1005,11 +1004,12 @@
 <li><em>Number of Station Locations Allowed</em> sets a range for how many nodes can be included in a single surface survey. Since surface surveys often measure change between surveys, survey size will remain constant across redeployments for a given campaign. By default, this value is set at 5%-40% of the total surface nodes. Hovering over these fields shows a tooltip with the total number of available surface nodes.</li>
 </ul>
 </li>
+<li><em>Maximum number of repeated surveys</em> determines the maximum number of times that a single point sensor can be moved, or the maximum number of times that a surface survey may be conducted. Surface surveys must be set to greater than 1 so that at least one reading is taken. It has a different meaning for different deployment methods.</li>    
 <li><strong><em>Point Sensors</em></strong>
 <ul>
 <li>sets a cap on the number of vertical wells that be included in a monitoring campaign. The algorithm will explore different numbers of wells, and the number of wells will affect the cost objective, but this sets a hard limit on how many wells of any depth can be considered for the campaigns. Leaving the value empty means there is no cap.</li>
 <li><em>Minimum Distance Between Wells</em> constrains the wells to be at a certain distance from other wells. DREAM is limited by the model resolution that makes up the domain space and assumes that wells are placed in the center of the cell, for the purposes of distance calculations. In reality, a decision-maker will micro-site the recommended monitoring campaign to a location that makes sense.</li>
-<li><em>Cost Per Well</em> and <em>Cost of Well Per unit Depth</em> assigns a cost to each well and for the depth of each well, respectively. This factors into the maximum monitoring budget and the cost objective. A numeric value or &nbsp;an equation can be entered for each field that includes &lsquo;t&rsquo; as a variable for time.</li>
+<li><em>Cost Per Well</em> and <em>Cost of Well Per unit Depth</em> assigns a cost to each well and for the depth of each well, respectively. This factors into the maximum monitoring budget and the cost objective. A numeric value or an equation can be entered for each field that includes &lsquo;t&rsquo; as a variable for time.</li>
 </ul>
 </li>
 </ul>
@@ -1028,7 +1028,7 @@
 
 
 
-<p>For this example shown in Figure 17, leave the default settings for <em>Maximum Monitoring Budget</em> to be empty (i.e., &ldquo;$No Limit&rdquo;) and Number of Sensors to range from 1-5. Set the <em>Number of Station Locations Allowed </em>under<em> <strong>Surface Surveys</strong> </em>to be between 20 and 200 nodes. Under <strong><em>Point Sensors</em></strong><em>,</em> set the <em>Maximum Number of Wells</em> to 3, the <em>Cost Per Well</em> to $500,000, and the <em>Cost of Well Per m Depth</em> (i.e., cost of well per unit depth) to $1,000. Leave the <em>Minimum Distance Between Wells</em> with a value of 0. Click <em>Next</em>.</p>
+<p>For the example shown in Figure 17, leave the default settings for <em>Maximum Monitoring Budget</em> to be empty (i.e., &ldquo;$No Limit&rdquo;) and Number of Sensors to range from 1-5. Set the <em>Number of Station Locations Allowed </em> to be between 20 and 200 nodes and <em>Maximum number of repeated surveys</em> to &ldquo;5&rdquo; under <em> <strong>Surface Surveys</strong> </em>to be between 20 and 200 nodes. Under <strong><em>Point Sensors</em></strong><em>,</em> set the <em>Maximum Number of Wells</em> to &ldquo;3&rdquo;, the <em>Cost Per Well</em> to &ldquo;$500,000&rdquo;, and the <em>Cost of Well Per m Depth</em> (i.e., cost of well per unit depth) to &ldquo;$1,000&rdquo;. Leave the <em>Minimum Distance Between Wells</em> with a value of &ldquo;0&rdquo;. Click <em>Next</em>.</p>
 <p>
 
       
@@ -1055,7 +1055,7 @@
  <img src="./figures/exclude_locations_page.png">
 </p>
 <p align="center"><sub><b>
-      Figure&nbsp;18: <em>Exclude Locations</em> Page showing an example with some of the nodes disabled
+      Figure&nbsp;18: <em>Exclude Locations</em> Page showing an example with none of the nodes disabled
       </b></sub></p>
 <p>&nbsp;</p>
 
@@ -1087,7 +1087,8 @@
 <li><em>Scenarios Detected</em> (optional) &ndash; Tied to the first objective, this calculates the percent of scenarios that are detected for a given monitoring campaign.</li>
 </ul>
 <p>Objectives are assessed for each scenario, and there is a minimum of two objectives that must be assessed. Note that any objective (other than <em>Time to Detection</em>) can be disabled for any reason, like reducing computational time. These objectives may feed back into some algorithms at each iteration (refer to Appendix &nbsp;for more details about the objectives).</p>
-<p>When the user clicks <em>Start Optimization</em>, up to two windows may appear if selected under <strong><em>Plotting Options</em></strong>. The user can choose to select <em>Calculate Pareto Ranks </em>(highly recommended), <em>Show Visualization</em>, or <em>Show Objective Graph</em>. The first page to display is the <em>Visualization</em> (Figure 20) that spatially displays each campaign overlaid with the leak space in a 3D space. The second page is an <em>Objective Graph</em> (Figure 21) that plots two objectives against one another to show progress as the optimization works towards an optimal solution. Under <em>Initial Graphed Objective</em>, the user can select which objectives to display in the Y- and X-Axes. Selecting <em>Calculate Pareto Ranks</em> will add a processing step after the iterations complete, . In other words, the multi-objective optimization will minimize the tradeoff in performance for the objectives. the DREAM only calculates the top 10 pareto ranks as they are expected to contain the best solutions. Once calculated, only the top ranks will be displayed on the <em>Visualization </em>page, and the ranks will be colored on the <em>Objective Graph</em>. It is recommended that the user leave <em>Calculate Pareto Ranks</em> enabled. The colors of the outputs (e.g., aqueous pressure or CO<sub>2</sub>) can be modified to suit the user&rsquo;s preference, and the included configurations or data can be disabled as desired.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+<p>Under <em><strong>Optimization Settings</strong></em>, there is the Display Python Plots button. This feature will be disabled until the optimization algorithm has finished running. The Display Python Plots needs to have a full set of campaigns in order to be executed. Once the optimization run has finished, the user will then be able to run this feature and display the figures produced from Python post-processing. These figures will be discussed in further detail under Section 5. </p>
+<p>When the user clicks <em>Start Optimization</em>, up to two windows may appear if selected under <strong><em>Plotting Options</em></strong>. The user can choose to select <em>Calculate Pareto Ranks </em>(highly recommended), <em>Show Visualization</em>, or <em>Show Objective Graph</em>. The first page to display is the <em>Visualization</em> (Figure 20) that spatially displays each campaign overlaid with the leak space in a 3D space. The second page is an <em>Objective Graph</em> (Figure 21) that plots two objectives against one another to show progress as the optimization works towards an optimal solution. Under <em>Initial Graphed Objective</em>, the user can select which objectives to display in the Y- and X-Axes. Selecting <em>Calculate Pareto Ranks</em> will add a processing step after the iterations complete, . In other words, the multi-objective optimization will minimize the tradeoff in performance for the objectives. the DREAM only calculates up to 10 of the top pareto ranks as they are expected to contain the best solutions. Once calculated, only the top ranks will be displayed on the <em>Visualization </em>page, and the ranks will be colored on the <em>Objective Graph</em>. It is recommended that the user leave <em>Calculate Pareto Ranks</em> enabled. The colors of the outputs (e.g., aqueous pressure or CO<sub>2</sub>) can be modified to suit the user&rsquo;s preference, and the included configurations or data can be disabled as desired.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
 
 
 
@@ -1121,7 +1122,7 @@
 <ol start="2">
 <li>Click under <strong><em>Diagnostic Tools</em></strong> to view a summary of the lowest possible times to leakage detection. An excel file is created in the results directory specified (&ldquo;best_ttd_table.csv&rdquo;).</li>
 <li>Click <em>Volume of Aquifer Degraded </em>under <strong><em>Diagnostic Tools</em></strong> to view a summary of the volume of aquifer degraded (VAD) per timestep (&ldquo;VolumeOfAquiferDegraded.csv&rdquo;).</li>
-<li>Next, for <strong><em>Optimization Settings</em></strong>, select Heuristic algorithm at 1 run of 1000 iterations and keep all the objectives checked under <em>Select Objectives</em> (Figure 21). For <strong><em>Plotting Options</em></strong>, keep the default settings checked, including <em>Calculate Pareto Ranks</em>, <em>Show Visualization</em>, <em>Show Objective Graph</em>. For Initial Graphed Objective, choose the <em>Y-Axis Objective </em>to be &ldquo;Time to Detection&rdquo; and <em>X-Axis Objective</em> to be &ldquo;Cost&rdquo;. Click <em>Start Optimization</em>.</li>
+<li>Next, for <strong><em>Optimization Settings</em></strong>, select &ldquo;Simulated Annealing&rdquo; algorithm <em>Total Runs</em> set to &ldquo;1&rdquo; and <em>Total Iterations (n)</em> set to &ldquo;1000&rdquo;. Keep the <em>Cooling Equation</em> set as the default of &ldquo;0.01^(i/n)&rdquo;. For all the objectives, keep them checked under <em>Select Objectives</em> (Figure 21). For <strong><em>Plotting Options</em></strong>, keep the default settings checked, including <em>Calculate Pareto Ranks</em>, <em>Show Visualization</em>, <em>Show Objective Graph</em>. For Initial Graphed Objective, choose the <em>Y-Axis Objective </em>to be &ldquo;Time to Detection&rdquo; and <em>X-Axis Objective</em> to be &ldquo;Cost&rdquo;. Click <em>Start Optimization</em>.</li>
 <li>Run the optimization algorithm by clicking <em>Start Optimization</em>.
 <ol>
 <li>Check the <em>Calculate Pareto Ranks </em>box under <strong><em>Plotting Options</em></strong>. View the Pareto figure in real-time as it graphs each iteration. For this example, there should be &ldquo;Time to Detection&rdquo; selected for the <em>Y-Axis Objective</em> and &ldquo;Cost&rdquo; selected for the <em>X-Axis Objective</em> under <strong><em>Plotting Options</em></strong> for <em>Initial Graphed Objective</em>. The objectives can be changed as desired.</li>
@@ -1394,8 +1395,8 @@
 <li>PLD &amp; PMCD vs TTD
 <ul>
 <li>A dual panel view of PLD and PMCD (e.g., Figure 24) is insightful for identifying if there are some leaks that are more important than others. It showcases where the bulk of leaks are as well as the less frequent but larger leaks. PLD and PMCD are plotted against TTD to see how TTD is related to the two parameters.</li>
-<li>Questions to consider are: how is TTD affected by solely looking at percent of leaks detected compared to the percent mass of CO<sub>2 detected? Is one of these objectives more indicative of performance than the other?</li>
-<li>In</li>
+<li>Questions to consider are: how is TTD affected by solely looking at percent of leaks detected compared to the percent mass of CO<sub>2 detected? Are one of these objectives more indicative of performance than the other?</li>
+<li>In Figure 24, there is more scattering or variability in TTD when using PMCD; whereas PLD shows a slight clustering for PLD<15% with larger range for TTD while PLD>25% tend to have a smaller range but greater TTD.</li>
 </ul>
 </li>
 </ul>
