@@ -12,15 +12,12 @@
 
 <hr>
 
-
 <p align=right style="margin-bottom:9.6pt;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <strong><span style='font-size:40px;font-family:"Arial",sans-serif;'>Office of Fossil Energy and Carbon Management</span></strong></p>
 <p align=right style="margin-bottom:9.6pt;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span style='font-size:35px;font-family:"Arial",sans-serif;'>NRAP-TRS-III-001-2020</span></p>
 
 <p style="margin-bottom:9.6pt;"><img src="./figure/doe_label.png" style="width: 222.4pt; height: 36pt;" alt="image"><strong><span style='font-size:21px;font-family:"Arial",sans-serif;'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span></strong></p>
 
-
 <p>&nbsp;&nbsp;</p>
-
 
 <hr>
 
@@ -32,23 +29,70 @@
 <p style="margin-bottom:9.6pt;text-align:justify;text-indent:.25in;">Successful use of this software requires a rudimentary understanding of the leak scenarios, domain space, DREAM constraints, and the available optimization algorithms. There is rarely a definitively &ldquo;best&rdquo; monitoring solution, so DREAM instead functions as a support tool to highlight the opportunity trade-offs between good monitoring configurations. DREAM is limited by the spatial and temporal resolution of the subsurface leakage simulations, so decision-makers will need to translate DREAM configurations to real-world monitoring configurations that factor in site-specific constraints at a finer level. Decision-makers should always ground truth DREAM results to operational principles.</p>
 <p>&nbsp;&nbsp;</p>
 
+<h1 name="software">2.&nbsp;&nbsp;&nbsp;&nbsp; Software Installation and Requirements</h1>
+<p style="margin-bottom:9.6pt;text-align:justify;text-indent:.25in;">DREAM has three software dependencies that will support the effective use of the tool: Java, Python and HDF5 viewer.</p>
+        </ol>
+        <p style="margin-bottom:9.6pt;text-indent:.5in;"></p>
+        <p style="margin-bottom:9.6pt;text-align:justify;"><strong>Java &ndash; Required</strong></p>
+        <p style="margin-bottom:9.6pt;text-indent:.25in;">DREAM is coded almost exclusively in Java. Users must have the most recent release of the Java Platform, which is currently compatible with Version 8. If Java is already installed, a search for &ldquo;About Java&rdquo; will help find the current version on your local machine. The latest version of Java SE can be downloaded at the following link:</p>
+        <p style="margin-bottom:9.6pt;"><a href="https://www.oracle.com/java/technologies/downloads/#java8">https://www.oracle.com/java/technologies/downloads/#java8</a></p>
+        <p style="margin-bottom:9.6pt;">Note that you might have to create an account with Oracle before you can download the latest version of Java.</p>
+        <p style="margin-bottom:9.6pt;text-align:justify;"><strong>Python 3 &ndash; Optional (strongly recommended)</strong></p>
+        <p style="margin-bottom:9.6pt;text-indent:.25in;">The core DREAM functions will run without Python, but most of the post-processing scripts that provide valuable insights from results are created with Python. <span style='font-family:"Times",serif;'>If you already have Python installed, you can check your version by typing &ldquo;python --version&rdquo; into a command prompt. You can download the latest version of Python 3 at the following link:</span></p>
+        <p style="margin-bottom:9.6pt;"><a href="https://www.python.org/downloads/">https://www.python.org/downloads/</a></p>
+        <p style="margin-bottom:9.6pt;text-indent:.25in;">Python packages can also be installed by typing &ldquo;python -m pip install &lt;name&gt;&rdquo; into a command prompt. It is highly recommended to create a dedicated Python (or conda) environment for DREAM that will host compatible versions of the following required packages:</p>
+        <ul style="list-style-type: disc;margin-left:0.25in;">
+            <li><span style='font-size:16px;line-height:115%;font-family:"Times New Roman",serif;'>numpy</span><span style="font-size:11px;"><a href="#_msocom_4" id="_anchor_4" language="JavaScript" name="_msoanchor_4"></a></span></li>
+            <li><span style='line-height:115%;font-family:"Times New Roman",serif;font-family:"Times New Roman",serif;font-size:12.0pt;'>numpy</span></li>    
+            <li><span style='line-height:115%;font-family:"Times New Roman",serif;font-family:"Times New Roman",serif;font-size:12.0pt;'>h5py</span></li>
+            <li><span style='line-height:115%;font-family:"Times New Roman",serif;font-family:"Times New Roman",serif;font-size:12.0pt;'>glob</span></li>
+            <li><span style='line-height:115%;font-family:"Times New Roman",serif;font-family:"Times New Roman",serif;font-size:12.0pt;'>matplotlib</span></li>
+            <li><span style='line-height:115%;font-family:"Times New Roman",serif;font-family:"Times New Roman",serif;font-size:12.0pt;'>pillow (known as PIL)</span><span style="line-height:115%;font-size:11px;">&nbsp;</span></li>
+        </ul>
+        <p style="margin-bottom:9.6pt;text-align:justify;"></p>
+<p><strong>HDF5 Viewer &ndash; Optional</strong></p>        
+        <p style="margin-bottom:9.6pt;text-indent:.25in;">DREAM converts raw leak simulation outputs into HDF5 files, a hierarchical data format that is designed to store and organize large amounts of data. The data can be explored with the <em>h5py</em> Python package that was mentioned earlier or with a packaged HDF5 viewer. DREAM developers recommend either installing HDFView or Panoply. The first application allows for simple viewing and editing of HDF5 files, while the second application allows for simple viewing and plotting. The viewers can be downloaded at the following links:</p>
+        <p style="margin-bottom:9.6pt;">HDFView: <a href="https://www.hdfgroup.org/downloads/hdfview/">https://www.hdfgroup.org/downloads/hdfview/</a></p>
+        <p style="margin-bottom:9.6pt;">Panoply: <a href="https://www.giss.nasa.gov/tools/panoply/download/">https://www.giss.nasa.gov/tools/panoply/download/</a></p>
+        <p style="margin-bottom:9.6pt;text-indent:.25in;">The current release of DREAM is made available on the NETL Energy Data Exchange (EDX) at <span style="background:yellow;">XXXXX</span> and includes a zip file with the following files:</p>
 
-<h1><a name="howto"></a>7.&nbsp;&nbsp;&nbsp;&nbsp; How to Install</h1>
+
+<ul style="list-style-type: disc;margin-left:0.25in;">
+            <li><strong><span style='line-height:115%;font-family:"Times New Roman",serif;font-size:16px;'>A runnable JAR file</span></strong><span style='line-height:115%;font-family:"Times New Roman",serif;font-size:16px;'>, which packages all the necessary libraries, images, and documentation into an executable program.</span></li>
+            <li><strong><span style='line-height:115%;font-family:"Times New Roman",serif;font-size:16px;'>Test Datasets</span></strong><span style="line-height:115%;font-size:11px;"><a href="#_msocom_9" id="_anchor_9" language="JavaScript" name="_msoanchor_9"></a></span><span style="line-height:115%;font-size:11px;"><a href="#_msocom_10" id="_anchor_10" language="JavaScript" name="_msoanchor_10"></a>&nbsp;</span><span style="font-size:16px;">that can be used by users to get familiar with the tool:</span>
+                <ol style="list-style-type: circle;">
+                    <li><u><span style="font-size:16px;">NRAP-OpenIAM Open Wellbore, Kimberlina site</span></u><span style="line-height:115%;font-size:11px;"><a href="#_msocom_12" id="_anchor_12" language="JavaScript" name="_msoanchor_12"></a>&nbsp;</span>
+                        <ul class="decimal_type" style="list-style-type: square;">
+                            <li><span style='line-height:115%;font-family:"Times New Roman",serif;font-size:16px;'>About the dataset: This dataset contains all the files</span><span style="line-height:115%;font-size:11px;"><a href="#_msocom_13" id="_anchor_13" language="JavaScript" name="_msoanchor_13"></a>&nbsp;</span><span style='line-height:115%;font-family:"Times New Roman",serif;font-size:16px;'>associated with the analysis of leakage risks at a brownfield site (i.e., Kimberlina site), using NRAP-Open-IAM.&nbsp;</span></li>
+                            <li><span style='line-height:115%;font-family:"Times New Roman",serif;font-size:16px;'>Access:</span> <a href="https://edx.netl.doe.gov/dataset/application-of-nrap-open-iam-to-the-kimberlina-site"><span style="font-size:16px;">https://edx.netl.doe.gov/dataset/application-of-nrap-open-iam-to-the-kimberlina-site</span></a></li>
+                            </ol></ul>
+                        
+                        
+<h1><a name="howto"></a>3.&nbsp;&nbsp;&nbsp;&nbsp; How to Install</h1>
 <p> &nbsp; </p>
-Design
+The <em>Designs for Risk Evaluation and Management</em> (<em>DREAM</em>) tool is an open source software developed at PNNL for risk-based assessment and monitoring of geologic carbon sequestration and storage. The user can develop models in DREAM to find the optimal placement of monitoring technologies that will detect carbon dioxide (CO<sub>2</sub>) and brine leakage from storage formations. The DREAM tool can be downloaded at one of the following links:</p>
+
+<p> Download the software package to your local device and save it to your desired directory path. </p>
+~ [Link to DREAM Download Page](https://....)
+<p> Clone the repository to your local device. </p>
+~ [Link to Git Repository](https://github.com/pnnl/dream_v3)
+<p> &nbsp; </p>
+
+<h2><a name="windows"></a>3.1&nbsp;&nbsp;&nbsp;&nbsp; Installation for Windows</h2>
+<p> &nbsp; </p>
 
 <p> &nbsp; </p>
-<h2><a name="windows"></a>7.&nbsp;&nbsp;&nbsp;&nbsp; Installation for Windows</h2>
+<h2><a name="ubuntu"></a>3.2&nbsp;&nbsp;&nbsp;&nbsp; Installation for Mac</h2>
 <p> &nbsp; </p>
 
 <p> &nbsp; </p>
-<h2><a name="ubuntu"></a>7.&nbsp;&nbsp;&nbsp;&nbsp; Installation for Mac</h2>
+<h2><a name="ubuntu"></a>3.3&nbsp;&nbsp;&nbsp;&nbsp; Installation for Linux</h2>
 <p> &nbsp; </p>
 
+<h1><a name="howto"></a>4.&nbsp;&nbsp;&nbsp;&nbsp; Getting Started with DREAM</h1>
 <p> &nbsp; </p>
-<h2><a name="ubuntu"></a>7.&nbsp;&nbsp;&nbsp;&nbsp; Installation for Linux</h2>
-<p> &nbsp; </p>
+Once DREAM has been downloaded and successfully installed, the user is officially ready to get started. Execute the runnable JAR file or open up the DREAM application. The user can find more information on how to run DREAM by referring to the User Guide Manual, which includes a step-by-step tutorial on setting up and running DREAM using a test dataset. The user can also find the User Guide Manual on DREAM (v3) Github.
 
-
+~[Direct link to User Guide Manual on Github.](./README.md)
 
 <p> &nbsp; </p>
