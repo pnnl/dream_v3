@@ -114,7 +114,7 @@
  
 <p> &nbsp; </p> 
  
-[3.5 Detection Threshold](#threshold)
+[3.5 Define Available Sensors](#threshold)
  
 <p> &nbsp; </p>  
  
