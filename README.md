@@ -136,43 +136,43 @@
  
 [3.10 Outputs](#outputs)
  
-<p> &nbsp; </p>  
+<p> Summary: the <em>Outputs</em> page goes over the different outptut files created once the DREAM run has completed.&nbsp; </p>  
  
 [4. Pre-processing Data](#pre)
  
-<p> &nbsp; </p>  
+<p> Summary: the <em>Pre-processing Data</em> page goes over the different input file types that are accepted and can be used in DREAM using the DREAM file converter. &nbsp; </p>  
  
 [4.1 STOMP Data](#stomp)
  
-<p> &nbsp; </p>  
+<p> Summary: the <em>STOMP Data</em> page goes over the requirements for Subsurface Transport Over Multiple Phases (STOMP) file types from the PNNL's STOMP Simulator. &nbsp; </p>  
  
 [4.2 NUFT Data](#nuft)
  
-<p> &nbsp; </p>  
+<p> Summary: the <em>NUFT Data</em> page goes over the requirements for Nonisothermal, Unsaturated Flow and Transport (NUFT) file types from NUFT's multiphase flow and transport simulations. &nbsp; </p>  
  
 [4.3 TECPLOT Data](#tecplot)
  
-<p> &nbsp; </p>  
+<p> Summary: the <em>TECPLOT Data</em> page goes over the requirements for TECPLOT file types from Computational Fluid Dynamics (CFD) simulations. &nbsp; </p>  
  
 [4.4 HDF5 Data](#hdf)
  
-<p> &nbsp; </p>  
+<p> Summary: the <em>HDF5 Data</em> page goes over the requirements for HDF5 file types. &nbsp; </p>  
  
 [4.5 IAM Data](#iam) 
  
-<p> &nbsp; </p>  
+<p> Summary: the <em>IAM Data</em> page goes over the requirements for IAM file types that comes from IAM's industry-based and decision making software for simulations. &nbsp; </p>  
  
 [5. Post-processing Data](#post)
  
-<p> &nbsp; </p>  
+<p> Summary: the <em>Post-processing Data</em> page extensively goes over the data output files and how to interpret them. &nbsp; </p>  
  
 [5.1. Python Visualization](#py)
  
-<p> &nbsp; </p>  
+<p> Summary: the <em>Python Visualization</em> page shows the figures produced by <em>Display Python Plots</em> and provides examples of how to interpret the results. &nbsp; </p>  
  
 [6. Monitoring Technologies](#technologies)
  
-<p> &nbsp; </p>  
+<p> Summary: the <em>Python Visualization</em> page shows the figures produced by <em>Display Python Plots</em> and provides examples of how to interpret the results. &nbsp; </p>  
  
 [6.1 Point Sensors](#point)
  
