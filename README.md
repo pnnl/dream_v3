@@ -1018,7 +1018,7 @@
 
 
 <p align="center">
- <img src="./figure/monitoring_campaign_settings_page.png">
+ <img src="./figure/monitoring_campaign_settings_page0.png">
 </p>
 <p align="center"><sub><b>
       Figure&nbsp;16: Default settings for <em>Monitoring Campaign Settings</em> page
@@ -1033,7 +1033,7 @@
 
       
 <p align="center">
- <img src="./figure/monitoring_campaign_settings_page1.png">
+ <img src="./figure/monitoring_campaign_settings_page.png">
 </p>
 <p align="center"><sub><b>
       Figure&nbsp;17: Example on <em>Monitoring Campaign Settings </em>page
