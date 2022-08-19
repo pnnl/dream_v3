@@ -962,7 +962,7 @@
 
 
 <h2 name="criteria">3.6&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Detection Criteria</h2>
-<p>The <em>Detection Criteria</em> page (Figure 14) prompts the user to specify how many monitoring devices must be triggered to signify a leak has occurred. Only the sensors that were defined on the <em>Detection Threshold</em> page are selectable. &ldquo;Any Technology&rdquo; is a wildcard for any available sensors. Multiple criteria can be created by clicking the <em>Add a new criteria</em> button. Within a given test, the user may select any combination of specific technologies that will signify a leak. It is important to note that on this page we are taking all the instances where the nodes exceed the leak threshold from <em>Detection Threshold</em> (and <em>Leak Definition)</em> and are allowing the user to determine whether that instance qualifies as a &ldquo;leak&rdquo;, e.g., both pressure and saturation sensors exceed their leak detection thresholds.</p>
+<p>The <em>Detection Criteria</em> page (Figure 14) prompts the user to specify how many monitoring devices must be triggered to signify a leak has occurred. Only the sensors that were defined on the <em>Detection Threshold</em> page are selectable. &ldquo;Any Technology&rdquo; is a wildcard for any available sensors. Multiple criteria can be created by clicking the <em>Add a new criteria</em> button. Within a given test, the user may select any combination of specific technologies that will signify a leak. It is important to note that on this page we are taking all the instances where the nodes exceed the leak threshold from <em>Define Available Sensors </em> (and <em>Leak Definition)</em> and are allowing the user to determine whether that instance qualifies as a &ldquo;leak&rdquo;, e.g., both pressure and saturation sensors exceed their leak detection thresholds.</p>
 <p>Minimum Detections specifies how many detections from a specific sensor must exceed the user-defined value to have confidence that a leak occurred. Multiple tests with any combination of sensors can be created. To clarify, a full campaign of surface surveys monitoring an area is counted as one sensor, so it is advised not to require more than one surface survey. In most cases, it can be left at default, where one of any detecting sensors can identify a leak. For example, if both a cheap and expensive pressure sensor are available, two criteria can be created for one expensive or two cheap sensors need to be triggered to have a confidence in the leak.</p>
 
 
@@ -1758,10 +1758,10 @@
 <p><strong><em>Detection Criteria</em></strong></p>
 <ul>
 <li>The user has free range on how many criteria to specify for leak detection.</li>
-<li>&ldquo;Any Technology&rdquo; is a wildcard, meaning any sensor specified on the <strong><em>Detection Threshold</em></strong> page exceeding the user-defined value for <em>Minimum Detections to Signify Leak </em>will confidently indicate a leak has occurred.</li>
-<li>The only sensors that can be used to signify a leak must have been defined on the <strong><em>Detection Threshold</em></strong></li>
+<li>&ldquo;Any Technology&rdquo; is a wildcard, meaning any sensor specified on the <strong><em>Define Available Sensors </em></strong> page exceeding the user-defined value for <em>Minimum Detections to Signify Leak </em>will confidently indicate a leak has occurred.</li>
+<li>The only sensors that can be used to signify a leak must have been defined on the <strong><em>Define Available Sensors </em></strong></li>
 </ul>
-<p><strong><em>Detection Threshold</em></strong></p>
+<p><strong><em>Define Available Sensors </em></strong></p>
 <ul>
 <li>This page is different from the <strong><em>Leak Definition</em></strong> The potential leak space does not indicate a detectable leak. The thresholds and criteria specified on this page and the following are what determine if there is a detectable leak(s).</li>
 <li>Under <em>Cost</em>, a cost function can be created for each monitoring technology with any of the variables, e.g., <em>t, i, s, a</em>.</li>
