@@ -73,9 +73,9 @@
 The <em>Designs for Risk Evaluation and Management</em> (<em>DREAM</em>) tool is an open source software developed at PNNL for risk-based assessment and monitoring of geologic carbon sequestration and storage. The user can develop models in DREAM to find the optimal placement of monitoring technologies that will detect carbon dioxide (CO<sub>2</sub>) and brine leakage from storage formations. The DREAM tool can be downloaded at one of the following links:</p>
 
 <p> Download the software package to your local device and save it to your desired directory path. </p>
-~ [Link to DREAM Download Page](https://....)
+Link to DREAM Download Page: (https://....)
 <p> Clone the repository to your local device. </p>
-~ [Link to Git Repository](https://github.com/pnnl/dream_v3)
+Link to Git Repository: (https://github.com/pnnl/dream_v3)
 <p> &nbsp; </p>
 
 <h2><a name="windows"></a>3.1&nbsp;&nbsp;&nbsp;&nbsp; Installation for Windows</h2>
@@ -93,6 +93,6 @@ The <em>Designs for Risk Evaluation and Management</em> (<em>DREAM</em>) tool is
 <p> &nbsp; </p>
 Once DREAM has been downloaded and successfully installed, the user is officially ready to get started. Execute the runnable JAR file or open up the DREAM application. The user can find more information on how to run DREAM by referring to the User Guide Manual, which includes a step-by-step tutorial on setting up and running DREAM using a test dataset. The user can also find the User Guide Manual on DREAM (v3) Github.
 
-~[Direct link to User Guide Manual on Github.](./README.md)
+[Direct link to User Guide Manual on Github.](./README.md)
 
 <p> &nbsp; </p>
