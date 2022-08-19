@@ -217,10 +217,23 @@
 <p>&nbsp;&nbsp;</p>
 
 
+
+
+
+
+
+
+
 <hr>
 
 
-<h1><a name="_Toc108615019"></a>7.&nbsp;&nbsp;&nbsp;&nbsp; List of Figures</h1>
+
+
+
+
+
+
+<h1><a name="figures"></a>7.&nbsp;&nbsp;&nbsp;&nbsp; List of Figures</h1>
 <p> &nbsp; </p>
 
 [Figure 1: Beta Example Schematic. Figure from Carroll et al. (2014b) shows the links between reservoir, well leakage, and aquifer models using the alluvium case study. Links between reservoir, well leakage, and the carbonate case study are identical.](#fig1)
@@ -231,6 +244,152 @@
  
 <p> &nbsp; </p>
 
+[Figure 3: DREAM Welcome Page.](#fig3)
+
+<p> &nbsp; </p>
+
+[Figure 4: Input Directory Page (by folders).](#fig4)
+
+<p> &nbsp; </p>
+
+[Figure 5: Input Directory Page (by filenames).](#fig5)
+
+<p> &nbsp; </p>
+
+[Figure 6: Pop-up to specify missing information.](#fig6)
+
+<p> &nbsp; </p>
+
+[Figure 7: Scenario Leak Definition Page.](#fig7)
+
+<p> &nbsp; </p>
+
+[Figure 8: Calculating leak space on Leak Definition Page.](#fig8)
+
+<p> &nbsp; </p>
+
+[Figure 9: Interactive display of the leak plume after Leak Definition.](#fig9)
+
+<p> &nbsp; </p>
+
+[Figure 10: Default settings on Scenario Weighting page.](#fig10)
+
+<p> &nbsp; </p>
+
+[Figure 11: Default settings on Define Available Sensors page.](#fig11)
+
+<p> &nbsp; </p>
+
+[Figure 12: Specifying the criteria for Define Available Sensors page.](#fig12)
+
+<p> &nbsp; </p>
+
+[Figure 13: Visualization of detectable plume.](#fig13)
+
+<p> &nbsp; </p>
+
+[Figure 14: Default settings for Detection Criteria page.](#fig14)
+
+<p> &nbsp; </p>
+
+[Figure 15: Setting criteria for detecting a leak on Detection Criteria page.](#fig15)
+
+<p> &nbsp; </p>
+
+[Figure 16: Default settings for Monitoring Campaign Settings page.](#fig16)
+
+<p> &nbsp; </p>
+
+[Figure 17: Example on Monitoring Campaign Settings page.](#fig17)
+
+<p> &nbsp; </p>
+
+[Figure 18: Exclude Locations Page showing an example with none of the nodes disabled.](#fig18)
+
+<p> &nbsp; </p>
+
+[Figure 19: Run DREAM page.](#fig19)
+
+<p> &nbsp; </p>
+
+[Figure 20: 3D visualization of monitoring campaigns and leak plumes from Visualization page.](#fig20)
+
+<p> &nbsp; </p>
+
+[Figure 21: Objective Graph campaign performance between time to detection and cost objectives that is produced when Calculate Pareto Ranks is enabled.](#fig21)
+
+<p> &nbsp; </p>
+
+[Figure 22: DREAM HDF5 Converter Tool.](#fig22)
+
+<p> &nbsp; </p>
+
+[Figure 23: HDFView of DREAM input file structure.](#fig23)
+
+<p> &nbsp; </p>
+
+[Figure 24: Simulated annealing example of PLD and PMCD versus TTD.](#fig24)
+
+<p> &nbsp; </p>
+
+[Figure 25: Simulated annealing example of PLD and PMCD versus Monitoring Cost.](#fig25)
+
+<p> &nbsp; </p>
+
+[Figure 26: Simulated annealing example of PLD versus PMCD.](#fig26)
+
+<p> &nbsp; </p>
+
+[Figure 27: Simulated annealing example Monitoring Cost versus TTD.](#fig27)
+
+<p> &nbsp; </p>
+
+[Figure 28: Simulated annealing example of VAD versus TTD.](#fig28)
+
+<p> &nbsp; </p>
+
+[Figure 29: Simulated annealing example of PMCD using last time step compared to the time at which the maximum leak is detected versus TTD.](#fig29)
+
+<p> &nbsp; </p>
+
+[Figure 30: Simulated annealing example of PMCD using last time step compared to the time at which the maximum leak is detected versus Monitoring Cost.](#fig30)
+
+<p> &nbsp; </p>
+
+[Figure 31: Simulated annealing example of 3D scatter plots that show when 0%-100% of leaks are detected for (left) PMCD, PLD and TTD and (right) PLD, TTD, and Monitoring Cost.](#fig31)
+
+<p> &nbsp; </p>
+
+[Figure 32: Simulated annealing example of 3D scatter plots that show (left) some of the proposed monitoring campaigns and (right) the respective PLD and Monitoring Cost versus TTD Monitoring Technologies.](#fig32)
+
+<p> &nbsp; </p>
+
+[Figure 33: Exponential decay used for temperature function.](#fig33)
+
+<p> &nbsp; </p>
+
+[Figure 34: The variability and intensity of color in the colormap indicates the number of leaks that overlap at each point (x,y), considering only the leaks that are detectable but as-yet undetected by the given monitoring plan.](#fig34)
+
+<p> &nbsp; </p>
+
+[Figure 35: Each node number corresponds to a pixel from Figure 34, and the rise in the corresponding CDF value is proportional to the number of leaks that are detectable at that node location.](#fig35)
+
+<p> &nbsp; </p>
+
+[Figure 36: Example of question marks that you can click on for more information.](#fig36)
+
+<p> &nbsp; </p>
+
+[Figure 37: Example of the Help Viewer in DREAM.](#fig37)
+
+
+<p> &nbsp; &nbsp; </p>
+
+
+<h1><a name="tables"></a>7.&nbsp;&nbsp;&nbsp;&nbsp; List of Tables</h1>
+<p> &nbsp; </p>
+
+[Table 1: Number of detectable nodes for each parameter in the example.](#tab1)
 
 
 <p>&nbsp;&nbsp;</p>
