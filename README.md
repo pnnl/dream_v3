@@ -88,15 +88,15 @@
 
 [1. Introduction](#intro)
  
-<p> Summary: introduction to the open-source software DREAM and accompanied with a literature review about the risk-based assessment and monitoring for geologic carbon sequestration. &nbsp; </p>
+<p> Summary: the <em>Introduction</em> page begins with presenting the newest version of the open-source software DREAM, and then it covers a literature review about the risk-based assessment and monitoring for geologic carbon sequestration. &nbsp; </p>
 
 [2. Software Installation and Requirements](#software)
 
-<p> Summary: discussion on DREAM's software dependencies, overview of the available datasets, and mention of the input data file requirements. &nbsp; </p>
+<p> Summary: the <em>Software Installation and Requirements</em> page discusses DREAM's software dependencies, overview of the available datasets, and mention of the input data file requirements. &nbsp; </p>
 
 [3. User Interface Walkthrough](#ui)
  
-<p> Summary: introduction to the step-by-step DREAM tutorial using the Kimberlina 1.2 site. &nbsp;</p> 
+<p> Summary: the <em>User Interface Walkthrough</em> page steps through every page in the DREAM tutorial using the Kimberlina 1.2 site as an example. &nbsp;</p> 
 
 [3.1 DREAM Welcome Page](#welcome)
  
