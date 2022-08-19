@@ -112,27 +112,27 @@
  
 [3.4 Scenario Weighting](#weight)
  
-<p> Summary: the <em>Scenario Weighting</em> page &nbsp; allows the user selectively assign weights to each campaign scenario manually, with an equation, or by loading a file containing the weight values. </p> 
+<p> Summary: the <em>Scenario Weighting</em> page allows the user selectively assign weights to each campaign scenario manually, with an equation, or by loading a file containing the weight values. &nbsp;</p> 
  
 [3.5 Define Available Sensors](#threshold)
  
-<p> &nbsp; </p>  
+<p> Summary: the <em>Define Available Sensors</em> page allows the user to select monitoring technologies that are being considered based on the parameters available in the input files, and to define associated parameters, such as deployment cost and detection threshold for specified monitoring technologies. &nbsp; </p>  
  
 [3.6 Detection Criteria](#criteria)
  
-<p> &nbsp; </p>  
+<p> Summary: the <em>Detection Criteria</em> page prompts the user to specify how many monitoring devices must be triggered to signify a leak has occurred. Only the sensors that were defined on the <em>Define Available Sensors</em> page are selectable.  &nbsp; </p>  
  
 [3.7 Monitoring Campaign Settings](#settings)
  
-<p> &nbsp; </p>  
+<p> Summary: the <em>Monitoring Campaign Settings</em> page allows the user to specify additional information and constraints for monitoring campaigns. Some inputs apply to all campaigns, while others are only for surface surveys or point sensors. &nbsp; </p>  
  
 [3.8 Exclude Locations](#locations)
  
-<p> &nbsp; </p>  
+<p> Summary: the <em>Exclude Locations</em> page allows the user to exclude (x, y) locations from the monitoring configuration that are infeasible or unapproved. This window allows the user to manually deselect nodes that should not be used in the optimization algorithm. &nbsp; </p>  
  
 [3.9 Run DREAM](#run)
  
-<p> &nbsp; </p>  
+<p> Summary: the <em>Run DREAM</em> page is where the user can finally execute the optimization algorithm using their inputs from the previous pages and run their model to provide a set of Pareto ranked monitoring campaigns. The user can also visualize the tradeoff between different objectives to see which monitoring campaigns are suitable to their interests and needs. &nbsp; </p>  
  
 [3.10 Outputs](#outputs)
  
@@ -1063,7 +1063,7 @@
 
 
 <h2 name="run">3.9&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Run DREAM</h2>
-<p>The <em>Run DREAM</em> page (Figure 19) provides a summary of the user inputs to the left. By default, a new &ldquo;results&rdquo; directory will be created to store output files. The output file location can be changed along with the output&rsquo;s filename.</p>
+<p>The <em>Run DREAM</em> page (Figure 19) is where the user can finally execute the optimization algorithm using their inputs from the previous pages and run their model to provide a set of Pareto ranked monitoring campaigns. The user can also visualize the tradeoff between different objectives to see which monitoring campaigns are suitable to their interests and needs. This page provides a summary of the user inputs to the left. By default, a new &ldquo;results&rdquo; directory will be created to store output files. The output file location can be changed along with the output&rsquo;s filename.</p>
 <p>&nbsp;</p>
 
 
