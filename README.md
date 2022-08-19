@@ -742,13 +742,14 @@
         <p style="margin-bottom:9.6pt;text-indent:.25in;">Python packages can also be installed by typing &ldquo;python -m pip install &lt;name&gt;&rdquo; into a command prompt. It is highly recommended to create a dedicated Python (or conda) environment for DREAM that will host compatible versions of the following required packages:</p>
         <ul style="list-style-type: disc;margin-left:0.25in;">
             <li><span style='font-size:16px;line-height:115%;font-family:"Times New Roman",serif;'>numpy</span><span style="font-size:11px;"><a href="#_msocom_4" id="_anchor_4" language="JavaScript" name="_msoanchor_4"></a></span></li>
-            <li><span style='line-height:115%;font-family:"Times New Roman",serif;font-family:"Times New Roman",serif;font-size:12.0pt;'>scipy</span></li>
+            <li><span style='line-height:115%;font-family:"Times New Roman",serif;font-family:"Times New Roman",serif;font-size:12.0pt;'>numpy</span></li>    
             <li><span style='line-height:115%;font-family:"Times New Roman",serif;font-family:"Times New Roman",serif;font-size:12.0pt;'>h5py</span></li>
+            <li><span style='line-height:115%;font-family:"Times New Roman",serif;font-family:"Times New Roman",serif;font-size:12.0pt;'>glob</span></li>
             <li><span style='line-height:115%;font-family:"Times New Roman",serif;font-family:"Times New Roman",serif;font-size:12.0pt;'>matplotlib</span></li>
-            <li><span style='line-height:115%;font-family:"Times New Roman",serif;font-family:"Times New Roman",serif;font-size:12.0pt;'>pandas</span><span style="line-height:115%;font-size:11px;">&nbsp;</span></li>
-            <li><strong>HDF5 Viewer &ndash; Optional</strong></li>
+            <li><span style='line-height:115%;font-family:"Times New Roman",serif;font-family:"Times New Roman",serif;font-size:12.0pt;'>pillow (known as PIL)</span><span style="line-height:115%;font-size:11px;">&nbsp;</span></li>
         </ul>
         <p style="margin-bottom:9.6pt;text-align:justify;"></p>
+<p><strong>HDF5 Viewer &ndash; Optional</strong></p>        
         <p style="margin-bottom:9.6pt;text-indent:.25in;">DREAM converts raw leak simulation outputs into HDF5 files, a hierarchical data format that is designed to store and organize large amounts of data. The data can be explored with the <em>h5py</em> Python package that was mentioned earlier or with a packaged HDF5 viewer. DREAM developers recommend either installing HDFView or Panoply. The first application allows for simple viewing and editing of HDF5 files, while the second application allows for simple viewing and plotting. The viewers can be downloaded at the following links:</p>
         <p style="margin-bottom:9.6pt;">HDFView: <a href="https://www.hdfgroup.org/downloads/hdfview/">https://www.hdfgroup.org/downloads/hdfview/</a></p>
         <p style="margin-bottom:9.6pt;">Panoply: <a href="https://www.giss.nasa.gov/tools/panoply/download/">https://www.giss.nasa.gov/tools/panoply/download/</a></p>
