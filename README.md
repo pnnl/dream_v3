@@ -1,8 +1,8 @@
 <p style="margin-bottom:9.6pt;"><br></p>
-<p style="margin-bottom:9.6pt;"><img width=5000pt src="./figures/image.png" alt="image"> </p>
+<p style="margin-bottom:9.6pt;"><img width=5000pt src="./figure/image.png" alt="image"> </p>
 <p style="margin-bottom:9.6pt;">&nbsp; &nbsp; </p>
 
-<p align=center><img src="./figures/dream_front_matter.png" style="width: 396pt; height: 278.5pt;" alt="image"></p>
+<p align=center><img src="./figure/dream_front_matter.png" style="width: 396pt; height: 278.5pt;" alt="image"></p>
 <div style="border:none;border-bottom:solid windowtext 1.0pt;padding:0in 0in 6.0pt 0in;margin-left:2.25in;margin-right:0in;">
     <p align=center style="margin-bottom:9.6pt;border:none;padding:0in;"><strong><span style='font-size:24px;font-family:"Arial",sans-serif;color:#003399;'>Designs for Risk Evaluation and Management (DREAM) Tool User Manual, Version: 2022.01</span></strong></p>
 </div>
@@ -16,7 +16,7 @@
 <p align=right style="margin-bottom:9.6pt;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <strong><span style='font-size:40px;font-family:"Arial",sans-serif;'>Office of Fossil Energy and Carbon Management</span></strong></p>
 <p align=right style="margin-bottom:9.6pt;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span style='font-size:35px;font-family:"Arial",sans-serif;'>NRAP-TRS-III-001-2020</span></p>
 
-<p style="margin-bottom:9.6pt;"><img src="./figures/doe_label.png" style="width: 222.4pt; height: 36pt;" alt="image"><strong><span style='font-size:21px;font-family:"Arial",sans-serif;'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span></strong></p>
+<p style="margin-bottom:9.6pt;"><img src="./figure/doe_label.png" style="width: 222.4pt; height: 36pt;" alt="image"><strong><span style='font-size:21px;font-family:"Arial",sans-serif;'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span></strong></p>
 
 <p><span style='font-size:16px;font-family:"Times New Roman",serif;'><br>&nbsp;</span></p>
 
@@ -643,7 +643,7 @@
 
 
 <p align="center">
- <img src="./figures/beta_ex_fig1.png">
+ <img src="./figure/beta_ex_fig1.png">
 </p>
 <p align="center"><sub><b>
       Figure&nbsp;1: Beta Example Schematic. Figure from Carroll et al. (2014b) shows the links between reservoir, well leakage, and aquifer models using the alluvium case study. Links between reservoir, well leakage, and the carbonate case study are identical.
@@ -661,7 +661,7 @@
 
 
 <p align="center">
- <img src="./figures/gui_flow_chart.png">
+ <img src="./figure/gui_flow_chart.png">
 </p>
 <p align="center"><sub><b>
       Figure&nbsp;2: DREAM GUI Flow Chart
@@ -681,7 +681,7 @@
 
 
 <p align="center">
- <img src="./figures/welcome_page.png">
+ <img src="./figure/welcome_page.png">
 </p>
 <p align="center"><sub><b>
       Figure&nbsp;3: DREAM <em>Welcome</em> Page
@@ -701,7 +701,7 @@
 
 
 <p align="center">
- <img src="./figures/input_directory_page.png">
+ <img src="./figure/input_directory_page.png">
 </p>
 <p align="center"><sub><b>
       Figure&nbsp;4: <em>Input Directory</em> Page&nbsp;(by folders)
@@ -716,7 +716,7 @@
 
 
 <p align="center">
- <img src="./figures/input_directory_page1.png">
+ <img src="./figure/input_directory_page1.png">
 </p>
 <p align="center"><sub><b>
       Figure&nbsp;5: <em>Input Directory</em> Page&nbsp;(by filenames)
@@ -730,7 +730,7 @@
 
 
 <p align="center">
- <img src="./figures/input_directory_page2.png">
+ <img src="./figure/input_directory_page2.png">
 </p>
 <p align="center"><sub><b>
       Figure&nbsp;6: Pop-up to specify missing information
@@ -763,7 +763,7 @@
 
 
 <p align="center">
- <img src="./figures/leak_definition_page.png">
+ <img src="./figure/leak_definition_page.png">
 </p>
 <p align="center"><sub><b>
       Figure&nbsp;7: Scenario <em>Leak Definition</em> Page
@@ -790,7 +790,7 @@
       
       
  <p align="center">
- <img src="./figures/leak_definition_page1.png">
+ <img src="./figure/leak_definition_page1.png">
 </p>
 <p align="center"><sub><b>
       Figure&nbsp;8: Calculating leak space on <em>Leak Definition</em> page
@@ -806,7 +806,7 @@
 
 
 <p align="center">
- <img src="./figures/leak_visualization.png">
+ <img src="./figure/leak_visualization.png">
 </p>
 <p align="center"><sub><b>
       Figure&nbsp;9: Interactive display of the leak plume after <em>Leak Definition</em>
@@ -832,7 +832,7 @@
 
 
 <p align="center">
- <img src="./figures/scenario_weighting_page.png">
+ <img src="./figure/scenario_weighting_page.png">
 </p>
 <p align="center"><sub><b>
       Figure&nbsp;10: Default settings on <em>Scenario Weighting</em> page.</em>
@@ -849,7 +849,7 @@
 
 
 <p align="center">
- <img src="./figures/define_available_sensors_page.png">
+ <img src="./figure/define_available_sensors_page.png">
 </p>
 <p align="center"><sub><b>
       Figure&nbsp;11: Default settings on <em>Define Available Sensors</em> page
@@ -892,7 +892,7 @@
 
 
 <p align="center">
- <img src="./figures/define_available_sensors_page1.png">
+ <img src="./figure/define_available_sensors_page1.png">
 </p>
 <p align="center"><sub><b>
       Figure&nbsp;12: Specifying criteria for each monitoring technology on <em>Define Available Sensors</em> page
@@ -950,7 +950,7 @@
 
 
 <p align="center">
- <img src="./figures/detectable_plume_visualization.png">
+ <img src="./figure/detectable_plume_visualization.png">
 </p>
 <p align="center"><sub><b>
       Figure&nbsp;13: Visualization of detectable plume
@@ -968,7 +968,7 @@
 
 
 <p align="center">
- <img src="./figures/detection_criteria_page.png">
+ <img src="./figure/detection_criteria_page.png">
 </p>
 <p align="center"><sub><b>
       Figure&nbsp;14: Default settings for <em>Detection Criteria</em> page
@@ -984,7 +984,7 @@
 
 
 <p align="center">
- <img src="./figures/detection_criteria_page1.png">
+ <img src="./figure/detection_criteria_page1.png">
 </p>
 <p align="center"><sub><b>
       Figure&nbsp;15: Setting criteria for detecting a leak on <em>Detection Criteria</em> page
@@ -1018,7 +1018,7 @@
 
 
 <p align="center">
- <img src="./figures/monitoring_campaign_settings_page.png">
+ <img src="./figure/monitoring_campaign_settings_page.png">
 </p>
 <p align="center"><sub><b>
       Figure&nbsp;16: Default settings for <em>Monitoring Campaign Settings</em> page
@@ -1033,7 +1033,7 @@
 
       
 <p align="center">
- <img src="./figures/monitoring_campaign_settings_page1.png">
+ <img src="./figure/monitoring_campaign_settings_page1.png">
 </p>
 <p align="center"><sub><b>
       Figure&nbsp;17: Example on <em>Monitoring Campaign Settings </em>page
@@ -1052,7 +1052,7 @@
 
 
 <p align="center">
- <img src="./figures/exclude_locations_page.png">
+ <img src="./figure/exclude_locations_page.png">
 </p>
 <p align="center"><sub><b>
       Figure&nbsp;18: <em>Exclude Locations</em> Page showing an example with none of the nodes disabled
@@ -1069,7 +1069,7 @@
 
 
 <p align="center">
- <img src="./figures/dream_run_page.png">
+ <img src="./figure/dream_run_page.png">
 </p>
 <p align="center"><sub><b>
       Figure&nbsp;19: <em>Run Dream</em> Page 
@@ -1093,7 +1093,7 @@
 
 
 <p align="center">
- <img src="./figures/dream_run_page1.png">
+ <img src="./figure/dream_run_page1.png">
 </p>
 <p align="center"><sub><b>
       Figure&nbsp;20: 3D visualization of monitoring campaigns and leak plumes from <em>Visualization</em> page
@@ -1102,7 +1102,7 @@
 
 
 <p align="center">
- <img src="./figures/dream_run_page2.png">
+ <img src="./figure/dream_run_page2.png">
 </p>
 <p align="center"><sub><b>
       Figure&nbsp;21: <em>Objective Graph </em>campaign performance between time to detection and cost objectives that is produced when <em>Calculate Pareto Ranks</em> is enabled
@@ -1177,7 +1177,7 @@
 
 
 <p align="center">
- <img src="./figures/hdf5_tool.png">
+ <img src="./figure/hdf5_tool.png">
 </p>
 <p align="center"><sub><b>
       Figure&nbsp;22: DREAM HDF5 Converter Tool
@@ -1317,7 +1317,7 @@
 
 
 <p align="center">
- <img src="./figures/hdf5_tool2.png">
+ <img src="./figure/hdf5_tool2.png">
 </p>
 <p align="center"><sub><b>
       Figure&nbsp;23: HDFView of DREAM input file structure.
@@ -1405,7 +1405,7 @@
 
 
 <p align="center">
- <img src="./figures/kimberlina_1_2_sa_10k_example_a.png">
+ <img src="./figure/kimberlina_1_2_sa_10k_example_a.png">
 </p>
 <p align="center"><sub><b>
       Figure&nbsp;24: Simulated annealing example of PLD and PMCD versus TTD &nbsp;
@@ -1428,7 +1428,7 @@
 
 
 <p align="center">
- <img src="./figures/kimberlina_1_2_sa_10k_example_b.png">
+ <img src="./figure/kimberlina_1_2_sa_10k_example_b.png">
 </p>
 <p align="center"><sub><b>
       Figure&nbsp;25: Simulated annealing example of PLD and PMCD versus Monitoring Cost
@@ -1451,7 +1451,7 @@
 
 
 <p align="center">
- <img src="./figures/kimberlina_1_2_sa_10k_example_c.png">
+ <img src="./figure/kimberlina_1_2_sa_10k_example_c.png">
 </p>
 <p align="center"><sub><b>
       Figure&nbsp;26: Simulated annealing example of PLD versus PMCD
@@ -1472,7 +1472,7 @@
 
 
 <p align="center">
- <img src="./figures/kimberlina_1_2_sa_10k_example_d.png">
+ <img src="./figure/kimberlina_1_2_sa_10k_example_d.png">
 </p>
 <p align="center"><sub><b>
       Figure&nbsp;27: Simulated annealing example of Monitoring Cost versus TTD
@@ -1496,7 +1496,7 @@
 
 
 <p align="center">
- <img src="./figures/kimberlina_1_2_sa_10k_example_e.png">
+ <img src="./figure/kimberlina_1_2_sa_10k_example_e.png">
 </p>
 <p align="center"><sub><b>
       Figure&nbsp;28: Simulated annealing example of VAD versus TTD
@@ -1518,7 +1518,7 @@
 
 
 <p align="center">
- <img src="./figures/kimberlina_1_2_sa_10k_example_f.png">
+ <img src="./figure/kimberlina_1_2_sa_10k_example_f.png">
 </p>
 <p align="center"><sub><b>
       Figure&nbsp;29: Simulated annealing example of PMCD using last time step compared to the time at which the maximum leak is detected versus TTD
@@ -1545,7 +1545,7 @@
 
 
 <p align="center">
- <img src="./figures/kimberlina_1_2_sa_10k_example_g.png">
+ <img src="./figure/kimberlina_1_2_sa_10k_example_g.png">
 </p>
 <p align="center"><sub><b>
       Figure&nbsp;30: Simulated annealing example of PMCD using last time step compared to the time at which the maximum leak is detected versus Monitoring Cost
@@ -1572,8 +1572,8 @@
 
 
 <p align="center">
- <img src="./figures/kimberlina_1_2_sa_10k_example_h.gif">
- <img src="./figures/kimberlina_1_2_sa_10k_example_i.gif">
+ <img src="./figure/kimberlina_1_2_sa_10k_example_h.gif">
+ <img src="./figure/kimberlina_1_2_sa_10k_example_i.gif">
 </p>
 <p align="center"><sub><b>
       Figure&nbsp;31: Simulated annealing example of 3D scatter plots that show when 0%-100% of leaks are detected for (left) PMCD, PLD and TTD and (right) PLD, TTD, and Monitoring Cost
@@ -1603,7 +1603,7 @@
 
 
 <p align="center">
- <img src="./figures/kimberlina_1_2_sa_10k_example_j.gif">
+ <img src="./figure/kimberlina_1_2_sa_10k_example_j.gif">
 </p>
 <p align="center"><sub><b>
       Figure&nbsp;32: Simulated annealing example of 3D scatter plots that show (left) some of the proposed monitoring campaigns and (right) the respective PLD and Monitoring Cost versus TTD
@@ -1662,7 +1662,7 @@
 
 
 <p align="center">
- <img src="./figures/simulated_annealing_temp_func.png">
+ <img src="./figure/simulated_annealing_temp_func.png">
 </p>
 <p align="center"><sub><b>
       Figure&nbsp;33: Exponential decay used for temperature function
@@ -1678,7 +1678,7 @@
 
 
 <p align="center">
- <img src="./figures/heuristic_alg.png">
+ <img src="./figure/heuristic_alg.png">
 </p>
 <p align="center"><sub><b>
       Figure&nbsp;34: The variability and intensity of color in the colormap indicates the number of leaks that overlap at each point (x,y), considering only the leaks that are detectable but as-yet undetected by the given monitoring plan.
@@ -1689,7 +1689,7 @@
 
 
 <p align="center">
- <img src="./figures/heuristic_alg_cdf.png">
+ <img src="./figure/heuristic_alg_cdf.png">
 </p>
 <p align="center"><sub><b>
       Figure&nbsp;35: Each node number corresponds to a pixel from Figure 34, and the rise in the corresponding CDF value is proportional to the number of leaks that are detectable at that node location.
@@ -1715,7 +1715,7 @@
 
 
 <p align="center">
- <img src="./figures/question_mark.png">
+ <img src="./figure/question_mark.png">
 </p>
 <p align="center"><sub><b>
       Figure&nbsp;36: Example of question marks that you can click on for more information
@@ -1782,9 +1782,9 @@
 
 
 <p align="center">
- <img src="./figures/scenario_weighting_question_marks.png">     
- <img src="./figures/scenario_weighting_a.png">
- <img src="./figures/scenario_weighting_b.png">   
+ <img src="./figure/scenario_weighting_question_marks.png">     
+ <img src="./figure/scenario_weighting_a.png">
+ <img src="./figure/scenario_weighting_b.png">   
 </p>
 <p align="center"><sub><b>
       Figure&nbsp;37: Example of the <strong><em>Help Viewer</em></strong> in DREAM
@@ -1821,7 +1821,7 @@
 
 
 
-<p align=center style='margin:0in;font-size:16px;font-family:"Times New Roman",serif;text-align:center;'>&nbsp;<img width=150.5pt height=72.5pt src="./figures/nrap_logo.png" alt="image"></p>
+<p align=center style='margin:0in;font-size:16px;font-family:"Times New Roman",serif;text-align:center;'>&nbsp;<img width=150.5pt height=72.5pt src="./figure/nrap_logo.png" alt="image"></p>
 <p style='margin:0in;font-size:16px;font-family:"Times New Roman",serif;text-align:justify;'>NRAP is an initiative within DOE&rsquo;s Office of Fossil Energy and is led by the National Energy Technology Laboratory (NETL). It is a multi-national-lab effort that leverages broad technical capabilities across the DOE complex to develop an integrated science base that can be applied to risk assessment for long-term storage of carbon dioxide (CO<sub>2</sub>). NRAP involves five DOE national laboratories: NETL, Lawrence Berkeley National Laboratory (LBNL), Lawrence Livermore National Laboratory (LLNL), Los Alamos National Laboratory (LANL), and Pacific Northwest National Laboratory (PNNL).</p>
 <p style='margin:0in;font-size:16px;font-family:"Times New Roman",serif;'>&nbsp;</p>
 <h2>Technical Leadership Team</h2>
@@ -1912,7 +1912,7 @@
 <hr>
     
 <p><span style='font-size:15px;font-family:"Times New Roman",serif;'><br>&nbsp;</span></p>
-<p style='margin:0in;font-size:16px;font-family:"Times New Roman",serif;'><img src="./figures/doe_label2.png" style="width: 170pt; height: 50pt;" alt="image">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./figures/nrap_logo.png" style="width: 120pt; height: 55pt;" alt="image"></p>
+<p style='margin:0in;font-size:16px;font-family:"Times New Roman",serif;'><img src="./figure/doe_label2.png" style="width: 170pt; height: 50pt;" alt="image">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./figure/nrap_logo.png" style="width: 120pt; height: 55pt;" alt="image"></p>
 
 <table>
 <tr>
@@ -1996,4 +1996,4 @@
     
 <p><span style='font-size:13px;font-family:"Times New Roman",serif;'><br>&nbsp;&nbsp;</span></p>
 <p style='margin:0in;font-size:16px;font-family:"Times New Roman",serif;'>&nbsp;&nbsp;</p>
-<p align=center style='margin:0in;font-size:16px;font-family:"Times New Roman",serif;margin-bottom:9.6pt;'><img src="./figures/netl_label.png" style="width: 70pt; height: 50pt;" alt="image">&nbsp;&nbsp;<img src="./figures/label2.png" style="width: 70pt; height: 50pt;" alt="image">&nbsp;&nbsp;<img src="./figures/label3.png" style="width: 80pt; height: 70pt;" alt="image">&nbsp;&nbsp;<img src="./figures/label4.png" style="width: 90pt; height: 80pt;" alt="image">&nbsp;&nbsp;<img src="./figures/label5.png" style="width: 80pt; height: 70pt;" alt="image">&nbsp;</p>
+<p align=center style='margin:0in;font-size:16px;font-family:"Times New Roman",serif;margin-bottom:9.6pt;'><img src="./figure/netl_label.png" style="width: 70pt; height: 50pt;" alt="image">&nbsp;&nbsp;<img src="./figure/label2.png" style="width: 70pt; height: 50pt;" alt="image">&nbsp;&nbsp;<img src="./figure/label3.png" style="width: 80pt; height: 70pt;" alt="image">&nbsp;&nbsp;<img src="./figure/label4.png" style="width: 90pt; height: 80pt;" alt="image">&nbsp;&nbsp;<img src="./figure/label5.png" style="width: 80pt; height: 70pt;" alt="image">&nbsp;</p>
