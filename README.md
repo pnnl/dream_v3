@@ -200,7 +200,7 @@
  
 [8. Appendix](#appendix)
  
-<p> &nbsp; </p>  
+<p> Summary: the <em>Appendix</em> page includes additional information that might be helpful to user when setting up and running DREAM. &nbsp; </p>  
  
 [8.1 Objectives](#objectives)
  
