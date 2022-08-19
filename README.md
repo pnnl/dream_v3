@@ -88,31 +88,31 @@
 
 [1. Introduction](#intro)
  
-<p> &nbsp; </p>
+<p> Summary: introduction to the open-source software DREAM and accompanied with a literature review about the risk-based assessment and monitoring for geologic carbon sequestration. &nbsp; </p>
 
 [2. Software Installation and Requirements](#software)
 
-<p> &nbsp; </p>
+<p> Summary: discussion on DREAM's software dependencies, overview of the available datasets, and mention of the input data file requirements. &nbsp; </p>
 
 [3. User Interface Walkthrough](#ui)
  
-<p> &nbsp;</p> 
+<p> Summary: introduction to the step-by-step DREAM tutorial using the Kimberlina 1.2 site. &nbsp;</p> 
 
 [3.1 DREAM Welcome Page](#welcome)
  
-<p> &nbsp; </p>  
+<p> Summary: the <em>Welcome</em> page shows how to get started with DREAM. &nbsp; </p>  
  
 [3.2 Input Directory Page](#input)
  
- <p> &nbsp; </p>
+ <p> Summary: the <em>Input Directory</em> page shows how to load input data into DREAM as a directory or list of files. Units must be specified if they are not included in input data files. &nbsp; </p>
  
 [3.3 Leak Definition](#def)
  
-<p> &nbsp; </p> 
+<p> Summary: the <em>Leak Definition</em> page allows the user to define what will be considered as a leak by taking a union of leak parameters, such as saturation and/or gravity, to specify a leak definition for some user-specified criteria. The user can visualize the leak plume once the leak definition is specified. &nbsp; </p> 
  
 [3.4 Scenario Weighting](#weight)
  
-<p> &nbsp; </p> 
+<p> Summary: the <em>Scenario Weighting</em> page &nbsp; allows the user selectively assign weights to each campaign scenario manually, with an equation, or by loading a file containing the weight values. </p> 
  
 [3.5 Define Available Sensors](#threshold)
  
@@ -816,7 +816,7 @@
 
 
 <h2 name="weight">3.4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Scenario Weighting</h2>
-<p>. This can be done with a simple weight equation that can use any combination of the following three variables:</p>
+<p>. The user may now choose to assign weights to each scenario manually, load a file containing the weight values associated with each scenario, or with an equation, in the Scenario Weighting pane. This can be done with a simple weight equation that can use any combination of the following three variables:</p>
 <ul>
 <li><em>v </em>&ndash; maximum volume of aquifer degraded,</li>
 <li><em>a </em>&ndash; user defined weights for <em>Variable A</em>, and</li>
