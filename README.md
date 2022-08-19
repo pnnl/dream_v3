@@ -1084,7 +1084,7 @@
 <p>For this example, refer to Figure 12. First, select the <em>check box</em> for &ldquo;gravity&rdquo;, &ldquo;pressure&rdquo;, and &ldquo;saturation&rdquo;. Assign &ldquo;gravity&rdquo; with a cost equation of &ldquo;1500*s+250*a/1000000&rdquo; to represent $1500 per survey plus $250 per square kilometer of land surveyed. Gravity should also set <em>Detection Type</em> to &ldquo;Above threshold&rdquo;, <em>Detection Threshold</em> to &ldquo;20 microGal&rdquo;. Pressure should set <em>Cost</em> to &ldquo;$500&rdquo;, <em>Detection Type</em> to &ldquo;Relative change&rdquo;, and <em>Detection Threshold</em> &ldquo;2000%&rdquo;. Disclaimer: starting at 0 when calculating &ldquo;Relative change&rdquo; will cause an infinite value. Saturation should set <em>Cost</em> to &ldquo;$1500&rdquo;, <em>Detection Type</em> to &ldquo;Above threshold&rdquo;, and <em>Detection Threshold</em> to &ldquo;2%&rdquo;. Finally, click <em>Find Detectable Nodes</em>. DREAM will calculate which nodes detect at least one scenario in the ensemble based on the user-defined detection type and value. The following values should appear next to each selected parameter type at the bottom of the page (Table 1).</p>
 <p>Note: While the process is working, a red box appears to the right of the progress bar. Pressing this box cancels the process before completion but progress is saved.</p>
 
-<p><a name="_Toc108615062"></a><b>Table 1: Number of detectable nodes for each parameter in the example.</b></p>
+<p><a name="tab1"></a><b>Table 1: Number of detectable nodes for each parameter in the example.</b></p>
 <table>
 <tbody>
 <tr>
