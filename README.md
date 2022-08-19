@@ -539,8 +539,8 @@
 <p style="margin-bottom:9.6pt;text-align:justify;text-indent:.25in;">DREAM optimizes across user-provided subsurface leakage simulations based on user-specified leak parameters, factoring multiple objectives including minimizing cost, the earliest time to detection, or the volume of aquifer degraded. Currently, DREAM employs multi-objective optimization schemes that the user can select, including (i) Monte Carlo, (ii) Simulated Annealing, and (iii) Heuristic algorithm. The optimization schemes (i)-(iii) search for the optimal monitoring campaigns that minimize the tradeoff between the objectives, such as time to detection versus cost. The default simulated annealing algorithm has proven to be orders of magnitude faster than an exhaustive search of the entire solution space, e.g., Grid Search (Yonkofski et al., 2016), and newer algorithms may prove to be even more efficient. Leak parameters may include pressure, temperature, gas saturation, dissolved component concentrations, pH, or any other quantity that can be modeled in a physics-based simulation of porous media fluid transport. DREAM allows for a mix of monitoring technologies including point sensors and surface measurements. While DREAM was designed with applications to CO<sub>2</sub> leakage in mind, this flexibility allows DREAM to determine optimal monitoring locations for any contaminant transport scenario<span style="font-size:11px;"><a href="#_msocom_1" id="_anchor_1" language="JavaScript" name="_msoanchor_1"></a></span>.</p>
 <p style="margin-bottom:9.6pt;text-align:justify;text-indent:.25in;">Successful use of this software requires a rudimentary understanding of the leak scenarios, domain space, DREAM constraints, and the available optimization algorithms. There is rarely a definitively &ldquo;best&rdquo; monitoring solution, so DREAM instead functions as a support tool to highlight the opportunity trade-offs between good monitoring configurations. DREAM is limited by the spatial and temporal resolution of the subsurface leakage simulations, so decision-makers will need to translate DREAM configurations to real-world monitoring configurations that factor in site-specific constraints at a finer level. Decision-makers should always ground truth DREAM results to operational principles.</p>
 <p style="margin-bottom:9.6pt;text-align:justify;text-indent:.25in;">Development of DREAM began in 2012 as part of the NRAP project, with the first code version being released in 2016, and the second major version released in 2020. The current version has been under development since then, and its release marks an important step in the completion of the second phase of the NRAP program. Subsequent versions are intended to add new objectives, monitoring technologies, algorithms, and input formats, while making continual improvements to user interface, post-processing analysis, and computational speeds.</p>
-<p>Over the past few years, there has been research and development in modeling potential leakage risks from geologic carbon storage sites (Baek et al. 2021; Vasylkivska, et al. 2021; Lackey et al. 2019; Yonkofski et al. 2019; Wainwright et al. 2013; Zhou et al. 2011). In Vasylkivska, et al. 2021, the authors introduced NRAP-Open-IAM, which is an open-source software for the risk assessment and management of geologic carbon storage system-models. Similarly, Lackey et al. (2019) focused on leakage risk assessment and monitoring of legacy wells using the NRAP-Open-IAM&rsquo;s workflow to test different monitoring strategies at the Kimberlina 1.2 Project Site. As part of NRAP-Open-IAM&rsquo;s workflow, Baek et al. (2022) presented their deep learning-based approach for multisegmented wellbore model development for monitoring many wells at a geologic carbon sequestration (GCS) site. In earlier works, Wainwright et al. 2013 performed sensitivity analysis using a hypothetical case study of GCS and storage using a basin-scale reservoir in TOUGH2; Zhou and Birkholzer (2011) investigated the effects of large-scale sequestration and storage of CO2 by looking at induced pressure buildup and brine migration. &nbsp;</p>
-<p>This manual illustrates the program GUI and describes the tool inputs and outputs, and how to interpret the results. For a synopsis of the theoretical basis of DREAM, see Yonkofski et al. (2016). For an example application using point source monitoring technologies from leakage simulations, see Yonkofski et al. (2017). For an example on the long-term risk-based monitoring of abandoned wellbores at the industrial scale, see Yonkofski et al. (2019) for applications to both DREAM and NRAP&rsquo;s Wellbore Leakage Analysis Tool (WLAT). For a combined application, see Bacon et al. (2019) for an example using NRAP-Open-IAM and DREAM to define a risk-based Post-Injection Site Care period and determine an optimized monitoring network for a commercial-scale CO2 storage project.</p>
+<p>Over the past few years, there has been research and development in modeling potential leakage risks from geologic carbon storage sites (Baek et al. 2021; Vasylkivska, et al. 2021; Lackey et al. 2019; Yonkofski et al. 2019; Wainwright et al. 2013; Zhou et al. 2011). In Vasylkivska, et al. 2021, the authors introduced NRAP-Open-IAM, which is an open-source software for the risk assessment and management of geologic carbon storage system-models. Similarly, Lackey et al. (2019) focused on leakage risk assessment and monitoring of legacy wells using the NRAP-Open-IAM&rsquo;s workflow to test different monitoring strategies at the Kimberlina 1.2 Project Site. As part of NRAP-Open-IAM&rsquo;s workflow, Baek et al. (2022) presented their deep learning-based approach for multisegmented wellbore model development for monitoring many wells at a geologic carbon sequestration (GCS) site. In earlier works, Wainwright et al. 2013 performed sensitivity analysis using a hypothetical case study of GCS and storage using a basin-scale reservoir in TOUGH2; Zhou and Birkholzer (2011) investigated the effects of large-scale sequestration and storage of CO<sub>2 by looking at induced pressure buildup and brine migration. &nbsp;</p>
+<p>This manual illustrates the program GUI and describes the tool inputs and outputs, and how to interpret the results. For a synopsis of the theoretical basis of DREAM, see Yonkofski et al. (2016). For an example application using point source monitoring technologies from leakage simulations, see Yonkofski et al. (2017). For an example on the long-term risk-based monitoring of abandoned wellbores at the industrial scale, see Yonkofski et al. (2019) for applications to both DREAM and NRAP&rsquo;s Wellbore Leakage Analysis Tool (WLAT). For a combined application, see Bacon et al. (2019) for an example using NRAP-Open-IAM and DREAM to define a risk-based Post-Injection Site Care period and determine an optimized monitoring network for a commercial-scale CO<sub>2 storage project.</p>
 <p>&nbsp;</p>
 <div id="_com_3" language="JavaScript"><br></div>
 
@@ -602,7 +602,7 @@
             <li><span style='line-height:115%;font-family:"Times New Roman",serif;font-size:16px;'><ins cite="mailto:Delphine%20Appriou" datetime="2022-03-16T16:29">Reference</ins><ins cite="mailto:Delphine%20Appriou" datetime="2022-03-16T16:46">s</ins><ins cite="mailto:Delphine%20Appriou" datetime="2022-03-16T16:29">:</ins><ins cite="mailto:Delphine%20Appriou" datetime="2022-03-16T16:30">&nbsp;</ins></span>
                 <ul style="list-style-type: disc;">
                     <li><span style='line-height:115%;font-family:"Times New Roman",serif;font-size:16px;'><ins cite="mailto:Delphine%20Appriou" datetime="2022-03-16T16:30">Kayyum Mansoor, Thomas A. Buscheck, Xianjin Yang, Susan A. Carroll, Xiao Chen. LLNL Kimberlina 1.2 NUFT Simulations June 2018, 2018-06-25, https://edx.netl.doe.gov/dataset/llnl-kimberlina-1-2-nuft-simulations-june-2018, DOI: 10.18141/1603336</ins></span></li>
-                    <li><span style='line-height:115%;font-family:"Times New Roman",serif;font-size:16px;'><ins cite="mailto:Delphine%20Appriou" datetime="2022-03-16T16:47">Yang, X., T. A. Buscheck, K. Mansoor, Z. Wang, K. Gao, L. Huang, D. Appriou, and S. A. Carroll (2019), Assessment of geophysical monitoring methods for detection of brine and CO2 leakage in drinking water aquifers, Int J Greenh Gas Con, 90, 102803.</ins></span></li>
+                    <li><span style='line-height:115%;font-family:"Times New Roman",serif;font-size:16px;'><ins cite="mailto:Delphine%20Appriou" datetime="2022-03-16T16:47">Yang, X., T. A. Buscheck, K. Mansoor, Z. Wang, K. Gao, L. Huang, D. Appriou, and S. A. Carroll (2019), Assessment of geophysical monitoring methods for detection of brine and CO<sub>2 leakage in drinking water aquifers, Int J Greenh Gas Con, 90, 102803.</ins></span></li>
                 </ul>
             </li>
             <li><u><span style='font-size:16px;line-height:115%;font-family:"Times New Roman",serif;'><span style="text-decoration:none;">&nbsp;</span></span></u></li>
@@ -634,7 +634,7 @@
 <p style="margin-bottom:9.6pt;text-indent:.25in;">(2) a visualization tool to view the domain space and optimization results,&nbsp;</p>
 <p style="margin-bottom:9.6pt;text-indent:.25in;">(3) plotting scripts used to analyze the results, &nbsp;</p>
 <p style="margin-bottom:9.6pt;text-indent:.25in;">(4) a Java application to aid users in converting common American Standard Code for Information Interchange (ASCII) output data to the standard DREAM hierarchical data format (HDF5).</p>
-<p style="margin-bottom:9.6pt;text-indent:.25in;">The example presented in this user manual is based on the test dataset from the brownfield site at Kimberlina Site, California, which is called Kimberlina 1.2. The data files are based on NUFT simulations at the Kimberlina site to model reactive multi-phase flow and transport of CO2 and brine for a case study of geologic carbon storage. In this tutorial, the user will be guided through the DREAM Java Wizard GUI while demonstrating an application to 19 randomly selected leakage scenarios generated for an NRAP Second-Generation Reduced-Order Model study (Carroll et al., 2014b). For context, a summary of the model set up from Carroll et al. (2014b) is provided below. <span style="font-size:11px;"><a href="#_msocom_4" id="_anchor_4" language="JavaScript" name="_msoanchor_4"></a></span></p>
+<p style="margin-bottom:9.6pt;text-indent:.25in;">The example presented in this user manual is based on the test dataset from the brownfield site at Kimberlina Site, California, which is called Kimberlina 1.2. The data files are based on NUFT simulations at the Kimberlina site to model reactive multi-phase flow and transport of CO<sub>2 and brine for a case study of geologic carbon storage. In this tutorial, the user will be guided through the DREAM Java Wizard GUI while demonstrating an application to 19 randomly selected leakage scenarios generated for an NRAP Second-Generation Reduced-Order Model study (Carroll et al., 2014b). For context, a summary of the model set up from Carroll et al. (2014b) is provided below. <span style="font-size:11px;"><a href="#_msocom_4" id="_anchor_4" language="JavaScript" name="_msoanchor_4"></a></span></p>
 <p style="margin-bottom:9.6pt;text-indent:.25in;">The Nonisothermal, Unsaturated Flow and Transport <ins cite="mailto:Kupis,%20Shyla" datetime="2022-07-01T09:15">(</ins>NUFT<ins cite="mailto:Kupis,%20Shyla" datetime="2022-07-01T09:15">)</ins> numerical model<span style="font-size:11px;"><a href="#_msocom_5" id="_anchor_5" language="JavaScript" name="_msoanchor_5"></a>&nbsp;</span>for an alluvium case study of CO<sub>2</sub> storage (Figure 1) from the Kimberlina 1.2 site is comprised of a 3D heterogeneous domain that is represented as an unconsolidated aquifer consisting of permeable sand layers and impermeable shale layers that are based on the lithology of the High Plains Aquifer. The aquifer is underlain by a hypothetical CO<sub>2</sub> storage reservoir, and both aquifer and reservoir are penetrated by leaking wells. The model domain encompasses 10 km &times; 5 km &times; 240 m with 1 to 5 leakage sources per scenario placed at a depth of 198 m based on 48 known well locations. The wells are a mix of domestic, feedlot, irrigation, public water supply, and oil field water supply wells. Leakage rates are varied based on uncertainties in the hydrogeologic properties.</p>
 
 
@@ -771,7 +771,7 @@
 
 
 
-<p>Under <em>Parameter</em>, pressure, saturation, and any other user-specified parameters can define a leak either individually or as a combination of parameters. Up to three parameters can be selected at a time to define a leak by taking the union of the selected parameters. Parameters are read in from the input H5 or IAM files and represent a value at each model node and timestep. The leak space is all the model nodes that exceed the defined type and value at any timestep. A carbon capture application might define the leak where CO2 saturation exceeds a maximum contaminant level.</p>
+<p>Under <em>Parameter</em>, pressure, saturation, and any other user-specified parameters can define a leak either individually or as a combination of parameters. Up to three parameters can be selected at a time to define a leak by taking the union of the selected parameters. Parameters are read in from the input H5 or IAM files and represent a value at each model node and timestep. The leak space is all the model nodes that exceed the defined type and value at any timestep. A carbon capture application might define the leak where CO<sub>2 saturation exceeds a maximum contaminant level.</p>
 <p>Under <em>Leak Type</em>, there are three options that can be selected to define a leak:</p>
 <ul>
 <li>&ldquo;Absolute change&rdquo; and &ldquo;Relative change&rdquo; define leaks as the change across time and may be limited to positive or negative change by providing a +/- sign before the value.
@@ -785,7 +785,7 @@
 <p>The <em>Leak Type</em> can be set independently for each parameter and defines the type of change that is expected to signify a leak.</p>
 <p>Hovering over the <em>Leak Value</em>will display the global minimum, average, and maximum for the parameter across all timesteps and scenarios to help the user make an informed selection. The leak value corresponds to the leak type and determines the leak space. The leak space is made of all model nodes that exceed the defined leak value at any scenario. This space determines how much aquifer has degraded at each timestep and scenario, indicating the size of the leak and potential environmental remediation costs.&nbsp; If multiple parameters are selected, the final leak space becomes the union of the parameters or nodes that meet any of the thresholds.</p>
 <p>Most users may choose to select a CO<sub>2</sub> parameter exceeding some value for carbon capture applications; although, pressure or other proxies may be necessary if a CO<sub>2 </sub>parameter is not available. Clicking <em>Calculate Leak</em> will calculate which nodes exceed the threshold in at least one scenario, and the number of nodes found should The number of nodes in the leak space must be greater than 0 to continue.</p>
-<p>and remove the default pressure leak type (Figure 8)<em>. Then,</em> click <em>Calculate Leak </em>and view how many nodes exceeded the saturation threshold. Finally, click <em>Next</em>.
+<p>For this example, set the leak definition under <em>Parameter</em> to &ldquo;saturation&rdquo; with the <em>Leak Type</em> set to &ldquo;Above threshold&rdquo; with a <em>Leak Value </em>of &ldquo;2.0% &rdquo;, and remove the default pressure leak type (Figure 8)<em>. Then,</em> click <em>Calculate Leak </em>and view how many nodes exceeded the saturation threshold. Finally, click <em>Next</em>.
       
       
       
@@ -1092,7 +1092,7 @@
 
 
 <p align="center">
- <img src="./figures/dream_run_page2.png">
+ <img src="./figures/dream_run_page1.png">
 </p>
 <p align="center"><sub><b>
       Figure&nbsp;20: 3D visualization of monitoring campaigns and leak plumes from <em>Visualization</em> page
@@ -1101,7 +1101,7 @@
 
 
 <p align="center">
- <img src="./figures/dream_run_page1.png">
+ <img src="./figures/dream_run_page2.png">
 </p>
 <p align="center"><sub><b>
       Figure&nbsp;21: <em>Objective Graph </em>campaign performance between time to detection and cost objectives that is produced when <em>Calculate Pareto Ranks</em> is enabled
@@ -1383,8 +1383,8 @@
 <p>Parameter List of Acronyms</p>
 <ul>
 <li>PLD - Percent of Leaks Detected</li>
-<li>PMCD - Percent Mass of CO2 Detected</li>
-<li>PMMCD &ndash; Percent Mass of CO2 Detected at Max Leak</li>
+<li>PMCD - Percent Mass of CO<sub>2 Detected</li>
+<li>PMMCD &ndash; Percent Mass of CO<sub>2 Detected at Max Leak</li>
 <li>TTD &ndash; Time to Detection</li>
 <li>VAD &ndash; Volume of Aquifer Degraded</li>
 </ul>
@@ -1394,7 +1394,7 @@
 <li>PLD &amp; PMCD vs TTD
 <ul>
 <li>A dual panel view of PLD and PMCD (e.g., Figure 24) is insightful for identifying if there are some leaks that are more important than others. It showcases where the bulk of leaks are as well as the less frequent but larger leaks. PLD and PMCD are plotted against TTD to see how TTD is related to the two parameters.</li>
-<li>Questions to consider are: how is TTD affected by solely looking at percent of leaks detected compared to the percent mass of CO2 detected? Is one of these objectives more indicative of performance than the other?</li>
+<li>Questions to consider are: how is TTD affected by solely looking at percent of leaks detected compared to the percent mass of CO<sub>2 detected? Is one of these objectives more indicative of performance than the other?</li>
 <li>In</li>
 </ul>
 </li>
@@ -1418,7 +1418,7 @@
 <li>PLD &amp; PMCD vs Monitoring Cost
 <ul>
 <li>Similar to (a), this figure is another dual panel view of PLD and PMCD (e.g., Figure 25). A dual panel view of PLD and PMCD is insightful for identifying if there are some leaks that are more important than others. It showcases where the bulk of leaks are as well as the less frequent but larger leaks. PLD and PMCD are plotted against Monitoring Cost.</li>
-<li>Questions to consider are: how is it better to use PLD or PMCD when budgeting for a CO2 monitoring campaign?</li>
+<li>Questions to consider are: how is it better to use PLD or PMCD when budgeting for a CO<sub>2 monitoring campaign?</li>
 <li>In Figure 25, PLD might be useful in providing more consistent estimates for monitoring costs compared to PMCD.</li>
 </ul>
 </li>
@@ -1439,7 +1439,7 @@
 <ul>
 <li>PLD vs PMCD
 <ul>
-<li>Ideally, a one-to-one or linear relationship between PLD and PMCD is expected to highlight the fact that as the percent of leaks detected increases so too will the percent mass of CO2 detected (e.g., Figure 26). If there are outliers, this indicates that some leaks are undetected.</li>
+<li>Ideally, a one-to-one or linear relationship between PLD and PMCD is expected to highlight the fact that as the percent of leaks detected increases so too will the percent mass of CO<sub>2 detected (e.g., Figure 26). If there are outliers, this indicates that some leaks are undetected.</li>
 <li>Questions to consider are: how many wells and monitoring technologies have been deployed? Are there any constraints or leak detection thresholds that can be affecting the number of undetected leaks?</li>
 <li>In Figure 26, the PMCD is greater than the PLD, meaning some leaks are going undetected.</li>
 </ul>
@@ -1507,7 +1507,7 @@
 <ul>
 <li>PMCD &amp; PMMCD vs TTD
 <ul>
-<li>This dual panel view is comparing the mass of CO2 detected at the end of the monitoring campaign to the mass of CO2 detected when there is maximum saturation (i.e., largest leak detected). This figure aims to highlight the discrepancy (if any) between PMCD and PMMCD (e.g., Figure 29).</li>
+<li>This dual panel view is comparing the mass of CO<sub>2 detected at the end of the monitoring campaign to the mass of CO<sub>2 detected when there is maximum saturation (i.e., largest leak detected). This figure aims to highlight the discrepancy (if any) between PMCD and PMMCD (e.g., Figure 29).</li>
 <li>For example, it can help address if there is a large enough difference between the two, such that there is a significant time gap when the largest leak is detected compared to the end of the monitoring campaign.</li>
 <li>In Figure 29, this figure indicates that there is not a significant difference for TTD when using the last time step of the monitoring campaign or the time step at which the maximum leak is detected.</li>
 </ul>
@@ -1534,7 +1534,7 @@
 <ul>
 <li>PMCD &amp; PMMCD vs Monitoring Cost
 <ul>
-<li>Similar to (f), this dual panel view is comparing the mass of CO2 detected at the end of the monitoring campaign to the mass of CO2 detected when there is maximum saturation (i.e., largest leak detected). This figure will highlight the discrepancy in PMCD and PMMCD (e.g., Figure 30).</li>
+<li>Similar to (f), this dual panel view is comparing the mass of CO<sub>2 detected at the end of the monitoring campaign to the mass of CO<sub>2 detected when there is maximum saturation (i.e., largest leak detected). This figure will highlight the discrepancy in PMCD and PMMCD (e.g., Figure 30).</li>
 <li>For example, it can help address if there is a large enough difference between the two, such that it is worthwhile to continue monitoring and accruing costs to capture relevant or significant leaks.</li>
 <li>In Figure 30, this figure indicates that there does not appear to be a significant difference between using the last time step of the monitoring campaign or the time step at which the maximum leak is detected.</li>
 </ul>
@@ -1586,7 +1586,7 @@
 <ul>
 <li>Similar to (h), these 3D scatter plots look at the leak detection cutoff from 10% to 90% (e.g., Figure 31). A GIF (right) is produced from this set of figures to show the relationship for the mass (or size) of the leak in relation to how long it takes to be detected and how expensive this scenario will be.</li>
 <li>Questions to consider are: how important is PMCD, and is it a good indicator with a strong relationship between TTD and monitoring cost?</li>
-<li>In Figure 31, as expected, the GIF shows how PLD and TTD increase as the mass of CO2 detected increases.</li>
+<li>In Figure 31, as expected, the GIF shows how PLD and TTD increase as the mass of CO<sub>2 detected increases.</li>
 </ul>
 </li>
 </ul>
