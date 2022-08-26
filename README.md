@@ -1376,7 +1376,7 @@
 <p>stomp_ensemble/scenario2/plot.1</p>
 <p>stomp_ensemble/scenario2/plot.2</p>
 <p><strong>File Example: stomp_ensemble/scenario1/plot.1 </strong></p>
-<p>This example file contains data for the first timestep from the first scenario. XYZ data in STOMP is expected in x, then y, then z ordering. <strong>Required </strong>inputs are in bold, and optional data is in <em>italics</em>.</p>
+<p>This example file contains data for the first timestep from the first scenario. XYZ data in STOMP is expected in x, then y, then z ordering. <strong>Required keys </strong> are in bold, and <em>optional data</em> is in <em>italics</em>.</p>
 <p>&nbsp;</p>
 <sub><p>----------------------------- Beginning of File</p>
 <p><em>Number of Time Steps =&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2</em></p>
@@ -1940,12 +1940,12 @@
 <p><strong><em>Detection Criteria</em></strong></p>
 <ul>
 <li>The user has free range on how many criteria to specify for leak detection.</li>
-<li>&ldquo;Any Technology&rdquo; is a wildcard, meaning any sensor specified on the <strong><em>Define Available Sensors </em></strong> page exceeding the user-defined value for <em>Minimum Detections to Signify Leak </em>will confidently indicate a leak has occurred.</li>
-<li>The only sensors that can be used to signify a leak must have been defined on the <strong><em>Define Available Sensors </em></strong></li>
+<li>&ldquo;Any Technology&rdquo; is a wildcard, meaning any sensor specified on the <em>Define Available Sensors </em> page exceeding the user-defined value for <em>Minimum Detections to Signify Leak </em>will confidently indicate a leak has occurred.</li>
+<li>The only sensors that can be used to signify a leak must have been defined on the <em>Define Available Sensors </em></li>
 </ul>
 <p><strong><em>Define Available Sensors </em></strong></p>
 <ul>
-<li>This page is different from the <strong><em>Leak Definition</em></strong> The potential leak space does not indicate a detectable leak. The thresholds and criteria specified on this page and the following are what determine if there is a detectable leak(s).</li>
+<li>This page is different from the <em>Leak Definition</em> page. The potential leak space does not indicate a detectable leak. The thresholds and criteria specified on this page and the following are what determine if there is a detectable leak(s).</li>
 <li>Under <em>Cost</em>, a cost function can be created for each monitoring technology with any of the variables, e.g., <em>t, i, s, a</em>.</li>
 <li>Make sure detectable nodes for each sensor covers a reasonable amount of nodes in the model space, e.g., should be greater than 0 but it should not necessarily cover all nodes. If there are zero detectable nodes, then no leak is detected. If all nodes are covered, then it means the entire model space is covered by a leak, which might not be realistic.</li>
 </ul>
