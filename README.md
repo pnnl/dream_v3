@@ -1317,7 +1317,7 @@
 <ul>
 <li><strong>Run#_AllCampaigns.csv</strong>
 <ul>
-<li>A file listing details on every iteration tested by the algorithm for each run set in <em>Total Runs</em>. It lists iteration number, scenarios with a leak detected, scenarios with no leak detected, the number of wells, time/location details for each monitoring technology in the campaign, average values for each objective (); however, in Simulate Annealing and Heuristic Algorithm, the weights are factored in.</li>
+<li>A file listing details on every iteration tested by the algorithm for each run set in <em>Total Runs</em>. It lists iteration number, scenarios with a leak detected, scenarios with no leak detected, the number of wells, time/location details for each monitoring technology in the campaign, average values for each objective (not factoring scenario weighting); however, in Simulated Annealing and Heuristic Algorithm, the weights can be factored in.</li>
 </ul>
 </li>
 </ul>
@@ -1886,7 +1886,9 @@
 <ul>
 <li>Cost &ndash; This objective includes the cost of each technology and well costs for the campaign. Using equations on the cost fields can allow for both capital and operating costs. DREAM considers lower costs to be preferable.</li>
 <li>VAD at Detection &ndash; Tied to the first objective, this calculates the volume of aquifer degraded at the time when the leak is first detected, representing the magnitude of the leak. DREAM considers lower volumes to be preferable.</li>
-<li>Scenarios Detected &ndash; Tied to the first objective, this calculates the percent of scenarios that are detected with a given monitoring campaign.</li>
+<li>Scenarios Detected &ndash; Tied to the first objective, this calculates the percent of scenarios that are detected for a given monitoring campaign.</li>
+<li> Percent Mass of CO2 Detected &ndash; Tied to the first objective, this calculates the percent mass of carbon dioxide that has been detected for a given monitoring campaign.
+</li>
 </ul>
 <p> &nbsp; </p>
 <h2 name="pointers">8.2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Pointers for Running Dream</h2>
@@ -1950,7 +1952,7 @@
 <p><strong><em>Leak Definition</em></strong></p>
 <ul>
 <li>Only saturation and pressure can define the leak space nodes.</li>
-<li>There must be at least one node found when calculating the leak space in order to proceed; otherwise, the <em>Leak Value</em> needs to be decreased, especially if there are only a few nodes covering the leak space.</li>
+<li>There must be at least one node found when calculating the leak space in order to proceed; otherwise, the <em>Leak Threshold</em> needs to be decreased, especially if there are only a few nodes covering the leak space.</li>
 <li>If the user-defined threshold is exceeded, this does not necessarily mean a leak has been detected. This section is mainly for calculating VAD by finding nodes that indicate part of the aquifer has been degraded.</li>
 </ul>
 <p><strong>Additional Information</strong></p>
