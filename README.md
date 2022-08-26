@@ -58,7 +58,7 @@
 </div>
 <p style="margin-bottom:9.6pt;text-align:center;line-height:150%;"><strong>&nbsp;</strong></p>
 <p align=center style="margin-bottom:9.6pt;text-align:center;line-height:150%;"><strong><span lang="DE">NRAP-TRS-III-001-2020</span></strong></p>
-<p align=center style="margin-bottom:9.6pt;text-align:center;line-height:150%;">X August 2022</p>
+<p align=center style="margin-bottom:9.6pt;text-align:center;line-height:150%;">August 2022</p>
 <p style="margin-bottom:9.6pt;text-align:center;line-height:150%;">&nbsp;</p>
 <p style="margin-bottom:9.6pt;text-align:center;line-height:150%;">&nbsp;</p>
 <p style="margin-bottom:9.6pt;text-align:center;line-height:150%;">&nbsp;</p>
