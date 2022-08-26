@@ -1561,7 +1561,7 @@
 <p>For &ldquo;VolumeOfAquiferDegraded.csv&rdquo;, the data file has multiple columns, including <em>Time</em> (units specified by user or within the input files), and the <em>Average</em>, <em>Minimum</em>, and <em>Maximum VAD</em> (units of volume, e.g., cubic meters), which are the estimated ranges for volume of aquifer degraded. The final column is <em>Total Possible VAD</em>.</p>
 <h2 name="py">5.1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Python Visualization</h2>
 <p>Post-processing of the DREAM run can be executed by clicking <em>Display Python Plots </em>under <strong><em>Optimization Settings</em></strong>. Multiple figures will be produced and then automatically saved to the specified output directory under a subdirectory called &ldquo;Figures&rdquo;. Below is a list of acronyms that are used in specifying the parameters in the figures.</p>
-<p>Parameter List of Acronyms</p>
+<p>List of Acronyms for the Objectives</p>
 <ul>
 <li>PLD - Percent of Leaks Detected</li>
 <li>PMCD - Percent Mass of CO<sub>2 Detected</li>
