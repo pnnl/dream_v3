@@ -841,7 +841,7 @@
 
 
 <p align="center">
- <img name="fig2" src="./figure/gui_flow_chart.png">
+ <img name="fig2" height=600 src="./figure/DREAM_Flow_Diagram.png">
 </p>
 <p align="center"><sub><b>
       Figure&nbsp;2: DREAM GUI Flow Chart
