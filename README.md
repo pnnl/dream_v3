@@ -753,55 +753,62 @@
         <p style="margin-bottom:9.6pt;text-indent:.25in;">DREAM converts raw leak simulation outputs into HDF5 files, a hierarchical data format that is designed to store and organize large amounts of data. The data can be explored with the <em>h5py</em> Python package that was mentioned earlier or with a packaged HDF5 viewer. DREAM developers recommend either installing HDFView or Panoply. The first application allows for simple viewing and editing of HDF5 files, while the second application allows for simple viewing and plotting. The viewers can be downloaded at the following links:</p>
         <p style="margin-bottom:9.6pt;">HDFView: <a href="https://www.hdfgroup.org/downloads/hdfview/">https://www.hdfgroup.org/downloads/hdfview/</a></p>
         <p style="margin-bottom:9.6pt;">Panoply: <a href="https://www.giss.nasa.gov/tools/panoply/download/">https://www.giss.nasa.gov/tools/panoply/download/</a></p>
-        <p style="margin-bottom:9.6pt;text-indent:.25in;">The current release of DREAM is made available on the NETL Energy Data Exchange (EDX) at <span style="background:yellow;">XXXXX</span> and includes a zip file with the following files:</p>
-        <ul style="list-style-type: disc;margin-left:0.25in;">
-            <li><strong><span style='line-height:115%;font-family:"Times New Roman",serif;font-size:16px;'>A runnable JAR file</span></strong><span style='line-height:115%;font-family:"Times New Roman",serif;font-size:16px;'>, which packages all the necessary libraries, images, and documentation into an executable program.</span></li>
-            <li><strong><span style='line-height:115%;font-family:"Times New Roman",serif;font-size:16px;'>Test Datasets</span></strong><span style="line-height:115%;font-size:11px;"><a href="#_msocom_9" id="_anchor_9" language="JavaScript" name="_msoanchor_9"></a></span><span style="line-height:115%;font-size:11px;"><a href="#_msocom_10" id="_anchor_10" language="JavaScript" name="_msoanchor_10"></a>&nbsp;</span><span style="font-size:16px;">that can be used by users to get familiar with the tool:</span>
-                <ol style="list-style-type: circle;">
-                    <li><u><span style="font-size:16px;">NRAP-OpenIAM Open Wellbore, Kimberlina site</span></u><span style="line-height:115%;font-size:11px;"><a href="#_msocom_12" id="_anchor_12" language="JavaScript" name="_msoanchor_12"></a>&nbsp;</span>
-                        <ul class="decimal_type" style="list-style-type: square;">
-                            <li><span style='line-height:115%;font-family:"Times New Roman",serif;font-size:16px;'>About the dataset: This dataset contains all the files</span><span style="line-height:115%;font-size:11px;"><a href="#_msocom_13" id="_anchor_13" language="JavaScript" name="_msoanchor_13"></a>&nbsp;</span><span style='line-height:115%;font-family:"Times New Roman",serif;font-size:16px;'>associated with the analysis of leakage risks at a brownfield site (i.e., Kimberlina site), using NRAP-Open-IAM.&nbsp;</span></li>
-                            <li><span style='line-height:115%;font-family:"Times New Roman",serif;font-size:16px;'>Access:</span> <a href="https://edx.netl.doe.gov/dataset/application-of-nrap-open-iam-to-the-kimberlina-site"><span style="font-size:16px;">https://edx.netl.doe.gov/dataset/application-of-nrap-open-iam-to-the-kimberlina-site</span></a></li>
-                            <li><span style='line-height:115%;font-family:"Times New Roman",serif;font-size:16px;'>Reference:</span> <span style='line-height:115%;font-family:"Times New Roman",serif;font-size:16px;'>Lackey G, VS Vasylkivska, NJ Huerta, S King, and RM Dilmore. 2019. &ldquo;Managing well leakage risks at a geologic carbon storage site with many wells.&rdquo; International Journal of Greenhouse Gas Control 88:182-194. 10.1016/j.ijggc.2019.06.011.</span></li>
-                        </ul>
-                    </li>
-                    <li><u><span style="font-size:16px;">NRAP-OpenIAM Reservoir model<ins cite="mailto:Delphine%20Appriou" datetime="2022-03-16T16:16">:</ins></span></u></li>
-                </ol>
-            </li>
-            <li><span style='font-size:16px;line-height:115%;font-family:"Times New Roman",serif;background:yellow;'><span class="msoIns"><ins cite="mailto:Delphine%20Appriou" datetime="2022-03-16T16:22">Provide description</ins></span></span><span style='font-size:16px;line-height:115%;font-family:"Times New Roman",serif;'><ins cite="mailto:Delphine%20Appriou" datetime="2022-03-16T16:31">:</ins></span><span style='font-size:11px;line-height:115%;font-family:"Times New Roman",serif;'>&nbsp;</span></li>
-        </ul>
-        <p style="margin-top:0in;margin-right:0in;margin-bottom:9.6pt;margin-left:1.25in;text-align:justify;"></p>
-        <ol style="list-style-type: circle;">
-            <li><u><span style="font-size:16px;">HDF5 files based on NUFT Simulations, Kimberlina 1.2 site</span></u></li>
-            <li><span class="msoIns"><ins cite="mailto:Delphine%20Appriou" datetime="2022-03-16T16:29">About the dataset:&nbsp;</ins></span><span style='font-size:13px;font-family:"Calibri",sans-serif;'><ins cite="mailto:Kupis,%20Shyla" datetime="2022-07-01T08:48">Nonisothermal, Unsaturated Flow and Transport model</ins><ins cite="mailto:Kupis,%20Shyla" datetime="2022-07-01T08:50">, referred to as&nbsp;</ins><ins cite="mailto:Kupis,%20Shyla" datetime="2022-07-01T08:48">NUFT</ins><ins cite="mailto:Kupis,%20Shyla" datetime="2022-07-01T08:50">, was developed by Los Alamos National Laboratory (LLNL) to&nbsp;</ins><ins cite="mailto:Kupis,%20Shyla" datetime="2022-07-01T09:15">numerically&nbsp;</ins><ins cite="mailto:Kupis,%20Shyla" datetime="2022-07-01T08:50">model</ins><ins cite="mailto:Kupis,%20Shyla" datetime="2022-07-01T08:51">&nbsp;multi-phase non-isothermal flow and transport</ins><ins cite="mailto:Kupis,%20Shyla" datetime="2022-07-01T08:52">&nbsp;for 3d simulations</ins><ins cite="mailto:Kupis,%20Shyla" datetime="2022-07-01T08:54">&nbsp;of</ins><ins cite="mailto:Kupis,%20Shyla" datetime="2022-07-01T08:58">&nbsp;</ins><ins cite="mailto:Kupis,%20Shyla" datetime="2022-07-01T09:01">either the</ins><ins cite="mailto:Kupis,%20Shyla" datetime="2022-07-01T08:54">&nbsp;saturated&nbsp;</ins><ins cite="mailto:Kupis,%20Shyla" datetime="2022-07-01T09:01">zone&nbsp;</ins><ins cite="mailto:Kupis,%20Shyla" datetime="2022-07-01T08:54">or unsaturated&nbsp;</ins><ins cite="mailto:Kupis,%20Shyla" datetime="2022-07-01T08:59">zone</ins><ins cite="mailto:Kupis,%20Shyla" datetime="2022-07-01T08:52">.&nbsp;</ins><ins cite="mailto:Kupis,%20Shyla" datetime="2022-07-01T09:01">U</ins><ins cite="mailto:Kupis,%20Shyla" datetime="2022-07-01T08:52">ser</ins><ins cite="mailto:Kupis,%20Shyla" datetime="2022-07-01T09:01">s</ins><ins cite="mailto:Kupis,%20Shyla" datetime="2022-07-01T08:52">&nbsp;</ins><ins cite="mailto:Kupis,%20Shyla" datetime="2022-07-01T08:54">can&nbsp;</ins><ins cite="mailto:Kupis,%20Shyla" datetime="2022-07-01T09:02">analyze</ins><ins cite="mailto:Kupis,%20Shyla" datetime="2022-07-01T08:59">&nbsp;the</ins><ins cite="mailto:Kupis,%20Shyla" datetime="2022-07-01T09:01">ir</ins><ins cite="mailto:Kupis,%20Shyla" datetime="2022-07-01T08:59">&nbsp;site</ins><ins cite="mailto:Kupis,%20Shyla" datetime="2022-07-01T09:01">s</ins><ins cite="mailto:Kupis,%20Shyla" datetime="2022-07-01T08:59">&nbsp;of interest</ins><ins cite="mailto:Kupis,%20Shyla" datetime="2022-07-01T10:01">&nbsp;for any leakage scenario</ins><ins cite="mailto:Kupis,%20Shyla" datetime="2022-07-01T08:59">&nbsp;</ins><ins cite="mailto:Kupis,%20Shyla" datetime="2022-07-01T09:02">using NUFT,&nbsp;</ins><ins cite="mailto:Kupis,%20Shyla" datetime="2022-07-01T09:01">and then</ins><ins cite="mailto:Kupis,%20Shyla" datetime="2022-07-01T09:03">&nbsp;they can</ins><ins cite="mailto:Kupis,%20Shyla" datetime="2022-07-01T09:01">&nbsp;us</ins><ins cite="mailto:Kupis,%20Shyla" datetime="2022-07-01T09:02">e these simulations as the inputs (e.g., hdf5 files) to run</ins><ins cite="mailto:Kupis,%20Shyla" datetime="2022-07-01T08:54">&nbsp;</ins><ins cite="mailto:Kupis,%20Shyla" datetime="2022-07-01T08:59">DREAM</ins><ins cite="mailto:Kupis,%20Shyla" datetime="2022-07-01T09:02">.</ins><ins cite="mailto:Kupis,%20Shyla" datetime="2022-07-01T08:51">&nbsp;</ins></span></li>
-        </ol>
-        <p style="margin-bottom:9.6pt;text-align:justify;"></p>
-        <ul style="list-style-type: square;">
-            <li><span style='line-height:115%;font-family:"Times New Roman",serif;font-size:16px;'><ins cite="mailto:Delphine%20Appriou" datetime="2022-03-16T16:29">&nbsp;</ins></span></li>
-            <li><span style='line-height:115%;font-family:"Times New Roman",serif;font-size:16px;'><ins cite="mailto:Delphine%20Appriou" datetime="2022-03-16T16:29">Access:</ins></span><ins cite="mailto:Delphine%20Appriou" datetime="2022-03-16T16:31">https://edx.netl.doe.gov/dataset/llnl-kimberlina-1-2-nuft-simulations-june-2018-v2</ins><span style='line-height:115%;font-family:"Times New Roman",serif;font-family:"Times New Roman",serif;font-size:8.0pt;'><ins cite="mailto:Delphine%20Appriou" datetime="2022-03-16T16:33"><a href="#_msocom_15" id="_anchor_15" language="JavaScript" name="_msoanchor_15"></a></ins></span></li>
-            <li><span style='line-height:115%;font-family:"Times New Roman",serif;font-size:16px;'><ins cite="mailto:Delphine%20Appriou" datetime="2022-03-16T16:29">Reference</ins><ins cite="mailto:Delphine%20Appriou" datetime="2022-03-16T16:46">s</ins><ins cite="mailto:Delphine%20Appriou" datetime="2022-03-16T16:29">:</ins><ins cite="mailto:Delphine%20Appriou" datetime="2022-03-16T16:30">&nbsp;</ins></span>
-                <ul style="list-style-type: disc;">
-                    <li><span style='line-height:115%;font-family:"Times New Roman",serif;font-size:16px;'><ins cite="mailto:Delphine%20Appriou" datetime="2022-03-16T16:30">Kayyum Mansoor, Thomas A. Buscheck, Xianjin Yang, Susan A. Carroll, Xiao Chen. LLNL Kimberlina 1.2 NUFT Simulations June 2018, 2018-06-25, https://edx.netl.doe.gov/dataset/llnl-kimberlina-1-2-nuft-simulations-june-2018, DOI: 10.18141/1603336</ins></span></li>
-                    <li><span style='line-height:115%;font-family:"Times New Roman",serif;font-size:16px;'><ins cite="mailto:Delphine%20Appriou" datetime="2022-03-16T16:47">Yang, X., T. A. Buscheck, K. Mansoor, Z. Wang, K. Gao, L. Huang, D. Appriou, and S. A. Carroll (2019), Assessment of geophysical monitoring methods for detection of brine and CO<sub>2 leakage in drinking water aquifers, Int J Greenh Gas Con, 90, 102803.</ins></span></li>
-                </ul>
-            </li>
-            <li><u><span style='font-size:16px;line-height:115%;font-family:"Times New Roman",serif;'><span style="text-decoration:none;">&nbsp;</span></span></u></li>
-        </ul>
-        <p style="margin-top:0in;margin-right:0in;margin-bottom:9.6pt;margin-left:1.25in;text-align:justify;"></p>
-        <ol style="list-style-type: circle;">
-            <li><u><span style="font-size:16px;">HDF5 files based on NUFT Simulations, Kimberlina 1.2 site (relocated, i.e., the leakage origin points are artificially randomized)</span></u><span style="line-height:115%;font-size:11px;">&nbsp;</span></li>
-            <li><span style="background:yellow;"><ins cite="mailto:Delphine%20Appriou" datetime="2022-03-16T16:23">Provide description</ins></span></li>
-        </ol>
-        <p style="margin-top:0in;margin-right:0in;margin-bottom:9.6pt;margin-left:1.0in;text-align:justify;text-indent:.25in;"></p>
-        <ol style="list-style-type: circle;">
-            <li><u><span style="font-size:16px;">For more information on pre-processing data to run DREAM, please refer to Section&nbsp;</span></u><u><span style='line-height:115%;font-family:"Times New Roman",serif;font-size:16px;'>4</span></u><u><span style='line-height:115%;font-family:"Times New Roman",serif;font-size:16px;'>. This section will discuss the applications that can produce suitable data files needed to run DREAM, such as STOMP, NUFT, IAM, and TECPLOT. &nbsp;&nbsp;</span></u></li>
-            <li><span style='line-height:115%;font-family:"Times New Roman",serif;font-family:"Times New Roman",serif;font-size:12.0pt;'>Examples of finished results to compare outputs to</span></li>
-            <li><span style="font-family:CMR10;background:yellow;"><ins cite="mailto:Delphine%20Appriou" datetime="2022-03-16T16:24">Provide list</ins></span></li>
-            <li>For any questions or feedback, please email <a href="mailto:alexander.hanna@pnnl.gov">alexander.hanna@pnnl.gov</a></li>
-        </ol>
-    </li>
-</ol>
-<div id="_com_3" language="JavaScript"><br></div>
+
+
+
+<p>The current release of DREAM is made available on the NETL Energy Data Exchange (EDX) at XXXXX and includes a zip file with the following files:</p>
+<ul>
+<li><strong>A runnable JAR file</strong>, which packages all the necessary libraries, images, and documentation into an executable program.</li>
+<li><strong>Test Datasets</strong> that can be used by users to get familiar with the tool:
+<ul>
+<li><u>NRAP-OpenIAM Open Wellbore, Kimberlina site</u>
+<ul>
+<li>About the dataset: This dataset contains all the files associated with the analysis of leakage risks at a brownfield site (i.e., Kimberlina site), using NRAP-Open-IAM.</li>
+<li>Access: <a href="https://edx.netl.doe.gov/dataset/application-of-nrap-open-iam-to-the-kimberlina-site">https://edx.netl.doe.gov/dataset/application-of-nrap-open-iam-to-the-kimberlina-site</a></li>
+<li>Reference: Lackey G, VS Vasylkivska, NJ Huerta, S King, and RM Dilmore. 2019. &ldquo;Managing well leakage risks at a geologic carbon storage site with many wells.&rdquo; International Journal of Greenhouse Gas Control 88:182-194. 10.1016/j.ijggc.2019.06.011.</li>
+</ul>
+</li>
+<li><u>NRAP-OpenIAM Reservoir model:</u>
+<ul>
+<li>About the dataset: The Reservoir component model provides spatial and temporal information on pressure and saturation in the storage reservoir. A reservoir simulation look-up table in United States (US) Department of Energy (DOE)&rsquo;s National Risk Assessment Partnership Open-source Integrated Assessment Model (NRAP-Open-IAM) is used for this study. The table is based on a set of numerical simulation models with varying rock properties for the Kimberlina reservoir in southern San Joaquin basin in California, USA. The homogeneous reservoir model No. 14 (reservoir porosity: 0.276; reservoir permeability: 1.585&times;10&minus;13 m2 ; caprock permeability: 1.995&times;10&minus;18 m2 ) for the first 100 years (i.e., 50 years of CO2 injection at a rate of 5 million metric tons/year and 50 years of post-injection) was used.</li>
+<li><u>Access: https://edx.netl.doe.gov/workspace/nrap-tools/folder/691e9f3f-eca4-4f77-a41e-8180bf4b5342</u></li>
+</ul>
+</li>
+    <li><u>HDF5 files based on NUFT Simulations, Kimberlina 1.2 site</u></li>
+<ul>
+<li>About the dataset: Nonisothermal, Unsaturated Flow and Transport model, referred to as NUFT, was developed by Los Alamos National Laboratory (LLNL) to numerically model multi-phase non-isothermal flow and transport for 3d simulations of either the saturated zone or unsaturated zone. Users can analyze their sites of interest for any leakage scenario using NUFT, and then they can use these simulations as the inputs (e.g., hdf5 files) to run DREAM.</li>
+</ul>
+<ul>
+<li>Available in original format as per references below: <a href="https://edx.netl.doe.gov/dataset/llnl-kimberlina-1-2-nuft-simulations-june-2018-v2">https://edx.netl.doe.gov/dataset/llnl-kimberlina-1-2-nuft-simulations-june-2018-v2</a></li>
+<li>Or, in their DREAMv3-compatible HDF5 format: <a href="https://edx.netl.doe.gov/workspace/nrap-tools/folder/691e9f3f-eca4-4f77-a41e-8180bf4b5342">https://edx.netl.doe.gov/workspace/nrap-tools/folder/691e9f3f-eca4-4f77-a41e-8180bf4b5342</a></li>
+<li>Alternatively, these simulations are also available at the URL above with their leakage origin points artificially relocated in order to provide a more challenging optimization problem more reminiscent of a fracture network or large field of many leaking wells</li>
+<li>References:
+<ul>
+<li>Kayyum Mansoor, Thomas A. Buscheck, Xianjin Yang, Susan A. Carroll, Xiao Chen. LLNL Kimberlina 1.2 NUFT Simulations June 2018, 2018-06-25, https://edx.netl.doe.gov/dataset/llnl-kimberlina-1-2-nuft-simulations-june-2018, DOI: 10.18141/1603336</li>
+<li>Yang, X., T. A. Buscheck, K. Mansoor, Z. Wang, K. Gao, L. Huang, D. Appriou, and S. A. Carroll (2019), Assessment of geophysical monitoring methods for detection of brine and CO<sub>2</sub> leakage in drinking water aquifers, Int J Greenh Gas Con, 90, 102803.</li>
+</ul>
+</li>
+<li><em>For more information on pre-processing data to run DREAM, please refer to Section </u><u>4</u><u>. This section will discuss the applications that can produce suitable data files needed to run DREAM, such as STOMP, NUFT, IAM, and TECPLOT. &nbsp;</em></li>
+</ul>
+<ul>
+<li>Examples of finished results to compare outputs to:
+<ul>
+<li>Figure 24: Simulated annealing example of PLD and PMCD versus TTD</li>
+<li>Figure 25: Simulated annealing example of PLD and PMCD versus Monitoring Cost</li>
+<li>Figure 26: Simulated annealing example of PLD versus PMCD</li>
+<li>Figure 27: Simulated annealing example Monitoring Cost versus TTD</li>
+<li>Figure 28: Simulated annealing example of VAD versus TTD</li>
+<li>Figure 29: Simulated annealing example of PMCD using last time step compared to the time at which the maximum leak is detected versus TTD</li>
+<li>Figure 30: Simulated annealing example of PMCD using last time step compared to the time at which the maximum leak is detected versus Monitoring Cost</li>
+<li>Figure 31: Simulated annealing example of 3D scatter plots that show when 0%-100% of leaks are detected for (left) PMCD, PLD and TTD and (right) PLD, TTD, and Monitoring Cost</li>
+<li>Figure 32: Simulated annealing example of 3D scatter plots that show (left) some of the proposed monitoring campaigns and (right) the respective PLD and Monitoring Cost versus TTD Monitoring Technologies</li>
+</ul>
+</li>
+</ul>
+<p>For any questions or feedback, please email <a href="mailto:alexander.hanna@pnnl.gov">alexander.hanna@pnnl.gov</a>.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
 
 
 
