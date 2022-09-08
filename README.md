@@ -756,7 +756,7 @@
 
 
 
-<p>The current release of DREAM is made available on the NETL Energy Data Exchange (EDX) at XXXXX and includes a zip file with the following files:</p>
+<p>The current release of DREAM is made available on the NETL Energy Data Exchange (EDX) at XXXXX and on a PNNL webpage at <a href="https://www.pnnl.gov/projects/designs-risk-evaluation-and-management-dream/get-dream">https://www.pnnl.gov/projects/designs-risk-evaluation-and-management-dream/get-dream</a>, and includes the following files:</p>
 <ul>
 <li><strong>A runnable JAR file</strong>, which packages all the necessary libraries, images, and documentation into an executable program.</li>
 <li><strong>Test Datasets</strong> that can be used by users to get familiar with the tool:
@@ -805,8 +805,8 @@
 </ul>
 </li>
 </ul>
-<p>For any questions or feedback, please email <a href="mailto:alexander.hanna@pnnl.gov">alexander.hanna@pnnl.gov</a>.</p>
 <p>&nbsp;</p>
+    <p>For any questions or feedback, please email <a href="mailto:alexander.hanna@pnnl.gov">alexander.hanna@pnnl.gov</a>.</p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 
