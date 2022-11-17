@@ -69,7 +69,7 @@
 <h1><a name="howto"></a>3.&nbsp;&nbsp;&nbsp;&nbsp; How to Run From JAR (recommended for regular users)</h1>
 
 <p> 1. Download JAR file from the GitHub Release section</p>
-<p style="margin-bottom:9.6pt;"><img width=550pt src="./figure/github_release.PNG" alt="image"> </p>
+<p style="margin-bottom:9.6pt;"><img width=750pt src="./figure/github_release.PNG" alt="image"> </p>
 
 <p> 2. Navigate to correct folder using File Explorer</p>
 <p> 3. Double-click on DREAM.jar</p>
