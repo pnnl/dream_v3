@@ -93,7 +93,7 @@
 <p> 9. To view history, right click on the project folder and select “Team > Show in History”.</p>
 
 <p> To get Python Scripts working:</p>
-<p> 1. I recommend downloading Anaconda. Make sure you get the 3.7 version, rather than 2.7.</p>
+<p> 1. Anaconda is recommended, preferably version 3.7 rather than 2.7.</p>
 <p> 2. Open a command prompt and type in “python” to see version. Typing “where python” will show you where the executable is located.</p>
 <p> 3.In your windows search bar, type “Edit the system environment variables”. In advanced tab, select “Environment Variables”. Under “user variables for …” click “New” and add:</p>
 <p> a. Variable name=”PATH”; Value = the location of your python executable</p>
