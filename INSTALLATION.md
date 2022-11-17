@@ -66,26 +66,49 @@
                             </ol></ul>
                         
                         
-<h1><a name="howto"></a>3.&nbsp;&nbsp;&nbsp;&nbsp; How to Install</h1>
-The <em>Designs for Risk Evaluation and Management</em> (<em>DREAM</em>) tool is an open source software developed at PNNL for risk-based assessment and monitoring of geologic carbon sequestration and storage. The user can develop models in DREAM to find the optimal placement of monitoring technologies that will detect carbon dioxide (CO<sub>2</sub>) and brine leakage from storage formations. The DREAM tool can be downloaded at one of the following links:</p>
+<h1><a name="howto"></a>3.&nbsp;&nbsp;&nbsp;&nbsp; How to Run From JAR (recommended for regular users)</h1>
+<p> 1. Navigate to correct folder using File Explorer</p>
+<p> 2. Double-click on DREAM.jar</p>
+<p> 3. The DREAM window should open</p>
+<p> OR</p>
+<p> 1. Open Start Menu</p>
+<p> 2. Open terminal by running the “CMD” program</p>
+<p> 3. Navigate to correct folder using “dir” command</p>
+<p> 4. Run “java -jar DREAM.jar”</p>
+<p> 5. The DREAM window should open as with a double-click, but this option should display more informative error messages that can help us identify any errors</p>
 
-<p> Download the software package to your local device and save it to your desired directory path. </p>
-Link to DREAM Download Page: (https://....)
-<p> Clone the repository to your local device. </p>
-Link to Git Repository: (https://github.com/pnnl/dream_v3)
-<p> &nbsp; </p>
+<h1><a name="howto"></a>3.&nbsp;&nbsp;&nbsp;&nbsp; How to Run From Source (recommended for developers)</h1>
 
-<h2><a name="windows"></a>3.1&nbsp;&nbsp;&nbsp;&nbsp; Installation for Windows</h2>
-<p> &nbsp; </p>
+<p> 1. Clone repository using command “git clone https://github.com/pnnl/dream_v3” </p>
+<p> OR </p>
+<p> 1. Clone repository by clicking on “Code”  button in GitHub followed by “Download ZIP” </p>
+<p style="margin-bottom:9.6pt;"><img width=300pt src="./figure/github_dl.PNG" alt="image"> </p>
+<p> 2. Install a Java-compatible IDE (integrated development environment), we recommend Eclipse and therefore our instructions assume Eclipse, but other IDE’s should work in the same manner with minimal</p>
+<p> 3. Go to “File > New > Java Project”. Uncheck “use default location” and provide it with the location where you cloned the GIT repository. Make sure that the execution environment JRE is JavaSE-1.8. Click “Finish”.</p>
+<p> 4. If you see a big red exclamation point by the top-level folder of the project, right click on it and go to “Build Path > Configure Build Path”. Select the “Libraries” tab and you will see jre7 at the bottom. Remove jre7, click “Add Library”, select “JRE System Library”, and chose the Workspace default JRE, which should be 1.8.</p>
+<p> 5. Press f5 while selecting the project to refresh it.</p>
+<p> 6. Right click on the “img” folder and select “build path > Use as Source Folder”. Repeat for “docs” and “scripts” folders.</p>
+<p> 7. Go to “Dream > src > wizardPages”. Right click on “DREAMWizard.java” and select “Run as > java application”.</p>
+<p> 8. To add Git Staging, go to “Window > Show View > Other…” and select “Git > Git Staging”.</p>
+<p> 9. To view history, right click on the project folder and select “Team > Show in History”.</p>
 
-<p> &nbsp; </p>
-<h2><a name="ubuntu"></a>3.2&nbsp;&nbsp;&nbsp;&nbsp; Installation for Mac</h2>
-<p> &nbsp; </p>
+<p> To get Python Scripts working:</p>
+<p> 1. I recommend downloading Anaconda. Make sure you get the 3.7 version, rather than 2.7.</p>
+<p> 2. Open a command prompt and type in “python” to see version. Typing “where python” will show you where the executable is located.</p>
+<p> 3.In your windows search bar, type “Edit the system environment variables”. In advanced tab, select “Environment Variables”. Under “user variables for …” click “New” and add:</p>
+<p> a. Variable name=”PATH”; Value = the location of your python executable</p>
 
-<p> &nbsp; </p>
-<h2><a name="ubuntu"></a>3.3&nbsp;&nbsp;&nbsp;&nbsp; Installation for Linux</h2>
-<p> &nbsp; </p>
+<p> Other Fixes</p>
+<p> •Issue: Problem reading HDF5 files in Eclipse</p>
+<p> oSolution: Go to “Run > Run Configuration”. Under the “Arguments” tab, add to the VM arguments: “-Dncsa.hdf.hdf5lib.H5.hdf5lib=C:\Users\whit162\OneDrive –PNNL\Documents\Projects\DreamProject\Dream\lib\jhdf5.dll”</p>
+<p> •Issue: Memory getting maxed out</p>
+<p> oSolution: Go to “Run > Run Configuration”. Under the “Arguments” tab, add to the VM arguments: “-Xmx2g -Xms32m”</p>
+<p> •If you want to assess code performance:</p>
+<p> oGo to “Help > Eclipse Marketplace” and search for ‘JVM Monitor’ and click install.</p>
+<p> oGo to “Window > Perspective > Open Perspective > Other” and select ‘Java Monitor’</p>
 
+                
+                
 <h1><a name="howto"></a>4.&nbsp;&nbsp;&nbsp;&nbsp; Getting Started with DREAM</h1>
 Once DREAM has been downloaded and successfully installed, the user is officially ready to get started. Execute the runnable JAR file or open up the DREAM application. The user can find more information on how to run DREAM by referring to the User Guide Manual, which includes a step-by-step tutorial on setting up and running DREAM using a test dataset. The user can also find the User Guide Manual on DREAM (v3) Github.
 
