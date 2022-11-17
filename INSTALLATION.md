@@ -67,15 +67,19 @@
                         
                         
 <h1><a name="howto"></a>3.&nbsp;&nbsp;&nbsp;&nbsp; How to Run From JAR (recommended for regular users)</h1>
-<p> 1. Navigate to correct folder using File Explorer</p>
-<p> 2. Double-click on DREAM.jar</p>
-<p> 3. The DREAM window should open</p>
+
+<p> 1. Download JAR file from the GitHub Release section</p>
+<p style="margin-bottom:9.6pt;"><img width=300pt src="./figure/github_release.PNG" alt="image"> </p>
+
+<p> 2. Navigate to correct folder using File Explorer</p>
+<p> 3. Double-click on DREAM.jar</p>
+<p> 4. The DREAM window should open</p>
 <p> OR</p>
-<p> 1. Open Start Menu</p>
-<p> 2. Open terminal by running the “CMD” program</p>
-<p> 3. Navigate to correct folder using “dir” command</p>
-<p> 4. Run “java -jar DREAM.jar”</p>
-<p> 5. The DREAM window should open as with a double-click, but this option should display more informative error messages that can help us identify any errors</p>
+<p> 2. Open Start Menu</p>
+<p> 3. Open terminal by running the “CMD” program</p>
+<p> 4. Navigate to correct folder using “dir” command</p>
+<p> 5. Run “java -jar DREAM.jar”</p>
+<p> 6. The DREAM window should open as with a double-click, but this option should display more informative error messages that can help us identify any errors</p>
 
 <h1><a name="howto"></a>3.&nbsp;&nbsp;&nbsp;&nbsp; How to Run From Source (recommended for developers)</h1>
 
